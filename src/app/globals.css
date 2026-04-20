@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Google Fonts ─────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ─── CSS Variables ─────────────────────────────────────── */
+:root {
+  --color-terracota: #C25A3A;
+  --color-azulejo:   #2A5A8C;
+  --color-ocre:      #D9A760;
+  --color-crema:     #F7F0E3;
+  --color-tinta:     #2B1E15;
+  --shadow-soft:     0 2px 15px -3px rgba(43,30,21,0.08), 0 10px 20px -2px rgba(43,30,21,0.04);
+  --shadow-medium:   0 4px 20px -4px rgba(43,30,21,0.12), 0 12px 28px -4px rgba(43,30,21,0.06);
+  --shadow-large:    0 8px 30px -6px rgba(43,30,21,0.16), 0 20px 40px -6px rgba(43,30,21,0.08);
+}
+
+/* ─── Base ──────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #F7F0E3;
+  color: #2B1E15;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+/* ─── Selection ─────────────────────────────────────────── */
+::selection {
+  background-color: rgba(194, 90, 58, 0.2);
+  color: var(--color-tinta);
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-crema);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-terracota);
+  border-radius: 3px;
+}
+
+/* ─── Leaflet Map Overrides ─────────────────────────────── */
+.leaflet-container {
+  font-family: 'Inter', sans-serif;
+  border-radius: 12px;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: var(--shadow-medium);
+  border: 1px solid rgba(194, 90, 58, 0.15);
+}
+
+.leaflet-popup-content {
+  margin: 12px 16px;
+  font-size: 14px;
+}
+
+.leaflet-popup-tip {
+  background: white;
+}
+
+/* ─── React Day Picker Overrides ────────────────────────── */
+.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #C25A3A;
+  --rdp-background-color: rgba(194, 90, 58, 0.1);
+  --rdp-accent-color-dark: #9E4830;
+  margin: 0;
+}
+
+.rdp-day_selected,
+.rdp-day_selected:focus-visible,
+.rdp-day_selected:hover {
+  background-color: var(--color-terracota);
+  color: white;
+}
+
+.rdp-day_range_start,
+.rdp-day_range_end {
+  background-color: var(--color-terracota) !important;
+  color: white !important;
+}
+
+.rdp-day_range_middle {
+  background-color: rgba(194, 90, 58, 0.15);
+  color: var(--color-tinta);
+}
+
+.rdp-day_today:not(.rdp-day_selected) {
+  font-weight: bold;
+  color: var(--color-terracota);
+}
+
+.rdp-day_disabled {
+  opacity: 0.35;
+  text-decoration: line-through;
+}
+
+/* ─── Utility Classes ───────────────────────────────────── */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+
+  .glass {
+    background: rgba(247, 240, 227, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(247, 240, 227, 0.5);
+  }
+
+  .glass-dark {
+    background: rgba(43, 30, 21, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(43, 30, 21, 0.3);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-medium text-white bg-terracota-500 hover:bg-terracota-600 active:bg-terracota-700 transition-all duration-200 shadow-soft hover:shadow-medium focus:outline-none focus:ring-2 focus:ring-terracota-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-medium text-tinta bg-crema border border-tinta/20 hover:bg-crema-dark active:bg-crema-darker transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-terracota-500 focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-medium text-terracota border-2 border-terracota hover:bg-terracota hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-terracota-500 focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-card border border-tinta/5 overflow-hidden;
+  }
+
+  .section {
+    @apply py-16 md:py-24 px-4 md:px-8 max-w-7xl mx-auto;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-serif text-tinta mb-3;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-tinta-lighter mb-10 md:mb-16 max-w-2xl;
+  }
+
+  .input {
+    @apply w-full px-4 py-3 rounded-xl border border-tinta/20 bg-white text-tinta placeholder:text-tinta/40 focus:outline-none focus:ring-2 focus:ring-terracota-500 focus:border-transparent transition-all;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium;
+  }
+}
+
+/* ─── Animations ────────────────────────────────────────── */
+@keyframes slideUpFade {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-slide-up-fade {
+  animation: slideUpFade 0.5s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out forwards;
+}
+
+/* ─── Shimmer Loading ───────────────────────────────────── */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(43, 30, 21, 0.06);
+}
+.shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  animation: shimmer 1.5s infinite;
+}
+
+/* ─── Print styles (for QR page) ───────────────────────── */
+@media print {
+  header, footer, .no-print { display: none !important; }
+  body { background: white; }
+  .print-full-width { width: 100% !important; }
+}
+
+/* ─── Dark mode (minimal support) ──────────────────────── */
+@media (prefers-color-scheme: dark) {
+  /* Future dark mode support */
+}
