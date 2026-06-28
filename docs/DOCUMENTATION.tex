@@ -1,0 +1,1693 @@
+%=============================================================
+%  ESENCIA SEVILLA — DOCUMENTACIÓN TÉCNICA COMPLETA
+%  Versión 1.0.0  |  Abril 2026
+%=============================================================
+\documentclass[12pt,a4paper,twoside,openright]{report}
+
+%--- Codificación y lengua --------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nolayout]{babel}
+\usepackage{lmodern}
+
+%--- Geometría de página ----------------------------------
+\usepackage[
+  top=3cm, bottom=3cm,
+  inner=3.5cm, outer=2.5cm,
+  headheight=15pt,
+  footskip=1.5cm
+]{geometry}
+
+%--- Tipografía -------------------------------------------
+\usepackage{microtype}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{parskip}
+
+%--- Paleta de colores del diseño ------------------------
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+\definecolor{Terracota}{HTML}{C25A3A}
+\definecolor{TerracotaClaro}{HTML}{FAE5DC}
+\definecolor{TerracotaOscuro}{HTML}{82321B}
+\definecolor{Azulejo}{HTML}{2A5A8C}
+\definecolor{AzulejoClaro}{HTML}{EFF5FB}
+\definecolor{Ocre}{HTML}{D9A760}
+\definecolor{Crema}{HTML}{F7F0E3}
+\definecolor{Tinta}{HTML}{2B1E15}
+\definecolor{GrisClaro}{HTML}{F4F4F4}
+\definecolor{GrisMedio}{HTML}{CCCCCC}
+\definecolor{Verde}{HTML}{16A34A}
+\definecolor{Naranja}{HTML}{D97706}
+
+%--- Encabezados y pies de página ------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\textcolor{Terracota}{\textbf{Esencia Sevilla}} \textcolor{GrisMedio}{|} Documentación Técnica v1.0}
+\fancyhead[RO]{\small\textcolor{Tinta}{\leftmark}}
+\fancyfoot[LE,RO]{\small\textcolor{GrisMedio}{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{TerracotaClaro}\leaders\hrule height \headrulewidth\hfill}}
+
+%--- Formato de capítulos y secciones --------------------
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\Huge\bfseries\color{Tinta}}
+  {{\Large\color{Terracota}\chaptertitlename\ \thechapter}}
+  {16pt}
+  {\Huge}[\vspace{4pt}{\color{TerracotaClaro}\hrule height 2pt}]
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{Azulejo}}
+  {\thesection}{1em}{}[\vspace{2pt}{\color{AzulejoClaro}\hrule height 0.5pt}]
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{Terracota}}
+  {\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{Tinta}}
+  {\thesubsubsection}{1em}{}
+
+%--- Tablas -----------------------------------------------
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{colortbl}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{X}{>{\raggedright\arraybackslash}X}
+
+%--- Código fuente ----------------------------------------
+\usepackage{listings}
+\usepackage{lstautogobble}
+
+\lstdefinelanguage{TypeScript}{
+  keywords={const,let,var,function,return,if,else,while,for,
+            export,import,from,async,await,typeof,interface,
+            type,class,extends,implements,new,this,null,
+            undefined,true,false,void,string,number,boolean},
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]",
+  morestring=[b]',
+  morestring=[b]`,
+  sensitive=true
+}
+
+\lstdefinestyle{tsStyle}{
+  language=TypeScript,
+  backgroundcolor=\color{GrisClaro},
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{Azulejo}\bfseries,
+  stringstyle=\color{Terracota},
+  commentstyle=\color{gray!70}\itshape,
+  numberstyle=\tiny\color{GrisMedio},
+  numbers=left,
+  numbersep=8pt,
+  breaklines=true,
+  breakatwhitespace=true,
+  columns=flexible,
+  keepspaces=true,
+  showstringspaces=false,
+  frame=leftline,
+  framesep=8pt,
+  rulecolor=\color{Terracota},
+  xleftmargin=20pt,
+  xrightmargin=4pt,
+  autogobble=true,
+  tabsize=2,
+}
+
+\lstdefinestyle{sqlStyle}{
+  language=SQL,
+  backgroundcolor=\color{AzulejoClaro},
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{Azulejo}\bfseries,
+  stringstyle=\color{Terracota},
+  commentstyle=\color{gray!70}\itshape,
+  numberstyle=\tiny\color{GrisMedio},
+  numbers=left,
+  numbersep=8pt,
+  breaklines=true,
+  frame=leftline,
+  framesep=8pt,
+  rulecolor=\color{Azulejo},
+  xleftmargin=20pt,
+  autogobble=true,
+}
+
+\lstdefinestyle{bashStyle}{
+  language=bash,
+  backgroundcolor=\color{Tinta!8},
+  basicstyle=\ttfamily\footnotesize\color{Tinta},
+  keywordstyle=\color{Terracota}\bfseries,
+  stringstyle=\color{Verde!80!black},
+  commentstyle=\color{gray!70}\itshape,
+  numbers=none,
+  breaklines=true,
+  frame=none,
+  xleftmargin=12pt,
+  autogobble=true,
+}
+
+\lstdefinestyle{jsonStyle}{
+  language=bash,
+  backgroundcolor=\color{GrisClaro},
+  basicstyle=\ttfamily\footnotesize,
+  numbers=none,
+  breaklines=true,
+  frame=single,
+  framesep=6pt,
+  rulecolor=\color{GrisMedio},
+  xleftmargin=8pt,
+  xrightmargin=8pt,
+  autogobble=true,
+}
+
+\lstset{style=tsStyle}
+
+%--- Listas -----------------------------------------------
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.5em, itemsep=3pt, topsep=4pt}
+\setlist[enumerate]{leftmargin=1.5em, itemsep=3pt, topsep=4pt}
+
+%--- Cajas decorativas ------------------------------------
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable, listings}
+
+\newtcolorbox{infobox}[2][]{
+  enhanced, breakable,
+  colback=TerracotaClaro!40,
+  colframe=Terracota,
+  coltitle=white,
+  fonttitle=\bfseries\small,
+  title=#2,
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  arc=5pt,
+  drop shadow={Terracota!30},
+  #1
+}
+
+\newtcolorbox{warnbox}[2][]{
+  enhanced, breakable,
+  colback=Ocre!15,
+  colframe=Ocre,
+  coltitle=Tinta,
+  fonttitle=\bfseries\small,
+  title={⚠ #2},
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  arc=5pt,
+  #1
+}
+
+\newtcolorbox{successbox}[2][]{
+  enhanced, breakable,
+  colback=Verde!8,
+  colframe=Verde,
+  coltitle=white,
+  fonttitle=\bfseries\small,
+  title={✓ #2},
+  left=8pt, right=8pt, top=6pt, bottom=6pt,
+  arc=5pt,
+  #1
+}
+
+\newtcolorbox{codebox}[2][]{
+  enhanced, breakable,
+  colback=GrisClaro,
+  colframe=GrisMedio,
+  coltitle=Tinta,
+  fonttitle=\ttfamily\bfseries\small,
+  title=#2,
+  left=6pt, right=6pt, top=6pt, bottom=6pt,
+  arc=3pt,
+  #1
+}
+
+%--- Gráficos y diagramas ---------------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, backgrounds,
+                fit, shadows.blur, calc}
+
+%--- Hiperlinks -------------------------------------------
+\usepackage[
+  colorlinks=true,
+  linkcolor=Azulejo,
+  urlcolor=Terracota,
+  citecolor=Tinta,
+  filecolor=Verde
+]{hyperref}
+\usepackage{url}
+
+%--- Otros ------------------------------------------------
+\usepackage{eurosym}
+\usepackage{amssymb}
+\usepackage{pifont}
+\newcommand{\cmark}{\textcolor{Verde}{\ding{51}}}
+\newcommand{\xmark}{\textcolor{red}{\ding{55}}}
+\newcommand{\pending}{\textcolor{Naranja}{\textbf{!}}}
+
+%--- Metadatos PDF ----------------------------------------
+\hypersetup{
+  pdftitle={Esencia Sevilla — Documentación Técnica v1.0.0},
+  pdfauthor={Esencia Sevilla Dev Team},
+  pdfsubject={Documentación técnica completa de la aplicación web},
+  pdfkeywords={Next.js 14, Supabase, Stripe, TypeScript, i18n, PWA, Sevilla},
+  pdfcreator={LaTeX + hyperref},
+  pdfproducer={pdfTeX}
+}
+
+%=============================================================
+\begin{document}
+%=============================================================
+
+\frontmatter
+
+%--- Portada ------------------------------------------------
+\begin{titlepage}
+\pagecolor{Crema}
+\afterpage{\nopagecolor}
+\centering
+\vspace*{1.5cm}
+
+{\color{Terracota}\rule{\textwidth}{4pt}}
+\vspace{1.5cm}
+
+{\fontsize{42}{52}\selectfont\bfseries\color{Tinta}Esencia Sevilla}
+
+\vspace{0.6cm}
+{\Large\color{Terracota}\itshape Imaginero Luis Alvarez Duarte N7 · 41008 Sevilla}
+
+\vspace{0.3cm}
+{\normalsize\color{Tinta!60} Nº Registro Turístico AT/SE/03584}
+
+\vspace{1.5cm}
+{\color{GrisMedio}\rule{\textwidth}{0.5pt}}
+\vspace{1cm}
+
+{\fontsize{28}{36}\selectfont\bfseries\color{Azulejo}Documentación Técnica}
+
+\vspace{0.5cm}
+{\large\color{Tinta!80} Aplicación Web de Gestión de Apartamento Turístico}
+
+\vspace{0.4cm}
+{\normalsize\color{Tinta!60}
+Next.js 14 · TypeScript · Tailwind CSS · Supabase · Stripe · OpenRouter
+}
+
+\vspace{1.5cm}
+{\color{GrisMedio}\rule{0.6\textwidth}{0.5pt}}
+\vspace{1cm}
+
+\begin{tabular}{@{}ll@{}}
+  \textcolor{Tinta!50}{\small Versión} & \textbf{1.0.0} \\[6pt]
+  \textcolor{Tinta!50}{\small Fecha} & \textbf{Abril 2026} \\[6pt]
+  \textcolor{Tinta!50}{\small Repositorio} & \texttt{\small github.com/danimap27/esencia-sevilla} \\[6pt]
+  \textcolor{Tinta!50}{\small Licencia} & \textbf{Privado} \\
+\end{tabular}
+
+\vfill
+{\color{Terracota}\rule{\textwidth}{4pt}}
+\end{titlepage}
+
+%--- Página en blanco y tabla de contenidos ---------------
+\cleardoublepage
+\tableofcontents
+\clearpage
+\listoftables
+\clearpage
+\listoffigures
+
+\mainmatter
+
+%=============================================================
+\chapter{Descripción General del Producto}
+%=============================================================
+
+\section{Visión y objetivos de negocio}
+
+\textbf{Esencia Sevilla} es una aplicación web de producción para la comercialización
+directa y la gestión integral de un apartamento turístico de alta gama ubicado en el
+corazón histórico de Sevilla, a menos de 10 minutos a pie de la Catedral, el Real Alcázar
+y la Torre del Oro.
+
+La plataforma nace para resolver el principal problema de los propietarios de alquiler
+vacacional: la \textbf{dependencia total de las OTAs} (Online Travel Agencies) como
+Booking.com y Airbnb, que cobran comisiones de entre el 15\% y el 25\% en cada reserva.
+La estrategia adoptada es ofrecer al viajero un \textbf{descuento permanente del 10\%}
+sobre el precio publicado en las OTAs, de manera que el huésped pague menos \emph{y}
+el propietario ingrese más, eliminando el intermediario en ambas direcciones.
+
+\begin{infobox}{Datos del inmueble}
+\begin{tabular}{@{}L{4cm}L{7.5cm}@{}}
+  \textbf{Nombre:}         & Esencia Sevilla \\[3pt]
+  \textbf{Dirección:}      & Imaginero Luis Alvarez Duarte N7, 41008 Sevilla \\[3pt]
+  \textbf{Coordenadas:}    & 37.38862°N,\ \ −5.98230°W \\[3pt]
+  \textbf{Reg. Turístico:} & AT/SE/03584 (Junta de Andalucía) \\[3pt]
+  \textbf{Capacidad:}      & 4 huéspedes · 2 dormitorios · 3 camas · 65 m² \\[3pt]
+  \textbf{Precio base:}    & \euro{}142/noche (temporada media) \\[3pt]
+  \textbf{Tarifa limpieza:}& \euro{}60 única por estancia \\[3pt]
+  \textbf{Tasa turística:} & \euro{}1,50 por persona/noche \\[3pt]
+  \textbf{Estancia mínima:}& 2 noches \\
+\end{tabular}
+\end{infobox}
+
+\subsection{Objetivos de negocio}
+
+\begin{longtable}{L{4.5cm} L{8cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Objetivo} & \textbf{Implementación técnica} \\
+  \midrule
+  Captación reservas directas & Sistema propio con Stripe Checkout, −10\% vs OTA \\
+  \addlinespace
+  Reducir dependencia de OTAs & Sincronización iCal bidireccional + bloqueo automático de fechas \\
+  \addlinespace
+  Presencia internacional & 6 idiomas: ES, EN, FR, DE, IT, PT (next-intl) \\
+  \addlinespace
+  Posicionamiento SEO orgánico & JSON-LD, hreflang, sitemap dinámico, blog de Sevilla \\
+  \addlinespace
+  Experiencia superior al huésped & Chatbot IA 24/7, guía turística interactiva, pre-check-in digital \\
+  \addlinespace
+  Cumplimiento legal & RGPD, SES.HOSPEDERÍA, normativa turística andaluza \\
+  \bottomrule
+\end{longtable}
+
+\section{Puntos de interés cercanos}
+
+\begin{longtable}{L{5cm} C{3cm}}
+  \toprule
+  \textbf{Monumento / Lugar} & \textbf{Distancia a pie} \\
+  \midrule
+  Barrio de Santa Cruz & 6 min \\
+  Torre del Oro & 7 min \\
+  Catedral de Sevilla & 8 min \\
+  La Giralda & 9 min \\
+  Archivo de Indias & 9 min \\
+  Real Alcázar & 10 min \\
+  Plaza de España & 12 min \\
+  Museo de Bellas Artes & 15 min \\
+  \bottomrule
+\end{longtable}
+
+%=============================================================
+\chapter{Stack Tecnológico}
+%=============================================================
+
+\section{Frontend}
+
+\begin{longtable}{L{3.5cm} C{2cm} L{7cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Librería} & \textbf{Versión} & \textbf{Descripción} \\
+  \midrule
+  Next.js & 14.2.5 & Framework principal con App Router, RSC, Route Handlers \\
+  React & 18.3.1 & UI library con Suspense y Concurrent Rendering \\
+  TypeScript & \textasciicircum 5 & Tipado estático en toda la aplicación \\
+  Tailwind CSS & \textasciicircum 3.4.6 & Utilidades CSS con design tokens personalizados \\
+  next-intl & \textasciicircum 3.17.3 & i18n nativo para App Router con Server Components \\
+  framer-motion & \textasciicircum 11.2.12 & Animaciones declarativas de alta calidad \\
+  lucide-react & \textasciicircum 0.411.0 & Librería de 1.000+ iconos SVG consistentes \\
+  react-day-picker & \textasciicircum 8.10.1 & Selector de fechas con modo DateRange y localización \\
+  react-leaflet & \textasciicircum 4.2.1 & Wrapper React para Leaflet (carga con SSR desactivado) \\
+  leaflet & \textasciicircum 1.9.4 & Motor de mapas OpenStreetMap \\
+  react-hot-toast & \textasciicircum 2.4.1 & Notificaciones toast no intrusivas \\
+  Radix UI & \textasciicircum 1.x & Primitivas UI accesibles: Dialog, Accordion, Tabs, Select \\
+  date-fns & \textasciicircum 3.6.0 & Manipulación de fechas con soporte de 6 locales \\
+  clsx + tailwind-merge & --- & Composición segura de clases CSS \\
+  \bottomrule
+\end{longtable}
+
+\section{Backend y servicios externos}
+
+\begin{longtable}{L{3.5cm} C{2cm} L{7cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Servicio} & \textbf{Versión} & \textbf{Descripción} \\
+  \midrule
+  Supabase & \textasciicircum 2.44.4 & PostgreSQL gestionado + RLS + API REST automática \\
+  Stripe & \textasciicircum 16.2.0 & Checkout Sessions, webhooks, PCI-DSS Level 1 \\
+  @stripe/stripe-js & \textasciicircum 4.1.0 & Stripe.js: Apple Pay, Google Pay, Payment Request \\
+  Resend & \textasciicircum 3.4.0 & Emails transaccionales HTML con dominio propio \\
+  OpenRouter & REST & Proxy de IA: Claude, GPT-4, Mistral... \\
+  Twilio & REST & WhatsApp Business API (notificaciones propietario) \\
+  ical.js & \textasciicircum 2.0.1 & Parser estándar iCalendar RFC 5545 \\
+  \bottomrule
+\end{longtable}
+
+\section{Herramientas de desarrollo y build}
+
+\begin{longtable}{L{4cm} C{2.5cm} L{6cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Herramienta} & \textbf{Versión} & \textbf{Uso} \\
+  \midrule
+  Zod & \textasciicircum 3.23.8 & Validación de esquemas en todas las API routes \\
+  qrcode & \textasciicircum 1.5.4 & Generación de QR en el panel de administración \\
+  next-pwa & \textasciicircum 5.6.0 & Service Worker + Workbox para PWA \\
+  ESLint & \textasciicircum 8 & Linting con reglas de Next.js \\
+  PostCSS & \textasciicircum 8.4.39 & Autoprefixer + pipeline Tailwind \\
+  \bottomrule
+\end{longtable}
+
+%=============================================================
+\chapter{Arquitectura del Sistema}
+%=============================================================
+
+\section{Diagrama general}
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  node distance=1.5cm and 2cm,
+  >=Stealth,
+  client/.style={rectangle, rounded corners=6pt, draw=Azulejo, fill=AzulejoClaro,
+                 minimum width=12cm, minimum height=1.2cm, font=\small\bfseries, text=Azulejo},
+  server/.style={rectangle, rounded corners=4pt, draw=Terracota, fill=TerracotaClaro!50,
+                 minimum width=5cm, minimum height=1.1cm, font=\small, text centered},
+  ext/.style={rectangle, rounded corners=4pt, draw=Tinta!40, fill=Crema,
+              minimum width=3cm, minimum height=1cm, font=\small, text centered},
+  arr/.style={->, thick, color=Tinta!50},
+  label/.style={font=\scriptsize\itshape, text=Tinta!60},
+]
+  \node[client] (browser) {Browser / PWA — React 18 + next-intl + Leaflet + DayPicker};
+
+  \node[server, below=1.5cm of browser, xshift=-3.2cm] (rsc) {Server Components\\(pages, sitemap, RSC)};
+  \node[server, below=1.5cm of browser, xshift=3.2cm]  (api)  {API Routes\\(/api/*)};
+
+  \node[ext, below=2cm of rsc, xshift=-2.5cm]  (supabase)    {Supabase\\PostgreSQL};
+  \node[ext, below=2cm of api, xshift=-1cm]    (stripe)      {Stripe\\Checkout};
+  \node[ext, below=2cm of api, xshift=2.5cm]   (openrouter)  {OpenRouter\\(IA)};
+  \node[ext, below=3.5cm of rsc, xshift=2.5cm] (resend)      {Resend\\+ Twilio};
+  \node[ext, below=5cm of supabase]             (ical)        {Booking.com\\Airbnb (iCal)};
+
+  % Caja Next.js
+  \begin{pgfonlayer}{background}
+    \node[draw=Terracota, dashed, rounded corners=8pt, fill=TerracotaClaro!20,
+          fit=(rsc)(api), inner sep=15pt,
+          label={[color=Terracota,font=\small\bfseries]above:Next.js 14 App Router}] {};
+  \end{pgfonlayer}
+
+  % Flechas
+  \draw[arr] (browser) -- (rsc);
+  \draw[arr] (browser) -- (api);
+  \draw[arr] (api) -- (supabase);
+  \draw[arr] (api) -- (stripe);
+  \draw[arr] (api) -- (openrouter);
+  \draw[arr] (api) -- (resend);
+  \draw[arr] (supabase) -- node[label, right]{iCal sync} (ical);
+
+  % Etiqueta HTTPS
+  \node[label, right=0.1cm of browser, yshift=-0.8cm] {HTTPS/2 · TLS 1.3};
+\end{tikzpicture}%
+}
+\caption{Arquitectura general del sistema Esencia Sevilla}
+\label{fig:architecture}
+\end{figure}
+
+\section{Patrones de renderizado}
+
+\begin{longtable}{L{4cm} L{8.5cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Patrón} & \textbf{Uso en la aplicación} \\
+  \midrule
+  Server Components (RSC) & Layout, Footer, páginas legales, sitemap, robots \\
+  Client Components & Hero, BookingSection, Gallery, FAQ, Reviews, Admin \\
+  Dynamic Import (SSR off) & MapSection (Leaflet), ChatWidget (window dependency) \\
+  API Routes & Todas las interacciones con BD, Stripe, IA y auth \\
+  Edge Middleware & Detección de locale y redirección i18n \\
+  \bottomrule
+\end{longtable}
+
+\section{Flujo de una reserva}
+
+\begin{enumerate}
+  \item El usuario llega a la web; el \textbf{Middleware} detecta el locale (Accept-Language) y redirige a \texttt{/es} (o el locale detectado).
+  \item \texttt{BookingSection} hace \texttt{GET /api/availability}: Supabase devuelve fechas bloqueadas + iCal de Booking.com y Airbnb. Caché de 5 min.
+  \item El usuario selecciona fechas, huéspedes, extras y aplica cupón.
+  \item Al pulsar ``Reservar directo'': \texttt{POST /api/bookings/checkout}.
+  \begin{itemize}
+    \item Zod valida el body de la petición.
+    \item Se comprueba disponibilidad en Supabase (segunda validación server-side).
+    \item Se calcula el precio en el servidor (inmune a tampering).
+    \item Se crea una Stripe Checkout Session.
+    \item Se inserta la reserva con \texttt{status: 'pending'}.
+    \item Se devuelve \texttt{\{ url, bookingRef \}}.
+  \end{itemize}
+  \item El usuario es redirigido a la hosted page de Stripe para completar el pago.
+  \item Stripe envía \texttt{checkout.session.completed} a \texttt{POST /api/webhooks/stripe}.
+  \begin{itemize}
+    \item Se verifica la firma HMAC-SHA256.
+    \item Se actualiza la reserva: \texttt{status: 'confirmed'}.
+    \item Se insertan todas las fechas de la estancia en \texttt{blocked\_dates}.
+    \item Se envía email de confirmación HTML (Resend).
+    \item Se notifica al propietario por WhatsApp (Twilio).
+  \end{itemize}
+  \item El usuario es redirigido a \texttt{/\{locale\}/reserva-confirmada?ref=...}
+\end{enumerate}
+
+%=============================================================
+\chapter{Sistema de Diseño}
+%=============================================================
+
+\section{Paleta de colores}
+
+Los colores evocan la arquitectura y cultura sevillana: el \textbf{terracota} de las
+tejas mudéjares, el \textbf{azulejo} andaluz, el \textbf{ocre} de las fachadas y la
+\textbf{crema} del encalado.
+
+\begin{longtable}{C{2cm} L{2.2cm} C{3cm} L{5cm}}
+  \toprule
+  \textbf{Muestra} & \textbf{Token} & \textbf{Hex} & \textbf{Uso principal} \\
+  \midrule
+  \cellcolor{Terracota} & terracota-500 & \#C25A3A & CTAs, acentos, hover states \\
+  \cellcolor{TerracotaClaro} & terracota-100 & \#FAE5DC & Fondos suaves, info boxes \\
+  \cellcolor{Azulejo} & azulejo-500 & \#2A5A8C & Secciones, enlaces, información \\
+  \cellcolor{AzulejoClaro} & azulejo-50 & \#EFF5FB & Fondos informativos \\
+  \cellcolor{Ocre} & ocre-500 & \#D9A760 & Badges temporada alta, alertas \\
+  \cellcolor{Crema} & crema & \#F7F0E3 & Fondo principal de la web \\
+  \cellcolor{Tinta} & tinta & \#2B1E15 & Texto principal \\
+  \bottomrule
+\end{longtable}
+
+\section{Tipografía}
+
+\begin{longtable}{L{3cm} L{4cm} L{5.5cm}}
+  \toprule
+  \textbf{Fuente} & \textbf{Uso} & \textbf{Características} \\
+  \midrule
+  Cormorant Garamond & H1, H2, taglines & Serif elegante, cargada con next/font \\
+  Inter & Cuerpo, UI, botones & Sans-serif legible, optical sizing \\
+  \bottomrule
+\end{longtable}
+
+\section{Clases utilitarias de componente}
+
+Definidas en \texttt{globals.css} para uso consistente en toda la aplicación:
+
+\begin{longtable}{L{3.5cm} L{9cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Clase CSS} & \textbf{Descripción} \\
+  \midrule
+  \texttt{.btn-primary} & Botón terracota sólido con hover, focus ring y transición \\
+  \texttt{.btn-secondary} & Botón azulejo sólido \\
+  \texttt{.btn-outline} & Botón con borde terracota, fondo transparente \\
+  \texttt{.card} & Contenedor blanco con sombra suave y bordes redondeados \\
+  \texttt{.section} & Padding vertical estándar (\texttt{py-16 sm:py-24}) \\
+  \texttt{.input} & Input HTML estilizado con focus ring terracota \\
+  \texttt{.badge} & Etiqueta pequeña con colores semánticos \\
+  \texttt{.glass} & Fondo glass morfismo claro (backdrop-blur) \\
+  \texttt{.glass-dark} & Fondo glass morfismo oscuro \\
+  \texttt{.scrollbar-hidden} & Scroll sin barra visible \\
+  \bottomrule
+\end{longtable}
+
+%=============================================================
+\chapter{Componentes de Interfaz}
+%=============================================================
+
+\section{Header}
+
+Barra de navegación sticky con efecto glass progresivo al superar 50 px de scroll
+(umbral detectado con \texttt{useEffect} + \texttt{addEventListener('scroll')}).
+
+En \textbf{desktop} presenta los links de sección con scroll suave y el selector de
+idioma — un dropdown con las 6 banderas y nombres nativos. En \textbf{móvil},
+un icono hamburguesa abre un overlay de pantalla completa con animación
+\texttt{slideUpFade}.
+
+El cambio de idioma usa \texttt{useRouter().replace()} con el nuevo locale,
+preservando la ruta actual.
+
+\section{Hero}
+
+Sección de pantalla completa con cinco elementos:
+
+\begin{enumerate}
+  \item \textbf{Carousel automático} — 5 fotos con rotación cada 4.500 ms, indicadores
+        de posición, gradiente negro para legibilidad.
+  \item \textbf{Contador de ahorro en tiempo real} — calcula \texttt{calculatePrice()}
+        para 3 noches/2 personas y muestra el ahorro vs Booking.com.
+  \item \textbf{Badges de confianza} — valoración 4,9/5, +47 reseñas, WiFi ultra, auto check-in,
+        nº de registro AT/SE/03584.
+  \item \textbf{CTAs} — ``Reservar directo'' (scroll a \texttt{\#reservar}) y
+        ``Ver en Booking.com'' (enlace externo de respaldo).
+  \item \textbf{Landmarks cercanos} — 8 monumentos con emoji, nombre y tiempo a pie.
+\end{enumerate}
+
+\section{BookingSection}
+
+El componente más complejo de la aplicación. Gestiona el flujo completo de reserva:
+
+\begin{enumerate}
+  \item \textbf{Tipo de reserva} — Pestaña Directa (−10\%, no reembolsable) / Booking.com.
+  \item \textbf{Fechas} — \texttt{react-day-picker} en modo \texttt{DateRange}; las fechas
+        bloqueadas se cargan de \texttt{GET /api/availability} al montar.
+  \item \textbf{Huéspedes} — Contador 1–4. Recalcula la tasa turística en tiempo real.
+  \item \textbf{Extras (Upsells)} — 5 opciones (traslado, welcome pack, late check-out,
+        cuna de viaje, pack romántico).
+  \item \textbf{Cupón} — Input con validación debounced de 800 ms contra
+        \texttt{POST /api/bookings/validate-coupon}.
+  \item \textbf{Desglose y pago} — Muestra el ahorro vs Booking.com y redirige a Stripe.
+\end{enumerate}
+
+\section{MapSection}
+
+Cargado con \texttt{dynamic(\dots, \{ ssr: false \})} porque Leaflet requiere
+el objeto \texttt{window}. Tiene 3 pestañas:
+
+\begin{description}
+  \item[Mapa] Marcador del apartamento (icono casa terracota) + 10 atracciones
+              con colores por categoría. Clic en marcador → popup con descripción.
+  \item[Rutas] 5 rutas turísticas con modal de detalle paso a paso.
+  \item[Transporte] Tabla con líneas EA, C3, C4, 24 y Metro L1.
+\end{description}
+
+\section{ChatWidget}
+
+Botón flotante (FAB) con indicador verde de disponibilidad. Al abrirse muestra la
+ventana de chat con:
+\begin{itemize}
+  \item 4 chips de sugerencias predefinidas (localizados)
+  \item Input de texto con envío por Enter o botón
+  \item Indicador de escritura animado (3 puntos)
+  \item Auto-scroll al último mensaje
+\end{itemize}
+
+Los mensajes se envían a \texttt{POST /api/chat}, que los reenvía a OpenRouter con
+un system prompt de 50+ líneas con contexto completo del apartamento.
+
+%=============================================================
+\chapter{API REST — Referencia Completa}
+%=============================================================
+
+\section{GET /api/availability}
+
+Devuelve las fechas bloqueadas para los próximos 120 días.
+
+\begin{codebox}{Respuesta 200 — application/json}
+\begin{lstlisting}[style=jsonStyle, numbers=none]
+{
+  "blockedDates": ["2026-05-10", "2026-05-11", "2026-06-01"]
+}
+\end{lstlisting}
+\end{codebox}
+
+\textbf{Lógica:} (1) Comprueba caché en memoria (TTL 5 min). (2) Consulta Supabase.
+(3) Sincroniza iCal de Booking.com y Airbnb. (4) Deduplica y devuelve.
+
+\section{POST /api/bookings/checkout}
+
+Crea sesión Stripe y persiste la reserva como \texttt{pending}.
+
+\begin{codebox}{Body requerido}
+\begin{lstlisting}[style=jsonStyle, numbers=none]
+{
+  "checkIn":    "2026-06-15",
+  "checkOut":   "2026-06-20",
+  "guests":     2,
+  "upsells":    [{ "id": "welcome-pack", "price": 25, "name": "Pack" }],
+  "couponCode": "VERANO10",
+  "locale":     "es"
+}
+\end{lstlisting}
+\end{codebox}
+
+\begin{longtable}{C{1.5cm} L{10cm}}
+  \toprule
+  \textbf{Código} & \textbf{Descripción} \\
+  \midrule
+  200 & \texttt{\{ "url": "https://checkout.stripe.com/...", "bookingRef": "ES-..." \}} \\
+  400 & Validación Zod fallida o estancia < 2 noches \\
+  409 & Fechas no disponibles (double-booking check) \\
+  500 & Error interno \\
+  \bottomrule
+\end{longtable}
+
+\section{POST /api/bookings/validate-coupon}
+
+Valida un código sin consumir el uso. Verifica: \texttt{active}, \texttt{valid\_from},
+\texttt{valid\_until}, \texttt{uses\_count < max\_uses}.
+
+\begin{codebox}{Respuesta — cupón válido}
+\begin{lstlisting}[style=jsonStyle, numbers=none]
+{ "valid": true, "discountType": "percent", "discountValue": 10 }
+\end{lstlisting}
+\end{codebox}
+
+\section{POST /api/chat}
+
+Proxy a OpenRouter. Límite: 500 tokens de respuesta.
+
+\section{POST /api/webhooks/stripe}
+
+\begin{warnbox}{Solo para Stripe}
+Esta ruta no puede llamarse manualmente. Requiere firma HMAC-SHA256 del payload.
+\end{warnbox}
+
+\begin{longtable}{L{6cm} L{7cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Evento Stripe} & \textbf{Acciones en el servidor} \\
+  \midrule
+  \texttt{checkout.session.completed} &
+    UPDATE booking → confirmed · INSERT blocked\_dates · Send email (Resend) · WhatsApp (Twilio) \\
+  \addlinespace
+  \texttt{checkout.session.expired} &
+    UPDATE booking → cancelled \\
+  \bottomrule
+\end{longtable}
+
+\section{Endpoints de administración}
+
+\begin{longtable}{L{5.5cm} C{1.5cm} L{5.5cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Ruta} & \textbf{Método} & \textbf{Acción} \\
+  \midrule
+  \texttt{/api/admin/auth} & POST & Login; cookie httpOnly 8h \\
+  \texttt{/api/admin/bookings} & GET & Lista de reservas \\
+  \texttt{/api/admin/block-date} & POST & Bloquear fecha manualmente \\
+  \texttt{/api/admin/block-date} & DELETE & Desbloquear fecha manual \\
+  \bottomrule
+\end{longtable}
+
+%=============================================================
+\chapter{Base de Datos}
+%=============================================================
+
+\section{Modelo de datos}
+
+El sistema usa \textbf{PostgreSQL} gestionado en Supabase con
+\textbf{Row Level Security (RLS)} activo en las 4 tablas.
+
+\subsection{Tabla bookings}
+
+\begin{longtable}{L{4.2cm} L{3.5cm} L{5cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Columna} & \textbf{Tipo} & \textbf{Descripción} \\
+  \midrule
+  \texttt{id} & UUID PK & \texttt{gen\_random\_uuid()} \\
+  \texttt{booking\_ref} & TEXT UNIQUE & Ref. legible ES-XXXX-XXXX \\
+  \texttt{check\_in} & DATE NOT NULL & Fecha de entrada \\
+  \texttt{check\_out} & DATE NOT NULL & Fecha de salida \\
+  \texttt{guests} & INTEGER & Nº de huéspedes (1--4) \\
+  \texttt{guest\_name} & TEXT NOT NULL & Nombre completo \\
+  \texttt{guest\_email} & TEXT NOT NULL & Email de contacto \\
+  \texttt{total\_amount} & DECIMAL(10,2) & Total cobrado en \euro{} \\
+  \texttt{status} & TEXT & pending/confirmed/cancelled/completed \\
+  \texttt{payment\_intent\_id} & TEXT & ID de Stripe PaymentIntent \\
+  \texttt{upsells} & JSONB & Array \texttt{[\{id, name, price\}]} \\
+  \texttt{coupon\_code} & TEXT & Código de cupón aplicado \\
+  \texttt{discount\_amount} & DECIMAL(10,2) & Total de descuento \\
+  \texttt{source} & TEXT & direct / booking / airbnb \\
+  \texttt{locale} & TEXT & Idioma del proceso (es/en/\ldots) \\
+  \texttt{pre\_checkin\_completed} & BOOLEAN & ¿Pre-check-in completado? \\
+  \texttt{pre\_checkin\_data} & JSONB & Datos SES.HOSPEDERÍA (cifrar) \\
+  \texttt{created\_at} & TIMESTAMPTZ & Timestamp de creación \\
+  \bottomrule
+\end{longtable}
+
+\subsection{Tabla blocked\_dates}
+
+\begin{longtable}{L{3.5cm} L{3.5cm} L{5.5cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Columna} & \textbf{Tipo} & \textbf{Descripción} \\
+  \midrule
+  \texttt{date} & DATE UNIQUE & Fecha bloqueada \\
+  \texttt{reason} & TEXT & Motivo del bloqueo \\
+  \texttt{source} & TEXT & manual / ical\_booking / ical\_airbnb / booking \\
+  \texttt{booking\_ref} & TEXT & Referencia de reserva (si aplica) \\
+  \bottomrule
+\end{longtable}
+
+\subsection{Tabla reviews}
+
+Almacena reseñas con soporte multilingüe completo: columnas
+\texttt{text\_es}, \texttt{text\_en}, \texttt{text\_fr}, \texttt{text\_de},
+\texttt{text\_it}, \texttt{text\_pt}. Solo se muestran públicamente las que tienen
+\texttt{approved = true}.
+
+\subsection{Tabla coupons}
+
+\begin{longtable}{L{3.5cm} L{3.5cm} L{5.5cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Columna} & \textbf{Tipo} & \textbf{Descripción} \\
+  \midrule
+  \texttt{code} & TEXT UNIQUE & Código en mayúsculas \\
+  \texttt{discount\_type} & TEXT & \texttt{percent} o \texttt{fixed} \\
+  \texttt{discount\_value} & DECIMAL(10,2) & Valor del descuento \\
+  \texttt{valid\_from} & DATE & Inicio de validez \\
+  \texttt{valid\_until} & DATE & Fin de validez \\
+  \texttt{max\_uses} & INTEGER & Límite de usos (\texttt{null} = ilimitado) \\
+  \texttt{uses\_count} & INTEGER & Usos consumidos \\
+  \texttt{active} & BOOLEAN & Estado activo/inactivo \\
+  \bottomrule
+\end{longtable}
+
+\section{Políticas RLS}
+
+\begin{lstlisting}[style=sqlStyle]
+-- Solo resenas aprobadas son publicas
+CREATE POLICY "Public read approved reviews"
+  ON reviews FOR SELECT USING (approved = true);
+
+-- Disponibilidad publica (calendario)
+CREATE POLICY "Public read blocked dates"
+  ON blocked_dates FOR SELECT USING (true);
+
+-- Insercion publica de reservas (pre-pago)
+CREATE POLICY "Public insert bookings"
+  ON bookings FOR INSERT WITH CHECK (true);
+\end{lstlisting}
+
+%=============================================================
+\chapter{Motor de Precios}
+%=============================================================
+
+\section{Fórmula matemática}
+
+Sea $n$ el número de noches, $h$ el número de huéspedes, $p$ el porcentaje de
+descuento directo y $d_c$ el descuento por cupón:
+
+\begin{align}
+  S &= n \times 142                     & \text{(subtotal)} \\
+  L &= 60                                & \text{(tarifa limpieza)} \\
+  T &= h \times n \times 1{,}50          & \text{(tasa turística)} \\
+  D &= \left\lfloor S \times \frac{p}{100} \right\rfloor + d_c & \text{(descuento total)} \\
+  \text{Total} &= S + L + T + U - D      & \text{($U$: upsells)} \\
+  P_{\text{OTA}} &= \lceil \text{Total} \times 1{,}10 \rceil & \text{(estimación Booking)} \\
+  \text{Ahorro} &= P_{\text{OTA}} - \text{Total}               & \text{(visible al usuario)}
+\end{align}
+
+\section{Multiplicadores de temporada}
+
+\begin{longtable}{L{6.5cm} C{2.5cm} R{2cm} R{2cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Período} & \textbf{Multiplicador} & \textbf{€/noche} & \textbf{Est. OTA} \\
+  \midrule
+  Semana Santa (25 mar -- 10 abr) & $\times 1{,}50$ & \euro{}213 & \euro{}234 \\
+  Feria de Abril (15 -- 30 abr)   & $\times 1{,}50$ & \euro{}213 & \euro{}234 \\
+  Verano (jun -- ago)             & $\times 1{,}25$ & \euro{}178 & \euro{}196 \\
+  Navidad / NYE (22 -- 31 dic)    & $\times 1{,}30$ & \euro{}185 & \euro{}204 \\
+  Primavera / Otoño               & $\times 1{,}00$ & \euro{}142 & \euro{}156 \\
+  Invierno (ene -- feb)           & $\times 0{,}85$ & \euro{}121 & \euro{}133 \\
+  \bottomrule
+\end{longtable}
+
+\section{Extras disponibles (Upsells)}
+
+\begin{longtable}{L{4.5cm} C{1.8cm} L{6cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Extra} & \textbf{Precio} & \textbf{Descripción} \\
+  \midrule
+  Traslado aeropuerto SVQ & \euro{}35 & Transfer desde/hasta el aeropuerto \\
+  Pack bienvenida local   & \euro{}25 & Productos artesanales sevillanos \\
+  Late check-out          & \euro{}20 & Salida hasta las 14:00 h \\
+  Cuna de viaje           & \euro{}15 & Para bebés y niños pequeños \\
+  Pack romántico          & \euro{}45 & Vino local + flores + decoración \\
+  \bottomrule
+\end{longtable}
+
+%=============================================================
+\chapter{Internacionalización}
+%=============================================================
+
+\section{Configuración de locales}
+
+\begin{lstlisting}[style=tsStyle]
+export const locales = ['es', 'en', 'fr', 'de', 'it', 'pt'] as const;
+export type Locale = typeof locales[number];
+export const defaultLocale: Locale = 'es';
+
+export const localeNames: Record<Locale, string> = {
+  es: 'Español', en: 'English', fr: 'Français',
+  de: 'Deutsch', it: 'Italiano', pt: 'Português',
+};
+\end{lstlisting}
+
+\section{Sitemap multilingüe}
+
+El sitemap dinámico genera \textbf{30 URLs} (6 locales × 5 páginas) con
+\texttt{alternates.languages} completo en cada entrada, habilitando las etiquetas
+\texttt{hreflang} para posicionamiento en los motores de búsqueda de cada país.
+
+\section{Localización de fechas}
+
+\texttt{date-fns} provee locales nativos para los 6 idiomas. El \texttt{DayPicker}
+y todas las fechas formateadas en la interfaz usan el locale activo:
+
+\begin{lstlisting}[style=tsStyle]
+// Resultado de format(new Date('2026-04-20'), 'PPP', { locale })
+// es: "20 de abril de 2026"
+// en: "April 20th, 2026"
+// de: "20. April 2026"
+// fr: "20 avril 2026"
+\end{lstlisting}
+
+%=============================================================
+\chapter{Seguridad}
+%=============================================================
+
+\begin{longtable}{L{4.5cm} L{8cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Vector de ataque} & \textbf{Mitigación implementada} \\
+  \midrule
+  SQL Injection & Supabase usa queries parametrizadas. Nunca interpolación de strings en SQL. \\
+  \addlinespace
+  XSS & React escapa HTML por defecto. No se usa \texttt{dangerouslySetInnerHTML}. \\
+  \addlinespace
+  CSRF & Stripe webhooks verificados con HMAC-SHA256. Cookie admin con SameSite=Strict. \\
+  \addlinespace
+  Price Tampering & El precio se calcula 100\% en el servidor. El cliente solo envía fechas y huéspedes. \\
+  \addlinespace
+  Acceso admin & Cookie httpOnly — inaccesible desde JavaScript. \\
+  \addlinespace
+  Secrets exposure & Las claves privadas NUNCA tienen el prefijo \texttt{NEXT\_PUBLIC\_}. \\
+  \addlinespace
+  Coupon abuse & Validación en servidor + \texttt{uses\_count} atómico en BD. \\
+  \addlinespace
+  Stripe replay & Webhook verifica timestamp (tolerancia 5 min). \\
+  \addlinespace
+  Rate limiting & Recomendado Upstash Ratelimit en producción. \\
+  \bottomrule
+\end{longtable}
+
+\section{Headers de seguridad recomendados}
+
+\begin{lstlisting}[style=tsStyle]
+// next.config.mjs
+async headers() {
+  return [{
+    source: '/(.*)',
+    headers: [
+      { key: 'X-Content-Type-Options', value: 'nosniff' },
+      { key: 'X-Frame-Options', value: 'DENY' },
+      { key: 'X-XSS-Protection', value: '1; mode=block' },
+      { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+      { key: 'Permissions-Policy',
+        value: 'camera=(), microphone=(), geolocation=()' },
+    ]
+  }];
+}
+\end{lstlisting}
+
+%=============================================================
+\chapter{Despliegue}
+%=============================================================
+
+\section{Vercel (recomendado)}
+
+\begin{lstlisting}[style=bashStyle]
+npm i -g vercel
+cd esencia-sevilla
+vercel --prod
+\end{lstlisting}
+
+Configuración en el dashboard de Vercel:
+\begin{itemize}
+  \item Framework: \textbf{Next.js} (autodetectado)
+  \item Build command: \texttt{npm run build}
+  \item Node.js version: \textbf{20.x}
+  \item Root directory: \texttt{esencia-sevilla}
+\end{itemize}
+
+\section{Self-hosted con NGINX}
+
+\begin{lstlisting}[style=bashStyle]
+git clone https://github.com/danimap27/esencia-sevilla
+cd esencia-sevilla && npm install
+cp .env.example .env.local  # rellenar con claves reales
+npm run build && npm start  # puerto 3000
+\end{lstlisting}
+
+Configuración de NGINX como reverse proxy con SSL (Let's Encrypt):
+
+\begin{lstlisting}[style=bashStyle]
+server {
+  listen 443 ssl http2;
+  server_name esenciasevilla.com;
+  ssl_certificate /etc/letsencrypt/live/.../fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/.../privkey.pem;
+
+  location / {
+    proxy_pass http://localhost:3000;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-Proto $scheme;
+  }
+}
+\end{lstlisting}
+
+\section{Checklist post-despliegue}
+
+\begin{itemize}
+  \item[$\square$] Verificar propiedad en Google Search Console; enviar sitemap.xml
+  \item[$\square$] Configurar webhook Stripe: \texttt{https://dominio.com/api/webhooks/stripe}
+  \item[$\square$] Activar cifrado de datos en Supabase dashboard
+  \item[$\square$] Probar reserva completa con tarjeta test de Stripe
+  \item[$\square$] Comprobar ChatWidget con API key de OpenRouter
+  \item[$\square$] Verificar sincronización iCal con reserva de prueba en Booking.com
+  \item[$\square$] Test de Core Web Vitals en PageSpeed Insights
+  \item[$\square$] Verificar hreflang en \url{https://www.hreflang.org/checker/}
+\end{itemize}
+
+%=============================================================
+\chapter{Cumplimiento Legal}
+%=============================================================
+
+\begin{longtable}{L{5.5cm} C{1.5cm} L{5.5cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Requisito} & \textbf{Estado} & \textbf{Detalle} \\
+  \midrule
+  Nº Reg. Turístico visible & \cmark & AT/SE/03584 en header, hero, footer \\
+  Política de Privacidad RGPD & \cmark & \texttt{/[locale]/privacidad} \\
+  Términos y Condiciones & \pending & Pendiente: \texttt{/[locale]/terminos} \\
+  Banner de cookies RGPD & \pending & Pendiente implementación \\
+  Pre-check-in digital & \cmark & Portal de huéspedes \\
+  Datos bancarios & \cmark & Solo en Stripe PCI-DSS \\
+  Derechos ARCO & \cmark & \texttt{hola@esenciasevilla.com} \\
+  SES.HOSPEDERÍA & \pending & Pendiente integración API \\
+  \bottomrule
+\end{longtable}
+
+Bases legales de los tratamientos de datos:
+
+\begin{longtable}{L{5cm} L{4cm} L{3.5cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Tratamiento} & \textbf{Base legal} & \textbf{Artículo RGPD} \\
+  \midrule
+  Gestión de reservas & Contrato & Art. 6.1.b \\
+  Registro de viajeros & Oblig. legal & Art. 6.1.c \\
+  Comunicaciones & Contrato & Art. 6.1.b \\
+  Marketing & Consentimiento & Art. 6.1.a \\
+  Analytics & Interés legítimo & Art. 6.1.f \\
+  \bottomrule
+\end{longtable}
+
+%=============================================================
+\chapter{Trabajo Futuro}
+%=============================================================
+
+Este capítulo describe la hoja de ruta completa del producto: mejoras técnicas
+pendientes, nuevas funcionalidades, optimizaciones de negocio y visión estratégica
+a largo plazo.
+
+%-------------------------------------------------------------
+\section{Corto plazo — v1.1 (1–3 meses)}
+%-------------------------------------------------------------
+
+\subsection{Páginas pendientes de implementar}
+
+\paragraph{Términos y Condiciones (\texttt{/[locale]/terminos})}
+Requerida por RGPD y la normativa turística andaluza. Debe cubrir: política de
+cancelación (no reembolsable en reservas directas), responsabilidades del arrendador
+y el arrendatario, legislación aplicable (Código Civil español y normativa turística
+de la Junta de Andalucía), y jurisdicción competente.
+
+\paragraph{Confirmación de reserva (\texttt{/[locale]/reserva-confirmada})}
+Página de éxito post-pago, accesible con \texttt{?ref=ES-XXXX\&session\_id=...}.
+Contenido: resumen de la reserva, próximos pasos (pre-check-in, instrucciones de
+llegada), código de la caja de llaves (visible solo tras confirmar identidad),
+descarga de comprobante PDF, y acceso al portal de huéspedes.
+
+\paragraph{Blog (\texttt{/[locale]/blog})}
+Blog turístico sobre Sevilla con objetivo de captación SEO. Los artículos se definen
+en \texttt{src/data/blog-posts.ts} con JSON-LD \texttt{Article} para cada entrada.
+Contenido planificado:
+\begin{itemize}
+  \item ``Los 10 mejores espectáculos de flamenco en Sevilla'' — keyword: \emph{flamenco sevilla}
+  \item ``Guía completa de la Feria de Abril 2027'' — keyword: \emph{feria de abril}
+  \item ``Qué comer en Sevilla: las mejores tapas del centro'' — keyword: \emph{tapas sevilla}
+  \item ``Semana Santa en Sevilla: cómo verla sin perderse nada''
+\end{itemize}
+
+\paragraph{Portal de huéspedes / Pre-check-in (\texttt{/[locale]/portal/[bookingRef]})}
+Formulario de pre-check-in con los datos exigidos por la
+\textbf{Ley Orgánica 4/2015 de Seguridad Ciudadana} para el sistema
+\textbf{SES.HOSPEDERÍA}:
+\begin{itemize}
+  \item DNI/NIE/pasaporte (número, tipo, país de expedición, fecha de expedición)
+  \item Fecha de nacimiento
+  \item Nacionalidad
+  \item Dirección de procedencia
+\end{itemize}
+Los datos se cifran en tránsito, se almacenan en \texttt{bookings.pre\_checkin\_data}
+(JSONB cifrado en Supabase Vault), y opcionalmente se envían a SES.HOSPEDERÍA
+vía su API REST.
+
+\subsection{Banner de cookies RGPD}
+
+Implementar un banner conforme al RGPD con tres niveles:
+\begin{enumerate}
+  \item \textbf{Primer nivel}: Aceptar todo / Rechazar todo / Gestionar preferencias.
+  \item \textbf{Segundo nivel}: Panel de preferencias por categoría
+        (Esenciales, Analytics, Marketing).
+  \item \textbf{Persistencia}: Decisión en \texttt{localStorage}; scripts de
+        analytics solo se cargan tras aceptación.
+\end{enumerate}
+
+\begin{warnbox}{Aviso legal}
+Según la Guía sobre el uso de cookies de la AEPD (2023), el simple aviso sin
+opción de rechazo no es suficiente. Es obligatorio ofrecer la opción de rechazar
+las cookies no esenciales con la misma facilidad con la que se aceptan.
+\end{warnbox}
+
+\subsection{Fotos del apartamento}
+
+Añadir las fotos reales a \texttt{public/fotos/}:
+\begin{itemize}
+  \item Mínimo 12 fotos: dormitorios, salón, cocina, baño, terraza, exterior
+  \item Formato preferido: \textbf{WebP} (calidad 85) con fallback JPG
+  \item Dimensiones: 1200×800 px (mínimo) para la galería, 800×533 para mobile
+  \item OG image: \texttt{public/og-image.jpg} (1200×630 px)
+  \item Script de conversión: \texttt{npx sharp-cli --format webp --quality 85 fotos/\*.jpg}
+\end{itemize}
+
+\subsection{Emails HTML con diseño de marca}
+
+Las plantillas de confirmación deben incluir:
+\begin{itemize}
+  \item Logo y colores de Esencia Sevilla (terracota + crema)
+  \item Resumen de la reserva con desglose de precios
+  \item Mapa de ubicación embebido (imagen estática de Google Maps Static API)
+  \item Botón CTA para completar el pre-check-in
+  \item Links a la guía turística y el chatbot
+  \item Footer RGPD con enlace a la política de privacidad
+\end{itemize}
+
+\subsection{Rate limiting en las APIs}
+
+\begin{lstlisting}[style=tsStyle]
+// Con Upstash Ratelimit
+import { Ratelimit } from '@upstash/ratelimit';
+const ratelimit = new Ratelimit({
+  redis: Redis.fromEnv(),
+  limiter: Ratelimit.slidingWindow(10, '60 s'),
+});
+const { success } = await ratelimit.limit(ip);
+if (!success) return NextResponse.json(
+  { error: 'Too many requests' }, { status: 429 });
+\end{lstlisting}
+
+Límites recomendados:
+\begin{itemize}
+  \item \texttt{/api/chat}: 10 peticiones/minuto por IP
+  \item \texttt{/api/bookings/checkout}: 5 peticiones/minuto por IP
+  \item \texttt{/api/admin/auth}: 3 intentos/minuto (proteger contra bruteforce)
+\end{itemize}
+
+%-------------------------------------------------------------
+\section{Medio plazo — v1.2 (3–6 meses)}
+%-------------------------------------------------------------
+
+\subsection{Precios dinámicos en el calendario}
+
+Mostrar el precio por noche de cada día directamente en el DayPicker, usando
+\texttt{getDynamicPrice(day)} que aplica el multiplicador de temporada:
+
+\begin{lstlisting}[style=tsStyle]
+const renderDay = (day: Date) => (
+  <div className="flex flex-col items-center">
+    <span>{day.getDate()}</span>
+    <span className="text-[10px] text-terracota-600 font-medium">
+      {formatPrice(getDynamicPrice(day))}
+    </span>
+  </div>
+);
+\end{lstlisting}
+
+El cálculo del total deberá acumular el precio dinámico de cada noche individualmente
+en lugar de multiplicar el precio base por el número de noches.
+
+\subsection{Sistema de reseñas con moderación}
+
+\paragraph{Solicitud automática} 3 días después del check-out, enviar email con
+enlace único a \texttt{/[locale]/opinar/[bookingRef]?token=...}
+
+\paragraph{Formulario de reseña} Valoración 1--5 estrellas, texto libre (\textless 500 chars),
+idioma autodetectado, token único anti-spam.
+
+\paragraph{Moderación en admin} Tabla con reseñas pendientes, botones Aprobar/Rechazar.
+
+\paragraph{Integración con Google} Tras aprobación, sugerir al huésped que comparta la
+reseña en Google Business Profile (enlace directo).
+
+\subsection{Portal de huéspedes completo}
+
+\begin{description}
+  \item[Pre-check-in] Datos SES.HOSPEDERÍA como se describe en §11.1.4.
+  \item[Información de estancia] Código de la caja de llaves, WiFi, instrucciones de entrada.
+  \item[Guía del apartamento] Cómo funciona el climatizador, lavadora, SmartTV.
+  \item[Chatbot contextual] El chatbot sabe el nombre del huésped y sus fechas de estancia.
+  \item[Checkout digital] Checklist de salida para minimizar las reclamaciones.
+\end{description}
+
+\subsection{Suite de testing automatizado}
+
+\paragraph{Unit tests (Vitest)}
+
+\begin{lstlisting}[style=tsStyle]
+describe('calculatePrice', () => {
+  it('applies 10% direct discount correctly', () => {
+    const { discount, total } = calculatePrice(
+      new Date('2026-06-15'), new Date('2026-06-20'), 2, 0, 10
+    );
+    expect(discount).toBe(Math.floor(5 * 142 * 0.1));
+  });
+  it('estimates Booking.com at +10%', () => {
+    const { total, bookingPrice } = calculatePrice(
+      new Date('2026-06-15'), new Date('2026-06-20'), 2
+    );
+    expect(bookingPrice).toBe(Math.round(total * 1.1));
+  });
+});
+\end{lstlisting}
+
+\paragraph{E2E con Playwright}
+\begin{itemize}
+  \item Flujo completo de reserva con tarjeta de test Stripe (\texttt{4242 4242 4242 4242})
+  \item Cambio de idioma y verificación de traducciones
+  \item Login admin + creación de bloqueo de fecha
+  \item Chat widget: envío de mensaje y recepción de respuesta IA
+\end{itemize}
+
+\paragraph{GitHub Actions CI}
+\begin{lstlisting}[style=bashStyle]
+name: Tests CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci && npm test && npm run test:e2e
+\end{lstlisting}
+
+%-------------------------------------------------------------
+\section{Largo plazo — v2.0 (6–18 meses)}
+%-------------------------------------------------------------
+
+\subsection{Aplicación móvil nativa (React Native / Expo)}
+
+App para huéspedes disponible en App Store y Google Play:
+
+\begin{itemize}
+  \item Llave digital NFC o QR para acceso sin caja de llaves
+  \item Chat en tiempo real con el propietario (Supabase Realtime)
+  \item Guía turística offline con mapas descargados
+  \item Notificaciones push: recordatorio check-in, código de acceso, solicitud de reseña
+  \item Historial de estancias anteriores
+\end{itemize}
+
+\textbf{Stack:} Expo SDK 51 + React Native, Supabase Realtime, Expo Notifications.
+
+\subsection{Yield Management — Revenue Management}
+
+Sistema de precios dinámicos basado en demanda real:
+
+\begin{equation}
+  P_{\text{óptimo}}(d) = P_{\text{base}} \cdot M_{\text{temporada}}(d)
+    \cdot M_{\text{urgencia}}(\Delta t) \cdot M_{\text{ocupación}}(\rho)
+\end{equation}
+
+Donde $\Delta t$ es el número de días hasta la fecha y $\rho$ es la tasa de
+ocupación del período.
+
+\begin{longtable}{L{4cm} C{3cm} L{5.5cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Señal} & \textbf{Multiplicador} & \textbf{Lógica} \\
+  \midrule
+  Lead time < 7 días & $\times 1{,}20$ & Urgencia; el viajero ya está en Sevilla \\
+  Lead time < 30 días & $\times 1{,}10$ & Demanda próxima \\
+  Ocupación > 80\% & $\times 1{,}15$ & Semana muy demandada \\
+  Ocupación < 30\% & $\times 0{,}90$ & Incentivar la reserva \\
+  \bottomrule
+\end{longtable}
+
+\textbf{Dashboard de Revenue Management} con:
+\begin{itemize}
+  \item Calendario de precios editable día a día
+  \item Gráfico ingresos vs ocupación por mes
+  \item RevPAN (Revenue per Available Night), ADR, tasa de ocupación
+  \item Comparativa con precios de la competencia en Booking.com
+\end{itemize}
+
+\subsection{Soporte multi-propiedad}
+
+Escalar el sistema para gestionar una cartera de apartamentos:
+
+\begin{lstlisting}[style=sqlStyle]
+CREATE TABLE properties (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  slug TEXT UNIQUE NOT NULL,
+  owner_id UUID REFERENCES auth.users(id),
+  name TEXT NOT NULL,
+  address TEXT NOT NULL,
+  base_price DECIMAL(10,2) NOT NULL,
+  max_guests INTEGER NOT NULL,
+  -- ...
+);
+
+ALTER TABLE bookings ADD COLUMN property_id UUID
+  REFERENCES properties(id) ON DELETE RESTRICT;
+ALTER TABLE blocked_dates ADD COLUMN property_id UUID
+  REFERENCES properties(id) ON DELETE CASCADE;
+\end{lstlisting}
+
+\textbf{Routing multi-propiedad:} \texttt{/[locale]/[property]\#reservar}
+
+\textbf{Autenticación multi-rol:} migrar de cookie simple a Supabase Auth con roles
+(propietario, gestor, personal de limpieza).
+
+\subsection{Integraciones con Channel Managers}
+
+\begin{longtable}{L{3cm} L{3cm} L{7cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Sistema} & \textbf{Integración} & \textbf{Beneficio} \\
+  \midrule
+  Lodgify & API REST & Gestión unificada de todos los canales \\
+  Hostaway & API REST & Sincronización bidireccional en tiempo real \\
+  Beds24 & iCal + API & Precio dinámico en todos los canales simultáneamente \\
+  Guesty & Webhook & Automatización operacional completa \\
+  Smoobu & API REST & Solución integrada para propietarios pequeños \\
+  \bottomrule
+\end{longtable}
+
+\subsection{Casa inteligente (IoT)}
+
+\begin{description}
+  \item[Cerradura inteligente] Código temporal generado automáticamente para cada
+    huésped, válido desde el check-in hasta el check-out, enviado por email y
+    visible en el portal. Stack recomendado: \textbf{Nuki Smart Lock 4.0} con API REST.
+
+  \item[Control climático] Preconfigurar temperatura 1 hora antes del check-in.
+    Ahorro energético en períodos sin huésped. Integración: \textbf{Ecobee} o
+    \textbf{Google Nest} API.
+
+  \item[Sensor de ruido] Alerta al propietario si se detectan niveles >75 dB en
+    horario de silencio (22:00--08:00). Producto: \textbf{Minut} o \textbf{NoiseAware}.
+
+  \item[Detector de CO\textsubscript{2}] Notificación automática si los niveles
+    suponen riesgo para la salud. Integración con el sistema de notificaciones
+    existente (WhatsApp + email).
+\end{description}
+
+\subsection{Chatbot IA avanzado con RAG}
+
+Enriquecer el chatbot con Retrieval-Augmented Generation:
+
+\begin{description}
+  \item[Base de conocimiento dinámica] Menús de restaurantes actualizados semanalmente,
+    horarios reales de museos y atracciones (scraping), eventos locales en tiempo real
+    (API del Ayuntamiento de Sevilla), previsión del tiempo para la semana de estancia.
+
+  \item[Historial persistente] Guardar conversaciones en Supabase para que el bot
+    recuerde el contexto entre sesiones del mismo huésped.
+
+  \item[Escalado a humano] Si la confianza de la respuesta es baja, transferir
+    automáticamente a WhatsApp del propietario con el historial completo.
+
+  \item[Soporte multimodal] Permitir envío de fotos para soporte visual
+    (``¿Cómo funciona este electrodoméstico?'').
+\end{description}
+
+\subsection{Dashboard de Business Intelligence}
+
+\begin{description}
+  \item[Ingresos] RevPAN, ADR, ingresos mes/trimestre/año, proyección anual.
+  \item[Ocupación] Tasa de ocupación, mapa de calor calendario, lead time medio.
+  \item[Canales] Reservas directas vs OTAs, comisiones pagadas, ahorro total acumulado.
+  \item[Huéspedes] Distribución geográfica (mapa), idioma más frecuente, ratio de repetición, NPS.
+  \item[Valoraciones] Evolución de rating en el tiempo, distribución por fuente.
+  \item[Exportación] Informes PDF para declaraciones de impuestos (IAE, IVA, IRPF modelo 415).
+\end{description}
+
+\subsection{Automatización de operaciones}
+
+\begin{longtable}{L{6cm} L{6.5cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Trigger} & \textbf{Acción automática} \\
+  \midrule
+  7 días antes check-in & Email: instrucciones de llegada + link pre-check-in \\
+  1 día antes check-in & SMS + email: código de la caja de llaves \\
+  Día check-in (16:00) & WhatsApp bienvenida + link guía turística \\
+  Día check-out (09:00) & Recordatorio horario de salida \\
+  3 días post check-out & Solicitud de reseña por email \\
+  10 días sin reseña & Segundo recordatorio de reseña \\
+  Fin de mes & Resumen de ingresos por email al propietario \\
+  \bottomrule
+\end{longtable}
+
+\textbf{Stack:} Supabase Edge Functions + pg\_cron, o servicio externo (Zapier / Make.com).
+
+\subsection{Marketplace de experiencias locales}
+
+Ofrecer actividades curadas como upsells adicionales:
+
+\begin{longtable}{L{6.5cm} C{2cm} C{2cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Experiencia} & \textbf{Precio} & \textbf{Comisión} \\
+  \midrule
+  Espectáculo flamenco (2 pax) & \euro{}85 & 20\% \\
+  Tour de tapas y vinos (4 pax) & \euro{}120 & 15\% \\
+  Ruta en bici por el Guadalquivir & \euro{}40/pax & 18\% \\
+  Paddle surf en el río & \euro{}35/pax & 20\% \\
+  Clase de cocina sevillana & \euro{}65/pax & 15\% \\
+  Visita privada al Alcázar & \euro{}95 & 20\% \\
+  \bottomrule
+\end{longtable}
+
+\textbf{Integración:} GetYourGuide Affiliate API o Airbnb Experiences para inventario en tiempo real.
+
+\subsection{App para el personal de limpieza}
+
+Aplicación simplificada con:
+\begin{itemize}
+  \item Calendario de próximas limpiezas (check-outs pendientes)
+  \item Checklist de limpieza con confirmación fotográfica por estancia
+  \item Gestión de inventario (productos de limpieza, ropa de cama, toallas)
+  \item Reporte de incidencias con foto, descripción y nivel de urgencia
+\end{itemize}
+
+%-------------------------------------------------------------
+\section{Mejoras técnicas transversales}
+%-------------------------------------------------------------
+
+\subsection{Migración a Supabase Auth}
+
+Sustituir la cookie simple del admin por \textbf{Supabase Auth} con:
+\begin{itemize}
+  \item JWT tokens con refresh automático
+  \item Múltiples usuarios con roles (admin, gestor, limpieza)
+  \item 2FA/MFA para el propietario (TOTP o SMS)
+  \item Magic Links para acceso sin contraseña
+\end{itemize}
+
+\subsection{Internacionalización extendida}
+
+\begin{longtable}{L{4cm} C{2.5cm} L{6cm}}
+  \toprule
+  \rowcolor{AzulejoClaro}
+  \textbf{Idioma} & \textbf{Prioridad} & \textbf{Justificación} \\
+  \midrule
+  Japonés (ja) & Alta & Turismo japonés creciente en Andalucía \\
+  Chino simplificado (zh) & Alta & Mayor mercado turístico del mundo \\
+  Árabe (ar) + RTL & Media & Turismo del Golfo Pérsico en crecimiento \\
+  Ruso (ru) & Media & Frecuente en turismo de Europa del Este \\
+  Holandés (nl) & Media & Alta incidencia en turismo español \\
+  \bottomrule
+\end{longtable}
+
+También: detección de idioma por \textbf{GeoIP} (no solo Accept-Language),
+y \textbf{conversión de moneda} para mostrar precios en GBP, USD, CHF manteniendo
+el cobro en EUR.
+
+\subsection{Accesibilidad (WCAG 2.2 AA)}
+
+\begin{itemize}
+  \item Navegación completa por teclado (Tab, Enter, Space, Escape, flechas)
+  \item Skip-to-content links
+  \item ARIA labels en todos los elementos interactivos sin texto visible
+  \item Contraste de color $\geq$ 4,5:1 en todos los textos
+  \item Alt text descriptivo en todas las imágenes
+  \item Respeto a \texttt{prefers-reduced-motion} para animaciones
+  \item Verificación con Axe DevTools + Lighthouse Accessibility audit
+\end{itemize}
+
+\subsection{Observabilidad y monitorización}
+
+\begin{description}
+  \item[Error tracking] \textbf{Sentry} para capturar errores en producción con
+    contexto completo (stack trace, usuario, request).
+
+  \item[Uptime monitoring] \textbf{BetterUptime} o \textbf{UptimeRobot} con
+    alertas por email/SMS si la web cae.
+
+  \item[Logs estructurados] \textbf{Pino} logger en API routes, exportado a
+    Logtail o Datadog.
+
+  \item[Health check] \texttt{GET /api/health} que verifica la conexión a
+    Supabase, Stripe y devuelve la versión y uptime.
+\end{description}
+
+\subsection{Edge Runtime para disponibilidad}
+
+\begin{lstlisting}[style=tsStyle]
+// app/api/availability/route.ts
+export const runtime = 'edge';  // latencia < 50ms desde cualquier region
+\end{lstlisting}
+
+\subsection{CDN para imágenes}
+
+Migrar las fotos del apartamento a \textbf{Cloudinary} o \textbf{ImageKit}:
+\begin{itemize}
+  \item Conversión automática a AVIF/WebP según soporte del navegador
+  \item Resize bajo demanda sin reprocessing en el servidor
+  \item CDN global con edge nodes en Europa para baja latencia
+  \item LQIP (Low Quality Image Placeholders) generados automáticamente
+\end{itemize}
+
+%=============================================================
+% Apéndices
+%=============================================================
+
+\appendix
+
+\chapter{Variables de entorno completas}
+
+\begin{lstlisting}[style=bashStyle]
+# URL del sitio
+NEXT_PUBLIC_SITE_URL=https://esenciasevilla.com
+
+# Supabase
+NEXT_PUBLIC_SUPABASE_URL=https://xxx.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...
+SUPABASE_SERVICE_ROLE_KEY=eyJ...
+
+# Stripe
+STRIPE_SECRET_KEY=sk_live_...
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_live_...
+STRIPE_WEBHOOK_SECRET=whsec_...
+
+# IA
+OPENROUTER_API_KEY=sk-or-v1-...
+
+# Comunicaciones
+RESEND_API_KEY=re_...
+TWILIO_ACCOUNT_SID=AC...
+TWILIO_AUTH_TOKEN=...
+
+# iCal sync OTAs
+ICAL_BOOKING_URL=https://admin.booking.com/hotel/.../ical.html?...
+ICAL_AIRBNB_URL=https://www.airbnb.com/calendar/ical/...
+
+# Analytics
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_META_PIXEL_ID=...
+
+# Panel admin
+ADMIN_PASSWORD=password_muy_segura_min12_chars
+\end{lstlisting}
+
+\chapter{Schema SQL completo de Supabase}
+
+\begin{lstlisting}[style=sqlStyle]
+-- Tabla de reservas
+CREATE TABLE bookings (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  booking_ref TEXT UNIQUE NOT NULL,
+  check_in DATE NOT NULL, check_out DATE NOT NULL,
+  guests INTEGER NOT NULL DEFAULT 1,
+  guest_name TEXT NOT NULL, guest_email TEXT NOT NULL,
+  guest_phone TEXT,
+  total_amount DECIMAL(10,2) NOT NULL,
+  status TEXT NOT NULL DEFAULT 'pending'
+    CHECK (status IN ('pending','confirmed','cancelled','completed')),
+  payment_intent_id TEXT,
+  upsells JSONB DEFAULT '[]',
+  coupon_code TEXT, discount_amount DECIMAL(10,2) DEFAULT 0,
+  source TEXT DEFAULT 'direct', locale TEXT DEFAULT 'es',
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW(),
+  pre_checkin_completed BOOLEAN DEFAULT FALSE,
+  pre_checkin_data JSONB
+);
+
+-- Tabla de fechas bloqueadas
+CREATE TABLE blocked_dates (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  date DATE NOT NULL, reason TEXT,
+  source TEXT DEFAULT 'manual', booking_ref TEXT,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+CREATE UNIQUE INDEX blocked_dates_date_idx ON blocked_dates(date);
+
+-- Tabla de resenas
+CREATE TABLE reviews (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  author TEXT NOT NULL, country TEXT, country_flag TEXT,
+  rating INTEGER NOT NULL CHECK (rating BETWEEN 1 AND 5),
+  review_date DATE NOT NULL, source TEXT DEFAULT 'direct',
+  text_es TEXT, text_en TEXT, text_fr TEXT,
+  text_de TEXT, text_it TEXT, text_pt TEXT,
+  approved BOOLEAN DEFAULT FALSE,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Tabla de cupones
+CREATE TABLE coupons (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  code TEXT UNIQUE NOT NULL,
+  discount_type TEXT NOT NULL CHECK (discount_type IN ('percent','fixed')),
+  discount_value DECIMAL(10,2) NOT NULL,
+  valid_from DATE, valid_until DATE,
+  max_uses INTEGER, uses_count INTEGER DEFAULT 0,
+  active BOOLEAN DEFAULT TRUE,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- RLS
+ALTER TABLE bookings ENABLE ROW LEVEL SECURITY;
+ALTER TABLE blocked_dates ENABLE ROW LEVEL SECURITY;
+ALTER TABLE reviews ENABLE ROW LEVEL SECURITY;
+ALTER TABLE coupons ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Public read approved reviews"
+  ON reviews FOR SELECT USING (approved = true);
+CREATE POLICY "Public read blocked dates"
+  ON blocked_dates FOR SELECT USING (true);
+CREATE POLICY "Public insert bookings"
+  ON bookings FOR INSERT WITH CHECK (true);
+\end{lstlisting}
+
+%--- Índices de tablas y figuras --------------------------
+\clearpage
+\listoftables
+\clearpage
+\listoffigures
+
+%=============================================================
+\end{document}
+%=============================================================
