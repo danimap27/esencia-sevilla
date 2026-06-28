@@ -2,13 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import { BarChart2, Calendar, Star, Settings, LogOut, Download, Lock, DollarSign, Users, TrendingUp, X, Plus, Check, TrendingDown } from 'lucide-react';
+import { BarChart2, Calendar, Star, Settings, LogOut, Download, Lock, DollarSign, Users, TrendingUp, X, Plus, Check, TrendingDown, MapPin } from 'lucide-react';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { cn } from '@/lib/utils';
 import QRCode from 'qrcode';
 import { APARTMENT, UPSELLS } from '@/data/apartment';
+import SightsRoutesManager from '@/components/SightsRoutesManager';
 
-type AdminTab = 'dashboard' | 'bookings' | 'reviews' | 'revenue' | 'prices' | 'settings';
+type AdminTab = 'dashboard' | 'bookings' | 'reviews' | 'revenue' | 'prices' | 'sights' | 'settings';
 
 interface BookingRow {
   id: string;
@@ -174,6 +175,7 @@ export default function AdminPage({ params: { locale } }: { params: { locale: st
     { key: 'reviews', icon: Star, label: t('reviews') },
     { key: 'revenue', icon: TrendingUp, label: 'Ingresos' },
     { key: 'prices', icon: DollarSign, label: 'Precios' },
+    { key: 'sights', icon: MapPin, label: 'Sitios y Rutas' },
     { key: 'settings', icon: Settings, label: t('settings') },
   ];
 
@@ -519,6 +521,9 @@ export default function AdminPage({ params: { locale } }: { params: { locale: st
               </div>
             </div>
           )}
+
+          {/* SIGHTS & ROUTES */}
+          {tab === 'sights' && <SightsRoutesManager />}
 
           {/* SETTINGS */}
           {tab === 'settings' && (
