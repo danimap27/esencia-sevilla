@@ -1,9 +1,10 @@
 import type { MetadataRoute } from 'next';
 import { locales } from './[locale]/../../i18n';
 import { absoluteUrl } from '@/lib/utils';
+import { BLOG_POSTS } from '@/data/blog-posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ['', '/guia', '/blog', '/privacidad', '/terminos'];
+  const pages = ['', '/guia', '/blog', '/pre-checkin', '/welcome-book', '/privacidad'];
 
   const entries: MetadataRoute.Sitemap = [];
 
@@ -17,6 +18,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: {
           languages: Object.fromEntries(
             locales.map(l => [l, absoluteUrl(`/${l}${page}`)])
+          ),
+        },
+      });
+    }
+
+    // Blog post pages
+    for (const post of BLOG_POSTS) {
+      entries.push({
+        url: absoluteUrl(`/${locale}/blog/${post.slug}`),
+        lastModified: new Date(post.publishedAt),
+        changeFrequency: 'monthly',
+        priority: 0.7,
+        alternates: {
+          languages: Object.fromEntries(
+            locales.map(l => [l, absoluteUrl(`/${l}/blog/${post.slug}`)])
           ),
         },
       });

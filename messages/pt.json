@@ -1,21 +1,428 @@
 {
-  "nav": { "gallery": "Fotos", "booking": "Reservar", "map": "Mapa", "guide": "Guia", "reviews": "Avaliações", "faq": "FAQ", "blog": "Blog", "bookNow": "Reservar agora" },
-  "hero": { "badge": "Apartamento Turístico — Centro de Sevilha", "headline": "A sua casa no coração de Sevilha", "subheadline": "A passos da Catedral, do Alcázar e do bairro de Santa Cruz. Viva Sevilha como um local.", "cta": "Verificar disponibilidade", "ctaSecondary": "Ver fotos", "reviewsBadge": "{count} avaliações de cinco estrelas", "ratingLabel": "Avaliação média", "savingsBadge": "Poupe {amount}€ vs Booking", "savingsDesc": "Reservando diretamente", "registrationLabel": "N.º Registo Turístico", "trustBadges": { "checkin": "Auto check-in 24h", "wifi": "WiFi ultra-rápido", "ac": "A/C em todos os quartos", "location": "Localização imbatível" } },
-  "comparison": { "title": "Por que reservar aqui?", "subtitle": "Comparação direta com Booking.com", "feature": "Característica", "direct": "Esencia Sevilla", "booking": "Booking.com", "rows": { "price": "Preço", "priceDirect": "10% mais barato", "priceBooking": "Preço normal", "cancellation": "Cancelamento", "cancellationDirect": "Não reembolsável", "cancellationBooking": "Gratuito (preço mais alto)", "communication": "Comunicação", "communicationDirect": "Direta com o anfitrião", "communicationBooking": "Via plataforma", "extras": "Extras incluídos", "extrasDirect": "Livro boas-vindas, guia QR, chat IA", "extrasBooking": "Só alojamento", "checkin": "Instruções de chegada", "checkinDirect": "Personalizadas + mapa", "checkinBooking": "Standard" } },
-  "booking": { "title": "Reservar a sua estadia", "subtitle": "Escolha as datas e obtenha o melhor preço", "checkIn": "Entrada", "checkOut": "Saída", "guests": "Hóspedes", "guestCount": "{count} hóspede", "guestsCount": "{count} hóspedes", "nights": "{count} noite", "nightsPlural": "{count} noites", "pricePerNight": "por noite", "selectDates": "Selecione as datas", "minStay": "Estadia mínima: 2 noites", "unavailable": "Não disponível", "available": "Disponível", "today": "Hoje", "breakdown": { "title": "Detalhe do preço", "perNight": "{price}€ × {nights} noites", "cleaning": "Taxa de limpeza", "touristTax": "Taxa turística", "upsells": "Extras selecionados", "discount": "Desconto", "total": "Total", "bookingComparison": "Pagaria no Booking", "savings": "A sua poupança" }, "upsells": { "title": "Melhore a sua estadia", "add": "Adicionar", "added": "Adicionado", "airportTransfer": "Transferência aeroporto", "airportTransferDesc": "Recolha em SVQ", "welcomePack": "Pack boas-vindas", "welcomePackDesc": "Produtos artesanais locais", "lateCheckout": "Check-out tardio (até 14:00)", "lateCheckoutDesc": "Desfrute da manhã sem pressa", "travelCot": "Berço de viagem", "travelCotDesc": "Para bebés até 2 anos", "romanticPack": "Pack romântico", "romanticPackDesc": "Vinho andaluz + flores + nota pessoal" }, "coupon": { "label": "Código de desconto", "placeholder": "ESENCIA10", "apply": "Aplicar", "invalid": "Código inválido", "applied": "Desconto aplicado!" }, "nonRefundable": "Esta tarifa é NÃO REEMBOLSÁVEL", "nonRefundableNote": "Obtenha cancelamento gratuito reservando em", "bookButton": "Reservar agora — {total}€", "bookingRedirect": "Reservar com cancelamento gratuito no Booking.com", "processing": "A processar...", "noAvailability": "Sem disponibilidade nestas datas", "contactUs": "Contacte-nos para disponibilidade especial" },
-  "gallery": { "title": "O apartamento", "subtitle": "Espaços concebidos para o descanso e o prazer", "viewAll": "Ver todas as fotos", "virtualTour": "Visita virtual 360°", "close": "Fechar", "prev": "Anterior", "next": "Seguinte" },
-  "map": { "title": "Explore Sevilha a partir do seu apartamento", "subtitle": "Rotas, monumentos e segredos locais", "tabs": { "map": "Mapa interativo", "routes": "Rotas a pé", "transport": "Transporte" }, "categories": { "all": "Todos", "monument": "Monumentos", "neighborhood": "Bairros", "culture": "Cultura", "food": "Gastronomia", "nature": "Natureza", "modern": "Moderno", "fun": "Lazer" }, "openInMaps": "Abrir no Google Maps", "entranceFree": "Entrada livre", "minutesWalk": "{min} min a pé", "routeDetails": "Ver rota completa", "routeCategories": { "classic": "Clássica", "neighborhoods": "Bairros", "romantic": "Romântica", "food": "Gastronómica", "family": "Família", "culture": "Cultural", "nature": "Natureza", "shopping": "Compras", "photos": "Fotográfica" }, "transport": { "title": "Como se mover em Sevilha", "multiviaje": "Cartão Multiviaje TUSSAM", "multiviajePrices": "Carregue a partir de 5€ nas máquinas das paragens e app TUSSAM", "nearestStop": "Paragem mais próxima", "lines": "Linhas disponíveis", "frequency": "Frequência", "price": "Preço" } },
-  "events": { "title": "Sevilha está à sua espera", "subtitle": "Eventos e festivais do ano", "highSeason": "Alta temporada — reserve com antecedência", "limitedAvailability": "Disponibilidade limitada nestas datas", "viewMore": "Mais informações", "bookForEvent": "Reservar para este evento" },
-  "reviews": { "title": "O que dizem os nossos hóspedes", "subtitle": "Mais de {count} avaliações verificadas", "overallRating": "Avaliação global", "basedOn": "baseado em {count} avaliações", "leaveReview": "Deixar avaliação", "sources": { "google": "Google Avaliações", "booking": "Booking.com", "airbnb": "Airbnb", "direct": "Reserva direta" } },
-  "faq": { "title": "Perguntas frequentes", "subtitle": "Tudo o que precisa de saber antes de chegar", "questions": { "q1": "Há estacionamento perto do apartamento?", "a1": "Não há estacionamento privado. O mais próximo é o Parking Plaza Nueva (5 min a pé, cerca de 25€/dia). Recomendamos transporte público.", "q2": "São admitidos animais de estimação?", "a2": "Lamentamos, os animais não são admitidos.", "q3": "Como funciona o self check-in?", "a3": "24h antes da chegada receberá o código do cofre por WhatsApp e email. Pode chegar entre as 16:00 e as 23:00.", "q4": "O que inclui a taxa de limpeza?", "a4": "Limpeza completa, troca de roupa de cama e toalhas (60€).", "q5": "Há ar condicionado?", "a5": "Sim, em todos os quartos. Essencial no verão.", "q6": "Qual é a capacidade máxima?", "a6": "4 hóspedes: um quarto de casal e um quarto com duas camas individuais.", "q7": "Um bebé pode ficar?", "a7": "Claro! Berço de viagem disponível por 15€.", "q8": "Há WiFi? É rápido?", "a8": "Sim, fibra ótica 600 Mbps. Credenciais no livro de boas-vindas.", "q9": "Quais são os horários de check-in e check-out?", "a9": "Check-in: a partir das 16:00. Check-out: antes das 11:00. Check-out tardio até às 14:00 por 20€.", "q10": "A cozinha está equipada?", "a10": "Sim, completamente: frigorífico, fogão, micro-ondas, máquina café Nespresso, torradeira, chaleira.", "q11": "É permitido fumar?", "a11": "Não, penalidade de 150€.", "q12": "Como chegar do aeroporto?", "a12": "Autocarro EA (Airport Express), cada 30 min, 4€, cerca de 40 min até Prado de San Sebastián.", "q13": "O que fazer se tiver um problema?", "a13": "Disponíveis 24/7 por WhatsApp. Emergências: 112.", "q14": "São permitidas festas ou despedidas de solteiro?", "a14": "Não são permitidas festas ou eventos que possam perturbar os vizinhos.", "q15": "Há elevador?", "a15": "Sim.", "q16": "Há máquina de lavar?", "a16": "Sim, com detergente incluído.", "q17": "Posso fazer check-out tardio?", "a17": "Check-out padrão antes das 11:00. Tardio até às 14:00 por 20€.", "q18": "O apartamento é adaptado para pessoas com mobilidade reduzida?", "a18": "O edifício tem elevador. Há um degrau na entrada. Consulte-nos antes de reservar.", "q19": "Como funciona o pré-check-in online?", "a19": "Após confirmação receberá um link para os dados do passaporte e hora de chegada.", "q20": "Qual é o número de registo turístico?", "a20": "Número de registo turístico: AT/SE/03584." } },
-  "location": { "title": "Onde estamos", "subtitle": "No coração de Sevilha, tudo a pé", "address": "Imaginero Luis Alvarez Duarte N7, 41008 Sevilha", "howToArrive": "Como chegar", "fromAirport": "Do Aeroporto SVQ", "fromStation": "De Santa Justa (Renfe)", "byCar": "De carro", "step": "Passo {n}", "arrivalSteps": { "airport": { "step1": "Apanhe o autocarro EA (Airport Express) — 4€", "step2": "Desça em Prado de San Sebastián (≈40 min)", "step3": "Caminhe 10 min para norte", "step4": "Chegada a Imaginero Luis Álvarez Duarte, 7" }, "train": { "step1": "De Santa Justa: Metro L1", "step2": "Desça em Puerta Jerez (8 min)", "step3": "7 min a pé" }, "car": { "step1": "Centro histórico: acesso restrito. Parking Plaza Nueva recomendado", "step2": "GPS: Imaginero Luis Álvarez Duarte, 7, Sevilha", "step3": "Zona de carga/descarga em frente ao edifício" } } },
-  "chat": { "title": "Assistente Esencia Sevilla", "subtitle": "Pergunte-me sobre o apartamento ou Sevilha", "placeholder": "Escreva a sua pergunta...", "send": "Enviar", "welcome": "Olá! Sou o assistente virtual do Esencia Sevilla. Como posso ajudar?", "suggestions": [ "A que horas é o check-in?", "Qual é a senha do WiFi?", "Como chego do aeroporto?", "Que restaurantes recomenda perto?" ], "typing": "A escrever...", "error": "Erro de ligação. Tente novamente.", "poweredBy": "Assistido por IA" },
-  "guestPortal": { "title": "Portal do Hóspede", "subtitle": "Complete o seu pré-check-in", "countdown": "{days} dias para a sua estadia", "countdownToday": "A sua estadia começa hoje!", "preCheckin": { "title": "Pré-check-in online", "subtitle": "Complete os seus dados para uma chegada sem esperas", "documentType": "Tipo de documento", "passport": "Passaporte", "dni": "BI/CC", "nie": "NIE", "documentNumber": "Número do documento", "documentExpiry": "Data de validade", "nationality": "Nacionalidade", "arrivalTime": "Hora de chegada estimada", "specialRequests": "Pedidos especiais (opcional)", "addGuest": "Adicionar hóspede", "guestN": "Hóspede {n}", "firstName": "Nome", "lastName": "Apelido", "birthDate": "Data de nascimento", "submit": "Confirmar pré-check-in", "success": "Pré-check-in completo! Receberá o código de acesso 24h antes da chegada.", "legalNote": "Dados exigidos pela lei espanhola para o registo de viajantes." } },
-  "welcomeBook": { "title": "Livro de Boas-vindas", "wifi": "WiFi", "wifiPassword": "Senha", "checkIn": "Check-in", "checkOut": "Check-out", "rules": "Regras da casa", "emergencies": "Emergências", "appliances": "Eletrodomésticos", "checkoutSteps": "Passos para o check-out", "recommendations": "Recomendações do anfitrião" },
-  "footer": { "tagline": "A sua casa no coração de Sevilha", "registrationLabel": "N.º Registo Turístico", "links": { "privacy": "Política de Privacidade", "terms": "Termos e Condições", "cookies": "Política de Cookies", "blog": "Blog", "guide": "Guia Turístico" }, "contact": "Contacto", "followUs": "Siga-nos", "copyright": "© {year} Esencia Sevilla. Todos os direitos reservados.", "madeWith": "Feito com amor em Sevilha" },
-  "blog": { "title": "Blog Esencia Sevilha", "subtitle": "Guias, dicas e segredos para descobrir Sevilha", "readMore": "Ler mais", "minRead": "{min} min de leitura", "relatedPosts": "Artigos relacionados" },
-  "admin": { "title": "Painel do Proprietário", "dashboard": "Dashboard", "bookings": "Reservas", "calendar": "Calendário", "reviews": "Avaliações", "settings": "Configurações", "qrGuide": "QR Guia Turístico", "revenue": "Receitas do mês", "occupancy": "Ocupação", "avgNight": "Preço médio/noite", "blockDates": "Bloquear datas", "downloadQR": "Descarregar QR alta resolução", "logout": "Terminar sessão" },
-  "guide": { "title": "Guia Turístico Esencia Sevilha", "subtitle": "Tudo o que precisa para desfrutar de Sevilha", "offline": "Disponível offline", "sections": { "map": "Mapa", "transport": "Transporte", "restaurants": "Restaurantes", "events": "Eventos", "apartment": "O Apartamento", "emergency": "Emergências" } },
-  "common": { "loading": "A carregar...", "error": "Ocorreu um erro", "retry": "Tentar novamente", "close": "Fechar", "save": "Guardar", "cancel": "Cancelar", "confirm": "Confirmar", "back": "Voltar", "next": "Seguinte", "previous": "Anterior", "seeAll": "Ver tudo", "learnMore": "Saber mais", "minutes": "min", "km": "km", "free": "Gratuito", "perNight": "/ noite", "euros": "€" },
-  "seo": { "homeTitle": "Apartamento Turístico Sevilha Centro | Esencia Sevilla", "homeDescription": "Reserve o melhor apartamento turístico no centro de Sevilha. 8 min da Catedral e Alcázar. WiFi, A/C. 10% mais barato que o Booking!", "guideTitle": "Guia Turístico Sevilha Gratuito | Mapa, Rotas e Transporte", "guideDescription": "Guia turístico completo e gratuito de Sevilha: mapa interativo, rotas a pé, TUSSAM, restaurantes e eventos. Disponível offline.", "blogTitle": "Blog de Viagem Sevilha | Guias e Dicas", "blogDescription": "Os melhores guias de viagem para Sevilha. Dicas locais." }
+  "nav": {
+    "gallery": "Fotos",
+    "booking": "Reservar",
+    "map": "Mapa",
+    "guide": "Guia",
+    "reviews": "Avaliações",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "bookNow": "Reservar agora"
+  },
+  "hero": {
+    "badge": "Apartamento Turístico — Centro de Sevilha",
+    "headline": "Sua casa no coração de Sevilha",
+    "subheadline": "A poucos passos da Catedral, do Alcázar e do bairro de Santa Cruz. Viva Sevilha como um local.",
+    "cta": "Ver disponibilidade",
+    "ctaSecondary": "Ver fotos",
+    "reviewsBadge": "{count} avaliações 5 estrelas",
+    "ratingLabel": "Classificação média",
+    "savingsBadge": "Poupe {amount}€ vs Booking",
+    "savingsDesc": "Reservando diretamente",
+    "registrationLabel": "Nº Registo Turístico",
+    "trustBadges": {
+      "checkin": "Check-in autónomo 24h",
+      "wifi": "WiFi ultrarrápido",
+      "ac": "A/C em todos os quartos",
+      "location": "Localização incomparável"
+    }
+  },
+  "comparison": {
+    "title": "Porquê reservar aqui?",
+    "subtitle": "Comparação direta com Booking.com",
+    "feature": "Característica",
+    "direct": "Esencia Sevilla",
+    "booking": "Booking.com",
+    "rows": {
+      "price": "Preço",
+      "priceDirect": "10% mais barato",
+      "priceBooking": "Preço completo",
+      "cancellation": "Cancelamento",
+      "cancellationDirect": "Não reembolsável",
+      "cancellationBooking": "Gratuito (preço maior)",
+      "communication": "Comunicação",
+      "communicationDirect": "Direta com o anfitrião",
+      "communicationBooking": "Através da plataforma",
+      "extras": "Extras incluídos",
+      "extrasDirect": "Livro boas-vindas, guia QR, chat IA",
+      "extrasBooking": "Apenas alojamento",
+      "checkin": "Instruções chegada",
+      "checkinDirect": "Personalizadas + mapa",
+      "checkinBooking": "Padrão"
+    }
+  },
+  "booking": {
+    "title": "Reservar",
+    "subtitle": "Escolha as datas e obtenha o melhor preço",
+    "checkIn": "Entrada",
+    "checkOut": "Saída",
+    "guests": "Hóspedes",
+    "guestCount": "{count} hóspede",
+    "guestsCount": "{count} hóspedes",
+    "nights": "{count} noite",
+    "nightsPlural": "{count} noites",
+    "pricePerNight": "por noite",
+    "selectDates": "Selecione as datas",
+    "minStay": "Estadia mínima: 2 noites",
+    "unavailable": "Indisponível",
+    "available": "Disponível",
+    "today": "Hoje",
+    "breakdown": {
+      "title": "Detalhe do preço",
+      "perNight": "{price}€ × {nights} noites",
+      "cleaning": "Taxa de limpeza",
+      "touristTax": "Taxa turística",
+      "upsells": "Extras selecionados",
+      "discount": "Desconto",
+      "total": "Total",
+      "bookingComparison": "No Booking pagaria",
+      "savings": "Sua poupança"
+    },
+    "upsells": {
+      "title": "Melhore a sua estadia",
+      "add": "Adicionar",
+      "added": "Adicionado",
+      "airportTransfer": "Transfer aeroporto",
+      "airportTransferDesc": "Recolha no SVQ, chegada à sua hora",
+      "welcomePack": "Pack boas-vindas",
+      "welcomePackDesc": "Produtos locais artesanais de Sevilha",
+      "lateCheckout": "Late check-out (até às 14:00)",
+      "lateCheckoutDesc": "Desfrute da manhã sem pressa",
+      "travelCot": "Berço de viagem",
+      "travelCotDesc": "Para bebés até 2 anos",
+      "romanticPack": "Pack romântico",
+      "romanticPackDesc": "Vinho andaluz + flores + nota personalizada"
+    },
+    "coupon": {
+      "label": "Código de desconto",
+      "placeholder": "ESENCIA10",
+      "apply": "Aplicar",
+      "invalid": "Código inválido",
+      "applied": "Desconto aplicado!"
+    },
+    "nonRefundable": "Esta tarifa é NÃO REEMBOLSÁVEL",
+    "nonRefundableNote": "Obtenha cancelamento gratuito reservando em",
+    "bookButton": "Reservar agora — {total}€",
+    "bookingRedirect": "Reservar com cancelamento gratuito em Booking.com",
+    "processing": "A processar...",
+    "noAvailability": "Sem disponibilidade nestas datas",
+    "contactUs": "Contacte-nos para disponibilidade especial",
+    "cta": "Reservar"
+  },
+  "gallery": {
+    "title": "O apartamento",
+    "subtitle": "Espaços desenhados para o descanso e prazer",
+    "viewAll": "Ver todas as fotos",
+    "virtualTour": "Tour virtual 360°",
+    "close": "Fechar",
+    "prev": "Anterior",
+    "next": "Seguinte"
+  },
+  "map": {
+    "title": "Explore Sevilha desde o seu apartamento",
+    "subtitle": "Rotas, monumentos e segredos locais",
+    "tabs": {
+      "map": "Mapa interativo",
+      "routes": "Rotas a pé",
+      "transport": "Transporte"
+    },
+    "categories": {
+      "all": "Todos",
+      "monument": "Monumentos",
+      "neighborhood": "Bairros",
+      "culture": "Cultura",
+      "food": "Gastronomia",
+      "nature": "Natureza",
+      "modern": "Moderno",
+      "fun": "Lazer"
+    },
+    "openInMaps": "Abrir no Google Maps",
+    "entranceFree": "Entrada livre",
+    "minutesWalk": "{min} min a pé",
+    "routeDetails": "Ver rota completa",
+    "routeCategories": {
+      "classic": "Clássica",
+      "neighborhoods": "Bairros",
+      "romantic": "Romântica",
+      "food": "Gastronómica",
+      "family": "Familiar",
+      "culture": "Cultural",
+      "nature": "Natureza",
+      "shopping": "Compras",
+      "photos": "Fotográfica"
+    },
+    "transport": {
+      "title": "Como deslocar-se em Sevilha",
+      "multiviaje": "Cartão Multiviaje TUSSAM",
+      "multiviajePrices": "Recarga desde 5€ nas máquinas das paragens e na app TUSSAM",
+      "nearestStop": "Paragem mais próxima do apartamento",
+      "lines": "Linhas disponíveis",
+      "frequency": "Frequência",
+      "price": "Preço"
+    }
+  },
+  "events": {
+    "title": "Sevilha espera por si",
+    "subtitle": "Eventos e festivais do ano",
+    "highSeason": "Época alta — reserve com antecedência",
+    "limitedAvailability": "Disponibilidade limitada nestas datas",
+    "viewMore": "Mais informações",
+    "bookForEvent": "Reservar para este evento"
+  },
+  "reviews": {
+    "title": "O que dizem os nossos hóspedes",
+    "subtitle": "Mais de {count} avaliações verificadas",
+    "overallRating": "Classificação global",
+    "basedOn": "baseado em {count} avaliações",
+    "leaveReview": "Deixar uma avaliação",
+    "sources": {
+      "google": "Google Reviews",
+      "booking": "Booking.com",
+      "airbnb": "Airbnb",
+      "direct": "Reserva direta"
+    }
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "subtitle": "Tudo o que precisa de saber antes de chegar",
+    "questions": {
+      "q1": "Há estacionamento perto do apartamento?",
+      "a1": "Não há estacionamento privado no edifício. O estacionamento público mais próximo é o Parking Plaza Nueva (5 min a pé, aprox. 25€/dia). Recomendamos transporte público já que o centro histórico tem acesso restrito a veículos.",
+      "q2": "Aceitam-se animais de estimação?",
+      "a2": "Lamentamos, não se aceitam animais no apartamento para respeitar outros hóspedes e manter a limpeza.",
+      "q3": "Como funciona o check-in autónomo?",
+      "a3": "24h antes da sua chegada receberá uma mensagem por WhatsApp e email com o código da caixa de segurança onde estão as chaves. Não é necessário coordenar-se com ninguém. Pode chegar a qualquer hora entre as 16:00 e as 23:00.",
+      "q4": "O que inclui a limpeza final?",
+      "a4": "A taxa de limpeza (60€) inclui limpeza completa do apartamento, mudança de lençóis e toalhas, e reposição de artigos de higiene. O serviço de limpeza diária não está incluído durante a estadia (disponível por 30€/dia extra).",
+      "q5": "Há ar condicionado?",
+      "a5": "Sim, o apartamento tem ar condicionado em todas as divisões (sala e quartos). É indispensável no verão quando as temperaturas em Sevilha podem ultrapossar os 40°C.",
+      "q6": "Qual é a capacidade máxima do apartamento?",
+      "a6": "O apartamento tem capacidade para 4 hóspedes: um quarto duplo com cama king e outro quarto com duas camas individuais.",
+      "q7": "Pode alojar-se um bebé?",
+      "a7": "Claro! Podemos fornecer um berço de viagem por 15€ adicionais (selecionável ao reservar). O apartamento é adequado para crianças de todas as idades.",
+      "q8": "Há WiFi? É rápido?",
+      "a8": "Sim, o apartamento dispõe de WiFi de fibra de alta velocidade (600 Mbps). O nome da rede e a palavra-passe encontram-se no livro de boas-vindas.",
+      "q9": "A que horas são o check-in e o check-out?",
+      "a9": "Check-in: a partir das 16:00h. Check-out: antes das 11:00h. Se o seu voo chega mais cedo, pode deixar as malas gratuitamente e explorar a cidade. Late check-out até às 14:00h disponível por 20€ (conforme disponibilidade).",
+      "q10": "O apartamento tem cozinha equipada?",
+      "a10": "Sim, a cozinha está completamente equipada: frigorífico, placa de indução, micro-ondas, cafeteira (cápsulas Nespresso), torradeira, chaleira, utensílios completos e loiça para 4 pessoas.",
+      "q11": "É permitido fumar no apartamento?",
+      "a11": "Não é permitido fumar dentro do apartamento. O incumprimento desta regra implica uma penalização de 150€.",
+      "q12": "Como chego do aeroporto ao apartamento?",
+      "a12": "A opção mais conveniente é o autocarro EA (Aeroporto Express), que sai a cada 30 minutos e custa 4€. Demora cerca de 40 minutos até Prado de San Sebastián, de onde o apartamento está a 10 minutos a pé. Oferecemos também transfer privado do aeroporto por 35€.",
+      "q13": "O que faço se tiver algum problema durante a minha estadia?",
+      "a13": "Estamos disponíveis 24/7 por WhatsApp para qualquer incidência. Em caso de emergência: o 112 é o número de emergências em Espanha.",
+      "q14": "Aceitam-se despedidas de solteiro/a ou festas?",
+      "a14": "Não se permitem festas ou eventos que possam incomodar os vizinhos. Sevilha tem muitas opções de lazer noturno, mas o apartamento é exclusivamente para descanso.",
+      "q15": "O edifício tem elevador?",
+      "a15": "Sim, o edifício dispõe de elevador.",
+      "q16": "Há máquina de lavar?",
+      "a16": "Sim, o apartamento dispõe de máquina de lavar com detergente incluído.",
+      "q17": "Posso fazer check-out tardio se o meu voo é à tarde?",
+      "a17": "O check-out padrão é antes das 11:00h. Se necessita de mais tempo, o late check-out até às 14:00h está disponível por 20€ conforme disponibilidade. Para partidas mais tardias, pode deixar a bagagem guardada no apartamento.",
+      "q18": "O apartamento está adaptado para pessoas com mobilidade reduzida?",
+      "a18": "O edifício tem elevador. O apartamento fica no 3º andar. Existe um degrau no acesso ao edifício. Se tem necessidades especiais, consulte-nos antes de reservar.",
+      "q19": "Como funciona o pre-check-in online?",
+      "a19": "Ao confirmar a sua reserva receberá um link para completar o pre-check-in: dados do passaporte, hora estimada de chegada e preferências. Isto permite-nos preparar tudo para a sua chegada e cumprir a normativa espanhola de registo de viajantes.",
+      "q20": "Qual é o número de registo turístico do apartamento?",
+      "a20": "Número de registo turístico da Junta de Andaluzia: AT/SE/03584. Pode verificá-lo no Registo de Turismo da Andaluzia."
+    }
+  },
+  "location": {
+    "title": "Onde estamos",
+    "subtitle": "No coração de Sevilha, tudo a pé",
+    "address": "Imaginero Luis Alvarez Duarte N7, 41008 Sevilha",
+    "howToArrive": "Como chegar",
+    "fromAirport": "Do Aeroporto SVQ",
+    "fromStation": "De Santa Justa (Renfe)",
+    "byCar": "De carro",
+    "step": "Passo {n}",
+    "arrivalSteps": {
+      "airport": {
+        "step1": "Tome o autocarro EA (Aeroporto Express) na saída de chegadas — 4€",
+        "step2": "Desça em Prado de San Sebastián (≈40 min)",
+        "step3": "Camine 10 minutos para norte pela Av. Menéndez Pelayo",
+        "step4": "Chegue a Imaginero Luis Álvarez Duarte, 7"
+      },
+      "train": {
+        "step1": "De Santa Justa tome o Metro Linha 1 (direção Olivar de Quinto)",
+        "step2": "Desça em Puerta Jerez (3 paragens, 8 min)",
+        "step3": "Camine 7 minutos até ao apartamento"
+      },
+      "car": {
+        "step1": "O centro de Sevilha tem acesso restrito — estacionamento recomendado: Parking Plaza Nueva",
+        "step2": "Introduza no GPS: Imaginero Luis Álvarez Duarte, 7, Sevilha",
+        "step3": "Zona de carga/descarga disponível em frente ao edifício"
+      }
+    }
+  },
+  "chat": {
+    "title": "Assistente Esencia Sevilla",
+    "subtitle": "Pergunte-me sobre o apartamento, Sevilha ou a sua reserva",
+    "placeholder": "Escreva a sua pergunta...",
+    "send": "Enviar",
+    "welcome": "Olá! Sou o assistente virtual da Esencia Sevilla. Posso ajudá-lo com informações sobre o apartamento, recomendações em Sevilha, transporte ou a sua reserva. Como posso ajudar?",
+    "suggestions": [
+      "A que horas é o check-in?",
+      "Qual é a palavra-passe do WiFi?",
+      "Como chego do aeroporto?",
+      "Que restaurantes recomenda perto?"
+    ],
+    "typing": "A escrever...",
+    "error": "Erro de ligação. Tente novamente.",
+    "poweredBy": "Assistido por IA"
+  },
+  "guestPortal": {
+    "title": "Portal do Hóspede",
+    "subtitle": "Complete o seu pre-check-in",
+    "countdown": "Faltam {days} dias para a sua estadia",
+    "countdownToday": "A sua estadia começa hoje!",
+    "preCheckin": {
+      "title": "Pre-check-in online",
+      "subtitle": "Complete os seus dados para uma chegada sem esperas",
+      "documentType": "Tipo de documento",
+      "passport": "Passaporte",
+      "dni": "DNI",
+      "nie": "NIE",
+      "documentNumber": "Número de documento",
+      "documentExpiry": "Data de validade",
+      "nationality": "Nacionalidade",
+      "arrivalTime": "Hora estimada de chegada",
+      "specialRequests": "Pedidos especiais (opcional)",
+      "addGuest": "Adicionar hóspede",
+      "guestN": "Hóspede {n}",
+      "firstName": "Nome",
+      "lastName": "Apelido",
+      "birthDate": "Data de nascimento",
+      "submit": "Confirmar pre-check-in",
+      "success": "Pre-check-in concluído! Receberá o código de acesso 24h antes da sua chegada.",
+      "legalNote": "Dados requeridos pela Lei Orgânica de Segurança Cidadã (Espanha) para o registo de viajantes."
+    }
+  },
+  "welcomeBook": {
+    "title": "Livro de Boas-vindas",
+    "wifi": "WiFi",
+    "wifiPassword": "Palavra-passe",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "rules": "Regras da casa",
+    "emergencies": "Emergências",
+    "appliances": "Eletrodomésticos",
+    "checkoutSteps": "Passos para o check-out",
+    "recommendations": "Recomendações do anfitrião"
+  },
+  "footer": {
+    "tagline": "Sua casa no coração de Sevilha",
+    "registrationLabel": "Nº Registo Turístico",
+    "links": {
+      "privacy": "Política de Privacidade",
+      "terms": "Termos e Condições",
+      "cookies": "Política de Cookies",
+      "blog": "Blog",
+      "guide": "Guia Turística"
+    },
+    "contact": "Contacto",
+    "followUs": "Siga-nos",
+    "copyright": "© {year} Esencia Sevilla. Todos os direitos reservados.",
+    "madeWith": "Feito com amor em Sevilha"
+  },
+  "blog": {
+    "title": "O Blog da Esencia Sevilla",
+    "subtitle": "Guias, conselhos e segredos para descobrir Sevilha",
+    "readMore": "Ler mais",
+    "minRead": "{min} min de leitura",
+    "relatedPosts": "Artigos relacionados",
+    "posts": {
+      "que": {
+        "title": "O que ver em Sevilha em 3 dias",
+        "excerpt": "O guia definitivo para 3 dias em Sevilha: Catedral, Alcázar, Triana, Plaza de Espanha e mais."
+      },
+      "sevilla": {
+        "title": "Sevilha com crianças: guia completo",
+        "excerpt": "Parques, museus interativos e atividades para desfrutar Sevilha em família."
+      },
+      "semana": {
+        "title": "Semana Santa em Sevilha: conselhos para turistas",
+        "excerpt": "Tudo o que precisa de saber para viver a Semana Santa sevillana como um local."
+      },
+      "como": {
+        "title": "Como deslocar-se em Sevilha de autocarro",
+        "excerpt": "Guia completo dos transportes públicos de Sevilha: TUSSAM, cartões, rotas e conselhos."
+      },
+      "mejores": {
+        "title": "As melhores tapas perto da Catedral",
+        "excerpt": "A nossa seleção pessoal das melhores tabernas e tapas no centro de Sevilha."
+      }
+    }
+  },
+  "admin": {
+    "title": "Painel do Proprietário",
+    "dashboard": "Painel",
+    "bookings": "Reservas",
+    "calendar": "Calendário",
+    "reviews": "Avaliações",
+    "settings": "Configurações",
+    "qrGuide": "QR Guia Turística",
+    "revenue": "Receitas do mês",
+    "occupancy": "Ocupação",
+    "avgNight": "Preço médio/noite",
+    "blockDates": "Bloquear datas",
+    "downloadQR": "Descarregar QR em alta resolução",
+    "logout": "Sair"
+  },
+  "guide": {
+    "title": "Guia Turística Esencia Sevilla",
+    "subtitle": "Tudo o que precisa para desfrutar de Sevilha",
+    "offline": "Disponível offline",
+    "sections": {
+      "map": "Mapa",
+      "transport": "Transporte",
+      "restaurants": "Restaurantes",
+      "events": "Eventos",
+      "apartment": "O Apartamento",
+      "emergency": "Emergências"
+    }
+  },
+  "common": {
+    "loading": "A carregar...",
+    "error": "Ocorreu um erro",
+    "retry": "Tentar novamente",
+    "close": "Fechar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "back": "Voltar",
+    "next": "Seguinte",
+    "previous": "Anterior",
+    "seeAll": "Ver todos",
+    "learnMore": "Mais informações",
+    "minutes": "min",
+    "km": "km",
+    "free": "Grátis",
+    "perNight": "/ noite",
+    "euros": "€"
+  },
+  "seo": {
+    "homeTitle": "Apartamento Turístico Sevilha Centro | Esencia Sevilla",
+    "homeDescription": "Alugue o melhor apartamento turístico no centro de Sevilha. A 8 min da Catedral e do Alcázar. Check-in autónomo, WiFi, A/C. 10% mais barato que Booking!",
+    "guideTitle": "Guia Turística Sevilha Grátis | Mapa, Rotas e Transporte",
+    "guideDescription": "Guia turística completa e gratuita de Sevilha: mapa interativo, rotas a pé, transporte TUSSAM, restaurantes e eventos. Disponível offline.",
+    "blogTitle": "Blog de Viagens Sevilha | Guias e Conselhos",
+    "blogDescription": "Os melhores guias de viagem para Sevilha: o que ver, onde comer, como deslocar-se. Conselhos de locais para viver Sevilha como um verdadeiro sevilhano."
+  },
+  "cookies": {
+    "title": "Uso de cookies",
+    "description": "Usamos cookies para melhorar a sua experiência e analisar o tráfego. Pode aceitar, recusar ou personalizar as suas preferências.",
+    "customize": "Personalizar preferências",
+    "necessary": "Necessários",
+    "necessaryDesc": "Requeridos para o funcionamento. Não podem ser desativados.",
+    "analytics": "Analíticos",
+    "analyticsDesc": "Google Analytics para entender como usa o site.",
+    "marketing": "Marketing",
+    "marketingDesc": "Meta Pixel para medir campanhas publicitárias.",
+    "acceptAll": "Aceitar todos",
+    "rejectAll": "Recusar não essenciais",
+    "savePrefs": "Guardar preferências",
+    "close": "Fechar"
+  }
 }

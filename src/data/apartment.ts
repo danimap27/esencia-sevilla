@@ -3,8 +3,8 @@ import { ApartmentInfo, BookingUpsell } from '@/types';
 export const APARTMENT: ApartmentInfo = {
   name: 'Esencia Sevilla',
   address: 'Imaginero Luis Alvarez Duarte N7, 41008 Sevilla, España',
-  lat: 37.38862,
-  lng: -5.98230,
+  lat: 37.39694,
+  lng: -5.97400,
   registrationNumber: 'AT/SE/03584',
   maxGuests: 4,
   bedrooms: 2,
@@ -121,12 +121,12 @@ export const ARRIVAL_INSTRUCTIONS = {
 } as const;
 
 export const NEARBY_LANDMARKS = [
-  { name: 'Catedral de Sevilla', distance: '8 min a pie', icon: '⛪' },
-  { name: 'La Giralda', distance: '9 min a pie', icon: '🗼' },
-  { name: 'Real Alcázar', distance: '10 min a pie', icon: '🏰' },
-  { name: 'Barrio de Santa Cruz', distance: '6 min a pie', icon: '🌺' },
-  { name: 'Plaza de España', distance: '12 min a pie', icon: '🏛️' },
-  { name: 'Archivo de Indias', distance: '9 min a pie', icon: '📚' },
-  { name: 'Torre del Oro', distance: '7 min a pie', icon: '🌟' },
-  { name: 'Museo de Bellas Artes', distance: '15 min a pie', icon: '🎨' },
+  { name: 'Catedral de Sevilla', distance: '26 min a pie', icon: '⛪' },
+  { name: 'La Giralda', distance: '26 min a pie', icon: '🗼' },
+  { name: 'Real Alcázar', distance: '27 min a pie', icon: '🏰' },
+  { name: 'Barrio de Santa Cruz', distance: '24 min a pie', icon: '🌺' },
+  { name: 'Plaza de España', distance: '31 min a pie', icon: '🏛️' },
+  { name: 'Archivo de Indias', distance: '26 min a pie', icon: '📚' },
+  { name: 'Torre del Oro', distance: '32 min a pie', icon: '🌟' },
+  { name: 'Museo de Bellas Artes', distance: '20 min a pie', icon: '🎨' },
 ] as const;

@@ -2,7 +2,10 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Toaster } from 'react-hot-toast';
+import dynamic from 'next/dynamic';
 import { locales, type Locale } from '@/i18n';
+
+const CookieBanner = dynamic(() => import('@/components/CookieBanner'), { ssr: false });
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -22,6 +25,7 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       {children}
+      <CookieBanner />
       <Toaster
         position="bottom-center"
         toastOptions={{

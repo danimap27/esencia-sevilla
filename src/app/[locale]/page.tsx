@@ -10,6 +10,7 @@ import { absoluteUrl } from '@/lib/utils';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Gallery from '@/components/Gallery';
+import BookingComparison from '@/components/BookingComparison';
 import BookingSection from '@/components/BookingSection';
 import FAQ from '@/components/FAQ';
 import Reviews from '@/components/Reviews';
@@ -30,6 +31,7 @@ const MapSection = dynamic(() => import('@/components/MapSection'), {
 });
 
 const ChatWidget = dynamic(() => import('@/components/ChatWidget'), { ssr: false });
+const VirtualTour = dynamic(() => import('@/components/VirtualTour'), { ssr: false });
 
 export async function generateMetadata({
   params: { locale },
@@ -168,7 +170,9 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
       <Header />
       <main>
         <Hero />
+        <BookingComparison />
         <Gallery />
+        <VirtualTour locale={locale} />
         <BookingSection />
         <MapSection />
         <EventsSection />

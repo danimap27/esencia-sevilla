@@ -106,7 +106,8 @@
     "bookingRedirect": "Reservar con cancelación gratuita en Booking.com",
     "processing": "Procesando...",
     "noAvailability": "Sin disponibilidad en estas fechas",
-    "contactUs": "Contactar para disponibilidad especial"
+    "contactUs": "Contactar para disponibilidad especial",
+    "cta": "Reservar"
   },
   "gallery": {
     "title": "El apartamento",
@@ -330,7 +331,29 @@
     "subtitle": "Guías, consejos y secretos para descubrir Sevilla",
     "readMore": "Leer más",
     "minRead": "{min} min de lectura",
-    "relatedPosts": "Artículos relacionados"
+    "relatedPosts": "Artículos relacionados",
+    "posts": {
+      "que": {
+        "title": "Qué ver en Sevilla en 3 días",
+        "excerpt": "La guía definitiva para 3 días en Sevilla: Catedral, Alcázar, Triana, Plaza de España y mucho más."
+      },
+      "sevilla": {
+        "title": "Sevilla con niños: guía completa",
+        "excerpt": "Parques, museos interactivos y actividades para disfrutar Sevilla en familia."
+      },
+      "semana": {
+        "title": "Semana Santa en Sevilla: consejos para turistas",
+        "excerpt": "Todo lo que necesitas saber para vivir la Semana Santa sevillana como un local."
+      },
+      "como": {
+        "title": "Cómo moverse por Sevilla en autobús",
+        "excerpt": "Guía completa del transporte público sevillano: TUSSAM, tarjetas, rutas y consejos."
+      },
+      "mejores": {
+        "title": "Las mejores tapas cerca de la Catedral",
+        "excerpt": "Nuestra selección personal de las mejores tabernas y tapas del centro de Sevilla."
+      }
+    }
   },
   "admin": {
     "title": "Panel de Propietario",
@@ -386,5 +409,20 @@
     "guideDescription": "Guía turística completa y gratuita de Sevilla: mapa interactivo, rutas a pie, transporte TUSSAM, restaurantes y eventos. Disponible offline.",
     "blogTitle": "Blog de Viajes Sevilla | Guías y Consejos",
     "blogDescription": "Las mejores guías de viaje para Sevilla: qué ver, dónde comer, cómo moverse. Consejos de locales para vivir Sevilla como un auténtico sevillano."
+  },
+  "cookies": {
+    "title": "Uso de cookies",
+    "description": "Usamos cookies para mejorar tu experiencia y analizar el tráfico. Puedes aceptar, rechazar o personalizar tu configuración.",
+    "customize": "Personalizar preferencias",
+    "necessary": "Necesarias",
+    "necessaryDesc": "Requeridas para el funcionamiento. No se pueden desactivar.",
+    "analytics": "Analíticas",
+    "analyticsDesc": "Google Analytics para entender cómo usas la web.",
+    "marketing": "Marketing",
+    "marketingDesc": "Meta Pixel para medir campañas publicitarias.",
+    "acceptAll": "Aceptar todas",
+    "rejectAll": "Rechazar no esenciales",
+    "savePrefs": "Guardar preferencias",
+    "close": "Cerrar"
   }
 }

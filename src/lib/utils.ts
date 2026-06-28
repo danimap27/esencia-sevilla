@@ -41,8 +41,15 @@ export function calculatePrice(
   couponDiscount = 0
 ): PriceBreakdown {
   const nights = calculateNights(checkIn, checkOut);
-  const pricePerNight = APARTMENT.basePricePerNight;
-  const subtotal = nights * pricePerNight;
+  // Dynamic pricing: each night priced according to season/events
+  let subtotal = 0;
+  let current = new Date(checkIn);
+  for (let i = 0; i < nights; i++) {
+    subtotal += getDynamicPrice(current);
+    current = addDays(current, 1);
+  }
+  // Base price per night (average for display)
+  const pricePerNight = nights > 0 ? Math.round(subtotal / nights) : APARTMENT.basePricePerNight;
   const cleaningFee = APARTMENT.cleaningFee;
   const touristTax = guests * nights * APARTMENT.touristTaxPerPersonNight;
   const discount = Math.round(subtotal * (discountPercent / 100)) + couponDiscount;

@@ -1,21 +1,428 @@
 {
-  "nav": { "gallery": "Foto", "booking": "Prenota", "map": "Mappa", "guide": "Guida", "reviews": "Recensioni", "faq": "FAQ", "blog": "Blog", "bookNow": "Prenota ora" },
-  "hero": { "badge": "Appartamento Turistico — Centro di Siviglia", "headline": "La tua casa nel cuore di Siviglia", "subheadline": "A pochi passi dalla Cattedrale, dall'Alcázar e dal quartiere di Santa Cruz. Vivi Siviglia come un locale.", "cta": "Verifica disponibilità", "ctaSecondary": "Vedi le foto", "reviewsBadge": "{count} recensioni cinque stelle", "ratingLabel": "Valutazione media", "savingsBadge": "Risparmia {amount}€ vs Booking", "savingsDesc": "Prenotando direttamente", "registrationLabel": "N° registrazione turistica", "trustBadges": { "checkin": "Self check-in 24h", "wifi": "WiFi ultra-veloce", "ac": "A/C in tutte le stanze", "location": "Posizione imbattibile" } },
-  "comparison": { "title": "Perché prenotare qui?", "subtitle": "Confronto diretto con Booking.com", "feature": "Caratteristica", "direct": "Esencia Sevilla", "booking": "Booking.com", "rows": { "price": "Prezzo", "priceDirect": "10% più economico", "priceBooking": "Prezzo pieno", "cancellation": "Cancellazione", "cancellationDirect": "Non rimborsabile", "cancellationBooking": "Gratuita (prezzo più alto)", "communication": "Comunicazione", "communicationDirect": "Diretta con il proprietario", "communicationBooking": "Tramite piattaforma", "extras": "Extra inclusi", "extrasDirect": "Libro benvenuto, guida QR, chat IA", "extrasBooking": "Solo alloggio", "checkin": "Istruzioni arrivo", "checkinDirect": "Personalizzate + mappa", "checkinBooking": "Standard" } },
-  "booking": { "title": "Prenota il tuo soggiorno", "subtitle": "Scegli le date e ottieni il miglior prezzo", "checkIn": "Arrivo", "checkOut": "Partenza", "guests": "Ospiti", "guestCount": "{count} ospite", "guestsCount": "{count} ospiti", "nights": "{count} notte", "nightsPlural": "{count} notti", "pricePerNight": "a notte", "selectDates": "Seleziona le date", "minStay": "Soggiorno minimo: 2 notti", "unavailable": "Non disponibile", "available": "Disponibile", "today": "Oggi", "breakdown": { "title": "Dettaglio del prezzo", "perNight": "{price}€ × {nights} notti", "cleaning": "Quota pulizie", "touristTax": "Tassa di soggiorno", "upsells": "Extra selezionati", "discount": "Sconto", "total": "Totale", "bookingComparison": "Pagheresti su Booking", "savings": "Il tuo risparmio" }, "upsells": { "title": "Migliora il tuo soggiorno", "add": "Aggiungi", "added": "Aggiunto", "airportTransfer": "Trasferimento aeroporto", "airportTransferDesc": "Prelievo a SVQ", "welcomePack": "Kit benvenuto", "welcomePackDesc": "Prodotti artigianali locali", "lateCheckout": "Check-out tardivo (fino alle 14:00)", "lateCheckoutDesc": "Goditi la mattina senza fretta", "travelCot": "Lettino da viaggio", "travelCotDesc": "Per bambini fino a 2 anni", "romanticPack": "Kit romantico", "romanticPackDesc": "Vino andaluso + fiori + nota personale" }, "coupon": { "label": "Codice sconto", "placeholder": "ESENCIA10", "apply": "Applica", "invalid": "Codice non valido", "applied": "Sconto applicato!" }, "nonRefundable": "Questa tariffa è NON RIMBORSABILE", "nonRefundableNote": "Ottieni la cancellazione gratuita prenotando su", "bookButton": "Prenota ora — {total}€", "bookingRedirect": "Prenota con cancellazione gratuita su Booking.com", "processing": "Elaborazione...", "noAvailability": "Nessuna disponibilità in queste date", "contactUs": "Contattaci per disponibilità speciale" },
-  "gallery": { "title": "L'appartamento", "subtitle": "Spazi progettati per il riposo e il piacere", "viewAll": "Vedi tutte le foto", "virtualTour": "Tour virtuale 360°", "close": "Chiudi", "prev": "Precedente", "next": "Successivo" },
-  "map": { "title": "Esplora Siviglia dal tuo appartamento", "subtitle": "Percorsi, monumenti e segreti locali", "tabs": { "map": "Mappa interattiva", "routes": "Percorsi a piedi", "transport": "Trasporti" }, "categories": { "all": "Tutti", "monument": "Monumenti", "neighborhood": "Quartieri", "culture": "Cultura", "food": "Gastronomia", "nature": "Natura", "modern": "Moderno", "fun": "Svago" }, "openInMaps": "Apri in Google Maps", "entranceFree": "Ingresso libero", "minutesWalk": "{min} min a piedi", "routeDetails": "Vedi percorso completo", "routeCategories": { "classic": "Classico", "neighborhoods": "Quartieri", "romantic": "Romantico", "food": "Gastronomico", "family": "Famiglia", "culture": "Culturale", "nature": "Natura", "shopping": "Shopping", "photos": "Fotografico" }, "transport": { "title": "Muoversi a Siviglia", "multiviaje": "Carta Multiviaje TUSSAM", "multiviajePrices": "Ricarica da 5€ alle biglietterie delle fermate e app TUSSAM", "nearestStop": "Fermata più vicina", "lines": "Linee disponibili", "frequency": "Frequenza", "price": "Prezzo" } },
-  "events": { "title": "Siviglia ti aspetta", "subtitle": "Eventi e festival dell'anno", "highSeason": "Alta stagione — prenota in anticipo", "limitedAvailability": "Disponibilità limitata in queste date", "viewMore": "Ulteriori informazioni", "bookForEvent": "Prenota per questo evento" },
-  "reviews": { "title": "Cosa dicono i nostri ospiti", "subtitle": "Oltre {count} recensioni verificate", "overallRating": "Valutazione globale", "basedOn": "basata su {count} recensioni", "leaveReview": "Lascia una recensione", "sources": { "google": "Google Recensioni", "booking": "Booking.com", "airbnb": "Airbnb", "direct": "Prenotazione diretta" } },
-  "faq": { "title": "Domande frequenti", "subtitle": "Tutto quello che devi sapere prima di arrivare", "questions": { "q1": "C'è parcheggio vicino all'appartamento?", "a1": "Non c'è parcheggio privato. Il più vicino è Parking Plaza Nueva (5 min a piedi, circa 25€/giorno). Consigliamo i mezzi pubblici.", "q2": "Sono ammessi animali?", "a2": "Spiacenti, gli animali non sono ammessi.", "q3": "Come funziona il self check-in?", "a3": "24h prima dell'arrivo riceverai il codice della cassetta delle chiavi via WhatsApp e email. Puoi arrivare tra le 16:00 e le 23:00.", "q4": "Cosa include la quota pulizie?", "a4": "Pulizia completa, cambio lenzuola e asciugamani (60€).", "q5": "C'è l'aria condizionata?", "a5": "Sì, in tutte le stanze. Indispensabile in estate.", "q6": "Qual è la capacità massima?", "a6": "4 ospiti: una camera matrimoniale e una con due letti singoli.", "q7": "Un bambino piccolo può soggiornare?", "a7": "Certo! Lettino da viaggio disponibile per 15€.", "q8": "C'è il WiFi? È veloce?", "a8": "Sì, fibra ottica 600 Mbps. Credenziali nel libro di benvenuto.", "q9": "Quando sono check-in e check-out?", "a9": "Check-in: dalle 16:00. Check-out: prima delle 11:00. Check-out tardivo fino alle 14:00 per 20€.", "q10": "La cucina è attrezzata?", "a10": "Sì, completamente: frigorifero, piano cottura, microonde, macchina caffè Nespresso, tostapane, bollitore.", "q11": "È permesso fumare?", "a11": "No, penalità di 150€.", "q12": "Come arrivo dall'aeroporto?", "a12": "Bus EA (Airport Express), ogni 30 min, 4€, circa 40 min fino a Prado de San Sebastián.", "q13": "Cosa faccio in caso di problema?", "a13": "Disponibili 24/7 su WhatsApp. Emergenze: 112.", "q14": "Sono ammesse feste o addii al celibato?", "a14": "No, vietate feste o eventi che possano disturbare i vicini.", "q15": "C'è l'ascensore?", "a15": "Sì.", "q16": "C'è la lavatrice?", "a16": "Sì, con detersivo incluso.", "q17": "Posso fare un check-out tardivo?", "a17": "Check-out standard prima delle 11:00. Tardivo fino alle 14:00 per 20€.", "q18": "L'appartamento è adatto a persone con mobilità ridotta?", "a18": "L'edificio ha l'ascensore. C'è un gradino all'ingresso. Consultaci prima di prenotare.", "q19": "Come funziona il pre-check-in online?", "a19": "Dopo la conferma riceverai un link per inserire i dati del passaporto e l'orario di arrivo.", "q20": "Qual è il numero di registrazione turistica?", "a20": "Numero di registrazione turistica: AT/SE/03584." } },
-  "location": { "title": "Dove siamo", "subtitle": "Nel cuore di Siviglia, tutto a piedi", "address": "Imaginero Luis Alvarez Duarte N7, 41008 Siviglia", "howToArrive": "Come arrivare", "fromAirport": "Dall'Aeroporto SVQ", "fromStation": "Da Santa Justa (Renfe)", "byCar": "In auto", "step": "Passo {n}", "arrivalSteps": { "airport": { "step1": "Prendi il bus EA (Airport Express) — 4€", "step2": "Scendi a Prado de San Sebastián (≈40 min)", "step3": "Cammina 10 min verso nord", "step4": "Arrivo a Imaginero Luis Álvarez Duarte, 7" }, "train": { "step1": "Da Santa Justa: Metro L1", "step2": "Scendi a Puerta Jerez (8 min)", "step3": "7 min a piedi" }, "car": { "step1": "Centro storico: accesso limitato. Parking Plaza Nueva consigliato", "step2": "GPS: Imaginero Luis Álvarez Duarte, 7, Siviglia", "step3": "Zona carico/scarico davanti all'edificio" } } },
-  "chat": { "title": "Assistente Esencia Sevilla", "subtitle": "Chiedimi dell'appartamento o di Siviglia", "placeholder": "Scrivi la tua domanda...", "send": "Invia", "welcome": "Ciao! Sono l'assistente virtuale di Esencia Sevilla. Come posso aiutarti?", "suggestions": [ "A che ora è il check-in?", "Qual è la password del WiFi?", "Come arrivo dall'aeroporto?", "Quali ristoranti consigli?" ], "typing": "Sto scrivendo...", "error": "Errore di connessione. Riprova.", "poweredBy": "Assistito dall'IA" },
-  "guestPortal": { "title": "Portale Ospiti", "subtitle": "Completa il tuo pre-check-in", "countdown": "{days} giorni al tuo soggiorno", "countdownToday": "Il tuo soggiorno inizia oggi!", "preCheckin": { "title": "Pre-check-in online", "subtitle": "Completa i tuoi dati per un arrivo senza attese", "documentType": "Tipo di documento", "passport": "Passaporto", "dni": "Carta d'identità", "nie": "NIE", "documentNumber": "Numero documento", "documentExpiry": "Data di scadenza", "nationality": "Nazionalità", "arrivalTime": "Orario di arrivo stimato", "specialRequests": "Richieste speciali (opzionale)", "addGuest": "Aggiungi ospite", "guestN": "Ospite {n}", "firstName": "Nome", "lastName": "Cognome", "birthDate": "Data di nascita", "submit": "Conferma pre-check-in", "success": "Pre-check-in completato! Riceverai il codice di accesso 24h prima del tuo arrivo.", "legalNote": "Dati richiesti dalla legge spagnola per la registrazione dei viaggiatori." } },
-  "welcomeBook": { "title": "Libro di Benvenuto", "wifi": "WiFi", "wifiPassword": "Password", "checkIn": "Check-in", "checkOut": "Check-out", "rules": "Regole della casa", "emergencies": "Emergenze", "appliances": "Elettrodomestici", "checkoutSteps": "Passi per il check-out", "recommendations": "Raccomandazioni del proprietario" },
-  "footer": { "tagline": "La tua casa nel cuore di Siviglia", "registrationLabel": "N° registrazione turistica", "links": { "privacy": "Informativa sulla privacy", "terms": "Termini e condizioni", "cookies": "Informativa sui cookie", "blog": "Blog", "guide": "Guida turistica" }, "contact": "Contatto", "followUs": "Seguici", "copyright": "© {year} Esencia Sevilla. Tutti i diritti riservati.", "madeWith": "Fatto con amore a Siviglia" },
-  "blog": { "title": "Blog Esencia Siviglia", "subtitle": "Guide, consigli e segreti per scoprire Siviglia", "readMore": "Leggi di più", "minRead": "{min} min di lettura", "relatedPosts": "Articoli correlati" },
-  "admin": { "title": "Pannello di controllo proprietario", "dashboard": "Dashboard", "bookings": "Prenotazioni", "calendar": "Calendario", "reviews": "Recensioni", "settings": "Impostazioni", "qrGuide": "QR Guida turistica", "revenue": "Entrate del mese", "occupancy": "Occupazione", "avgNight": "Prezzo medio/notte", "blockDates": "Blocca date", "downloadQR": "Scarica QR alta risoluzione", "logout": "Disconnetti" },
-  "guide": { "title": "Guida Turistica Esencia Siviglia", "subtitle": "Tutto ciò di cui hai bisogno per godere Siviglia", "offline": "Disponibile offline", "sections": { "map": "Mappa", "transport": "Trasporti", "restaurants": "Ristoranti", "events": "Eventi", "apartment": "L'appartamento", "emergency": "Emergenze" } },
-  "common": { "loading": "Caricamento...", "error": "Si è verificato un errore", "retry": "Riprova", "close": "Chiudi", "save": "Salva", "cancel": "Annulla", "confirm": "Conferma", "back": "Indietro", "next": "Successivo", "previous": "Precedente", "seeAll": "Vedi tutti", "learnMore": "Scopri di più", "minutes": "min", "km": "km", "free": "Gratuito", "perNight": "/ notte", "euros": "€" },
-  "seo": { "homeTitle": "Appartamento Turistico Siviglia Centro | Esencia Sevilla", "homeDescription": "Prenota il miglior appartamento turistico nel centro di Siviglia. 8 min dalla Cattedrale e dall'Alcázar. WiFi, A/C. 10% più economico di Booking!", "guideTitle": "Guida Turistica Siviglia Gratuita | Mappa, Percorsi e Trasporti", "guideDescription": "Guida turistica completa e gratuita di Siviglia: mappa interattiva, percorsi a piedi, TUSSAM, ristoranti ed eventi. Disponibile offline.", "blogTitle": "Blog Viaggi Siviglia | Guide e Consigli", "blogDescription": "Le migliori guide di viaggio per Siviglia. Consigli locali." }
+  "nav": {
+    "gallery": "Foto",
+    "booking": "Prenota",
+    "map": "Mappa",
+    "guide": "Guida",
+    "reviews": "Recensioni",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "bookNow": "Prenota ora"
+  },
+  "hero": {
+    "badge": "Appartamento Turistico — Centro di Siviglia",
+    "headline": "La tua casa nel cuore di Siviglia",
+    "subheadline": "A pochi passi dalla Cattedrale, dall'Alcázar e dal quartiere di Santa Cruz. Vivi Siviglia come un locale.",
+    "cta": "Verifica disponibilità",
+    "ctaSecondary": "Vedi foto",
+    "reviewsBadge": "{count} recensioni 5 stelle",
+    "ratingLabel": "Valutazione media",
+    "savingsBadge": "Risparmia {amount}€ vs Booking",
+    "savingsDesc": "Prenotando direttamente",
+    "registrationLabel": "Nº Registrazione Turistica",
+    "trustBadges": {
+      "checkin": "Check-in autonomo 24h",
+      "wifi": "WiFi ultrarapido",
+      "ac": "A/C in tutte le stanze",
+      "location": "Posizione ineguagliabile"
+    }
+  },
+  "comparison": {
+    "title": "Perché prenotare qui?",
+    "subtitle": "Comparazione diretta con Booking.com",
+    "feature": "Caratteristica",
+    "direct": "Esencia Sevilla",
+    "booking": "Booking.com",
+    "rows": {
+      "price": "Prezzo",
+      "priceDirect": "10% più economico",
+      "priceBooking": "Prezzo pieno",
+      "cancellation": "Cancellazione",
+      "cancellationDirect": "Non rimborsabile",
+      "cancellationBooking": "Gratuita (prezzo maggiore)",
+      "communication": "Comunicazione",
+      "communicationDirect": "Diretta con l'host",
+      "communicationBooking": "Tramite piattaforma",
+      "extras": "Extra inclusi",
+      "extrasDirect": "Libro benvenuto, guida QR, chat IA",
+      "extrasBooking": "Solo alloggio",
+      "checkin": "Istruzioni arrivo",
+      "checkinDirect": "Personalizzate + mappa",
+      "checkinBooking": "Standard"
+    }
+  },
+  "booking": {
+    "title": "Prenota",
+    "subtitle": "Scegli le date e ottieni il miglior prezzo",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Ospiti",
+    "guestCount": "{count} ospite",
+    "guestsCount": "{count} ospiti",
+    "nights": "{count} notte",
+    "nightsPlural": "{count} notti",
+    "pricePerNight": "a notte",
+    "selectDates": "Seleziona le date",
+    "minStay": "Soggiorno minimo: 2 notti",
+    "unavailable": "Non disponibile",
+    "available": "Disponibile",
+    "today": "Oggi",
+    "breakdown": {
+      "title": "Dettaglio del prezzo",
+      "perNight": "{price}€ × {nights} notti",
+      "cleaning": "Tassa di pulizia",
+      "touristTax": "Tassa turistica",
+      "upsells": "Extra selezionati",
+      "discount": "Sconto",
+      "total": "Totale",
+      "bookingComparison": "Su Booking pagheresti",
+      "savings": "Il tuo risparmio"
+    },
+    "upsells": {
+      "title": "Migliora il tuo soggiorno",
+      "add": "Aggiungi",
+      "added": "Aggiunto",
+      "airportTransfer": "Trasferimento aeroporto",
+      "airportTransferDesc": "Prelievo al SVQ, arrivo al tuo orario",
+      "welcomePack": "Pack benvenuto",
+      "welcomePackDesc": "Prodotti locali artigianali di Siviglia",
+      "lateCheckout": "Check-out tardivo (fino alle 14:00)",
+      "lateCheckoutDesc": "Goditi la mattina senza fretta",
+      "travelCot": "Letto da viaggio",
+      "travelCotDesc": "Per neonati fino a 2 anni",
+      "romanticPack": "Pack romantico",
+      "romanticPackDesc": "Vino andaluso + fiori + nota personalizzata"
+    },
+    "coupon": {
+      "label": "Codice sconto",
+      "placeholder": "ESENCIA10",
+      "apply": "Applica",
+      "invalid": "Codice non valido",
+      "applied": "Sconto applicato!"
+    },
+    "nonRefundable": "Questa tariffa è NON RIMBORSABILE",
+    "nonRefundableNote": "Ottieni cancellazione gratuita prenotando su",
+    "bookButton": "Prenota ora — {total}€",
+    "bookingRedirect": "Prenota con cancellazione gratuita su Booking.com",
+    "processing": "Elaborazione...",
+    "noAvailability": "Nessuna disponibilità per queste date",
+    "contactUs": "Contattaci per disponibilità speciale",
+    "cta": "Prenota"
+  },
+  "gallery": {
+    "title": "L'appartamento",
+    "subtitle": "Spazi pensati per il riposo e il piacere",
+    "viewAll": "Vedi tutte le foto",
+    "virtualTour": "Tour virtuale 360°",
+    "close": "Chiudi",
+    "prev": "Precedente",
+    "next": "Successivo"
+  },
+  "map": {
+    "title": "Esplora Siviglia dal tuo appartamento",
+    "subtitle": "Itinerari, monumenti e segreti locali",
+    "tabs": {
+      "map": "Mappa interattiva",
+      "routes": "Itinerari a piedi",
+      "transport": "Trasporti"
+    },
+    "categories": {
+      "all": "Tutti",
+      "monument": "Monumenti",
+      "neighborhood": "Quartieri",
+      "culture": "Cultura",
+      "food": "Gastronomia",
+      "nature": "Natura",
+      "modern": "Moderno",
+      "fun": "Intrattenimento"
+    },
+    "openInMaps": "Apri in Google Maps",
+    "entranceFree": "Ingresso libero",
+    "minutesWalk": "{min} min a piedi",
+    "routeDetails": "Vedi itinerario completo",
+    "routeCategories": {
+      "classic": "Classica",
+      "neighborhoods": "Quartieri",
+      "romantic": "Romantica",
+      "food": "Gastronomica",
+      "family": "Familiare",
+      "culture": "Culturale",
+      "nature": "Natura",
+      "shopping": "Shopping",
+      "photos": "Fotografica"
+    },
+    "transport": {
+      "title": "Come muoversi a Siviglia",
+      "multiviaje": "Carta Multiviaje TUSSAM",
+      "multiviajePrices": "Ricarica da 5€ alle macchinette delle fermate e sull'app TUSSAM",
+      "nearestStop": "Fermata più vicina all'appartamento",
+      "lines": "Linee disponibili",
+      "frequency": "Frequenza",
+      "price": "Prezzo"
+    }
+  },
+  "events": {
+    "title": "Siviglia ti aspetta",
+    "subtitle": "Eventi e festival dell'anno",
+    "highSeason": "Alta stagione — prenota in anticipo",
+    "limitedAvailability": "Disponibilità limitata in queste date",
+    "viewMore": "Maggiori informazioni",
+    "bookForEvent": "Prenota per questo evento"
+  },
+  "reviews": {
+    "title": "Cosa dicono i nostri ospiti",
+    "subtitle": "Oltre {count} recensioni verificate",
+    "overallRating": "Valutazione generale",
+    "basedOn": "basato su {count} recensioni",
+    "leaveReview": "Lascia una recensione",
+    "sources": {
+      "google": "Google Reviews",
+      "booking": "Booking.com",
+      "airbnb": "Airbnb",
+      "direct": "Prenotazione diretta"
+    }
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "subtitle": "Tutto ciò che devi sapere prima di arrivare",
+    "questions": {
+      "q1": "C'è un parcheggio vicino all'appartamento?",
+      "a1": "Non c'è parcheggio privato nell'edificio. Il parcheggio pubblico più vicino è Parking Plaza Nueva (5 min a piedi, circa 25€/giorno). Consigliamo i trasporti pubblici poiché il centro storico ha accesso limitato ai veicoli.",
+      "q2": "Si accettano animali?",
+      "a2": "Spiacenti, non si accettano animali nell'appartamento per rispettare gli altri ospiti e mantenere la pulizia.",
+      "q3": "Come funziona il check-in autonomo?",
+      "a3": "24h prima del tuo arrivo riceverai un messaggio WhatsApp e email con il codice della cassetta di sicurezza dove si trovano le chiavi. Non è necessario coordinarsi con nessuno. Puoi arrivare in qualsiasi ora tra le 16:00 e le 23:00.",
+      "q4": "Cosa include la pulizia finale?",
+      "a4": "La tassa di pulizia (60€) include la pulizia completa dell'appartamento, cambio lenzuola e asciugamani, e ripristino dei prodotti da bagno. Il servizio di pulizia giornaliero non è incluso durante il soggiorno (disponibile per 30€/giorno extra).",
+      "q5": "C'è l'aria condizionata?",
+      "a5": "Sì, l'appartamento ha aria condizionata in tutte le stanze (soggiorno e camere). È indispensabile in estate quando le temperature a Siviglia possono superare i 40°C.",
+      "q6": "Qual è la capacità massima dell'appartamento?",
+      "a6": "L'appartamento ospita 4 ospiti: una camera doppia con letto king e un'altra camera con due letti singoli.",
+      "q7": "Si può ospitare un neonato?",
+      "a7": "Certo! Possiamo fornire un letto da viaggio per 15€ aggiuntivi (selezionabile al momento della prenotazione). L'appartamento è adatto a bambini di tutte le età.",
+      "q8": "C'è il WiFi? È veloce?",
+      "a8": "Sì, l'appartamento dispone di WiFi in fibra ad alta velocità (600 Mbps). Il nome della rete e la password si trovano nel libro di benvenuto.",
+      "q9": "A che ora sono il check-in e il check-out?",
+      "a9": "Check-in: dalle 16:00. Check-out: prima delle 11:00. Se il tuo volo arriva prima, puoi lasciare i bagagli gratuitamente e esplorare la città. Check-out tardivo fino alle 14:00 disponibile per 20€ (seconda disponibilità).",
+      "q10": "L'appartamento ha una cucina attrezzata?",
+      "a10": "Sì, la cucina è completamente attrezzata: frigorifero, piano a induzione, microonde, macchina da caffè (capsule Nespresso), tostapane, bollitore, utensili completi e stoviglie per 4 persone.",
+      "q11": "È permesso fumare nell'appartamento?",
+      "a11": "Non è permesso fumare nell'appartamento. Il mancato rispetto di questa regola comporta una penalità di 150€.",
+      "q12": "Come arrivo dall'aeroporto all'appartamento?",
+      "a12": "L'opzione più comoda è l'autobus EA (Aeroporto Express), che parte ogni 30 minuti e costa 4€. Impiega circa 40 minuti fino a Prado de San Sebastián, da dove l'appartamento è a 10 minuti a piedi. Offriamo anche un trasferimento privato dall'aeroporto per 35€.",
+      "q13": "Cosa faccio se ho un problema durante il soggiorno?",
+      "a13": "Siamo disponibili 24/7 su WhatsApp per qualsiasi evenienza. In caso di emergenza: il 112 è il numero di emergenza in Spagna.",
+      "q14": "Si accettano addii al celibato/nubilato o feste?",
+      "a14": "Non sono ammesse feste o eventi che possano disturbare i vicini. Siviglia ha molte opzioni per il tempo libero notturno, ma l'appartamento è esclusivamente per il riposo.",
+      "q15": "L'edificio ha un ascensore?",
+      "a15": "Sì, l'edificio dispone di un ascensore.",
+      "q16": "C'è una lavatrice?",
+      "a16": "Sì, l'appartamento dispone di una lavatrice con detersivo incluso.",
+      "q17": "Posso fare un check-out tardivo se il mio volo è nel pomeriggio?",
+      "a17": "Il check-out standard è prima delle 11:00. Se hai bisogno di più tempo, il check-out tardivo fino alle 14:00 è disponibile per 20€ secondo disponibilità. Per partenze più tardive, puoi lasciare i bagagli nell'appartamento.",
+      "q18": "L'appartamento è adatto a persone con mobilità ridotta?",
+      "a18": "L'edificio ha un ascensore. L'appartamento è al 3° piano. C'è un gradino all'ingresso dell'edificio. Se hai esigenze speciali, consultaci prima di prenotare.",
+      "q19": "Come funziona il pre-check-in online?",
+      "a19": "Alla conferma della prenotazione riceverai un link per completare il pre-check-in: dati del passaporto, orario stimato di arrivo e preferenze. Questo ci permette di preparare tutto per il tuo arrivo e rispettare la normativa spagnola di registrazione dei viaggiatori.",
+      "q20": "Qual è il numero di registrazione turistica dell'appartamento?",
+      "a20": "Numero di registrazione turistica della Giunta di Andalusia: AT/SE/03584. Puoi verificarlo nel Registro del Turismo dell'Andalusia."
+    }
+  },
+  "location": {
+    "title": "Dove siamo",
+    "subtitle": "Nel cuore di Siviglia, tutto a piedi",
+    "address": "Imaginero Luis Alvarez Duarte N7, 41008 Siviglia",
+    "howToArrive": "Come arrivare",
+    "fromAirport": "Dall'aeroporto SVQ",
+    "fromStation": "Da Santa Justa (Renfe)",
+    "byCar": "In auto",
+    "step": "Passo {n}",
+    "arrivalSteps": {
+      "airport": {
+        "step1": "Prendi l'autobus EA (Aeroporto Express) all'uscita degli arrivi — 4€",
+        "step2": "Scendi a Prado de San Sebastián (≈40 min)",
+        "step3": "Cammina 10 minuti verso nord per Av. Menéndez Pelayo",
+        "step4": "Arriva a Imaginero Luis Álvarez Duarte, 7"
+      },
+      "train": {
+        "step1": "Da Santa Justa prendi la Metro Linea 1 (direzione Olivar de Quinto)",
+        "step2": "Scendi a Puerta Jerez (3 fermate, 8 min)",
+        "step3": "Cammina 7 minuti fino all'appartamento"
+      },
+      "car": {
+        "step1": "Il centro di Siviglia ha accesso limitato — parcheggio consigliato: Parking Plaza Nueva",
+        "step2": "Inserisci nel GPS: Imaginero Luis Álvarez Duarte, 7, Siviglia",
+        "step3": "Zona di carico/scarico disponibile davanti all'edificio"
+      }
+    }
+  },
+  "chat": {
+    "title": "Assistente Esencia Sevilla",
+    "subtitle": "Chiedimi dell'appartamento, di Siviglia o della tua prenotazione",
+    "placeholder": "Scrivi la tua domanda...",
+    "send": "Invia",
+    "welcome": "Ciao! Sono l'assistente virtuale di Esencia Sevilla. Posso aiutarti con informazioni sull'appartamento, consigli su Siviglia, trasporti o la tua prenotazione. Come posso aiutarti?",
+    "suggestions": [
+      "A che ora è il check-in?",
+      "Qual è la password del WiFi?",
+      "Come arrivo dall'aeroporto?",
+      "Quali ristoranti consigli nei dintorni?"
+    ],
+    "typing": "Scrivendo...",
+    "error": "Errore di connessione. Riprova.",
+    "poweredBy": "Assistito da IA"
+  },
+  "guestPortal": {
+    "title": "Portale dell'Ospite",
+    "subtitle": "Completa il tuo pre-check-in",
+    "countdown": "Mancano {days} giorni al tuo soggiorno",
+    "countdownToday": "Il tuo soggiorno inizia oggi!",
+    "preCheckin": {
+      "title": "Pre-check-in online",
+      "subtitle": "Completa i tuoi dati per un arrivo senza attese",
+      "documentType": "Tipo di documento",
+      "passport": "Passaporto",
+      "dni": "DNI",
+      "nie": "NIE",
+      "documentNumber": "Numero di documento",
+      "documentExpiry": "Data di scadenza",
+      "nationality": "Nazionalità",
+      "arrivalTime": "Orario stimato di arrivo",
+      "specialRequests": "Richieste speciali (opzionale)",
+      "addGuest": "Aggiungi ospite",
+      "guestN": "Ospite {n}",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "birthDate": "Data di nascita",
+      "submit": "Conferma pre-check-in",
+      "success": "Pre-check-in completato! Riceverai il codice di accesso 24h prima del tuo arrivo.",
+      "legalNote": "Dati richiesti dalla Legge Organica di Sicurezza Cittadina (Spagna) per la registrazione dei viaggiatori."
+    }
+  },
+  "welcomeBook": {
+    "title": "Libro di Benvenuto",
+    "wifi": "WiFi",
+    "wifiPassword": "Password",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "rules": "Regole della casa",
+    "emergencies": "Emergenze",
+    "appliances": "Elettrodomestici",
+    "checkoutSteps": "Passaggi per il check-out",
+    "recommendations": "Consigli dell'host"
+  },
+  "footer": {
+    "tagline": "La tua casa nel cuore di Siviglia",
+    "registrationLabel": "Nº Registrazione Turistica",
+    "links": {
+      "privacy": "Informativa sulla Privacy",
+      "terms": "Termini e Condizioni",
+      "cookies": "Politica dei Cookie",
+      "blog": "Blog",
+      "guide": "Guida Turistica"
+    },
+    "contact": "Contatto",
+    "followUs": "Seguici",
+    "copyright": "© {year} Esencia Sevilla. Tutti i diritti riservati.",
+    "madeWith": "Fatto con amore a Siviglia"
+  },
+  "blog": {
+    "title": "Il Blog di Esencia Sevilla",
+    "subtitle": "Guide, consigli e segreti per scoprire Siviglia",
+    "readMore": "Leggi di più",
+    "minRead": "{min} min di lettura",
+    "relatedPosts": "Articoli correlati",
+    "posts": {
+      "que": {
+        "title": "Cosa vedere a Siviglia in 3 giorni",
+        "excerpt": "La guida definitiva per 3 giorni a Siviglia: Cattedrale, Alcázar, Triana, Plaza de España e altro."
+      },
+      "sevilla": {
+        "title": "Siviglia con bambini: guida completa",
+        "excerpt": "Parchi, musei interattivi e attività per godersi Siviglia in famiglia."
+      },
+      "semana": {
+        "title": "Settimana Santa a Siviglia: consigli per turisti",
+        "excerpt": "Tutto ciò che devi sapere per vivere la Settimana Santa sivigliana come un locale."
+      },
+      "como": {
+        "title": "Come muoversi a Siviglia in autobus",
+        "excerpt": "Guida completa ai trasporti pubblici di Siviglia: TUSSAM, carte, percorsi e consigli."
+      },
+      "mejores": {
+        "title": "I migliori tapas vicino alla Cattedrale",
+        "excerpt": "La nostra selezione personale delle migliori taverne e tapas nel centro di Siviglia."
+      }
+    }
+  },
+  "admin": {
+    "title": "Pannello Proprietario",
+    "dashboard": "Dashboard",
+    "bookings": "Prenotazioni",
+    "calendar": "Calendario",
+    "reviews": "Recensioni",
+    "settings": "Impostazioni",
+    "qrGuide": "QR Guida Turistica",
+    "revenue": "Entrate del mese",
+    "occupancy": "Occupazione",
+    "avgNight": "Prezzo medio/notte",
+    "blockDates": "Blocca date",
+    "downloadQR": "Scarica QR in alta risoluzione",
+    "logout": "Esci"
+  },
+  "guide": {
+    "title": "Guida Turistica Esencia Sevilla",
+    "subtitle": "Tutto ciò che ti serve per goderti Siviglia",
+    "offline": "Disponibile offline",
+    "sections": {
+      "map": "Mappa",
+      "transport": "Trasporti",
+      "restaurants": "Ristoranti",
+      "events": "Eventi",
+      "apartment": "L'Appartamento",
+      "emergency": "Emergenze"
+    }
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "retry": "Riprova",
+    "close": "Chiudi",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "confirm": "Conferma",
+    "back": "Indietro",
+    "next": "Avanti",
+    "previous": "Precedente",
+    "seeAll": "Vedi tutti",
+    "learnMore": "Maggiori informazioni",
+    "minutes": "min",
+    "km": "km",
+    "free": "Gratuito",
+    "perNight": "/ notte",
+    "euros": "€"
+  },
+  "seo": {
+    "homeTitle": "Appartamento Turistico Siviglia Centro | Esencia Sevilla",
+    "homeDescription": "Affitta il miglior appartamento turistico nel centro di Siviglia. A 8 min dalla Cattedrale e dall'Alcázar. Check-in autonomo, WiFi, A/C. 10% più economico di Booking!",
+    "guideTitle": "Guida Turistica Siviglia Gratuita | Mappa, Itinerari e Trasporti",
+    "guideDescription": "Guida turistica completa e gratuita di Siviglia: mappa interattiva, itinerari a piedi, trasporti TUSSAM, ristoranti ed eventi. Disponibile offline.",
+    "blogTitle": "Blog di Viaggi Siviglia | Guide e Consigli",
+    "blogDescription": "Le migliori guide di viaggio per Siviglia: cosa vedere, dove mangiare, come muoversi. Consigli di locali per vivere Siviglia come un vero sivigliano."
+  },
+  "cookies": {
+    "title": "Uso dei cookie",
+    "description": "Usiamo cookie per migliorare la tua esperienza e analizzare il traffico. Puoi accettare, rifiutare o personalizzare le tue preferenze.",
+    "customize": "Personalizza preferenze",
+    "necessary": "Necessari",
+    "necessaryDesc": "Richiesti per il funzionamento. Non possono essere disattivati.",
+    "analytics": "Analitici",
+    "analyticsDesc": "Google Analytics per capire come usi il sito.",
+    "marketing": "Marketing",
+    "marketingDesc": "Meta Pixel per misurare le campagne pubblicitarie.",
+    "acceptAll": "Accetta tutti",
+    "rejectAll": "Rifiuta non essenziali",
+    "savePrefs": "Salva preferenze",
+    "close": "Chiudi"
+  }
 }

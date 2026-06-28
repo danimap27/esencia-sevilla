@@ -8,6 +8,7 @@ import { format, parseISO, isAfter, isBefore, addDays } from 'date-fns';
 import { es, enUS, fr, de, it, pt } from 'date-fns/locale';
 import { type Locale } from '@/i18n';
 import { SEVILLE_EVENTS } from '@/data/events';
+import WeatherWidget from '@/components/WeatherWidget';
 import { cn } from '@/lib/utils';
 
 const DATE_FNS_LOCALES: Record<Locale, object> = {
@@ -148,28 +149,9 @@ export default function EventsSection() {
           })}
         </div>
 
-        {/* Weather widget placeholder */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="card p-6 flex items-center gap-4">
-            <div className="text-5xl">☀️</div>
-            <div>
-              <p className="font-semibold text-tinta">Sevilla ahora</p>
-              <p className="text-3xl font-serif font-bold text-terracota-500">28°C</p>
-              <p className="text-sm text-tinta/60">Despejado · Sensación 31°C</p>
-            </div>
-          </div>
-          <div className="card p-6">
-            <p className="font-semibold text-tinta mb-3">Próximos días</p>
-            <div className="flex justify-between">
-              {['L', 'M', 'X', 'J', 'V', 'S', 'D'].map((day, i) => (
-                <div key={day} className="text-center">
-                  <p className="text-xs text-tinta/50 mb-1">{day}</p>
-                  <span className="text-sm">{['☀️', '⛅', '☀️', '🌤️', '☀️', '☀️', '⛅'][i]}</span>
-                  <p className="text-xs font-medium mt-1">{[28, 25, 29, 27, 30, 31, 26][i]}°</p>
-                </div>
-              ))}
-            </div>
-          </div>
+        {/* Weather widget */}
+        <div className="mt-12">
+          <WeatherWidget />
         </div>
       </div>
     </section>

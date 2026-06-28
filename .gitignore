@@ -34,3 +34,8 @@ next-env.d.ts
 
 # pnpm
 pnpm-lock.yaml
+
+# PWA generated files (generated at build time)
+public/sw.js
+public/workbox-*.js
+public/swe-worker-*.js

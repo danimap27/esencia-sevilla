@@ -106,7 +106,8 @@
     "bookingRedirect": "Book with free cancellation on Booking.com",
     "processing": "Processing...",
     "noAvailability": "No availability on these dates",
-    "contactUs": "Contact us for special availability"
+    "contactUs": "Contact us for special availability",
+    "cta": "Book now"
   },
   "gallery": {
     "title": "The apartment",
@@ -330,7 +331,29 @@
     "subtitle": "Guides, tips and secrets to discover Seville",
     "readMore": "Read more",
     "minRead": "{min} min read",
-    "relatedPosts": "Related posts"
+    "relatedPosts": "Related posts",
+    "posts": {
+      "que": {
+        "title": "What to see in Seville in 3 days",
+        "excerpt": "The ultimate guide for 3 days in Seville: Cathedral, Alcázar, Triana, Plaza de España and more."
+      },
+      "sevilla": {
+        "title": "Seville with kids: complete guide",
+        "excerpt": "Parks, interactive museums and activities to enjoy Seville as a family."
+      },
+      "semana": {
+        "title": "Holy Week in Seville: tips for tourists",
+        "excerpt": "Everything you need to know to experience Seville's Holy Week like a local."
+      },
+      "como": {
+        "title": "How to get around Seville by bus",
+        "excerpt": "Complete guide to Seville's public transport: TUSSAM, cards, routes and tips."
+      },
+      "mejores": {
+        "title": "The best tapas near the Cathedral",
+        "excerpt": "Our personal selection of the best taverns and tapas in central Seville."
+      }
+    }
   },
   "admin": {
     "title": "Owner Dashboard",
@@ -386,5 +409,20 @@
     "guideDescription": "Complete free tourist guide to Seville: interactive map, walking routes, TUSSAM transport, restaurants and events. Available offline.",
     "blogTitle": "Seville Travel Blog | Guides & Tips",
     "blogDescription": "The best travel guides for Seville: what to see, where to eat, how to get around. Local tips for experiencing Seville like a true Sevillian."
+  },
+  "cookies": {
+    "title": "Cookie usage",
+    "description": "We use cookies to improve your experience and analyze traffic. You can accept, reject, or customize your preferences.",
+    "customize": "Customize preferences",
+    "necessary": "Necessary",
+    "necessaryDesc": "Required for the website to function. Cannot be disabled.",
+    "analytics": "Analytics",
+    "analyticsDesc": "Google Analytics to understand how you use the site.",
+    "marketing": "Marketing",
+    "marketingDesc": "Meta Pixel to measure advertising campaigns.",
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject non-essential",
+    "savePrefs": "Save preferences",
+    "close": "Close"
   }
 }
