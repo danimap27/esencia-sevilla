@@ -55,6 +55,7 @@ El proyecto está **parametrizado para que cualquier persona pueda adaptarlo a u
 | 👨‍💼 Panel admin | Dashboard, reservas, reseñas, ingresos, precios, settings |
 | 📝 Blog | 5 artículos evergreen con schema Article |
 | 🔐 Legal | Cookie banner RGPD granular + política de privacidad |
+| 🗺️ Sitios y Rutas | **Gestión visual de POIs y rutas a pie desde el panel admin** |
 
 ---
 
