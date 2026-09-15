@@ -3,8 +3,8 @@ import { ApartmentInfo, BookingUpsell } from '@/types';
 export const APARTMENT: ApartmentInfo = {
   name: 'Esencia Sevilla',
   address: 'Imaginero Luis Alvarez Duarte N7, 41008 Sevilla, España',
-  lat: 37.39694,
-  lng: -5.97400,
+  lat: 37.3968636,
+  lng: -5.9742189,
   registrationNumber: 'AT/SE/03584',
   maxGuests: 4,
   bedrooms: 2,

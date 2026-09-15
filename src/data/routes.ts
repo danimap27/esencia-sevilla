@@ -30,14 +30,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     stops: [
       {
         name: 'Apartamento Esencia Sevilla',
-        lat: 37.38862, lng: -5.98230,
+        lat: 37.3968636, lng: -5.9742189,
         description: {
-          es: 'Punto de partida. Baja por Mateos Gago hacia la Catedral.',
-          en: 'Starting point. Head down Mateos Gago towards the Cathedral.',
-          fr: 'Point de départ. Descendez Mateos Gago vers la Cathédrale.',
-          de: 'Startpunkt. Mateos Gago hinunter Richtung Kathedrale.',
-          it: 'Punto di partenza. Scendi per Mateos Gago verso la Cattedrale.',
-          pt: 'Ponto de partida. Desça Mateos Gago em direção à Catedral.',
+          es: 'Punto de partida. Desde aquí, bus C1/C2 o taxi al centro (10 min): la ruta comienza en el casco histórico.',
+          en: 'Starting point. From here, bus C1/C2 or taxi to the centre (10 min): the route begins in the old town.',
+          fr: 'Point de départ. D\'ici, bus C1/C2 ou taxi vers le centre (10 min) : la route commence dans la vieille ville.',
+          de: 'Startpunkt. Von hier mit Bus C1/C2 oder Taxi ins Zentrum (10 Min.): Die Route beginnt in der Altstadt.',
+          it: 'Punto di partenza. Da qui, bus C1/C2 o taxi verso il centro (10 min): il percorso inizia nel centro storico.',
+          pt: 'Ponto de partida. Daqui, autocarro C1/C2 ou táxi para o centro (10 min): a rota começa no centro histórico.',
         },
         tip: {
           es: 'Sal antes de las 9:30 para ver Santa Cruz casi vacío.',

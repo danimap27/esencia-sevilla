@@ -29,10 +29,10 @@ export default function LocationSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           {/* Left: Map embed + address */}
           <div>
-            {/* Map placeholder — replaced with embed in production */}
+            {/* Mapa embebido de OpenStreetMap (sin API key, coherente con Leaflet del resto del sitio) */}
             <div className="rounded-2xl overflow-hidden shadow-medium border border-tinta/10 h-80 relative bg-crema-dark flex items-center justify-center">
               <iframe
-                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&q=${encodeURIComponent(APARTMENT.address)}&zoom=16`}
+                src={`https://www.openstreetmap.org/export/embed.html?bbox=${APARTMENT.lng - 0.004}%2C${APARTMENT.lat - 0.003}%2C${APARTMENT.lng + 0.004}%2C${APARTMENT.lat + 0.003}&layer=mapnik&marker=${APARTMENT.lat}%2C${APARTMENT.lng}`}
                 width="100%"
                 height="100%"
                 style={{ border: 0, borderRadius: '16px' }}
