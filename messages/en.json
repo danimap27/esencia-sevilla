@@ -149,7 +149,13 @@
       "culture": "Cultural",
       "nature": "Nature",
       "shopping": "Shopping",
-      "photos": "Photography"
+      "photos": "Photography",
+      "history": "History",
+      "legends": "Legends",
+      "art": "Art",
+      "daytrip": "Day trip",
+      "wine": "Wine",
+      "beach": "Beach"
     },
     "transport": {
       "title": "Getting around Seville",
@@ -161,7 +167,17 @@
       "price": "Price"
     },
     "fullRoute": "Full route in Google Maps",
-    "bestTime": "Best time"
+    "bestTime": "Best time",
+    "routeTransport": {
+      "walking": "On foot",
+      "public": "Public transport",
+      "car": "By car"
+    },
+    "howToGet": "How to get there",
+    "historyLabel": "History",
+    "officialWeb": "Official website",
+    "filterAll": "All",
+    "filterBy": "Filter by type"
   },
   "events": {
     "title": "Seville is waiting for you",

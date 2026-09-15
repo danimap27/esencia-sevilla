@@ -149,7 +149,13 @@
       "culture": "Culturel",
       "nature": "Nature",
       "shopping": "Shopping",
-      "photos": "Photographique"
+      "photos": "Photographique",
+      "history": "Histoire",
+      "legends": "Légendes",
+      "art": "Art",
+      "daytrip": "Excursion",
+      "wine": "Vin",
+      "beach": "Plage"
     },
     "transport": {
       "title": "Comment se déplacer à Séville",
@@ -161,7 +167,17 @@
       "price": "Prix"
     },
     "fullRoute": "Itinéraire complet dans Google Maps",
-    "bestTime": "Meilleur moment"
+    "bestTime": "Meilleur moment",
+    "routeTransport": {
+      "walking": "À pied",
+      "public": "Transports publics",
+      "car": "En voiture"
+    },
+    "howToGet": "Comment s'y rendre",
+    "historyLabel": "Histoire",
+    "officialWeb": "Site officiel",
+    "filterAll": "Toutes",
+    "filterBy": "Filtrer par type"
   },
   "events": {
     "title": "Séville vous attend",

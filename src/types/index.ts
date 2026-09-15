@@ -22,14 +22,24 @@ export interface RouteStop {
   description?: Record<Locale, string>;
   tip?: Record<Locale, string>;
   bestTime?: Record<Locale, string>;
+  /** Historia del sitio (2-3 frases, datos documentados) */
+  history?: Record<Locale, string>;
+  /** Web oficial del sitio (entrada, horarios, info) */
+  url?: string;
   image?: string;
 }
+
+export type RouteTransport = 'walking' | 'public' | 'car';
 
 export interface TouristRoute {
   id: string;
   title: Record<Locale, string>;
   description: Record<Locale, string>;
-  category: 'classic' | 'neighborhoods' | 'romantic' | 'food' | 'family' | 'culture' | 'nature' | 'shopping' | 'photos';
+  category: 'classic' | 'neighborhoods' | 'romantic' | 'food' | 'family' | 'culture' | 'nature' | 'shopping' | 'photos' | 'history' | 'legends' | 'art' | 'daytrip' | 'wine' | 'beach';
+  /** Modo principal de la ruta */
+  transport?: RouteTransport;
+  /** Cómo moverse: líneas de bus/metro/tranvía, indicaciones en coche, aparcamiento */
+  transportDetails?: Record<Locale, string>;
   duration: string;
   distance: string;
   difficulty: 'easy' | 'moderate' | 'hard';

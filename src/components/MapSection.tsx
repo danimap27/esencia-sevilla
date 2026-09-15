@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
-import { MapPin, Route, Bus, Clock, Footprints, Filter, ExternalLink, Lightbulb, Timer } from 'lucide-react';
+import { MapPin, Route, Bus, Clock, Footprints, Filter, ExternalLink, Lightbulb, Timer, Car, Globe, BookOpen } from 'lucide-react';
 import { type Locale } from '@/i18n';
 import { SIGHTS, NEARBY, BUS_LINES } from '@/data/sights';
 import { TOURIST_ROUTES } from '@/data/routes';
@@ -26,6 +26,7 @@ export default function MapSection() {
   const [category, setCategory] = useState<SightCategory>('all');
   const [selectedSight, setSelectedSight] = useState<typeof SIGHTS[0] | null>(null);
   const [selectedRoute, setSelectedRoute] = useState<typeof TOURIST_ROUTES[0] | null>(null);
+  const [routeCat, setRouteCat] = useState<string>('all');
   const [mapLoaded, setMapLoaded] = useState(false);
   const leafletMapRef = useRef<L.Map | null>(null);
 
@@ -240,8 +241,29 @@ export default function MapSection() {
 
         {/* ROUTES TAB */}
         {tab === 'routes' && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {TOURIST_ROUTES.map(route => (
+          <div>
+            {/* Filtro por categoría */}
+            <div className="flex flex-wrap gap-2 mb-6 justify-center">
+              {['all', ...Array.from(new Set(TOURIST_ROUTES.map(r => r.category)))].map(cat => (
+                <button
+                  key={cat}
+                  onClick={() => setRouteCat(cat)}
+                  className={cn(
+                    'px-4 py-2 rounded-full text-sm font-medium transition-all border',
+                    routeCat === cat
+                      ? 'bg-terracota-500 text-white border-terracota-500'
+                      : 'bg-white text-tinta/60 border-tinta/10 hover:border-terracota-300'
+                  )}
+                >
+                  {cat === 'all'
+                    ? t('filterAll')
+                    : t(`routeCategories.${cat}` as Parameters<typeof t>[0])}
+                </button>
+              ))}
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {TOURIST_ROUTES.filter(r => routeCat === 'all' || r.category === routeCat).map(route => (
               <div
                 key={route.id}
                 className="card overflow-hidden cursor-pointer group hover:-translate-y-1 transition-all duration-200"
@@ -263,6 +285,12 @@ export default function MapSection() {
                     )}>
                       {t(`routeCategories.${route.category}` as Parameters<typeof t>[0])}
                     </span>
+                    {route.transport && route.transport !== 'walking' && (
+                      <span className="absolute top-3 right-3 badge text-xs bg-tinta/70 text-white backdrop-blur-sm">
+                        {route.transport === 'public' ? <Bus size={11} /> : <Car size={11} />}
+                        {t(`routeTransport.${route.transport}` as Parameters<typeof t>[0])}
+                      </span>
+                    )}
                   </div>
                 )}
                 <div className="p-5">
@@ -310,6 +338,7 @@ export default function MapSection() {
                 </div>
               </div>
             ))}
+            </div>
           </div>
         )}
 
@@ -393,7 +422,27 @@ export default function MapSection() {
                     ✕
                   </button>
                 </div>
-                <p className="text-tinta/70 mb-6">{selectedRoute.description[locale]}</p>
+                <p className="text-tinta/70 mb-4">{selectedRoute.description[locale]}</p>
+
+                {/* Cómo llegar */}
+                {selectedRoute.transportDetails && (
+                  <div className="flex items-start gap-2 p-3 rounded-xl bg-azulejo-50 border border-azulejo-200 mb-6">
+                    {selectedRoute.transport === 'car' ? (
+                      <Car size={16} className="text-azulejo-700 flex-shrink-0 mt-0.5" />
+                    ) : selectedRoute.transport === 'public' ? (
+                      <Bus size={16} className="text-azulejo-700 flex-shrink-0 mt-0.5" />
+                    ) : (
+                      <Footprints size={16} className="text-azulejo-700 flex-shrink-0 mt-0.5" />
+                    )}
+                    <div>
+                      <p className="text-xs font-semibold text-azulejo-800 uppercase tracking-wide mb-0.5">
+                        {t('howToGet')}
+                      </p>
+                      <p className="text-sm text-azulejo-900">{selectedRoute.transportDetails[locale]}</p>
+                    </div>
+                  </div>
+                )}
+
                 <div className="space-y-3">
                   {selectedRoute.stops.map((stop, i) => (
                     <div key={i} className="flex gap-3">
@@ -404,17 +453,40 @@ export default function MapSection() {
                       <div className="pb-3 flex-1">
                         <div className="flex items-center justify-between gap-2">
                           <p className="font-semibold text-tinta text-sm">{stop.name}</p>
-                          <a
-                            href={`https://maps.google.com/?q=${stop.lat},${stop.lng}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-azulejo-500 hover:text-azulejo-700 flex-shrink-0"
-                            aria-label={`${stop.name} — Google Maps`}
-                          >
-                            <MapPin size={14} />
-                          </a>
+                          <div className="flex items-center gap-2 flex-shrink-0">
+                            {stop.url && (
+                              <a
+                                href={stop.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-azulejo-500 hover:text-azulejo-700"
+                                aria-label={`${stop.name} — ${t('officialWeb')}`}
+                                title={t('officialWeb')}
+                              >
+                                <Globe size={14} />
+                              </a>
+                            )}
+                            <a
+                              href={`https://maps.google.com/?q=${stop.lat},${stop.lng}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-azulejo-500 hover:text-azulejo-700"
+                              aria-label={`${stop.name} — Google Maps`}
+                            >
+                              <MapPin size={14} />
+                            </a>
+                          </div>
                         </div>
                         {stop.description && <p className="text-xs text-tinta/60 mt-0.5">{stop.description[locale]}</p>}
+                        {stop.history && (
+                          <p className="text-xs text-tinta/70 bg-crema-dark/60 border border-tinta/5 rounded-lg px-2 py-1.5 mt-1.5 flex items-start gap-1.5">
+                            <BookOpen size={12} className="flex-shrink-0 mt-0.5 text-azulejo-600" />
+                            <span>
+                              <span className="font-medium text-azulejo-800">{t('historyLabel')}: </span>
+                              {stop.history[locale]}
+                            </span>
+                          </p>
+                        )}
                         {stop.tip && (
                           <p className="text-xs text-ocre-700 bg-ocre-50 border border-ocre-200 rounded-lg px-2 py-1.5 mt-1.5 flex items-start gap-1.5">
                             <Lightbulb size={12} className="flex-shrink-0 mt-0.5" />

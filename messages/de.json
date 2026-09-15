@@ -149,7 +149,13 @@
       "culture": "Kulturell",
       "nature": "Natur",
       "shopping": "Einkaufen",
-      "photos": "Fotografisch"
+      "photos": "Fotografisch",
+      "history": "Geschichte",
+      "legends": "Legenden",
+      "art": "Kunst",
+      "daytrip": "Ausflug",
+      "wine": "Wein",
+      "beach": "Strand"
     },
     "transport": {
       "title": "Fortbewegung in Sevilla",
@@ -161,7 +167,17 @@
       "price": "Preis"
     },
     "fullRoute": "Komplette Route in Google Maps",
-    "bestTime": "Beste Zeit"
+    "bestTime": "Beste Zeit",
+    "routeTransport": {
+      "walking": "Zu Fuß",
+      "public": "Öffentliche Verkehrsmittel",
+      "car": "Mit dem Auto"
+    },
+    "howToGet": "Anreise",
+    "historyLabel": "Geschichte",
+    "officialWeb": "Offizielle Website",
+    "filterAll": "Alle",
+    "filterBy": "Nach Typ filtern"
   },
   "events": {
     "title": "Sevilla erwartet Sie",

@@ -149,7 +149,13 @@
       "culture": "Cultural",
       "nature": "Natureza",
       "shopping": "Compras",
-      "photos": "Fotográfica"
+      "photos": "Fotográfica",
+      "history": "História",
+      "legends": "Lendas",
+      "art": "Arte",
+      "daytrip": "Excursão",
+      "wine": "Vinho",
+      "beach": "Praia"
     },
     "transport": {
       "title": "Como deslocar-se em Sevilha",
@@ -161,7 +167,17 @@
       "price": "Preço"
     },
     "fullRoute": "Rota completa no Google Maps",
-    "bestTime": "Melhor hora"
+    "bestTime": "Melhor hora",
+    "routeTransport": {
+      "walking": "A pé",
+      "public": "Transporte público",
+      "car": "De carro"
+    },
+    "howToGet": "Como chegar",
+    "historyLabel": "História",
+    "officialWeb": "Site oficial",
+    "filterAll": "Todas",
+    "filterBy": "Filtrar por tipo"
   },
   "events": {
     "title": "Sevilha espera por si",

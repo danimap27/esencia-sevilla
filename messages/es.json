@@ -149,7 +149,13 @@
       "culture": "Cultural",
       "nature": "Naturaleza",
       "shopping": "Compras",
-      "photos": "Fotográfica"
+      "photos": "Fotográfica",
+      "history": "Historia",
+      "legends": "Leyendas",
+      "art": "Arte",
+      "daytrip": "Excursión",
+      "wine": "Vino",
+      "beach": "Playa"
     },
     "transport": {
       "title": "Cómo moverte por Sevilla",
@@ -161,7 +167,17 @@
       "price": "Precio"
     },
     "fullRoute": "Ruta completa en Google Maps",
-    "bestTime": "Mejor hora"
+    "bestTime": "Mejor hora",
+    "routeTransport": {
+      "walking": "A pie",
+      "public": "Transporte público",
+      "car": "En coche"
+    },
+    "howToGet": "Cómo llegar",
+    "historyLabel": "Historia",
+    "officialWeb": "Web oficial",
+    "filterAll": "Todas",
+    "filterBy": "Filtrar por tipo"
   },
   "events": {
     "title": "Sevilla te espera",

@@ -149,7 +149,13 @@
       "culture": "Culturale",
       "nature": "Natura",
       "shopping": "Shopping",
-      "photos": "Fotografica"
+      "photos": "Fotografica",
+      "history": "Storia",
+      "legends": "Leggende",
+      "art": "Arte",
+      "daytrip": "Escursione",
+      "wine": "Vino",
+      "beach": "Spiaggia"
     },
     "transport": {
       "title": "Come muoversi a Siviglia",
@@ -161,7 +167,17 @@
       "price": "Prezzo"
     },
     "fullRoute": "Percorso completo in Google Maps",
-    "bestTime": "Orario migliore"
+    "bestTime": "Orario migliore",
+    "routeTransport": {
+      "walking": "A piedi",
+      "public": "Trasporto pubblico",
+      "car": "In auto"
+    },
+    "howToGet": "Come arrivare",
+    "historyLabel": "Storia",
+    "officialWeb": "Sito ufficiale",
+    "filterAll": "Tutte",
+    "filterBy": "Filtra per tipo"
   },
   "events": {
     "title": "Siviglia ti aspetta",
