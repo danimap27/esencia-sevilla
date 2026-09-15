@@ -20,6 +20,8 @@ export interface RouteStop {
   lat: number;
   lng: number;
   description?: Record<Locale, string>;
+  tip?: Record<Locale, string>;
+  bestTime?: Record<Locale, string>;
   image?: string;
 }
 
@@ -71,6 +73,13 @@ export interface Review {
   avatar?: string;
 }
 
+export interface EventLocation {
+  name: string;
+  address?: string;
+  lat: number;
+  lng: number;
+}
+
 export interface SevilleEvent {
   id: string;
   title: Record<Locale, string>;
@@ -80,6 +89,7 @@ export interface SevilleEvent {
   category: 'festival' | 'culture' | 'music' | 'sports' | 'religious' | 'gastronomy';
   image: string;
   url?: string;
+  location?: EventLocation;
   isHighSeason: boolean;
 }
 

@@ -159,7 +159,9 @@
       "lines": "Verfügbare Linien",
       "frequency": "Frequenz",
       "price": "Preis"
-    }
+    },
+    "fullRoute": "Komplette Route in Google Maps",
+    "bestTime": "Beste Zeit"
   },
   "events": {
     "title": "Sevilla erwartet Sie",
@@ -167,7 +169,9 @@
     "highSeason": "Hauptsaison — im Voraus buchen",
     "limitedAvailability": "Begrenzte Verfügbarkeit an diesen Daten",
     "viewMore": "Mehr Informationen",
-    "bookForEvent": "Für dieses Event buchen"
+    "bookForEvent": "Für dieses Event buchen",
+    "now": "Läuft jetzt",
+    "startsIn": "Beginnt in {days} Tagen."
   },
   "reviews": {
     "title": "Was unsere Gäste sagen",

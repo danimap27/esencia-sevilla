@@ -1,13 +1,14 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
-import { MapPin, Route, Bus, Clock, Footprints, Filter, ExternalLink } from 'lucide-react';
+import { MapPin, Route, Bus, Clock, Footprints, Filter, ExternalLink, Lightbulb, Timer } from 'lucide-react';
 import { type Locale } from '@/i18n';
 import { SIGHTS, NEARBY, BUS_LINES } from '@/data/sights';
 import { TOURIST_ROUTES } from '@/data/routes';
 import { APARTMENT } from '@/data/apartment';
-import { cn } from '@/lib/utils';
+import { cn, getRouteMapsUrl } from '@/lib/utils';
 
 type Tab = 'map' | 'routes' | 'transport';
 type SightCategory = 'all' | 'monument' | 'neighborhood' | 'culture' | 'food' | 'nature' | 'modern' | 'fun';
@@ -243,9 +244,29 @@ export default function MapSection() {
             {TOURIST_ROUTES.map(route => (
               <div
                 key={route.id}
-                className="card p-5 cursor-pointer hover:-translate-y-1 transition-transform duration-200"
+                className="card overflow-hidden cursor-pointer group hover:-translate-y-1 transition-all duration-200"
                 onClick={() => setSelectedRoute(route)}
               >
+                {route.image && (
+                  <div className="relative h-40 overflow-hidden">
+                    <Image
+                      src={route.image}
+                      alt={route.title[locale]}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-tinta/50 to-transparent" />
+                    <span className={cn(
+                      'absolute top-3 left-3 badge text-xs backdrop-blur-sm',
+                      'bg-white/90 text-azulejo-700'
+                    )}>
+                      {t(`routeCategories.${route.category}` as Parameters<typeof t>[0])}
+                    </span>
+                  </div>
+                )}
+                <div className="p-5">
+                {!route.image && (
                 <div className="flex items-start justify-between mb-3">
                   <span className={cn(
                     'badge text-xs',
@@ -253,15 +274,8 @@ export default function MapSection() {
                   )}>
                     {t(`routeCategories.${route.category}` as Parameters<typeof t>[0])}
                   </span>
-                  <span className={cn(
-                    'badge text-xs',
-                    route.difficulty === 'easy' ? 'bg-green-100 text-green-700' :
-                    route.difficulty === 'moderate' ? 'bg-yellow-100 text-yellow-700' :
-                    'bg-red-100 text-red-700'
-                  )}>
-                    {route.difficulty}
-                  </span>
                 </div>
+                )}
 
                 <h3 className="font-serif text-xl font-semibold text-tinta mb-2">
                   {route.title[locale]}
@@ -280,11 +294,20 @@ export default function MapSection() {
                   <span className="flex items-center gap-1">
                     <MapPin size={14} /> {route.stops.length} paradas
                   </span>
+                  <span className={cn(
+                    'ml-auto badge text-xs',
+                    route.difficulty === 'easy' ? 'bg-green-100 text-green-700' :
+                    route.difficulty === 'moderate' ? 'bg-yellow-100 text-yellow-700' :
+                    'bg-red-100 text-red-700'
+                  )}>
+                    {route.difficulty}
+                  </span>
                 </div>
 
                 <button className="mt-4 text-sm text-terracota-500 hover:text-terracota-700 font-medium flex items-center gap-1">
                   {t('routeDetails')} →
                 </button>
+                </div>
               </div>
             ))}
           </div>
@@ -376,23 +399,46 @@ export default function MapSection() {
                     <div key={i} className="flex gap-3">
                       <div className="flex flex-col items-center">
                         <div className="w-7 h-7 rounded-full bg-terracota-500 text-white flex items-center justify-center text-xs font-bold">{i + 1}</div>
-                        {i < selectedRoute.stops.length - 1 && <div className="w-0.5 h-8 bg-terracota-200 mt-1" />}
+                        {i < selectedRoute.stops.length - 1 && <div className="w-0.5 h-full min-h-8 bg-terracota-200 mt-1" />}
                       </div>
-                      <div className="pb-2">
-                        <p className="font-semibold text-tinta text-sm">{stop.name}</p>
-                        {stop.description && <p className="text-xs text-tinta/60">{stop.description[locale]}</p>}
+                      <div className="pb-3 flex-1">
+                        <div className="flex items-center justify-between gap-2">
+                          <p className="font-semibold text-tinta text-sm">{stop.name}</p>
+                          <a
+                            href={`https://maps.google.com/?q=${stop.lat},${stop.lng}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-azulejo-500 hover:text-azulejo-700 flex-shrink-0"
+                            aria-label={`${stop.name} — Google Maps`}
+                          >
+                            <MapPin size={14} />
+                          </a>
+                        </div>
+                        {stop.description && <p className="text-xs text-tinta/60 mt-0.5">{stop.description[locale]}</p>}
+                        {stop.tip && (
+                          <p className="text-xs text-ocre-700 bg-ocre-50 border border-ocre-200 rounded-lg px-2 py-1.5 mt-1.5 flex items-start gap-1.5">
+                            <Lightbulb size={12} className="flex-shrink-0 mt-0.5" />
+                            <span>{stop.tip[locale]}</span>
+                          </p>
+                        )}
+                        {stop.bestTime && (
+                          <p className="text-xs text-azulejo-600 mt-1 flex items-center gap-1">
+                            <Timer size={12} />
+                            <span>{t('bestTime')}: {stop.bestTime[locale]}</span>
+                          </p>
+                        )}
                       </div>
                     </div>
                   ))}
                 </div>
                 <a
-                  href={`https://maps.google.com/?q=${selectedRoute.stops[0].lat},${selectedRoute.stops[0].lng}`}
+                  href={getRouteMapsUrl(selectedRoute.stops)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary mt-6 w-full justify-center"
                 >
                   <ExternalLink size={16} />
-                  {t('openInMaps')}
+                  {t('fullRoute')}
                 </a>
               </div>
             </div>

@@ -159,7 +159,9 @@
       "lines": "Lignes disponibles",
       "frequency": "Fréquence",
       "price": "Prix"
-    }
+    },
+    "fullRoute": "Itinéraire complet dans Google Maps",
+    "bestTime": "Meilleur moment"
   },
   "events": {
     "title": "Séville vous attend",
@@ -167,7 +169,9 @@
     "highSeason": "Saison haute — réservez à l'avance",
     "limitedAvailability": "Disponibilité limitée à ces dates",
     "viewMore": "Plus d'informations",
-    "bookForEvent": "Réserver pour cet événement"
+    "bookForEvent": "Réserver pour cet événement",
+    "now": "En cours",
+    "startsIn": "Commence dans {days} jours."
   },
   "reviews": {
     "title": "Ce que disent nos voyageurs",

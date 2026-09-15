@@ -159,7 +159,9 @@
       "lines": "Linee disponibili",
       "frequency": "Frequenza",
       "price": "Prezzo"
-    }
+    },
+    "fullRoute": "Percorso completo in Google Maps",
+    "bestTime": "Orario migliore"
   },
   "events": {
     "title": "Siviglia ti aspetta",
@@ -167,7 +169,9 @@
     "highSeason": "Alta stagione — prenota in anticipo",
     "limitedAvailability": "Disponibilità limitata in queste date",
     "viewMore": "Maggiori informazioni",
-    "bookForEvent": "Prenota per questo evento"
+    "bookForEvent": "Prenota per questo evento",
+    "now": "In corso",
+    "startsIn": "Inizia tra {days} giorni."
   },
   "reviews": {
     "title": "Cosa dicono i nostri ospiti",

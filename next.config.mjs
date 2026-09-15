@@ -21,6 +21,8 @@ const nextConfig = {
       { protocol: 'https', hostname: 'images.unsplash.com' },
       { protocol: 'https', hostname: 'cf.bstatic.com' },
       { protocol: 'https', hostname: 'lh3.googleusercontent.com' },
+      { protocol: 'https', hostname: 'thumb.wikimedia.org' },
+      { protocol: 'https', hostname: 'upload.wikimedia.org' },
     ],
     formats: ['image/avif', 'image/webp'],
   },

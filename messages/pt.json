@@ -159,7 +159,9 @@
       "lines": "Linhas disponíveis",
       "frequency": "Frequência",
       "price": "Preço"
-    }
+    },
+    "fullRoute": "Rota completa no Google Maps",
+    "bestTime": "Melhor hora"
   },
   "events": {
     "title": "Sevilha espera por si",
@@ -167,7 +169,9 @@
     "highSeason": "Época alta — reserve com antecedência",
     "limitedAvailability": "Disponibilidade limitada nestas datas",
     "viewMore": "Mais informações",
-    "bookForEvent": "Reservar para este evento"
+    "bookForEvent": "Reservar para este evento",
+    "now": "A decorrer",
+    "startsIn": "Começa em {days} dias."
   },
   "reviews": {
     "title": "O que dizem os nossos hóspedes",

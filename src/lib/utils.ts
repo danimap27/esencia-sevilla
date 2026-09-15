@@ -149,3 +149,21 @@ export function absoluteUrl(path: string): string {
   const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://esenciasevilla.com';
   return `${base}${path}`;
 }
+
+/**
+ * URL de Google Maps Directions con la ruta completa a pie.
+ * origin = apartamento, destination = última parada, waypoints = intermedias.
+ */
+export function getRouteMapsUrl(stops: { lat: number; lng: number }[]): string {
+  if (stops.length === 0) return 'https://maps.google.com';
+  if (stops.length === 1) return `https://maps.google.com/?q=${stops[0].lat},${stops[0].lng}`;
+  const origin = `${stops[0].lat},${stops[0].lng}`;
+  const destination = `${stops[stops.length - 1].lat},${stops[stops.length - 1].lng}`;
+  const waypoints = stops
+    .slice(1, -1)
+    .map((s) => `${s.lat},${s.lng}`)
+    .join('|');
+  const params = new URLSearchParams({ api: '1', origin, destination, travelmode: 'walking' });
+  if (waypoints) params.set('waypoints', waypoints);
+  return `https://www.google.com/maps/dir/?${params.toString()}`;
+}

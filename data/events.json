@@ -1,0 +1,253 @@
+{
+  "updatedAt": "2026-09-15",
+  "source": "manual-verified",
+  "events": [
+    {
+      "id": "bienal-flamenco-2026",
+      "title": {
+        "es": "XXIV Bienal de Flamenco",
+        "en": "XXIV Flamenco Biennial",
+        "fr": "XXIV Biennale de Flamenco",
+        "de": "XXIV Flamenco-Biennale",
+        "it": "XXIV Biennale di Flamenco",
+        "pt": "XXIV Bienal de Flamenco"
+      },
+      "description": {
+        "es": "El festival de flamenco más importante del mundo celebra su XXIV edición con el centenario de la Generación de los 20 y la Ópera Flamenca. Gala inaugural en la Maestranza y espectáculos en teatros de toda la ciudad.",
+        "en": "The world's most important flamenco festival celebrates its 24th edition marking the centenary of the Generation of the 20s and Ópera Flamenca. Opening gala at the Maestranza and shows across the city's theatres.",
+        "fr": "Le festival de flamenco le plus important au monde célèbre sa XXIVe édition avec le centenaire de la Génération des années 20. Gala inaugural à la Maestranza et spectacles dans toute la ville.",
+        "de": "Das wichtigste Flamenco-Festival der Welt feiert seine 24. Ausgabe mit dem 100. Jahrestag der Generation der 20er. Eröffnungsgala in der Maestranza und Shows in der ganzen Stadt.",
+        "it": "Il festival di flamenco più importante del mondo celebra la sua XXIV edizione con il centenario della Generazione degli anni 20. Gala inaugurale alla Maestranza e spettacoli in tutta la città.",
+        "pt": "O festival de flamenco mais importante do mundo celebra a sua XXIV edição com o centenário da Geração dos anos 20. Gala inaugural na Maestranza e espetáculos por toda a cidade."
+      },
+      "startDate": "2026-09-09",
+      "endDate": "2026-10-03",
+      "category": "festival",
+      "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800",
+      "url": "https://www.labienal.com/",
+      "location": {
+        "name": "Teatro de la Maestranza y sedes",
+        "address": "Paseo de Cristóbal Colón 22",
+        "lat": 37.3840732,
+        "lng": -5.9966688
+      },
+      "isHighSeason": false
+    },
+    {
+      "id": "pop-caac-2026",
+      "title": {
+        "es": "Pop CAAC 2026",
+        "en": "Pop CAAC 2026",
+        "fr": "Pop CAAC 2026",
+        "de": "Pop CAAC 2026",
+        "it": "Pop CAAC 2026",
+        "pt": "Pop CAAC 2026"
+      },
+      "description": {
+        "es": "El ciclo de conciertos del Centro Andaluz de Arte Contemporáneo en la pradera del Monasterio de la Cartuja: La M.O.D.A., Amaia y más, con el claustro de fondo.",
+        "en": "The concert series of the Andalusian Contemporary Art Centre on the lawns of the Cartuja Monastery: La M.O.D.A., Amaia and more, with the cloister as backdrop.",
+        "fr": "Le cycle de concerts du Centre Andalou d'Art Contemporain sur la prairie du Monastère de la Cartuja : La M.O.D.A., Amaia et plus.",
+        "de": "Die Konzertreihe des Zentrums für zeitgenössische Kunst auf der Wiese des Cartuja-Klosters: La M.O.D.A., Amaia und mehr.",
+        "it": "Il ciclo di concerti del Centro Andaluso di Arte Contemporanea sul prato del Monastero della Cartuja: La M.O.D.A., Amaia e altri.",
+        "pt": "O ciclo de concertos do Centro Andaluz de Arte Contemporânea no relvado do Mosteiro da Cartuja: La M.O.D.A., Amaia e mais."
+      },
+      "startDate": "2026-09-10",
+      "endDate": "2026-09-19",
+      "category": "music",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Monasterio_de_la_Cartuja%2C_Sevilla.jpg/960px-Monasterio_de_la_Cartuja%2C_Sevilla.jpg",
+      "url": "https://www.caac.es/",
+      "location": {
+        "name": "Monasterio de la Cartuja (CAAC)",
+        "address": "Av. Américo Vespucio 2",
+        "lat": 37.3983819,
+        "lng": -6.0075971
+      },
+      "isHighSeason": false
+    },
+    {
+      "id": "noches-alcazar-2026",
+      "title": {
+        "es": "Noches en los Jardines del Real Alcázar",
+        "en": "Nights in the Gardens of the Royal Alcázar",
+        "fr": "Nuits dans les Jardins de l'Alcázar Royal",
+        "de": "Nächte in den Gärten des Real Alcázar",
+        "it": "Notti nei Giardini del Real Alcázar",
+        "pt": "Noites nos Jardins do Real Alcázar"
+      },
+      "description": {
+        "es": "Conciertos al aire libre entre palacios y naranjos: música antigua, clásica, flamenco y world music en los jardines históricos, solo con entrada anticipada (7€). Últimas fechas de la temporada.",
+        "en": "Open-air concerts among palaces and orange trees: early, classical, flamenco and world music in the historic gardens, advance tickets only (€7). Last dates of the season.",
+        "fr": "Concerts en plein air entre palais et orangers : musique ancienne, classique, flamenco et world music dans les jardins historiques, billets en avance uniquement (7€).",
+        "de": "Open-Air-Konzerte zwischen Palästen und Orangenbäumen: Alte Musik, Klassik, Flamenco und World Music, nur mit Vorverkauf (7€).",
+        "it": "Concerti all'aperto tra palazzi e aranci: musica antica, classica, flamenco e world music nei giardini storici, solo con biglietto anticipato (7€).",
+        "pt": "Concertos ao ar livre entre palácios e laranjeiras: música antiga, clássica, flamenco e world music nos jardins históricos, só com bilhete antecipado (7€)."
+      },
+      "startDate": "2026-06-25",
+      "endDate": "2026-09-19",
+      "category": "music",
+      "image": "https://images.unsplash.com/photo-1551009175-15bdf9dcb580?w=800",
+      "url": "https://www.alcazarsevilla.org/",
+      "location": {
+        "name": "Jardines del Real Alcázar",
+        "address": "Patio de Banderas s/n",
+        "lat": 37.3832105,
+        "lng": -5.9901835
+      },
+      "isHighSeason": false
+    },
+    {
+      "id": "festival-del-patio-2026",
+      "title": {
+        "es": "Festival del Patio + Metrópolis",
+        "en": "Festival del Patio + Metrópolis",
+        "fr": "Festival del Patio + Metrópolis",
+        "de": "Festival del Patio + Metrópolis",
+        "it": "Festival del Patio + Metrópolis",
+        "pt": "Festival del Patio + Metrópolis"
+      },
+      "description": {
+        "es": "La Diputación llena de música el otoño con precios populares: Tanxugueiras, Los Planetas, Café Quijano y más, entre el Patio de la Diputación y cinco municipios de la provincia.",
+        "en": "The Provincial Council fills autumn with music at popular prices: Tanxugueiras, Los Planetas, Café Quijano and more, at the Diputación courtyard and five towns across the province.",
+        "fr": "La Diputación remplit l'automne de musique à prix populaires : Tanxugueiras, Los Planetas, Café Quijano et plus.",
+        "de": "Die Provinzregierung füllt den Herbst mit Musik zu Volkspreisen: Tanxugueiras, Los Planetas, Café Quijano und mehr.",
+        "it": "La Diputación riempie l'autunno di musica a prezzi popolari: Tanxugueiras, Los Planetas, Café Quijano e altri.",
+        "pt": "A Diputación enche o outono de música a preços populares: Tanxugueiras, Los Planetas, Café Quijano e mais."
+      },
+      "startDate": "2026-09-11",
+      "endDate": "2026-10-03",
+      "category": "music",
+      "image": "https://www.festivaldelpatio.es/wp-content/uploads/2026/07/Festival-Patio-metropolis-Diputacion.jpg",
+      "url": "https://www.festivaldelpatio.es/",
+      "location": {
+        "name": "Patio de la Diputación",
+        "address": "Av. Menéndez Pelayo 32",
+        "lat": 37.3821858,
+        "lng": -5.9879016
+      },
+      "isHighSeason": false
+    },
+    {
+      "id": "espana-croacia-2026",
+      "title": {
+        "es": "España - Croacia: Liga de Naciones UEFA",
+        "en": "Spain - Croatia: UEFA Nations League",
+        "fr": "Espagne - Croatie : Ligue des Nations UEFA",
+        "de": "Spanien - Kroatien: UEFA Nations League",
+        "it": "Spagna - Croazia: UEFA Nations League",
+        "pt": "Espanha - Croácia: Liga das Nações UEFA"
+      },
+      "description": {
+        "es": "La selección española juega en Sevilla: partido oficial de la Liga de Naciones en el Ramón Sánchez Pizjuán, uno de los campos con más ambiente de Europa.",
+        "en": "The Spanish national team plays in Seville: an official Nations League match at the Ramón Sánchez Pizjuán, one of Europe's most atmospheric grounds.",
+        "fr": "La sélection espagnole joue à Séville : match officiel de la Ligue des Nations au Ramón Sánchez Pizjuán.",
+        "de": "Die spanische Nationalmannschaft spielt in Sevilla: offizielles Nations-League-Spiel im Ramón Sánchez Pizjuán.",
+        "it": "La nazionale spagnola gioca a Siviglia: partita ufficiale della Nations League al Ramón Sánchez Pizjuán.",
+        "pt": "A seleção espanhola joga em Sevilha: jogo oficial da Liga das Nações no Ramón Sánchez Pizjuán."
+      },
+      "startDate": "2026-09-29",
+      "endDate": "2026-09-29",
+      "category": "sports",
+      "image": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=800",
+      "url": "https://sevillafc.es/",
+      "location": {
+        "name": "Estadio Ramón Sánchez Pizjuán",
+        "address": "Calle Sevilla FC s/n",
+        "lat": 37.3840876,
+        "lng": -5.9706309
+      },
+      "isHighSeason": true
+    },
+    {
+      "id": "semana-santa-2027",
+      "title": {
+        "es": "Semana Santa de Sevilla",
+        "en": "Holy Week in Seville",
+        "fr": "Semaine Sainte à Séville",
+        "de": "Karwoche in Sevilla",
+        "it": "Settimana Santa di Siviglia",
+        "pt": "Semana Santa de Sevilha"
+      },
+      "description": {
+        "es": "La procesión más emocionante del mundo. Más de 60 hermandades desfilan por las calles de Sevilla durante una semana. Las mejores localidades se llenan con meses de antelación.",
+        "en": "The world's most moving procession. Over 60 brotherhoods parade through Seville's streets for a week. The best spots fill up months in advance.",
+        "fr": "La procession la plus émouvante du monde. Plus de 60 confréries défilent dans les rues de Séville pendant une semaine.",
+        "de": "Die bewegendste Prozession der Welt. Über 60 Bruderschaften ziehen eine Woche lang durch Sevillas Gassen.",
+        "it": "La processione più emozionante del mondo. Oltre 60 confraternite sfilano per le strade di Siviglia per una settimana.",
+        "pt": "A procissão mais emocionante do mundo. Mais de 60 irmandades desfilam pelas ruas de Sevilha durante uma semana."
+      },
+      "startDate": "2027-03-21",
+      "endDate": "2027-03-28",
+      "category": "religious",
+      "image": "https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=800",
+      "url": "https://www.semana-santa.org",
+      "location": {
+        "name": "Carrera oficial (Centro)",
+        "address": "Calle Sierpes, Sevilla",
+        "lat": 37.3886303,
+        "lng": -5.9953403
+      },
+      "isHighSeason": true
+    },
+    {
+      "id": "feria-abril-2027",
+      "title": {
+        "es": "Feria de Abril",
+        "en": "April Fair",
+        "fr": "Foire d'Avril",
+        "de": "Aprilmesse",
+        "it": "Fiera di Aprile",
+        "pt": "Feira de Abril"
+      },
+      "description": {
+        "es": "La fiesta más alegre de España: casetas, sevillanas, caballos y el mejor ambiente andaluz en el Real de la Feria durante 6 días.",
+        "en": "Spain's most joyful festival: casetas, sevillanas dancing, horses and the best Andalusian atmosphere at the fairgrounds for 6 days.",
+        "fr": "La fête la plus joyeuse d'Espagne : casetas, sevillanas, chevaux et la meilleure ambiance andalouse pendant 6 jours.",
+        "de": "Spaniens fröhlichstes Fest: Casetas, Sevillanas, Pferde und beste andalusische Stimmung 6 Tage lang.",
+        "it": "La festa più gioiosa di Spagna: casetas, sevillanas, cavalli e la migliore atmosfera andalusa per 6 giorni.",
+        "pt": "A festa mais alegre da Espanha: casetas, sevillanas, cavalos e o melhor ambiente andaluz durante 6 dias."
+      },
+      "startDate": "2027-04-20",
+      "endDate": "2027-04-25",
+      "category": "festival",
+      "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800",
+      "url": "https://www.sevilla.org/feria",
+      "location": {
+        "name": "Real de la Feria (Los Remedios)",
+        "address": "Calle Antonio Bienvenida s/n",
+        "lat": 37.3812,
+        "lng": -6.0058
+      },
+      "isHighSeason": true
+    },
+    {
+      "id": "navidad-sevilla-2026",
+      "title": {
+        "es": "Navidad en Sevilla",
+        "en": "Christmas in Seville",
+        "fr": "Noël à Séville",
+        "de": "Weihnachten in Sevilla",
+        "it": "Natale a Siviglia",
+        "pt": "Natal em Sevilha"
+      },
+      "description": {
+        "es": "Iluminación espectacular, mercadillos navideños, belenes y la Cabalgata de Reyes el 5 de enero. El centro se llena de vida y castañas asadas.",
+        "en": "Spectacular lighting, Christmas markets, nativity scenes and the Three Kings Parade on January 5th. The centre fills with life and roasted chestnuts.",
+        "fr": "Illuminations spectaculaires, marchés de Noël, crèches et le défilé des Rois Mages le 5 janvier.",
+        "de": "Spektakuläre Beleuchtung, Weihnachtsmärkte, Krippen und der Dreikönigsumzug am 5. Januar.",
+        "it": "Illuminazioni spettacolari, mercatini di Natale, presepi e la Cavalcata dei Re il 5 gennaio.",
+        "pt": "Iluminação espetacular, mercados de Natal, presépios e a Cavalgada dos Reis a 5 de janeiro."
+      },
+      "startDate": "2026-12-08",
+      "endDate": "2027-01-06",
+      "category": "festival",
+      "image": "https://images.unsplash.com/photo-1545048702-79362596cdc9?w=800",
+      "url": "https://www.sevilla.org",
+      "location": {
+        "name": "Centro histórico (Avenida de la Constitución)",
+        "lat": 37.3858,
+        "lng": -5.994
+      },
+      "isHighSeason": false
+    }
+  ]
+}

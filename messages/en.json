@@ -159,7 +159,9 @@
       "lines": "Available lines",
       "frequency": "Frequency",
       "price": "Price"
-    }
+    },
+    "fullRoute": "Full route in Google Maps",
+    "bestTime": "Best time"
   },
   "events": {
     "title": "Seville is waiting for you",
@@ -167,7 +169,9 @@
     "highSeason": "High season — book in advance",
     "limitedAvailability": "Limited availability on these dates",
     "viewMore": "More information",
-    "bookForEvent": "Book for this event"
+    "bookForEvent": "Book for this event",
+    "now": "Now on",
+    "startsIn": "Starts in {days} days."
   },
   "reviews": {
     "title": "What our guests say",

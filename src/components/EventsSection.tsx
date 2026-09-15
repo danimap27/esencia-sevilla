@@ -1,12 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
-import { Calendar, ExternalLink, AlertCircle, Flame } from 'lucide-react';
-import { format, parseISO, isAfter, isBefore, addDays } from 'date-fns';
+import { Calendar, ExternalLink, AlertCircle, Flame, MapPin, Radio } from 'lucide-react';
+import { format, parseISO, isAfter, isBefore, addDays, differenceInDays } from 'date-fns';
 import { es, enUS, fr, de, it, pt } from 'date-fns/locale';
 import { type Locale } from '@/i18n';
+import { type SevilleEvent } from '@/types';
 import { SEVILLE_EVENTS } from '@/data/events';
 import WeatherWidget from '@/components/WeatherWidget';
 import { cn } from '@/lib/utils';
@@ -26,16 +27,41 @@ const CATEGORY_COLORS: Record<string, string> = {
 
 export default function EventsSection() {
   const t = useTranslations('events');
-  const tBooking = useTranslations('booking');
   const locale = useLocale() as Locale;
+  const [events, setEvents] = useState<SevilleEvent[]>(SEVILLE_EVENTS);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const dateFnsLocale = DATE_FNS_LOCALES[locale] as Parameters<typeof format>[2]['locale'];
 
-  const now = new Date();
+  // Eventos dinámicos actualizados por el cron semanal (data/events.json vía /api/events)
+  useEffect(() => {
+    let cancelled = false;
+    fetch('/api/events')
+      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+      .then((data: { events?: SevilleEvent[] }) => {
+        if (!cancelled && Array.isArray(data.events) && data.events.length > 0) {
+          setEvents(data.events);
+        }
+      })
+      .catch(() => {
+        // Fallback silencioso a los eventos estáticos del bundle
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
-  const sortedEvents = [...SEVILLE_EVENTS].sort((a, b) =>
-    parseISO(a.startDate).getTime() - parseISO(b.startDate).getTime()
-  );
+  const now = new Date();
+  const thirtyDaysAgo = addDays(now, -30);
+
+  // En curso primero, luego próximos por fecha; ocultar los terminados hace >30 días
+  const sortedEvents = [...events]
+    .filter((e) => isAfter(parseISO(e.endDate), thirtyDaysAgo))
+    .sort((a, b) => {
+      const aLive = !isAfter(parseISO(a.startDate), now) && !isBefore(parseISO(a.endDate), now);
+      const bLive = !isAfter(parseISO(b.startDate), now) && !isBefore(parseISO(b.endDate), now);
+      if (aLive !== bLive) return aLive ? -1 : 1;
+      return parseISO(a.startDate).getTime() - parseISO(b.startDate).getTime();
+    });
 
   const scrollToBooking = () => {
     document.querySelector('#reservar')?.scrollIntoView({ behavior: 'smooth' });
@@ -54,7 +80,9 @@ export default function EventsSection() {
             const startDate = parseISO(event.startDate);
             const endDate = parseISO(event.endDate);
             const isUpcoming = isAfter(endDate, now);
-            const isNear = isAfter(endDate, now) && isBefore(startDate, addDays(now, 120));
+            const isLive = !isAfter(startDate, now) && !isBefore(endDate, now);
+            const daysUntil = differenceInDays(startDate, now);
+            const isNear = isUpcoming && isBefore(startDate, addDays(now, 120));
             const isSameDay = event.startDate === event.endDate;
 
             return (
@@ -62,7 +90,8 @@ export default function EventsSection() {
                 key={event.id}
                 className={cn(
                   'card overflow-hidden group transition-all duration-300 hover:-translate-y-1',
-                  !isUpcoming && 'opacity-60'
+                  !isUpcoming && 'opacity-60',
+                  isLive && 'ring-2 ring-terracota-400'
                 )}
                 onMouseEnter={() => setHoveredId(event.id)}
                 onMouseLeave={() => setHoveredId(null)}
@@ -73,6 +102,7 @@ export default function EventsSection() {
                     src={event.image}
                     alt={event.title[locale]}
                     fill
+                    unoptimized
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
@@ -83,7 +113,13 @@ export default function EventsSection() {
                     <span className={cn('badge', CATEGORY_COLORS[event.category] || 'bg-white/20 text-white')}>
                       {event.category}
                     </span>
-                    {event.isHighSeason && (
+                    {isLive && (
+                      <span className="badge bg-terracota-500 text-white animate-pulse">
+                        <Radio size={10} />
+                        {t('now')}
+                      </span>
+                    )}
+                    {!isLive && event.isHighSeason && (
                       <span className="badge bg-terracota-500 text-white">
                         <Flame size={10} />
                         {t('highSeason').split(' — ')[0]}
@@ -98,8 +134,7 @@ export default function EventsSection() {
                       <span>
                         {isSameDay
                           ? format(startDate, 'd MMMM yyyy', { locale: dateFnsLocale })
-                          : `${format(startDate, 'd MMM', { locale: dateFnsLocale })} – ${format(endDate, 'd MMM yyyy', { locale: dateFnsLocale })}`
-                        }
+                          : `${format(startDate, 'd MMM', { locale: dateFnsLocale })} – ${format(endDate, 'd MMM yyyy', { locale: dateFnsLocale })}`}
                       </span>
                     </div>
                   </div>
@@ -110,15 +145,34 @@ export default function EventsSection() {
                   <h3 className="text-xl font-serif font-semibold text-tinta mb-2 line-clamp-2">
                     {event.title[locale]}
                   </h3>
-                  <p className="text-sm text-tinta/70 line-clamp-3 mb-4">
+                  <p className="text-sm text-tinta/70 line-clamp-3 mb-3">
                     {event.description[locale]}
                   </p>
+
+                  {/* Location */}
+                  {event.location && (
+                    <a
+                      href={`https://maps.google.com/?q=${event.location.lat},${event.location.lng}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 text-xs text-azulejo-600 hover:text-azulejo-800 mb-4 group/loc"
+                    >
+                      <MapPin size={13} className="flex-shrink-0 text-terracota-500" />
+                      <span className="group-hover/loc:underline">
+                        {event.location.name}
+                        {event.location.address ? ` · ${event.location.address}` : ''}
+                      </span>
+                    </a>
+                  )}
 
                   {/* High season warning */}
                   {event.isHighSeason && isNear && (
                     <div className="flex items-start gap-2 p-3 rounded-xl bg-terracota-50 border border-terracota-200 mb-4">
                       <AlertCircle size={14} className="text-terracota-600 flex-shrink-0 mt-0.5" />
-                      <p className="text-xs text-terracota-700">{t('limitedAvailability')}</p>
+                      <p className="text-xs text-terracota-700">
+                        {t('limitedAvailability')}
+                        {daysUntil > 0 && ` ${t('startsIn', { days: daysUntil })}`}
+                      </p>
                     </div>
                   )}
 
