@@ -10,7 +10,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     duration: '3h',
     distance: '4 km',
     difficulty: 'easy',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Callej%C3%B3n_del_Agua_y_la_antigua_muralla%2C_Sevilla%2C_Espa%C3%B1a.jpg/960px-Callej%C3%B3n_del_Agua_y_la_antigua_muralla%2C_Sevilla%2C_Espa%C3%B1a.jpg',
     title: {
       es: 'Imprescindible: Casco Antiguo',
       en: 'Essential: Old Town',
@@ -26,6 +26,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Die drei Welterbestätten (Alcázar, Kathedrale und Indien-Archiv) plus das Labyrinth von Santa Cruz, Casa de Pilatos und die Setas.',
       it: 'I tre siti Patrimonio dell\'Umanità (Alcázar, Cattedrale e Archivio delle Indie) più il labirinto di Santa Cruz, Casa de Pilatos e le Setas.',
       pt: 'Os três Patrimônios Mundiais (Alcázar, Catedral e Arquivo das Índias) mais o labirinto de Santa Cruz, Casa de Pilatos e as Setas.',
+    },
+    intro: {
+      es: 'El corazón monumental de Sevilla cabe en un paseo de tres horas. Aquí se levantaron la mezquita mayor y su alminar, aquí juraron fidelidad reyes y descubridores, y de estas calles salieron barcos hacia un mundo nuevo. Santa Cruz, el antiguo barrio judío, es hoy un laberinto de patios y callejones donde cada esquina guarda una placa, una leyenda o un balcón con geranios. La ruta sigue el orden lógico del casco antiguo, de Doña Elvira al Alcázar, para terminar en las Setas con la ciudad a tus pies.',
+      en: 'Seville\'s monumental heart fits into a three-hour walk. Here rose the great mosque and its minaret, here kings and discoverers swore allegiance, and from these streets ships set out for a new world. Santa Cruz, the old Jewish quarter, is today a maze of courtyards and alleys where every corner hides a plaque, a legend or a balcony of geraniums. The route follows the old town\'s natural order, from Doña Elvira to the Alcázar, ending at the Setas with the city at your feet.',
+      fr: 'Le cœur monumental de Séville tient en une promenade de trois heures. Ici s\'élevaient la grande mosquée et son minaret, ici jurèrent rois et découvreurs, et de ces rues partirent les navires vers un monde nouveau. Santa Cruz, l\'ancien quartier juif, est aujourd\'hui un labyrinthe de patios et de ruelles. La route suit l\'ordre naturel de la vieille ville, de Doña Elvira à l\'Alcázar, pour finir aux Setas avec la ville à vos pieds.',
+      de: 'Sevillas monumentales Herz passt in einen Drei-Stunden-Spaziergang. Hier standen die große Moschee und ihr Minarett, hier schworen Könige und Entdecker, und von diesen Gassen liefen Schiffe in eine neue Welt aus. Santa Cruz, das alte Judenviertel, ist heute ein Labyrinth aus Patios und Gassen, in dem jede Ecke eine Plakette, eine Legende oder einen Geranienbalkon birgt. Die Route folgt der natürlichen Ordnung der Altstadt, von Doña Elvira zum Alcázar, und endet auf den Setas mit der Stadt zu Füßen.',
+      it: 'Il cuore monumentale di Siviglia entra in una passeggiata di tre ore. Qui sorgevano la grande moschea e il suo minareto, qui giurarono re e scopritori, e da queste strade partirono le navi verso un mondo nuovo. Santa Cruz, l\'antico quartiere ebraico, è oggi un labirinto di patio e vicoli. Il percorso segue l\'ordine naturale del centro storico, da Doña Elvira all\'Alcázar, per finire alle Setas con la città ai vostri piedi.',
+      pt: 'O coração monumental de Sevilha cabe num passeio de três horas. Aqui ergueram-se a grande mesquita e o seu minarete, aqui juraram reis e descobridores, e destas ruas partiram naus para um mundo novo. Santa Cruz, o antigo bairro judeu, é hoje um labirinto de pátios e vielas. A rota segue a ordem natural do centro histórico, de Doña Elvira ao Alcázar, terminando nas Setas com a cidade aos seus pés.',
     },
     stops: [
       {
@@ -180,7 +188,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     duration: '2.5h',
     distance: '4 km',
     difficulty: 'easy',
-    image: 'https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?w=800',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Puente_de_Isabel_II_de_noche.jpg/960px-Puente_de_Isabel_II_de_noche.jpg',
     title: {
       es: 'El Río y Triana',
       en: 'The River & Triana',
@@ -196,6 +204,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Vom Seefahrer-Erbe des Torre del Oro zur Flamenco-Seele Trianas über seine Brücke. Keramik, Markt und die besten Aussichten von der Calle Betis.',
       it: 'Dall\'eredità marinara della Torre del Oro all\'anima flamenca di Triana attraverso il suo ponte. Ceramica, mercato e le migliori viste da Calle Betis.',
       pt: 'Do legado marinheiro da Torre del Oro à alma flamenca de Triana atravessando sua ponte. Cerâmica, mercado e as melhores vistas da Calle Betis.',
+    },
+    intro: {
+      es: 'Triana fue durante siglos la orilla de los marineros: de aquí salían pilotos para las flotas de Indias y aquí se forjó la leyenda del barrio flamenco. El río fue puerto, frontera y cadena defensiva; hoy es el mejor paseo urbano de la ciudad. La ruta cruza el puente de Isabel II, recorre la calle Betis frente a la ciudad monumental y termina entre alfares y lonjas del mercado, donde la Inquisición tuvo su castillo.',
+      en: 'For centuries Triana was the sailors\' bank: from here pilots left for the Indies fleets and here the legend of the flamenco quarter was forged. The river was port, frontier and defensive chain; today it is the city\'s best urban walk. The route crosses the Isabel II bridge, follows Calle Betis facing the monumental city and ends among potteries and market halls, where the Inquisition had its castle.',
+      fr: 'Pendant des siècles, Triana fut la rive des marins : d\'ici partaient les pilotes des flottes des Indes et ici se forgea la légende du quartier flamenco. Le fleuve fut port, frontière et chaîne défensive ; c\'est aujourd\'hui la meilleure promenade urbaine de la ville. La route traverse le pont d\'Isabel II, longe la calle Betis face à la ville monumentale et finit entre poteries et halles, là où l\'Inquisition avait son château.',
+      de: 'Jahrhundertelang war Triana das Ufer der Seeleute: Von hier brachen Piloten zu den Indienflotten auf, und hier entstand die Legende des Flamenco-Viertels. Der Fluss war Hafen, Grenze und Verteidigungskette; heute ist er Sevillas bester Stadtspaziergang. Die Route überquert die Isabel-II.-Brücke, folgt der Calle Betis gegenüber der monumentalen Stadt und endet zwischen Töpfereien und Markthallen, wo die Inquisition ihre Burg hatte.',
+      it: 'Per secoli Triana fu la riva dei marinai: da qui partivano i piloti per le flotte delle Indie e qui nacque la leggenda del quartiere flamenco. Il fiume fu porto, frontiera e catena difensiva; oggi è la migliore passeggiata urbana della città. Il percorso attraversa il ponte di Isabel II, segue calle Betis di fronte alla città monumentale e termina tra fornaci e mercati, dove l\'Inquisizione aveva il suo castello.',
+      pt: 'Durante séculos Triana foi a margem dos marinheiros: daqui partiam pilotos para as frotas das Índias e aqui nasceu a lenda do bairro flamenco. O rio foi porto, fronteira e corrente defensiva; hoje é o melhor passeio urbano da cidade. A rota atravessa a ponte de Isabel II, segue a calle Betis frente à cidade monumental e termina entre olarias e mercados, onde a Inquisição tinha o seu castelo.',
     },
     stops: [
       {
@@ -306,7 +322,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     duration: '3h',
     distance: '4.5 km',
     difficulty: 'easy',
-    image: 'https://images.unsplash.com/photo-1551009175-15bdf9dcb580?w=800',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Parque_de_Maria_Luisa_-_Sevilla.jpg/960px-Parque_de_Maria_Luisa_-_Sevilla.jpg',
     title: {
       es: 'Jardines y Exposición del 29',
       en: 'Gardens & the 1929 Exhibition',
@@ -322,6 +338,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Das grüne Sevilla: von den romantischen Murillo-Gärten zur monumentalen Plaza de España, dem María-Luisa-Park und den Expo-Pavillons.',
       it: 'La Siviglia verde: dai giardini romantici di Murillo alla monumentale Plaza de España, il parco María Luisa e i padiglioni dell\'Expo.',
       pt: 'A Sevilha verde: dos jardins românticos de Murillo à monumental Plaza de España, o parque María Luisa e os pavilhões da Expo.',
+    },
+    intro: {
+      es: 'La Sevilla verde nació de los huertos del Alcázar y estalló con la Exposición Iberoamericana de 1929. En un solo paseo se pasa de los jardines románticos de Murillo a la Plaza de España, un semicírculo de 200 metros con canal navegable, y del parque María Luisa, pulmón de 34 hectáreas con pavos reales, a los pabellones que hoy son museos. Es la ruta ideal para familias y para las horas de más calor: casi todo el recorrido va a la sombra.',
+      en: 'Green Seville was born from the Alcázar\'s orchards and blossomed with the 1929 Ibero-American Exhibition. One walk takes you from the romantic Murillo gardens to the Plaza de España, a 200-metre semicircle with a navigable canal, and from María Luisa park, a 34-hectare lung with peacocks, to the pavilions that are now museums. Ideal for families and for the hottest hours: almost the whole route is shaded.',
+      fr: 'La Séville verte est née des vergers de l\'Alcázar et a éclos avec l\'Exposition ibéro-américaine de 1929. Une seule promenade mène des jardins romantiques de Murillo à la Plaza de España, un demi-cercle de 200 mètres au canal navigable, et du parc María Luisa, poumon de 34 hectares avec paons, aux pavillons devenus musées. Idéale pour les familles et les heures chaudes : presque tout le parcours est ombragé.',
+      de: 'Das grüne Sevilla entstand aus den Gärten des Alcázar und erblühte mit der Ibero-Amerikanischen Ausstellung von 1929. Ein Spaziergang führt von den romantischen Murillo-Gärten zur Plaza de España, einem 200-Meter-Halbkreis mit schiffbarem Kanal, und vom María-Luisa-Park, einer 34-Hektar-Lunge mit Pfauen, zu den Pavillons, die heute Museen sind. Ideal für Familien und die heißesten Stunden: Fast die ganze Route liegt im Schatten.',
+      it: 'La Siviglia verde nacque dagli orti dell\'Alcázar e sbocciò con l\'Esposizione Iberoamericana del 1929. Una sola passeggiata porta dai romantici giardini di Murillo alla Plaza de España, un semicerchio di 200 metri con canale navigabile, e dal parco María Luisa, polmone di 34 ettari con pavoni, ai padiglioni oggi musei. Ideale per famiglie e per le ore più calde: quasi tutto il percorso è all\'ombra.',
+      pt: 'A Sevilha verde nasceu das hortas do Alcázar e floresceu com a Exposição Ibero-Americana de 1929. Um só passeio leva dos românticos jardins de Murillo à Plaza de España, um semicírculo de 200 metros com canal navegável, e do parque María Luisa, pulmão de 34 hectares com pavões, aos pavilhões que hoje são museus. Ideal para famílias e para as horas mais quentes: quase todo o percurso é à sombra.',
     },
     stops: [
       {
@@ -456,7 +480,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     duration: '3h',
     distance: '2.5 km',
     difficulty: 'easy',
-    image: 'https://images.unsplash.com/photo-1515443961218-a51367888e4b?w=800',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Las_gambas_al_ajillo%2C_t%C3%ADpica_tapa_espa%C3%B1ola.jpg/960px-Las_gambas_al_ajillo%2C_t%C3%ADpica_tapa_espa%C3%B1ola.jpg',
     title: {
       es: 'Ruta de Tapas: Centro Histórico',
       en: 'Tapas Route: Historic Centre',
@@ -472,6 +496,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Tapeo auf Sevilla-Art: fünf legendäre Bars, jede mit ihrer Signature-Tapa.',
       it: 'Il tapeo alla sivigliana: cinque bar leggendari, ognuno con la sua tapa simbolo.',
       pt: 'O tapeo à moda sevilhana: cinco bares lendários, cada um com sua tapa assinatura.',
+    },
+    intro: {
+      es: 'El tapeo no se inventó en los libros de cocina sino en las barras: de pie, con la tapa en el plato pequeño y la conversación a media voz. Esta ruta encadena cinco bares que llevan generaciones perfeccionando lo mismo: el Rinconcillo (1670), la Alfalfa, Casa Morales, la Bodeguita Romero y Las Columnas. Entre bar y bar, menos de diez minutos a pie: el recorrido importa menos que lo que se pide en cada parada.',
+      en: 'Tapeo wasn\'t invented in cookbooks but at the bar: standing up, tapa on a small plate and conversation at half voice. This route strings together five bars that have spent generations perfecting the same thing: El Rinconcillo (1670), Alfalfa, Casa Morales, Bodeguita Romero and Las Columnas. Under ten minutes between bars: the walk matters less than what you order at each stop.',
+      fr: 'Le tapeo n\'est pas né dans les livres de cuisine mais au comptoir : debout, la tapa sur une petite assiette et la conversation à mi-voix. Cette route enchaîne cinq bars qui perfectionnent la même chose depuis des générations : El Rinconcillo (1670), la Alfalfa, Casa Morales, la Bodeguita Romero et Las Columnas. Moins de dix minutes entre chaque : le parcours compte moins que ce qu\'on commande à chaque arrêt.',
+      de: 'Das Tapeo wurde nicht in Kochbüchern erfunden, sondern an der Bar: im Stehen, die Tapa auf kleinem Teller und Gespräche mit halber Stimme. Diese Route verbindet fünf Bars, die seit Generationen dasselbe perfektionieren: El Rinconcillo (1670), Alfalfa, Casa Morales, Bodeguita Romero und Las Columnas. Unter zehn Minuten zwischen den Bars: Der Weg zählt weniger als das, was man an jeder Station bestellt.',
+      it: 'Il tapeo non è nato nei libri di cucina ma al bancone: in piedi, la tapa sul piattino e la conversazione a mezza voce. Questo percorso collega cinque bar che da generazioni perfezionano la stessa cosa: El Rinconcillo (1670), la Alfalfa, Casa Morales, Bodeguita Romero e Las Columnas. Meno di dieci minuti tra un bar e l\'altro: il tragitto conta meno di ciò che si ordina a ogni tappa.',
+      pt: 'O tapeo não nasceu nos livros de cozinha mas ao balcão: em pé, a tapa no pratinho e a conversa a meia voz. Esta rota encadeia cinco bares que passam gerações a aperfeiçoar o mesmo: El Rinconcillo (1670), a Alfalfa, Casa Morales, Bodeguita Romero e Las Columnas. Menos de dez minutos entre bares: o percurso importa menos do que se pede em cada paragem.',
     },
     stops: [
       {
@@ -599,6 +631,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       it: 'Pensata per due: gli angoli più intimi di Santa Cruz, il Guadalquivir dorato e la città illuminata dalle Setas.',
       pt: 'Feita para dois: os cantos mais íntimos de Santa Cruz, o Guadalquivir dourado e a cidade iluminada das Setas.',
     },
+    intro: {
+      es: 'Sevilla es la ciudad del atardecer, y este paseo está diseñado alrededor de esa hora dorada. Los patios silenciosos de Santa Cruz, el callejón donde vivió Washington Irving y la orilla del Guadalquivir cuando el sol cae detrás de Triana. La ruta termina en alto, con la ciudad iluminada desde las Setas, a la hora en que Sevilla se vuelve más Sevilla.',
+      en: 'Seville is the city of sunset, and this walk is designed around that golden hour. The silent courtyards of Santa Cruz, the alley where Washington Irving lived and the riverbank as the sun drops behind Triana. The route ends up high, with the lit-up city from the Setas, at the hour when Seville becomes most itself.',
+      fr: 'Séville est la ville du coucher du soleil, et cette promenade est conçue autour de cette heure dorée. Les patios silencieux de Santa Cruz, la ruelle où vécut Washington Irving et la rive du Guadalquivir quand le soleil tombe derrière Triana. La route finit en hauteur, avec la ville illuminée depuis les Setas.',
+      de: 'Sevilla ist die Stadt des Sonnenuntergangs, und dieser Spaziergang ist um diese goldene Stunde herum angelegt. Die stillen Patios von Santa Cruz, die Gasse, in der Washington Irving lebte, und das Flussufer, wenn die Sonne hinter Triana fällt. Die Route endet hoch oben mit der beleuchteten Stadt von den Setas aus.',
+      it: 'Siviglia è la città del tramonto, e questa passeggiata è disegnata intorno a quell\'ora dorata. I patio silenziosi di Santa Cruz, il vicolo dove visse Washington Irving e la riva del Guadalquivir quando il sole cade dietro Triana. Il percorso finisce in alto, con la città illuminata dalle Setas.',
+      pt: 'Sevilha é a cidade do pôr do sol, e este passeio foi desenhado à volta dessa hora dourada. Os pátios silenciosos de Santa Cruz, o beco onde viveu Washington Irving e a margem do Guadalquivir quando o sol cai atrás de Triana. A rota termina no alto, com a cidade iluminada desde as Setas.',
+    },
     stops: [
       {
         name: 'Hospital de los Venerables',
@@ -725,6 +765,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       it: 'L\'altra Siviglia: mercato di quartiere, l\'Alameda (centro della vita alternativa), la Vergine più amata della città e le mura medievali. Senza turisti.',
       pt: 'A outra Sevilha: mercado de bairro, a Alameda (centro da vida alternativa), a Virgem mais querida da cidade e a muralha medieval. Sem turistas.',
     },
+    intro: {
+      es: 'Al norte del centro turístico, la ciudad vive su vida real. La Alameda de Hércules, el jardín público más antiguo de Europa, es hoy el salón de la Sevilla alternativa; la calle Feria guarda el mercado más viejo y el mercadillo de los jueves; y la Macarena custodia a la Virgen más querida de la ciudad junto a la última puerta de la muralla almohade. Una ruta para quien ya conoce lo de siempre.',
+      en: 'North of the tourist centre, the city lives its real life. The Alameda de Hércules, Europe\'s oldest public garden, is today the alternative Seville\'s living room; Calle Feria keeps the oldest market and the Thursday flea market; and the Macarena guards the city\'s most beloved Virgin beside the last Almohad wall gate. A route for those who already know the usual sights.',
+      fr: 'Au nord du centre touristique, la ville vit sa vraie vie. L\'Alameda de Hércules, le plus ancien jardin public d\'Europe, est le salon de la Séville alternative ; la calle Feria garde le plus vieux marché et la brocante du jeudi ; la Macarena veille sur la Vierge la plus aimée près de la dernière porte almohade. Une route pour ceux qui connaissent déjà l\'essentiel.',
+      de: 'Nördlich des Touristenzentrums lebt die Stadt ihr echtes Leben. Die Alameda de Hércules, Europas ältester öffentlicher Garten, ist heute das Wohnzimmer des alternativen Sevilla; die Calle Feria bewahrt den ältesten Markt und den Donnerstagsflohmarkt; die Macarena hütet die beliebteste Jungfrau der Stadt an der letzten almohadischen Stadtmauerpforte.',
+      it: 'A nord del centro turistico la città vive la sua vita vera. L\'Alameda de Hércules, il giardino pubblico più antico d\'Europa, è il salotto della Siviglia alternativa; calle Feria custodisce il mercato più antico e il mercatino del giovedì; la Macarena veglia la Vergine più amata accanto all\'ultima porta almohade.',
+      pt: 'A norte do centro turístico, a cidade vive a sua vida real. A Alameda de Hércules, o jardim público mais antigo da Europa, é hoje a sala da Sevilha alternativa; a calle Feria guarda o mercado mais antigo e a feira das quintas; a Macarena custodia a Virgem mais querida junto à última porta da muralha almóada.',
+    },
     stops: [
       {
         name: 'Mercado de Feria',
@@ -850,6 +898,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Die Motive, die Fotografen suchen: der unmögliche Platz, ein versteckter Säulenhof, das Ufer mit der gespiegelten Giralda und das Holz der Setas bei Sonnenuntergang.',
       it: 'Le inquadrature che cercano i fotografi: la piazza impossibile, un cortile di colonne nascosto, la riva con la Giralda riflessa e il legno delle Setas al tramonto.',
       pt: 'Os enquadramentos que os fotógrafos procuram: a praça impossível, um pátio de colunas escondido, a margem com a Giralda refletida e a madeira das Setas ao pôr do sol.',
+    },
+    intro: {
+      es: 'La luz de Sevilla es distinta: más cálida, más limpia, con una hora dorada que los pintores descubrieron hace siglos y los móviles no logran cansar. Esta ruta está pensada por y para fotógrafos: cada parada es un encuadre probado, con su hora recomendada y su truco. De la simetría de la Plaza de España al patio escondido del Cabildo, de la Giralda reflejada en el río a la madera de las Setas.',
+      en: 'Seville\'s light is different: warmer, cleaner, with a golden hour that painters discovered centuries ago and phones never tire of. This route is designed by and for photographers: every stop is a proven frame, with its recommended time and trick. From the symmetry of Plaza de España to the hidden Cabildo courtyard, from the Giralda reflected in the river to the wood of the Setas.',
+      fr: 'La lumière de Séville est différente : plus chaude, plus nette, avec une heure dorée que les peintres ont découverte il y a des siècles et dont les téléphones ne se lassent pas. Cette route est conçue par et pour les photographes : chaque arrêt est un cadrage éprouvé, avec son heure et son astuce. De la symétrie de la Plaza de España au patio caché du Cabildo.',
+      de: 'Sevillas Licht ist anders: wärmer, klarer, mit einer goldenen Stunde, die Maler vor Jahrhunderten entdeckten und Handys nie müde werden. Diese Route ist von und für Fotografen gedacht: Jede Station ist ein erprobtes Motiv mit empfohlener Zeit und Trick. Von der Symmetrie der Plaza de España bis zum versteckten Cabildo-Patio.',
+      it: 'La luce di Siviglia è diversa: più calda, più netta, con un\'ora dorata che i pittori scoprirono secoli fa e che i telefoni non stancano mai. Questo percorso è pensato da e per i fotografi: ogni tappa è un\'inquadratura collaudata. Dalla simmetria della Plaza de España al cortile nascosto del Cabildo.',
+      pt: 'A luz de Sevilha é diferente: mais quente, mais limpa, com uma hora dourada que os pintores descobriram há séculos e que os telemóveis não cansam. Esta rota foi pensada por e para fotógrafos: cada paragem é um enquadramento testado. Da simetria da Plaza de España ao pátio escondido do Cabildo.',
     },
     stops: [
       {
@@ -984,7 +1040,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     duration: '4h',
     distance: '6 km',
     difficulty: 'moderate',
-    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/El_Desaf%C3%ADo%2C_atardecer%2C_Isla_M%C3%A1gica%2C_Sevilla%2C_Espa%C3%B1a%2C_2015.JPG/960px-El_Desaf%C3%ADo%2C_atardecer%2C_Isla_M%C3%A1gica%2C_Sevilla%2C_Espa%C3%B1a%2C_2015.JPG',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Sevilla_-_Triana%2C_Bas%C3%ADlica_del_Sant%C3%ADsimo_Cristo_de_la_Expiraci%C3%B3n_30.jpg/960px-Sevilla_-_Triana%2C_Bas%C3%ADlica_del_Sant%C3%ADsimo_Cristo_de_la_Expiraci%C3%B3n_30.jpg',
     title: {
       es: 'Cartuja e Isla Mágica: Familia y Expo 92',
       en: 'Cartuja & Isla Mágica: Family & Expo 92',
@@ -1000,6 +1056,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Die Expo-92-Insel dreißig Jahre später: das Kloster, in dem Kolumbus seine Reise vorbereitete, zeitgenössische Kunst zwischen Keramikschornsteinen, der Freizeitpark und die Alamillo-Brücke.',
       it: 'L\'isola dell\'Expo 92 trent\'anni dopo: il monastero dove Colombo preparò il suo viaggio, arte contemporanea tra ciminiere di ceramica, il parco tematico e il ponte dell\'Alamillo.',
       pt: 'A ilha da Expo 92 trinta anos depois: o mosteiro onde Colombo preparou a sua viagem, arte contemporânea entre chaminés de cerâmica, o parque temático e a Ponte do Alamillo.',
+    },
+    intro: {
+      es: 'La isla de la Cartuja es la Sevilla de las dos Exposiciones: aquí acampó Colón en el monasterio cuando preparaba sus viajes, aquí se celebró la Expo 92, y del cruce de las dos épocas nacieron el parque temático, los pabellones y el puente del Alamillo de Calatrava. Una excursión familiar con monasterio, arte contemporáneo entre chimeneas de alfarería y el mejor atardecer del río.',
+      en: 'Cartuja island is the Seville of two Exhibitions: Columbus lodged in its monastery while preparing his voyages, Expo 92 was held here, and from the crossing of both eras came the theme park, the pavilions and Calatrava\'s Alamillo bridge. A family outing with monastery, contemporary art among pottery chimneys and the river\'s best sunset.',
+      fr: 'L\'île de la Cartuja, c\'est la Séville des deux Expositions : Colomb logea dans son monastère, l\'Expo 92 s\'y tint, et du croisement des deux époques naquirent le parc à thème, les pavillons et le pont de l\'Alamillo. Une sortie familiale avec monastère, art contemporain entre cheminées et le meilleur coucher de soleil sur le fleuve.',
+      de: 'Die Insel Cartuja ist das Sevilla zweier Ausstellungen: Kolumbus wohnte im Kloster, die Expo 92 fand hier statt, und aus der Kreuzung beider Epochen entstanden Freizeitpark, Pavillons und Calatravas Alamillo-Brücke. Ein Familienausflug mit Kloster, zeitgenössischer Kunst zwischen Schornsteinen und dem besten Sonnenuntergang am Fluss.',
+      it: 'L\'isola della Cartuja è la Siviglia delle due Esposizioni: Colombo alloggiò nel monastero, qui si tenne l\'Expo 92, e dall\'incrocio delle due epoche nacquero il parco tematico, i padiglioni e il ponte dell\'Alamillo. Una gita per famiglie con monastero, arte contemporanea tra ciminiere e il miglior tramonto sul fiume.',
+      pt: 'A ilha da Cartuja é a Sevilha das duas Exposições: Colombo ficou no mosteiro, aqui realizou-se a Expo 92, e do cruzamento das duas épocas nasceram o parque temático, os pavilhões e a ponte do Alamillo. Uma excursão familiar com mosteiro, arte contemporânea entre chaminés e o melhor pôr do sol do rio.',
     },
     stops: [
       {
@@ -1106,6 +1170,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Das aristokratische Sevilla: von der Casa de Pilatos zum Alba-Palast, vorbei an den römischen Mosaiken der Gräfin von Lebrija.',
       it: 'La Siviglia aristocratica: dalla Casa de Pilatos al palazzo degli Alba, passando per i mosaici romani della Contessa di Lebrija.',
       pt: 'A Sevilha aristocrática: da Casa de Pilatos ao palácio dos Alba, passando pelos mosaicos romanos da Condessa de Lebrija.',
+    },
+    intro: {
+      es: 'Sevilla es la ciudad con más palacios habitados de España, y muchos siguen en manos de las mismas familias nobles que los construyeron. Esta ruta abre las puertas que el turismo masivo ignora: la Casa de Pilatos y su Vía Crucis de 1521, los mosaicos romanos que la Condesa de Lebrija compró al peso, el jardín de los Alba donde nació Machado y la torre mudéjar de la Algaba. Señorío, arte y azulejo en tres horas de paseo.',
+      en: 'Seville has more inhabited palaces than any Spanish city, and many remain with the same noble families that built them. This route opens doors mass tourism ignores: Casa de Pilatos and its 1521 Via Crucis, the Roman mosaics the Countess of Lebrija bought by the metre, the Alba garden where Machado was born and the Mudéjar tower of the Algaba. Nobility, art and tiles in a three-hour walk.',
+      fr: 'Séville compte plus de palais habités que toute autre ville d\'Espagne, et beaucoup restent aux mains des mêmes familles nobles. Cette route ouvre les portes ignorées du tourisme de masse : la Casa de Pilatos et son chemin de croix de 1521, les mosaïques romaines achetées au mètre par la comtesse de Lebrija, le jardin des Alba où naquit Machado.',
+      de: 'Sevilla hat mehr bewohnte Paläste als jede andere spanische Stadt, viele noch in den Händen derselben Adelsfamilien. Diese Route öffnet Türen, die der Massentourismus ignoriert: die Casa de Pilatos mit ihrem Kreuzweg von 1521, die römischen Mosaiken der Gräfin von Lebrija, der Alba-Garten, in dem Machado geboren wurde.',
+      it: 'Siviglia ha più palazzi abitati di qualsiasi città spagnola, e molti restano alle stesse famiglie nobili. Questo percorso apre le porte che il turismo di massa ignora: la Casa de Pilatos col suo percorso del 1521, i mosaici romani comprati al metro dalla contessa di Lebrija, il giardino degli Alba dove nacque Machado.',
+      pt: 'Sevilha tem mais palácios habitados do que qualquer cidade espanhola, e muitos continuam nas mãos das mesmas famílias nobres. Esta rota abre as portas que o turismo de massas ignora: a Casa de Pilatos e o seu caminho de 1521, os mosaicos romanos comprados ao metro pela condessa de Lebrija, o jardim dos Alba onde nasceu Machado.',
     },
     stops: [
       {
@@ -1233,6 +1305,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       it: 'La Siviglia che ispirò opere e drammi: il libertino che vide il proprio funerale, la sigaraia di Bizet, la tragica ebrea di Santa Cruz.',
       pt: 'A Sevilha que inspirou óperas e dramas: o libertino que viu o próprio funeral, a cigarradeira de Bizet, a judia trágica de Santa Cruz.',
     },
+    intro: {
+      es: 'Pocas ciudades tienen tan poco respeto por la frontera entre historia y leyenda. En esta ruta, el libertino Miguel de Mañara se topa con su propio entierro, la cigarrera Carmen espera en la puerta de la fábrica, la judía Susona pide que expongan su calavera y Doña Elvira se asoma a un balcón de Santa Cruz. Cuatro siglos de literatura, ópera y teatro que nacieron en estas calles y aún las habitan.',
+      en: 'Few cities show so little respect for the border between history and legend. On this route, the rake Miguel de Mañara meets his own funeral, the cigarette girl Carmen waits at the factory gate, the Jewish girl Susona asks that her skull be displayed and Doña Elvira leans from a Santa Cruz balcony. Four centuries of literature, opera and theatre born in these streets and still haunting them.',
+      fr: 'Peu de villes respectent aussi peu la frontière entre histoire et légende. Sur cette route, le débauché Miguel de Mañara croise son propre enterrement, la cigarière Carmen attend à la porte de la fabrique, la Juive Susona demande qu\'on expose son crâne et Doña Elvira se penche à un balcon de Santa Cruz.',
+      de: 'Wenige Städte achten die Grenze zwischen Geschichte und Legende so wenig. Auf dieser Route begegnet der Lebemann Miguel de Mañara seinem eigenen Begräbnis, die Zigarettenarbeiterin Carmen wartet am Fabriktor, die Jüdin Susona bittet um Ausstellung ihres Schädels und Doña Elvira lehnt an einem Balkon in Santa Cruz.',
+      it: 'Poche città rispettano così poco il confine tra storia e leggenda. Su questo percorso il libertino Miguel de Mañara incontra il proprio funerale, la sigaraia Carmen attende alla porta della fabbrica, l\'ebrea Susona chiede che il suo teschio sia esposto e Doña Elvira si affaccia da un balcone di Santa Cruz.',
+      pt: 'Poucas cidades respeitam tão pouco a fronteira entre história e lenda. Nesta rota, o libertino Miguel de Mañara encontra o próprio funeral, a cigarradeira Carmen espera à porta da fábrica, a judia Susona pede que exponham o seu crânio e Doña Elvira debruça-se de uma varanda de Santa Cruz.',
+    },
     stops: [
       {
         name: 'Hospital de la Caridad',
@@ -1338,6 +1418,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Sevilla war 600 Jahre römisch: Tempelsäulen mitten in Straßen, Ruinen unter den Setas, ein Aquädukt und, 20 Minuten entfernt, Itálica, Heimat von Trajan und Hadrian.',
       it: 'Siviglia fu romana per 600 anni: colonne di templi in mezzo alle strade, rovine sotto le Setas, un acquedotto e, a 20 minuti, Itálica, patria di Traiano e Adriano.',
       pt: 'Sevilha foi romana durante 600 anos: colunas de templos no meio das ruas, ruínas sob as Setas, um aqueduto e, a 20 minutos, Itálica, pátria de Trajano e Adriano.',
+    },
+    intro: {
+      es: 'Antes de los almohades, antes de los visigodos, Sevilla fue romana durante seis siglos bajo el nombre de Hispalis. De aquella ciudad quedan columnas de templos en mitad de las calles, mosaicos bajo las Setas y un acueducto que funcionó dos mil años. La ruta cruza la ciudad romana y termina en Itálica, cuna de los emperadores Trajano y Adriano, cuyo anfiteatro fue el tercero más grande del Imperio.',
+      en: 'Before the Almohads, before the Visigoths, Seville was Roman for six centuries under the name Hispalis. Of that city remain temple columns mid-street, mosaics beneath the Setas and an aqueduct that ran for two thousand years. The route crosses the Roman city and ends at Itálica, cradle of emperors Trajan and Hadrian, whose amphitheatre was the Empire\'s third largest.',
+      fr: 'Avant les Almohades, avant les Wisigoths, Séville fut romaine six siècles sous le nom d\'Hispalis. Il reste de cette ville des colonnes de temples au milieu des rues, des mosaïques sous les Setas et un aqueduc qui fonctionna deux mille ans. La route traverse la ville romaine et finit à Itálica, berceau des empereurs Trajan et Hadrien.',
+      de: 'Vor den Almohaden, vor den Westgoten war Sevilla sechs Jahrhunderte römisch: Hispalis. Von jener Stadt blieben Tempelsäulen mitten auf den Straßen, Mosaiken unter den Setas und ein Aquädukt, das zweitausend Jahre lief. Die Route quert die römische Stadt und endet in Itálica, Wiege der Kaiser Trajan und Hadrian.',
+      it: 'Prima degli almohadi, prima dei visigoti, Siviglia fu romana per sei secoli con il nome di Hispalis. Di quella città restano colonne di templi in mezzo alle strade, mosaici sotto le Setas e un acquedotto attivo per duemila anni. Il percorso attraversa la città romana e termina a Itálica, culla degli imperatori Traiano e Adriano.',
+      pt: 'Antes dos almóadas, antes dos visigodos, Sevilha foi romana durante seis séculos com o nome de Hispalis. Dessa cidade restam colunas de templos no meio das ruas, mosaicos sob as Setas e um aqueduto que funcionou dois mil anos. A rota atravessa a cidade romana e termina em Itálica, berço dos imperadores Trajano e Adriano.',
     },
     stops: [
       {
@@ -1449,6 +1537,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       it: 'Nel XVII secolo Siviglia fu la capitale mondiale della pittura: Murillo, Zurbarán, Valdés Leal, Velázquez. Le loro opere pendono ancora dove furono commissionate.',
       pt: 'No século XVII Sevilha foi a capital mundial da pintura: Murillo, Zurbarán, Valdés Leal, Velázquez. As suas obras ainda pendem onde foram encomendadas.',
     },
+    intro: {
+      es: 'En el siglo XVII Sevilla era la capital mundial de la pintura: aquí trabajaban Murillo, Zurbarán, Valdés Leal y el joven Velázquez, y los conventos competían por encargarles retablos enteros. Esta ruta sigue sus obras allí donde fueron pintadas: el museo que fue convento de la Merced, la iglesia-hospital de la Caridad con sus seis Murillos, la casa donde el pintor murió tras caer de un andamio y la Catedral que guarda su Inmaculada. Un museo sin paredes.',
+      en: 'In the 17th century Seville was the world capital of painting: Murillo, Zurbarán, Valdés Leal and the young Velázquez worked here, and convents competed to commission whole altarpieces. This route follows their works where they were painted: the museum that was a Merced convent, the Caridad church-hospital with its six Murillos, the house where the painter died after a fall from scaffolding and the Cathedral keeping his Immaculate Conception.',
+      fr: 'Au XVIIe siècle, Séville était la capitale mondiale de la peinture : Murillo, Zurbarán, Valdés Leal et le jeune Velázquez y travaillaient, et les couvents se disputaient leurs retables. Cette route suit leurs œuvres là où elles furent peintes : le couvent de la Merced devenu musée, l\'église-hôpital de la Caridad et ses six Murillos, la maison où le peintre mourut.',
+      de: 'Im 17. Jahrhundert war Sevilla die Welthauptstadt der Malerei: Murillo, Zurbarán, Valdés Leal und der junge Velázquez arbeiteten hier, und Klöster wetteiferten um ganze Altäre. Diese Route folgt ihren Werken dorthin, wo sie gemalt wurden: dem Museum im Merced-Kloster, der Caridad-Kirche mit sechs Murillos, dem Sterbehaus des Malers und der Kathedrale mit seiner Immaculata.',
+      it: 'Nel XVII secolo Siviglia era la capitale mondiale della pittura: qui lavoravano Murillo, Zurbarán, Valdés Leal e il giovane Velázquez, e i conventi gareggiavano per commissionare pale intere. Questo percorso segue le loro opere dove furono dipinte: il museo che fu convento della Merced, la chiesa-ospedale della Caridad con sei Murillo, la casa dove il pittore morì.',
+      pt: 'No século XVII Sevilha era a capital mundial da pintura: aqui trabalhavam Murillo, Zurbarán, Valdés Leal e o jovem Velázquez, e os conventos competiam por retábulos inteiros. Esta rota segue as suas obras onde foram pintadas: o museu que foi convento da Merced, a igreja-hospital da Caridad com seis Murillos, a casa onde o pintor morreu.',
+    },
     stops: [
       {
         name: 'Museo de Bellas Artes',
@@ -1538,7 +1634,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     duration: '2.5h',
     distance: '3 km',
     difficulty: 'easy',
-    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Giralda_and_Sevilla_Tower_aligned.png/960px-Giralda_and_Sevilla_Tower_aligned.png',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Calle_Cabeza_del_Rey_D_Pedro_Sevilla_2024.jpg/960px-Calle_Cabeza_del_Rey_D_Pedro_Sevilla_2024.jpg',
     title: {
       es: 'Leyendas de Reyes: del Rey Santo al Justiciero',
       en: 'Legends of Kings: from the Saint to the Justicer',
@@ -1554,6 +1650,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Sevilla, erzählt von seinen Königen: dem, der wegen eines Ziegels Köpfe abschlagen wollte, dem, der nachts im Duell kämpfte, und dem Admiral, der eine Kette mit einem Schiff sprengte.',
       it: 'Siviglia raccontata dai suoi re: chi minacciò di tagliare teste per un mattone, chi duellò di notte e l\'ammiraglio che spezzò una catena con una nave.',
       pt: 'Sevilha contada pelos seus reis: o que ameaçou cortar cabeças por um tijolo, o que duelou de noite e o almirante que rompeu uma corrente com um navio.',
+    },
+    intro: {
+      es: 'Los reyes de Sevilla dejaron más historias que estatuas. Un monarca amenazó con cortar todas las cabezas de la ciudad por un ladrillo perdido; otro salió de noche a batirse en duelo y emparedó la cabeza de su rival en una calle estrecha; una dama fue quemada viva en una laguna por traidora; y un almirante rompió una cadena de hierro con barcos cargados de piedra para abrir el río. Cuatro siglos de corona y acero en dos horas y media de paseo.',
+      en: 'Seville\'s kings left more stories than statues. One monarch threatened to cut off every head in the city over a missing brick; another slipped out at night to duel and walled his rival\'s head into a narrow street; a lady was burned alive in a lagoon as a traitor; and an admiral snapped an iron chain with stone-laden ships to open the river. Four centuries of crowns and steel in a two-and-a-half-hour walk.',
+      fr: 'Les rois de Séville ont laissé plus d\'histoires que de statues. Un monarque menaça de couper toutes les têtes de la ville pour une brique ; un autre sortit la nuit se battre en duel et mura la tête de son rival dans une ruelle ; une dame fut brûlée vive dans une lagune pour trahison.',
+      de: 'Sevillas Könige hinterließen mehr Geschichten als Statuen. Ein Monarch drohte, wegen eines fehlenden Ziegels alle Köpfe der Stadt abzuschlagen; ein anderer schlich nachts zum Duell und mauerte den Kopf seines Rivalen in eine Gasse; eine Dame wurde als Verräterin in einer Lagune verbrannt.',
+      it: 'I re di Siviglia lasciarono più storie che statue. Un monarca minacciò di tagliare tutte le teste della città per un mattone; un altro uscì di notte a duellare e murò la testa del rivale in un vicolo; una dama fu bruciata viva in una laguna per tradimento.',
+      pt: 'Os reis de Sevilha deixaram mais histórias do que estátuas. Um monarca ameaçou cortar todas as cabeças da cidade por um tijolo; outro saiu de noite para duelar e emparedou a cabeça do rival numa ruela; uma dama foi queimada viva numa lagoa por traição.',
     },
     stops: [
       {
@@ -1681,6 +1785,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       it: 'Dalla profezia di una gitana a Hernán Cortés al Cristo che un capitano promise di modellare, passando per gli amori del re-poeta che portò la neve a Siviglia.',
       pt: 'Da profecia que uma cigana fez a Hernán Cortés ao Cristo que um capitão prometeu modelar, passando pelos amores do rei-poeta que trouxe a neve a Sevilha.',
     },
+    intro: {
+      es: 'Sevilla es la ciudad de los prodigios: la gitana que anunció su gloria a Hernán Cortés cuando era un fugitivo, el capitán que prometió tallar un Cristo en pasta cuando nadie lo creía posible, el rey poeta que cubrió Sevilla de blanco para su esposa, y el león que se negó a atacar a una alfarera de Triana. Historias que muchos dan por leyenda y que los archivos, a veces, confirman. Incluye la curiosidad de Castilleja de la Cuesta, donde murió el caballo de Cortés yace bajo una piedra con su nombre.',
+      en: 'Seville is the city of prodigies: the gypsy woman who foretold glory to a fugitive Hernán Cortés, the captain who promised to carve a Christ in paste when no one believed it possible, the poet-king who covered Seville in white for his wife, and the lion that refused to attack a Triana potter. Stories many take as legend and the archives sometimes confirm. Includes the Castilleja de la Cuesta curiosity, where Cortés\'s horse lies under a stone bearing its name.',
+      fr: 'Séville est la ville des prodiges : la gitane qui prédit sa gloire à un Hernán Cortés fugitif, le capitaine qui promit un Christ de pâte, le roi-poète qui couvrit Séville de blanc pour sa femme, et le lion qui refusa d\'attaquer une potière de Triana.',
+      de: 'Sevilla ist die Stadt der Wunder: die Gitana, die dem flüchtigen Hernán Cortés Ruhm vorhersagte, der Hauptmann, der einen Christus aus Paste versprach, der Dichterkönig, der Sevilla für seine Frau weiß kleidete, und der Löwe, der eine Töpferin aus Triana verschonte.',
+      it: 'Siviglia è la città dei prodigi: la gitana che predisse la gloria a Hernán Cortés fuggitivo, il capitano che promise un Cristo di pasta, il re-poeta che coprì Siviglia di bianco per sua moglie e il leone che risparmiò una ceramista di Triana.',
+      pt: 'Sevilha é a cidade dos prodígios: a cigana que anunciou glória a Hernán Cortés fugitivo, o capitão que prometeu um Cristo de pasta, o rei-poeta que cobriu Sevilha de branco para a sua esposa e o leão que recusou atacar uma oleira de Triana.',
+    },
     stops: [
       {
         name: 'Capilla del Cristo del Cachorro (Triana)',
@@ -1806,6 +1918,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Als Sevilla die Hauptstadt eines Imperiums war: die frisch erbaute Giralda, die Stadtmauer, die Flusskette und die Kirchen, die noch ihre Minarette verbergen.',
       it: 'Quando Siviglia era capitale di un impero: la Giralda appena costruita, le mura, la catena del fiume e le chiese che ancora nascondono i loro minareti.',
       pt: 'Quando Sevilha era capital de um império: a Giralda recém-construída, a muralha, a corrente do rio e as igrejas que ainda escondem os seus minaretes.',
+    },
+    intro: {
+      es: 'Entre 1147 y 1248 Sevilla fue capital de un imperio que dominaba desde Marrakech hasta Túnez. Los almohades construyeron la Giralda, el patio de los Naranjos, la muralla de 166 torres y la cadena del río; y de aquella ciudad aún quedan torres de mezquita asomando tras los campanarios. Esta ruta lee la Sevilla de hace 800 años en las calles que hoy pisan los turistas, incluidos los mihrabs originales que nadie parece ver.',
+      en: 'Between 1147 and 1248 Seville was the capital of an empire stretching from Marrakech to Tunis. The Almohads built the Giralda, the Orange Tree courtyard, the 166-tower wall and the river chain; and minaret towers still peek from behind church belfries. This route reads the Seville of 800 years ago in the streets tourists walk today, including the original mihrabs almost nobody seems to see.',
+      fr: 'Entre 1147 et 1248, Séville était la capitale d\'un empire s\'étendant de Marrakech à Tunis. Les Almohades construisirent la Giralda, le patio des Orangers, la muraille aux 166 tours et la chaîne du fleuve ; des tours de minaret dépassent encore des clochers. Cette route lit la Séville d\'il y a 800 ans dans les rues d\'aujourd\'hui.',
+      de: 'Zwischen 1147 und 1248 war Sevilla Hauptstadt eines Reiches von Marrakesch bis Tunis. Die Almohaden bauten die Giralda, den Orangenhof, die Mauer mit 166 Türmen und die Flusskette; Minaretttürme lugen noch hinter Kirchtürmen hervor. Diese Route liest das Sevilla von vor 800 Jahren in den Straßen der Gegenwart.',
+      it: 'Tra il 1147 e il 1248 Siviglia fu capitale di un impero da Marrakech a Tunisi. Gli almohadi costruirono la Giralda, il patio degli Aranci, le mura con 166 torri e la catena del fiume; torri di minareto spuntano ancora dietro i campanili. Questo percorso legge la Siviglia di 800 anni fa nelle strade di oggi.',
+      pt: 'Entre 1147 e 1248 Sevilha foi capital de um império de Marraquexe a Tunes. Os almóadas construíram a Giralda, o pátio das Laranjeiras, a muralha de 166 torres e a corrente do rio; torres de minarete ainda espreitam atrás dos campanários. Esta rota lê a Sevilha de há 800 anos nas ruas de hoje.',
     },
     stops: [
       {
@@ -1953,6 +2073,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       it: 'L\'asse commerciale sivigliana dall\'800: da Plaza Nueva all\'Alfalfa via Sierpes, Tetuán e Cuna, con sosta obbligatoria nella pasticceria più antica.',
       pt: 'O eixo comercial sevilhano desde o século XIX: da Plaza Nueva à Alfalfa por Sierpes, Tetuán e Cuna, com paragem obrigatória na confeitaria mais antiga.',
     },
+    intro: {
+      es: 'El eje comercial de Sevilla no ha cambiado en dos siglos: Sierpes, Tetuán y Cuna ya eran las calles de los comercios cuando el Baedeker las marcaba con estrella en 1908. Aquí están la confitería de 1885, las joyerías de tres generaciones y los escaparates históricos; y a un paso, el mercado del Arenal y el palacio de Lebrija escondido entre tiendas. Una ruta para comprar sin perder de vista los azulejos.',
+      en: 'Seville\'s shopping axis hasn\'t changed in two centuries: Sierpes, Tetuán and Cuna were already the retail streets when Baedeker starred them in 1908. Here stand the 1885 confectioner, three-generation jewellers and historic shopfronts; a step away, the Arenal market and the Lebrija palace hidden among shops. A route to shop without missing the tiles.',
+      fr: 'L\'axe commercial de Séville n\'a pas changé en deux siècles : Sierpes, Tetuán et Cuna étaient déjà les rues des commerces quand le Baedeker les étoilait en 1908. On y trouve la confiserie de 1885, des joailleries de trois générations et des vitrines historiques.',
+      de: 'Sevillas Einkaufsachse hat sich in zwei Jahrhunderten nicht verändert: Sierpes, Tetuán und Cuna waren schon die Geschäftsstraßen, als der Baedeker sie 1908 mit Sternen markierte. Hier stehen die Konditorei von 1885, Juweliere in dritter Generation und historische Schaufenster.',
+      it: 'L\'asse commerciale di Siviglia non è cambiato in due secoli: Sierpes, Tetuán e Cuna erano già le vie dei negozi quando il Baedeker le segnalava nel 1908. Qui ci sono la pasticceria del 1885, gioiellerie di tre generazioni e vetrine storiche.',
+      pt: 'O eixo comercial de Sevilha não mudou em dois séculos: Sierpes, Tetuán e Cuna já eram as ruas do comércio quando o Baedeker as assinalava em 1908. Aqui estão a confeitaria de 1885, joalharias de três gerações e montras históricas.',
+    },
     stops: [
       {
         name: 'Plaza Nueva y Ayuntamiento',
@@ -2078,6 +2206,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Sevillas älteste Rezepte kauft man durch ein Drehfenster: Yemas, Alfajores und Olivenölkuchen von Klausur-nonnen, seit Jahrhunderten.',
       it: 'Le ricette più antiche di Siviglia si comprano dal torno: yemas, alfajores e torte all\'olio fatte dalle monache di clausura da secoli.',
       pt: 'As receitas mais antigas de Sevilha compram-se pelo torno: yemas, alfajores e tortas de azeite feitas por freiras de clausura há séculos.',
+    },
+    intro: {
+      es: 'Las recetas más antiguas de Sevilla no están en los libros: están detrás de un torno de convento, donde las monjas de clausura las elaboran desde hace siglos sin que nadie las haya visto hacerlo. Las yemas de San Leandro, las tortas de aceite de Madre de Dios y los dulces del Torno del Cabildo se compran por una ventanilla giratoria, en efectivo y sin ver a quien los hace. Una ruta golosa con parada final en la confitería más antigua de la ciudad.',
+      en: 'Seville\'s oldest recipes aren\'t in books: they live behind a convent hatch, where cloistered nuns have made them for centuries unseen. San Leandro\'s yemas, Madre de Dios olive-oil cakes and the Cabildo hatch sweets are bought through a revolving window, in cash and without seeing who makes them. A sweet route ending at the city\'s oldest confectioner.',
+      fr: 'Les plus vieilles recettes de Séville ne sont pas dans les livres : elles vivent derrière un tourniquet de couvent, où des moniales les préparent depuis des siècles sans être vues. Les yemas de San Leandro, les galettes de Madre de Dios et les douceurs du Torno s\'achètent par une fenêtre tournante, en espèces.',
+      de: 'Sevillas älteste Rezepte stehen nicht in Büchern: Sie leben hinter einem Kloster-Drehfenster, wo Klausurnonnen sie seit Jahrhunderten unsichtbar herstellen. Yemas aus San Leandro, Olivenölkuchen von Madre de Dios und Süßes vom Torno kauft man durch ein Drehfenster, bar und ohne die Herstellerin zu sehen.',
+      it: 'Le ricette più antiche di Siviglia non sono nei libri: vivono dietro un torno di convento, dove le monache di clausura le preparano da secoli senza farsi vedere. Le yemas di San Leandro, le torte all\'olio di Madre de Dios e i dolci del Torno si comprano da una finestrella girevole, in contanti.',
+      pt: 'As receitas mais antigas de Sevilha não estão nos livros: vivem atrás de um torno de convento, onde as freiras de clausura as fazem há séculos sem serem vistas. As yemas de San Leandro, as tortas de azeite de Madre de Dios e os doces do Torno compram-se por uma janelinha giratória, em dinheiro.',
     },
     stops: [
       {
@@ -2205,6 +2341,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       it: 'Il Settecento sivigliano dall\'interno: cupole affrescate, pale dorate e la chiesa che volle essere "il Pantheon del barocco andaluso".',
       pt: 'O século XVIII sevilhano por dentro: cúpulas com frescos, retábulos dourados e a igreja que quis ser "o Panteão do barroco andaluz".',
     },
+    intro: {
+      es: 'Si el Siglo de Oro fue el siglo de la pintura, el XVIII fue el del oro de verdad: yeso dorado, mármoles de colores y cúpulas pintadas al fresco en iglesias que querían competir con el cielo. San Luis de los Franceses, proyectada como catedral de repuesto por si Sevilla perdía su rango; el Salvador, la segunda catedral; y San Telmo, la fachada más exuberante de la ciudad. Una ruta para mirar hacia arriba.',
+      en: 'If the Golden Age was the century of painting, the 18th was the century of actual gold: gilded plaster, coloured marbles and frescoed domes in churches that tried to compete with heaven. San Luis de los Franceses, designed as a spare cathedral in case Seville lost its rank; El Salvador, the second cathedral; and San Telmo, the city\'s most exuberant façade. A route to look up.',
+      fr: 'Si le Siècle d\'Or fut celui de la peinture, le XVIIIe fut celui de l\'or véritable : plâtre doré, marbres colorés et coupoles fresquées dans des églises qui voulaient rivaliser avec le ciel. San Luis de los Franceses, cathédrale de secours ; El Salvador, la seconde cathédrale ; et San Telmo, la façade la plus exubérante. Une route pour lever les yeux.',
+      de: 'War das Goldene Zeitalter das der Malerei, so war das 18. Jahrhundert das des echten Goldes: vergoldeter Stuck, farbige Marmore und freskierte Kuppeln in Kirchen, die mit dem Himmel wetteifern wollten. San Luis de los Franceses, als Ersatz-Kathedrale geplant; El Salvador, die zweite Kathedrale; und San Telmo, die üppigste Fassade der Stadt. Eine Route zum Aufschauen.',
+      it: 'Se il Secolo d\'Oro fu quello della pittura, il Settecento fu quello dell\'oro vero: stucchi dorati, marmi colorati e cupole affrescate in chiese che volevano competere col cielo. San Luis de los Franceses, cattedrale di riserva; El Salvador, la seconda cattedrale; e San Telmo, la facciata più esuberante. Un percorso per guardare in alto.',
+      pt: 'Se o Século de Ouro foi o da pintura, o século XVIII foi o do ouro verdadeiro: estuque dourado, mármores coloridos e cúpulas com frescos em igrejas que queriam competir com o céu. San Luis de los Franceses, catedral de reserva; El Salvador, a segunda catedral; e San Telmo, a fachada mais exuberante. Uma rota para olhar para cima.',
+    },
     stops: [
       {
         name: 'Iglesia de San Luis de los Franceses',
@@ -2295,7 +2439,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     duration: '1.5h',
     distance: '3 km',
     difficulty: 'easy',
-    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Plaza_Nueva_de_Sevilla_%28april_2015%29.jpg/960px-Plaza_Nueva_de_Sevilla_%28april_2015%29.jpg',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/ANTIGUO_TRANVIA_DE_SEVILLA.jpg/960px-ANTIGUO_TRANVIA_DE_SEVILLA.jpg',
     title: {
       es: 'Sevilla sobre Raíles: Tranvía y Metro',
       en: 'Seville by Rail: Tram & Metro',
@@ -2311,6 +2455,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Die bequemste Art, das Zentrum zu queren: Tram T1 verbindet Plaza Nueva mit San Bernardo in 15 Minuten, die Metro L1 hält an Puerta de Jerez.',
       it: 'Il modo più comodo per attraversare il centro: il tram T1 collega Plaza Nueva a San Bernardo in 15 minuti, la metro L1 ferma a Puerta de Jerez.',
       pt: 'A forma mais cómoda de atravessar o centro: o elétrico T1 liga a Plaza Nueva a San Bernardo em 15 minutos, e o metro L1 para em Puerta de Jerez.',
+    },
+    intro: {
+      es: 'Sevilla tuvo tranvía desde 1875 y lo perdió en 1960; volvió sobre raíles en 2007 y desde 2009 tiene metro. Este paseo propone la forma más cómoda de cruzar el centro: subir al tranvía T1 en Plaza Nueva, bajar en el Archivo de Indias y seguir hasta San Bernardo, donde enlazan metro, cercanías y los trenes hacia Cádiz. Historia de la ciudad contada desde la ventanilla, por 1,40 euros.',
+      en: 'Seville had trams from 1875 and lost them in 1960; it returned to rails in 2007 and has had a metro since 2009. This walk proposes the most comfortable way across the centre: board tram T1 at Plaza Nueva, hop off at the Archive of the Indies and ride to San Bernardo, where metro, commuter rail and Cádiz trains meet. City history from the window, for 1.40 euros.',
+      fr: 'Séville eut des tramways dès 1875 et les perdit en 1960 ; elle est revenue sur rails en 2007 et a un métro depuis 2009. Cette promenade propose la façon la plus confortable de traverser le centre : monter au tram T1 à Plaza Nueva, descendre aux Archives des Indes et continuer jusqu\'à San Bernardo.',
+      de: 'Sevilla hatte ab 1875 Straßenbahnen und verlor sie 1960; 2007 kehrte sie auf Schienen zurück, seit 2009 gibt es eine Metro. Dieser Spaziergang zeigt die bequemste Art durchs Zentrum: Tram T1 an der Plaza Nueva besteigen, am Indien-Archiv aussteigen, weiter bis San Bernardo. Stadtgeschichte aus dem Fenster für 1,40 Euro.',
+      it: 'Siviglia ebbe il tram dal 1875 e lo perse nel 1960; tornò su rotaie nel 2007 e ha la metropolitana dal 2009. Questa passeggiata propone il modo più comodo di attraversare il centro: salire sul tram T1 a Plaza Nueva, scendere all\'Archivio delle Indie e proseguire fino a San Bernardo.',
+      pt: 'Sevilha teve elétrico desde 1875 e perdeu-o em 1960; voltou aos carris em 2007 e tem metro desde 2009. Este passeio propõe a forma mais cómoda de atravessar o centro: subir ao elétrico T1 na Plaza Nueva, sair no Arquivo das Índias e seguir até San Bernardo.',
     },
     transportDetails: {
       es: 'Tranvía T1 (Metrocentro, TUSSAM): Plaza Nueva ↔ San Bernardo cada 7-10 min, 1,40€ sencillo (0,38€ con tarjeta Multiviaje). Metro L1: estación Puerta de Jerez, cada 5 min hacia el Aljarafe.',
@@ -2412,7 +2564,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     duration: '1.5h',
     distance: '4 km (fluvial)',
     difficulty: 'easy',
-    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/El_Guadalquivir_desde_el_puente_de_San_Juan_de_Aznalfarache.JPG/960px-El_Guadalquivir_desde_el_puente_de_San_Juan_de_Aznalfarache.JPG',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/CruceroporelGuadalquivir.jpg/960px-CruceroporelGuadalquivir.jpg',
     title: {
       es: 'El Guadalquivir en Barco',
       en: 'The Guadalquivir by Boat',
@@ -2428,6 +2580,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Sevilla vom Fluss aus, wie Phönizier, Römer und das Gold Amerikas kamen: eine Stunde Fahrt zwischen Torre del Oro und Alamillo.',
       it: 'Siviglia dal fiume, come arrivarono fenici, romani e l\'oro delle Americhe: una crociera di un\'ora tra la Torre del Oro e l\'Alamillo.',
       pt: 'Sevilha a partir do rio, como chegaram fenícios, romanos e o ouro das Américas: um cruzeiro de uma hora entre a Torre del Oro e o Alamillo.',
+    },
+    intro: {
+      es: 'Durante dos siglos, el Guadalquivir fue la autopista del imperio: por aquí subían el oro, la plata y el tabaco de América, y bajaban colonos y mercancías. Ver Sevilla desde el agua es verla como la vieron los pilotos de Indias: la Torre del Oro, Triana, la Maestranza y la Cartuja alineadas en una sola orilla. Una hora de crucero entre la Torre del Oro y el Alamillo, con guía y sin caminar.',
+      en: 'For two centuries the Guadalquivir was the empire\'s highway: up it came the gold, silver and tobacco of the Americas, down went settlers and goods. Seeing Seville from the water is seeing it as the Indies pilots did: Torre del Oro, Triana, the Maestranza and Cartuja lined up on one bank. An hour\'s cruise between the Torre del Oro and the Alamillo, guided and without walking.',
+      fr: 'Pendant deux siècles, le Guadalquivir fut l\'autoroute de l\'empire : par ici montaient l\'or, l\'argent et le tabac des Amériques, descendaient colons et marchandises. Voir Séville depuis l\'eau, c\'est la voir comme les pilotes des Indes : la Torre del Oro, Triana, la Maestranza et la Cartuja alignées sur une rive.',
+      de: 'Zwei Jahrhunderte war der Guadalquivir die Autobahn des Imperiums: Hinauf kamen Gold, Silber und Tabak Amerikas, hinunter Siedler und Waren. Sevilla vom Wasser aus zu sehen heißt, es wie die Indien-Piloten zu sehen: Torre del Oro, Triana, Maestranza und Cartuja an einem Ufer. Eine Stunde Fahrt, geführt und ohne Gehen.',
+      it: 'Per due secoli il Guadalquivir fu l\'autostrada dell\'impero: da qui salivano oro, argento e tabacco delle Americhe, scendevano coloni e merci. Vedere Siviglia dall\'acqua è vederla come i piloti delle Indie: Torre del Oro, Triana, la Maestranza e la Cartuja allineate su una riva.',
+      pt: 'Durante dois séculos o Guadalquivir foi a autoestrada do império: por aqui subiam ouro, prata e tabaco das Américas, desciam colonos e mercadorias. Ver Sevilha da água é vê-la como os pilotos das Índias: Torre del Oro, Triana, Maestranza e Cartuja alinhadas numa margem.',
     },
     transportDetails: {
       es: 'Cruceros de 1h con salida en el muelle de la Torre del Oro (varias navieras, salidas cada 30-60 min en temporada). Alternativa barata: el transbordador de Los Remedios (lanzadera de barrio).',
@@ -2548,7 +2708,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     duration: '2h',
     distance: '8 km',
     difficulty: 'easy',
-    image: 'https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?w=800',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Sevilla_desde_la_Torre_del_Oro_%282%29.jpg/960px-Sevilla_desde_la_Torre_del_Oro_%282%29.jpg',
     title: {
       es: 'Sevilla en Bici: El Carril del Río',
       en: 'Seville by Bike: The River Lane',
@@ -2564,6 +2724,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Sevilla ist flach und hat 180 km Radwege: die Flussroute verbindet Torre del Oro, Delicias und den María-Luisa-Park.',
       it: 'Siviglia è piatta e ha 180 km di piste ciclabili: la rotta del fiume unisce Torre del Oro, Delicias e il parco María Luisa.',
       pt: 'Sevilha é plana e tem 180 km de ciclovia: a rota do rio liga a Torre del Oro, Delicias e o parque María Luisa.',
+    },
+    intro: {
+      es: 'Sevilla es plana, tiene 180 kilómetros de carril bici y un servicio público de bicicletas desde 2007: la combinación perfecta para moverse como un vecino más. El carril del río es el eje estrella: une la Torre del Oro, el paseo de Colón, el muelle de las Delicias, el acuario y el parque María Luisa sin una sola cuesta y casi todo protegido del tráfico. Alquila una Sevici por una semana y rueda.',
+      en: 'Seville is flat, has 180 kilometres of bike lanes and a public bike service since 2007: the perfect combination to move like a local. The river lane is the star axis: it links the Torre del Oro, Paseo de Colón, Delicias dock, the aquarium and María Luisa park with no hills at all and almost all protected from traffic. Rent a Sevici for a week and ride.',
+      fr: 'Séville est plate, compte 180 kilomètres de pistes cyclables et un service public de vélos depuis 2007 : la combinaison parfaite pour bouger comme un habitant. La piste du fleuve relie la Torre del Oro, le paseo de Colón, le quai de las Delicias, l\'aquarium et le parc María Luisa sans aucune côte.',
+      de: 'Sevilla ist flach, hat 180 Kilometer Radwege und seit 2007 ein öffentliches Fahrradsystem: die perfekte Kombination, um wie ein Einheimischer unterwegs zu sein. Der Flussradweg ist die Starachse: Torre del Oro, Paseo de Colón, Delicias-Kai, Aquarium und María-Luisa-Park ohne einen einzigen Hügel. Sevici für eine Woche mieten und losfahren.',
+      it: 'Siviglia è piatta, ha 180 chilometri di piste ciclabili e un servizio pubblico di bici dal 2007: la combinazione perfetta per muoversi come un abitante. La pista del fiume è l\'asse principale: unisce Torre del Oro, paseo de Colón, molo de las Delicias, acquario e parco María Luisa senza una salita.',
+      pt: 'Sevilha é plana, tem 180 quilómetros de ciclovia e um serviço público de bicicletas desde 2007: a combinação perfeita para circular como um local. A ciclovia do rio é o eixo principal: liga a Torre del Oro, o Paseo de Colón, o cais de las Delicias, o aquário e o parque María Luisa sem uma única subida.',
     },
     transportDetails: {
       es: 'Bicis públicas Sevici (sevici.es): abono ocasional por 1 semana, primeras 30 min de cada viaje gratis; 260 estaciones por toda la ciudad. El carril va protegido junto al río.',
@@ -2664,7 +2832,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     duration: '2.5h',
     distance: '6 km',
     difficulty: 'moderate',
-    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/El_Guadalquivir_desde_el_puente_de_San_Juan_de_Aznalfarache.JPG/960px-El_Guadalquivir_desde_el_puente_de_San_Juan_de_Aznalfarache.JPG',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/San_Juan_de_Aznalfarache_-_Ascensor_4.jpg/960px-San_Juan_de_Aznalfarache_-_Ascensor_4.jpg',
     title: {
       es: 'Metro al Aljarafe: El Cerro de San Juan',
       en: 'Metro to Aljarafe: San Juan Hill',
@@ -2680,6 +2848,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Ein Kurzausflug mit Sevillas bester Gratisaussicht: der ummauerte Hügel von San Juan de Aznalfarache, 10 Metro-Minuten vom Zentrum.',
       it: 'Una gita breve con le migliori viste gratuite di Siviglia: il colle murato di San Juan de Aznalfarache, a 10 minuti di metro dal centro.',
       pt: 'Uma excursão curta com as melhores vistas gratuitas de Sevilha: o monte muralhado de San Juan de Aznalfarache, a 10 minutos de metro do centro.',
+    },
+    intro: {
+      es: 'Al otro lado del río, el Aljarafe guarda el mejor mirador gratuito de Sevilla: el cerro amurallado de San Juan de Aznalfarache, que los almohades llamaron Hisn al-Faraj, castillo de la vista. En metro son diez minutos desde Puerta de Jerez; una vez arriba, las murallas medievales, el monumento a los Sagrados Corazones y toda la ciudad extendida a tus pies, sobre todo al atardecer. La excursión perfecta para una tarde corta.',
+      en: 'Across the river, the Aljarafe keeps Seville\'s best free viewpoint: the walled hill of San Juan de Aznalfarache, which the Almohads called Hisn al-Faraj, castle of the view. It\'s ten metro minutes from Puerta de Jerez; once up, medieval walls, the Sacred Hearts monument and the whole city spread at your feet, especially at sunset. The perfect short-afternoon outing.',
+      fr: 'De l\'autre côté du fleuve, l\'Aljarafe garde le meilleur belvédère gratuit de Séville : la colline fortifiée de San Juan de Aznalfarache, que les Almohades appelaient Hisn al-Faraj, château de la vue. Dix minutes de métro depuis Puerta de Jerez ; en haut, murailles médiévales et toute la ville à vos pieds.',
+      de: 'Jenseits des Flusses bewahrt der Aljarafe Sevillas besten Gratis-Aussichtspunkt: den ummauerten Hügel von San Juan de Aznalfarache, den die Almohaden Hisn al-Faraj nannten, Schloss der Aussicht. Zehn Metro-Minuten ab Puerta de Jerez; oben erwarten dich mittelalterliche Mauern und die ganze Stadt zu Füßen.',
+      it: 'Oltre il fiume, l\'Aljarafe custodisce il miglior belvedere gratuito di Siviglia: il colle murato di San Juan de Aznalfarache, che gli almohadi chiamavano Hisn al-Faraj, castello della vista. Dieci minuti di metro da Puerta de Jerez; in cima, mura medievali e tutta la città ai tuoi piedi.',
+      pt: 'Do outro lado do rio, o Aljarafe guarda o melhor miradouro gratuito de Sevilha: o monte muralhado de San Juan de Aznalfarache, que os almóadas chamavam Hisn al-Faraj, castelo da vista. São dez minutos de metro desde Puerta de Jerez; lá em cima, muralhas medievais e toda a cidade aos seus pés.',
     },
     transportDetails: {
       es: 'Metro L1 desde Puerta de Jerez hasta San Juan Bajo (~10 min, 1,35€). Subida al cerro andando (15 min por cuestas) o con el ascensor panorámico gratuito.',
@@ -2785,6 +2961,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: '35 km von Sevilla: eine der ältesten bewohnten Städte Europas mit römischen und almohadischen Toren, einem in den Fels gehauenen Amphitheater und weißen Gassen.',
       it: 'A 35 km da Siviglia, una delle città abitate più antiche d\'Europa: porte romane e almohadi, un anfiteatro scavato nella roccia e vicoli bianchi.',
       pt: 'A 35 km de Sevilha, uma das cidades habitadas mais antigas da Europa: portas romanas e almóadas, um anfiteatro escavado na rocha e ruas caiadas.',
+    },
+    intro: {
+      es: 'Carmona es uno de los asentamientos humanos más antiguos de Europa, y se nota en cada capa: necrópolis romana con tumbas excavadas en roca, puertas almohades sobre cimientos cartagineses, iglesias que fueron mezquitas y sinagogas. Los romanos la llamaron \'la más fuerte\', y su Puerta de Sevilla sigue siendo una de las imágenes más potentes del patrimonio andaluz. A 35 kilómetros y con autobús directo, es la excursión más redonda desde la ciudad.',
+      en: 'Carmona is one of Europe\'s oldest human settlements, and every layer shows: a Roman necropolis with rock-cut tombs, Almohad gates on Carthaginian foundations, churches that were mosques and synagogues. The Romans called it \'the strongest\', and its Seville Gate remains one of Andalusia\'s most powerful sights. At 35 kilometres with a direct bus, it\'s the roundest day trip from the city.',
+      fr: 'Carmona est l\'un des plus anciens peuplements d\'Europe, et chaque couche le montre : nécropole romaine aux tombes rupestres, portes almohades sur des fondations carthaginoises, églises qui furent mosquées et synagogues. Les Romains l\'appelaient \'la plus forte\'. À 35 kilomètres en bus direct, c\'est l\'excursion la plus complète.',
+      de: 'Carmona ist eine der ältesten Siedlungen Europas, und jede Schicht zeigt es: römische Nekropole mit Felsengräbern, Almohadentore auf punischen Fundamenten, Kirchen, die Moscheen und Synagogen waren. Die Römer nannten sie \'die Stärkste\'. 35 Kilometer entfernt, mit Direktbus der rundeste Tagesausflug.',
+      it: 'Carmona è uno degli insediamenti umani più antichi d\'Europa, e ogni strato lo dimostra: necropoli romana con tombe rupestri, porte almohadi su fondamenta puniche, chiese che furono moschee e sinagoghe. I romani la chiamavano \'la più forte\'. A 35 chilometri con autobus diretto, l\'escursione più completa.',
+      pt: 'Carmona é um dos assentamentos humanos mais antigos da Europa, e cada camada mostra-o: necrópole romana com tumbas escavadas na rocha, portas almóadas sobre fundações púnicas, igrejas que foram mesquitas e sinagogas. Os romanos chamavam-lhe \'a mais forte\'. A 35 quilómetros com autocarro direto, a excursão mais completa.',
     },
     transportDetails: {
       es: 'Autobús M-124 desde la Estación de Plaza de Armas (para también en San Bernardo), cada 30-60 min, ~40 min de viaje. En coche: A-4 salida Carmona, aparcamiento gratuito junto a la Puerta de Sevilla.',
@@ -2910,6 +3094,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       it: 'La "padella dell\'Andalusia" custodisce undici torri barocche, palazzi e un ponte romano sul Genil.',
       pt: 'A "frigideira da Andaluzia" guarda onze torres barrocas, palácios e uma ponte romana sobre o Genil.',
     },
+    intro: {
+      es: 'Écija es la ciudad de las once torres y del calor legendario: sus veranos le han ganado el apodo de \'la sartén de Andalucía\'. Bajo las calles duerme Astigi, una de las cuatro capitales de la Bética romana, y sobre ellas se alzan torres barrocas, palacios y casas señoriales de ladrillo. El puente romano sobre el Genil sigue en uso dos mil años después, y la Vía Augusta que lo cruzaba unía Cádiz con Roma.',
+      en: 'Écija is the city of eleven towers and legendary heat: its summers earned it the nickname \'Andalusia\'s frying pan\'. Beneath the streets sleeps Astigi, one of Roman Baetica\'s four capitals, and above them rise Baroque towers, palaces and brick manor houses. The Roman bridge over the Genil is still in use two thousand years on, and the Via Augusta crossing it linked Cádiz with Rome.',
+      fr: 'Écija est la ville aux onze tours et à la chaleur légendaire : ses étés lui ont valu le surnom de \'poêle à frire de l\'Andalousie\'. Sous les rues dort Astigi, l\'une des quatre capitales de la Bétique romaine ; au-dessus s\'élèvent tours baroques et palais de brique.',
+      de: 'Écija ist die Stadt der elf Türme und der legendären Hitze: Ihre Sommer brachten ihr den Spitznamen \'Bratpfanne Andalusiens\' ein. Unter den Straßen schläft Astigi, eine der vier Hauptstädte der römischen Baetica; darüber erheben sich Barocktürme und Backsteinpaläste.',
+      it: 'Écija è la città delle undici torri e del caldo leggendario: le sue estati le sono valse il soprannome di \'padella dell\'Andalusia\'. Sotto le strade dorme Astigi, una delle quattro capitali della Betica romana; sopra si alzano torri barocche e palazzi di mattoni.',
+      pt: 'Écija é a cidade das onze torres e do calor lendário: os seus verões valeram-lhe o apelido de \'frigideira da Andaluzia\'. Sob as ruas dorme Astigi, uma das quatro capitais da Bética romana; acima erguem-se torres barrocas e palácios de tijolo.',
+    },
     transportDetails: {
       es: 'En coche: A-4 hasta Sevilla Este y luego A-92 dirección Granada, salida Écija (~1h). Aparcar en el centro es complicado: usa los parkings de la plaza de España. Autobuses interurbanos desde Plaza de Armas como alternativa.',
       en: 'By car: A-4 then A-92 towards Granada, Écija exit (~1h). Central parking is tricky: use the Plaza de España car parks. Intercity buses from Plaza de Armas as an alternative.',
@@ -3025,6 +3217,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Die herzogliche Stadt, die Game-of-Thrones-Kulisse war: Stiftskirche mit Renaissance-Gräbern, Universität des 16. Jh.',
       it: 'La città ducale che fu set di Game of Thrones: collegiata con sepolcri rinascimentali, università del Cinquecento.',
       pt: 'A cidade ducal que foi cenário de Game of Thrones: colegiada com sepulcros renascentistas, universidade do século XVI.',
+    },
+    intro: {
+      es: 'Osuna fue, durante el Siglo de Oro, una pequeña corte ducal con universidad propia: los Téllez-Girón trajeron de Nápoles artistas italianos para labrar sepulcros de mármol y llenaron la villa de colegiatas, conventos y palacios. Cervantes la retrató en sus novelas y hoy sirve de escenario a Juego de Tronos. Su colegiata guarda el sepulcro del Gran Duque, y su plaza mayor porticada es una de las más monumentales de Andalucía.',
+      en: 'During the Golden Age, Osuna was a small ducal court with its own university: the Téllez-Girón brought Italian artists from Naples to carve marble tombs and filled the town with collegiate churches, convents and palaces. Cervantes portrayed it in his novels and today it doubles as a Game of Thrones set. Its collegiate church keeps the Grand Duke\'s tomb and its arcaded square is among Andalusia\'s grandest.',
+      fr: 'Au Siècle d\'Or, Osuna fut une petite cour ducale avec sa propre université : les Téllez-Girón firent venir de Naples des artistes italiens pour sculpter des tombeaux de marbre. Cervantes l\'a dépeinte dans ses romans et Game of Thrones y a été tourné.',
+      de: 'Im Goldenen Zeitalter war Osuna ein kleiner Herzogshof mit eigener Universität: Die Téllez-Girón holten italienische Künstler aus Neapel für Marmorgräber und füllten die Stadt mit Stiftskirchen, Klöstern und Palästen. Cervantes porträtierte sie in seinen Romanen, heute dient sie Game of Thrones als Kulisse.',
+      it: 'Nel Secolo d\'Oro Osuna fu una piccola corte ducale con università propria: i Téllez-Girón portarono da Napoli artisti italiani per scolpire sepolcri di marmo. Cervantes la ritrasse nei suoi romanzi e oggi fa da set a Game of Thrones.',
+      pt: 'No Século de Ouro Osuna foi uma pequena corte ducal com universidade própria: os Téllez-Girón trouxeram de Nápoles artistas italianos para esculpir sepulcros de mármore. Cervantes retratou-a nos seus romances e hoje serve de cenário a Game of Thrones.',
     },
     transportDetails: {
       es: 'Autobuses directos Sevilla-Osuna (~1h20) varias salidas al día desde las estaciones de Prado de San Sebastián y Plaza de Armas: consulta horarios en la estación. En coche: A-92 dirección Granada, salida Osuna (~1h).',
@@ -3150,6 +3350,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       it: 'Il treno più pittoresco di Siviglia: la C-3 sale alla Sierra Norte tra pascoli e lecci fino a Cazalla, terra di acquavite.',
       pt: 'O comboio mais pitoresco de Sevilha: a C-3 sobe à Sierra Norte entre pastagens e azinheiras até Cazalla, terra de aguardente.',
     },
+    intro: {
+      es: 'El tren de cercanías C3 es el secreto mejor guardado de Sevilla: en menos de dos horas sube desde Santa Justa a la Sierra Norte atravesando dehesas de encinas, y por unos cinco euros. Cazalla de la Sierra huele a aguardiente y a piedra antigua: fue tierra de bandoleros y de viñedos, de conventos y de minas. La excursión sin coche perfecta para un día de campo con la Vía Verde como gran ruta senderista.',
+      en: 'The C3 commuter train is Seville\'s best-kept secret: in under two hours it climbs from Santa Justa to the Sierra Norte through holm-oak meadows, for about five euros. Cazalla de la Sierra smells of aguardiente and old stone: land of bandits and vineyards, convents and mines. The perfect car-free outing for a country day, with the Vía Verde as the star hiking route.',
+      fr: 'Le train C3 est le secret le mieux gardé de Séville : en moins de deux heures, il monte de Santa Justa à la Sierra Norte à travers les pâturages de chênes verts, pour environ cinq euros. Cazalla de la Sierra sent l\'eau-de-vie et la pierre ancienne : terre de bandits et de vignobles.',
+      de: 'Der C3-Vorortzug ist Sevillas bestgehütetes Geheimnis: In unter zwei Stunden steigt er von Santa Justa durch Steineichenweiden in die Sierra Norte, für rund fünf Euro. Cazalla de la Sierra riecht nach Aguardiente und altem Stein: Land von Banditen und Weinbergen.',
+      it: 'Il treno C3 è il segreto meglio custodito di Siviglia: in meno di due ore sale da Santa Justa alla Sierra Norte tra i pascoli di lecci, per circa cinque euro. Cazalla de la Sierra profuma di acquavite e pietra antica: terra di banditi e vigneti.',
+      pt: 'O comboio C3 é o segredo mais bem guardado de Sevilha: em menos de duas horas sobe de Santa Justa à Sierra Norte por entre pastagens de azinheiras, por cerca de cinco euros. Cazalla de la Sierra cheira a aguardente e pedra antiga: terra de bandidos e vinhas.',
+    },
     transportDetails: {
       es: 'Tren de Cercanías C3 desde Sevilla-Santa Justa o San Bernardo hasta Cazalla-Constantina (~1h50, ~5€). Conviene consultar horarios de vuelta en renfe.com: hay pocas frecuencias. En coche: A-455 por la Sierra.',
       en: 'Cercanías C3 train from Sevilla-Santa Justa or San Bernardo to Cazalla-Constantina (~1h50, ~€5). Check return times on renfe.com: limited services. By car: A-455 through the Sierra.',
@@ -3253,6 +3461,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Die von einer 100-Meter-Schlucht geteilte Stadt: Brücke aus dem 18. Jh. über die Tiefe, Spaniens älteste Stierkampfarena.',
       it: 'La città divisa da una gola di 100 metri: ponte del Settecento sul vuoto, l\'arena più antica di Spagna.',
       pt: 'A cidade dividida por um desfiladeiro de 100 metros: ponte do século XVIII sobre o vazio, a praça de touros mais antiga de Espanha.',
+    },
+    intro: {
+      es: 'Ronda no se parece a ninguna otra ciudad: está partida en dos por un tajo de cien metros y unida por un puente que tardó cuarenta años en levantarse sobre el vacío. Cuna del toreo a pie y del bandolerismo romántico, aquí veranearon Hemingway y Orson Welles, y sus calles blancas asoman a precipicios donde anidan buitres. A dos horas en autobús directo, es la excursión más espectacular de la provincia.',
+      en: 'Ronda looks like no other city: split in two by a 100-metre gorge and joined by a bridge that took forty years to raise over the void. Cradle of bullfighting on foot and of romantic banditry, Hemingway and Orson Welles summered here, and its white streets overlook cliffs where vultures nest. Two hours by direct bus: the most spectacular trip in the province.',
+      fr: 'Ronda ne ressemble à aucune autre ville : coupée en deux par un gouffre de cent mètres, unie par un pont qui mit quarante ans à s\'élever sur le vide. Berceau de la tauromachie à pied et du banditisme romantique, Hemingway et Orson Welles y ont passé l\'été.',
+      de: 'Ronda gleicht keiner anderen Stadt: geteilt von einer 100-Meter-Schlucht, verbunden durch eine Brücke, die vierzig Jahre über der Tiefe entstand. Wiege des Stierkampfs zu Fuß und romantischen Banditentums; Hemingway und Orson Welles verbrachten hier ihre Sommer.',
+      it: 'Ronda non assomiglia a nessun\'altra città: divisa in due da una gola di cento metri e unita da un ponte che impiegò quarant\'anni a sorgere sul vuoto. Culla della tauromachia a piedi e del banditismo romantico, qui passarono l\'estate Hemingway e Orson Welles.',
+      pt: 'Ronda não se parece com nenhuma outra cidade: está partida em dois por um desfiladeiro de cem metros e unida por uma ponte que levou quarenta anos a erguer sobre o vazio. Berço da tauromaquia a pé e do banditismo romântico, aqui veranearam Hemingway e Orson Welles.',
     },
     transportDetails: {
       es: 'Autobuses directos Damas desde la Estación de Plaza de Armas (~2h). En coche: A-376 por los pueblos blancos, una de las carreteras más bonitas de Andalucía (~1h45).',
@@ -3377,6 +3593,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Die älteste Stadt des Westens (3.000 Jahre, von Phöniziern gegründet): Stadtstrand, goldene Kathedrale und ein Licht, das Maler liebten.',
       it: 'La città più antica d\'Occidente (3.000 anni, fondata dai fenici), con spiaggia urbana, cattedrale dorata e una luce che sedusse i pittori.',
       pt: 'A cidade mais antiga do Ocidente (3.000 anos, fundada pelos fenícios), com praia urbana, catedral dourada e uma luz que encantou pintores.',
+    },
+    intro: {
+      es: 'Cádiz es la ciudad más antigua de Occidente: la fundaron navegantes fenicios hace tres mil años como Gadir, la fortaleza. Después fue puerto romano, base de las flotas de Indias y escenario de la primera Constitución española, y todo eso se nota en su casco antiguo, el más denso de España. Con playa urbana, torres vigía y una luz atlántica que los pintores persiguieron durante siglos, es un día perfecto en tren.',
+      en: 'Cádiz is the oldest city in the West: Phoenician sailors founded it three thousand years ago as Gadir, the fortress. Then it was a Roman port, base of the Indies fleets and stage of Spain\'s first Constitution, and all of it shows in its old town, Spain\'s densest. With an urban beach, watchtowers and an Atlantic light painters chased for centuries, it\'s a perfect day by train.',
+      fr: 'Cadix est la plus ancienne ville d\'Occident : des marins phéniciens la fondèrent il y a trois mille ans sous le nom de Gadir. Puis port romain, base des flottes des Indes et scène de la première Constitution espagnole, tout cela se lit dans sa vieille ville, la plus dense d\'Espagne.',
+      de: 'Cádiz ist die älteste Stadt des Westens: Phönizische Seefahrer gründeten sie vor dreitausend Jahren als Gadir. Dann römischer Hafen, Basis der Indienflotten und Schauplatz der ersten spanischen Verfassung — all das zeigt sich in der Altstadt, Spaniens dichtester.',
+      it: 'Cadice è la città più antica d\'Occidente: navigatori fenici la fondarono tremila anni fa come Gadir. Poi porto romano, base delle flotte delle Indie e scena della prima Costituzione spagnola: tutto si legge nel centro storico, il più denso di Spagna.',
+      pt: 'Cádis é a cidade mais antiga do Ocidente: navegadores fenícios fundaram-na há três mil anos como Gadir. Depois porto romano, base das frotas das Índias e palco da primeira Constituição espanhola — tudo isso se lê no centro histórico, o mais denso de Espanha.',
     },
     transportDetails: {
       es: 'Tren Media Distancia desde Sevilla-Santa Justa o San Bernardo a Cádiz (~1h40, desde ~13€). Sale varias veces al día: ida temprano y vuelta después de cenar. La estación está junto al casco antiguo.',
@@ -3503,6 +3727,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       it: 'La capitale dello sherry: cattedrale, alcázar e bodegas secolari dove nacque il vino amato dall\'Inghilterra.',
       pt: 'A capital do xerez: catedral, alcázar e bodegas centenárias onde nasceu o vinho que a Inglaterra adotou.',
     },
+    intro: {
+      es: 'Jerez huele a vino y suena a caballos: aquí nació el sherry, el vino fortificado que Inglaterra hizo suyo, y aquí se entrenan los caballos cartujanos, la sangre más pura del caballo español. Entre catedral, alcázar almohade y bodegas centenarias con naves de cien metros, la ciudad se visita a ritmo de cata. A una hora en tren de Santa Justa, con visitas a bodega que conviene reservar.',
+      en: 'Jerez smells of wine and sounds of horses: sherry was born here, the fortified wine England made its own, and here the Carthusian horses train, the purest blood of the Spanish horse. Between cathedral, Almohad alcázar and century-old bodegas with hundred-metre halls, the city is visited at tasting pace. One hour by train from Santa Justa; book bodega tours ahead.',
+      fr: 'Jerez sent le vin et sonne comme des chevaux : c\'est ici que naquit le sherry, le vin fortifié adopté par l\'Angleterre, et ici s\'entraînent les chevaux cartusiens. Entre cathédrale, alcázar almohade et bodegas centenaires, la ville se visite au rythme d\'une dégustation.',
+      de: 'Jerez riecht nach Wein und klingt nach Pferden: Hier entstand der Sherry, der Likörwein, den England sich zu eigen machte, und hier trainieren die Kartäuserpferde. Zwischen Kathedrale, Almohaden-Alcázar und jahrhundertealten Bodegas besucht man die Stadt im Verkostungstempo.',
+      it: 'Jerez profuma di vino e suona di cavalli: qui nacque lo sherry, il vino fortificato adottato dall\'Inghilterra, e qui si allenano i cavalli cartusiani. Tra cattedrale, alcázar almohade e bodegas secolari, la città si visita al ritmo di una degustazione.',
+      pt: 'Jerez cheira a vinho e soa a cavalos: aqui nasceu o xerez, o vinho fortificado adotado pela Inglaterra, e aqui treinam os cavalos cartuxos. Entre catedral, alcázar almóada e bodegas centenárias, a cidade visita-se ao ritmo de uma prova.',
+    },
     transportDetails: {
       es: 'Tren desde Sevilla-Santa Justa o San Bernardo a Jerez (~1h05, desde ~10€), varios al día. Las bodegas se visitan con reserva previa (tours desde ~15€).',
       en: 'Train from Sevilla-Santa Justa or San Bernardo to Jerez (~1h05, from €10), several daily. Bodegas visits need booking (tours from €15).',
@@ -3611,7 +3843,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     duration: '10h',
     distance: '200 km (ida y vuelta)',
     difficulty: 'easy',
-    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Sanl%C3%BAcar_-_V%C3%ADa_Verde_Entre_R%C3%ADos_02.jpg/960px-Sanl%C3%BAcar_-_V%C3%ADa_Verde_Entre_R%C3%ADos_02.jpg',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Bodega_de_Sanl%C3%BAcar.jpg/960px-Bodega_de_Sanl%C3%BAcar.jpg',
     title: {
       es: 'Sanlúcar y Doñana',
       en: 'Sanlúcar & Doñana',
@@ -3627,6 +3859,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Der Hafen der ersten Weltumseglung (1519) und das Tor zum Doñana-Park: Marschen, endlose Strände und Langustinen.',
       it: 'Il porto da cui partì la prima circumnavigazione (1519) e la porta del parco di Doñana: paludi, spiagge infinite e gamberi.',
       pt: 'O porto de onde partiu a primeira volta ao mundo (1519) e a porta para o parque de Doñana: sapais, praias infinitas e lagostins.',
+    },
+    intro: {
+      es: 'Sanlúcar de Barrameda es el puerto donde empezó y terminó la primera vuelta al mundo: de su playa zarparon Magallanes y Elcano en 1519, y aquí regresó la nao Victoria tres años después. Hoy es la puerta al parque de Doñana, la mayor reserva de Europa, y la capital de la manzanilla, el único vino criado bajo la brisa marina. Marismas, langostinos y atardeceres atlánticos en una excursión con coche.',
+      en: 'Sanlúcar de Barrameda is the port where the first circumnavigation began and ended: Magellan and Elcano set sail from its beach in 1519, and the nao Victoria returned here three years later. Today it\'s the gateway to Doñana, Europe\'s largest reserve, and capital of manzanilla, the only wine aged under sea breeze. Marshes, langoustines and Atlantic sunsets on a car outing.',
+      fr: 'Sanlúcar de Barrameda est le port où commença et s\'acheva le premier tour du monde : Magellan et Elcano partirent de sa plage en 1519. Aujourd\'hui, c\'est la porte du parc de Doñana et la capitale de la manzanilla, le seul vin élevé sous la brise marine.',
+      de: 'Sanlúcar de Barrameda ist der Hafen, in dem die erste Weltumseglung begann und endete: Magellan und Elcano stachen 1519 von seinem Strand in See. Heute ist es das Tor zum Doñana-Park und die Hauptstadt der Manzanilla, des einzigen Weins unter Meeresbrise.',
+      it: 'Sanlúcar de Barrameda è il porto dove iniziò e finì il primo giro del mondo: Magellano ed Elcano salparono dalla sua spiaggia nel 1519. Oggi è la porta del parco di Doñana e la capitale della manzanilla, l\'unico vino allevato sotto la brezza marina.',
+      pt: 'Sanlúcar de Barrameda é o porto onde começou e terminou a primeira volta ao mundo: Magalhães e Elcano partiram da sua praia em 1519. Hoje é a porta do parque de Doñana e a capital da manzanilla, o único vinho criado sob a brisa marinha.',
     },
     transportDetails: {
       es: 'En coche: A-4 dirección Cádiz y A-480 hasta Sanlúcar (~1h15). La visita a Doñana se hace desde el embarcadero de Bajo de Guía (visitas guiadas 4x4 o barco, reserva previa). Aparcamiento fácil junto al río.',
@@ -3753,6 +3993,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       it: 'La Mezquita-Cattedrale con 856 colonne, la giudecca fiorita e il ponte romano: la capitale del califfato a 45 minuti in AVE.',
       pt: 'A Mesquita-Catedral com 856 colunas, a judiaria florida e a ponte romana: a capital do califado a 45 minutos de AVE.',
     },
+    intro: {
+      es: 'Córdoba tuvo un kilómetro de Mezquita, con 856 columnas de mármol, y fue la ciudad más poblada y culta de Europa en el siglo X: biblioteca de 400.000 volúmenes, médicos, astrónomos y poetas bajo el califato. A 45 minutos en AVE de Santa Justa, la excursión permite desayunar en Sevilla y almorzar junto a la judería más florida de España. Imperdonable no entrar a la Mezquita-Catedral antes de que lleguen los grupos.',
+      en: 'Córdoba had a kilometre-long Mosque with 856 marble columns and was 10th-century Europe\'s most populous, cultured city: a 400,000-volume library, doctors, astronomers and poets under the caliphate. Forty-five AVE minutes from Santa Justa, the trip lets you breakfast in Seville and lunch beside Spain\'s most flowered Jewish quarter. Not entering the Mosque-Cathedral before groups arrive is unforgivable.',
+      fr: 'Cordoue eut une mosquée d\'un kilomètre aux 856 colonnes de marbre et fut la ville la plus peuplée et cultivée d\'Europe au Xe siècle. À 45 minutes en AVE, l\'excursion permet de petit-déjeuner à Séville et de déjeuner près de la judería la plus fleurie d\'Espagne.',
+      de: 'Córdoba hatte eine einen Kilometer lange Moschee mit 856 Marmorsäulen und war im 10. Jahrhundert Europas bevölkerungsreichste, kultivierteste Stadt. 45 AVE-Minuten von Santa Justa: Frühstück in Sevilla, Mittagessen an Spaniens blumigstem Judenviertel.',
+      it: 'Cordova ebbe una Moschea lunga un chilometro con 856 colonne di marmo e fu la città più popolosa e colta d\'Europa nel X secolo. A 45 minuti in AVE, l\'escursione permette di fare colazione a Siviglia e pranzare accanto alla giudecca più fiorita di Spagna.',
+      pt: 'Córdova teve uma Mesquita com um quilómetro e 856 colunas de mármore e foi a cidade mais populosa e culta da Europa no século X. A 45 minutos de AVE, a excursão permite tomar o pequeno-almoço em Sevilha e almoçar junto à judiaria mais florida de Espanha.',
+    },
     transportDetails: {
       es: 'AVE/AVANT desde Sevilla-Santa Justa a Córdoba (~45 min, desde ~15€ con antelación). Muchos trenes al día. En la ciudad todo se hace andando desde la estación o en bus urbano (líneas 1 y 3).',
       en: 'AVE/AVANT from Sevilla-Santa Justa to Córdoba (~45 min, from €15 if booked ahead). Many daily trains. Everything is walkable from the station or by city bus (lines 1 and 3).',
@@ -3876,6 +4124,14 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       de: 'Spaniens höchster Leuchtturm (69 Meter), das Seefahrer-Heiligtum Regla und einer der besten Atlantikstrände bei Cádiz.',
       it: 'Il faro più alto di Spagna (69 metri), il santuario marinaro di Regla e una delle migliori spiagge atlantiche.',
       pt: 'O farol mais alto de Espanha (69 metros), o santuário marinho de Regla e uma das melhores praias atlânticas de Cádis.',
+    },
+    intro: {
+      es: 'Chipiona huele a mar y a pescaíto frito, y guarda el faro más alto de España: 69 metros de torre sobre el antiguo castillo, con 322 escalones y vistas a la desembocadura del Guadalquivir y a Doñana. Fue puerto atunero en época romana —su garum llegaba a Roma— y hoy es playa familiar, santuario marinero y tierra de vinos albarizos. A hora y cuarto en coche, el plan perfecto de un día de verano.',
+      en: 'Chipiona smells of sea and fried fish, and keeps Spain\'s tallest lighthouse: a 69-metre tower over the old castle, 322 steps up, with views to the Guadalquivir mouth and Doñana. It was a Roman tuna port — its garum reached Rome — and today it\'s a family beach, seafaring shrine and land of albariza wines. An hour and a quarter by car: the perfect summer day plan.',
+      fr: 'Chipiona sent la mer et le poisson frit, et garde le plus haut phare d\'Espagne : 69 mètres de tour sur l\'ancien château, 322 marches et vue sur l\'embouchure du Guadalquivir. Port thonier romain, aujourd\'hui plage familiale et sanctuaire marin.',
+      de: 'Chipiona riecht nach Meer und Bratfisch und hütet Spaniens höchsten Leuchtturm: 69 Meter Turm über der alten Burg, 322 Stufen, mit Blick auf die Guadalquivir-Mündung und Doñana. Römischer Thunfischhafen, heute Familienstrand und Seefahrerheiligtum.',
+      it: 'Chipiona profuma di mare e pesce fritto e custodisce il faro più alto di Spagna: 69 metri di torre sull\'antico castello, 322 gradini, con vista sulla foce del Guadalquivir e su Doñana. Porto tonniero romano, oggi spiaggia per famiglie e santuario marinaro.',
+      pt: 'Chipiona cheira a mar e peixe frito e guarda o farol mais alto de Espanha: 69 metros de torre sobre o antigo castelo, 322 degraus, com vista para a foz do Guadalquivir e Doñana. Porto atuneiro romano, hoje praia familiar e santuário marinho.',
     },
     transportDetails: {
       es: 'En coche: A-4 dirección Cádiz y A-480/A-491 hasta Chipiona (~1h15). Aparcamiento junto a la playa en temporada baja; en verano, ve temprano. Autobuses interurbanos como alternativa.',

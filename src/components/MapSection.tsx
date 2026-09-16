@@ -2,13 +2,14 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
 import { MapPin, Route, Bus, Clock, Footprints, Filter, ExternalLink, Lightbulb, Timer, Car, Globe, BookOpen } from 'lucide-react';
 import { type Locale } from '@/i18n';
 import { SIGHTS, NEARBY, BUS_LINES } from '@/data/sights';
 import { TOURIST_ROUTES } from '@/data/routes';
 import { APARTMENT } from '@/data/apartment';
-import { cn, getRouteMapsUrl } from '@/lib/utils';
+import { cn } from '@/lib/utils';
 
 type Tab = 'map' | 'routes' | 'transport';
 type SightCategory = 'all' | 'monument' | 'neighborhood' | 'culture' | 'food' | 'nature' | 'modern' | 'fun';
@@ -25,7 +26,6 @@ export default function MapSection() {
   const [tab, setTab] = useState<Tab>('map');
   const [category, setCategory] = useState<SightCategory>('all');
   const [selectedSight, setSelectedSight] = useState<typeof SIGHTS[0] | null>(null);
-  const [selectedRoute, setSelectedRoute] = useState<typeof TOURIST_ROUTES[0] | null>(null);
   const [routeCat, setRouteCat] = useState<string>('all');
   const [mapLoaded, setMapLoaded] = useState(false);
   const leafletMapRef = useRef<L.Map | null>(null);
@@ -264,10 +264,10 @@ export default function MapSection() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {TOURIST_ROUTES.filter(r => routeCat === 'all' || r.category === routeCat).map(route => (
-              <div
+              <Link
                 key={route.id}
-                className="card overflow-hidden cursor-pointer group hover:-translate-y-1 transition-all duration-200"
-                onClick={() => setSelectedRoute(route)}
+                href={`/${locale}/rutas/${route.id}`}
+                className="card overflow-hidden cursor-pointer group hover:-translate-y-1 transition-all duration-200 block"
               >
                 {route.image && (
                   <div className="relative h-40 overflow-hidden">
@@ -332,11 +332,11 @@ export default function MapSection() {
                   </span>
                 </div>
 
-                <button className="mt-4 text-sm text-terracota-500 hover:text-terracota-700 font-medium flex items-center gap-1">
+                <span className="mt-4 text-sm text-terracota-500 group-hover:text-terracota-700 font-medium flex items-center gap-1">
                   {t('routeDetails')} →
-                </button>
+                </span>
                 </div>
-              </div>
+              </Link>
             ))}
             </div>
           </div>
@@ -405,117 +405,6 @@ export default function MapSection() {
           </div>
         )}
 
-        {/* Route detail modal */}
-        {selectedRoute && (
-          <div className="fixed inset-0 z-50 bg-tinta/50 backdrop-blur-sm flex items-center justify-center p-4" onClick={() => setSelectedRoute(null)}>
-            <div className="bg-white rounded-3xl shadow-large max-w-2xl w-full max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
-              <div className="p-6">
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className="text-2xl font-serif font-bold text-tinta">{selectedRoute.title[locale]}</h3>
-                    <div className="flex items-center gap-3 mt-1 text-sm text-tinta/60">
-                      <span className="flex items-center gap-1"><Clock size={14} /> {selectedRoute.duration}</span>
-                      <span className="flex items-center gap-1"><Route size={14} /> {selectedRoute.distance}</span>
-                    </div>
-                  </div>
-                  <button onClick={() => setSelectedRoute(null)} className="p-2 hover:bg-crema rounded-xl transition-colors">
-                    ✕
-                  </button>
-                </div>
-                <p className="text-tinta/70 mb-4">{selectedRoute.description[locale]}</p>
-
-                {/* Cómo llegar */}
-                {selectedRoute.transportDetails && (
-                  <div className="flex items-start gap-2 p-3 rounded-xl bg-azulejo-50 border border-azulejo-200 mb-6">
-                    {selectedRoute.transport === 'car' ? (
-                      <Car size={16} className="text-azulejo-700 flex-shrink-0 mt-0.5" />
-                    ) : selectedRoute.transport === 'public' ? (
-                      <Bus size={16} className="text-azulejo-700 flex-shrink-0 mt-0.5" />
-                    ) : (
-                      <Footprints size={16} className="text-azulejo-700 flex-shrink-0 mt-0.5" />
-                    )}
-                    <div>
-                      <p className="text-xs font-semibold text-azulejo-800 uppercase tracking-wide mb-0.5">
-                        {t('howToGet')}
-                      </p>
-                      <p className="text-sm text-azulejo-900">{selectedRoute.transportDetails[locale]}</p>
-                    </div>
-                  </div>
-                )}
-
-                <div className="space-y-3">
-                  {selectedRoute.stops.map((stop, i) => (
-                    <div key={i} className="flex gap-3">
-                      <div className="flex flex-col items-center">
-                        <div className="w-7 h-7 rounded-full bg-terracota-500 text-white flex items-center justify-center text-xs font-bold">{i + 1}</div>
-                        {i < selectedRoute.stops.length - 1 && <div className="w-0.5 h-full min-h-8 bg-terracota-200 mt-1" />}
-                      </div>
-                      <div className="pb-3 flex-1">
-                        <div className="flex items-center justify-between gap-2">
-                          <p className="font-semibold text-tinta text-sm">{stop.name}</p>
-                          <div className="flex items-center gap-2 flex-shrink-0">
-                            {stop.url && (
-                              <a
-                                href={stop.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-azulejo-500 hover:text-azulejo-700"
-                                aria-label={`${stop.name} — ${t('officialWeb')}`}
-                                title={t('officialWeb')}
-                              >
-                                <Globe size={14} />
-                              </a>
-                            )}
-                            <a
-                              href={`https://maps.google.com/?q=${stop.lat},${stop.lng}`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-azulejo-500 hover:text-azulejo-700"
-                              aria-label={`${stop.name} — Google Maps`}
-                            >
-                              <MapPin size={14} />
-                            </a>
-                          </div>
-                        </div>
-                        {stop.description && <p className="text-xs text-tinta/60 mt-0.5">{stop.description[locale]}</p>}
-                        {stop.history && (
-                          <p className="text-xs text-tinta/70 bg-crema-dark/60 border border-tinta/5 rounded-lg px-2 py-1.5 mt-1.5 flex items-start gap-1.5">
-                            <BookOpen size={12} className="flex-shrink-0 mt-0.5 text-azulejo-600" />
-                            <span>
-                              <span className="font-medium text-azulejo-800">{t('historyLabel')}: </span>
-                              {stop.history[locale]}
-                            </span>
-                          </p>
-                        )}
-                        {stop.tip && (
-                          <p className="text-xs text-ocre-700 bg-ocre-50 border border-ocre-200 rounded-lg px-2 py-1.5 mt-1.5 flex items-start gap-1.5">
-                            <Lightbulb size={12} className="flex-shrink-0 mt-0.5" />
-                            <span>{stop.tip[locale]}</span>
-                          </p>
-                        )}
-                        {stop.bestTime && (
-                          <p className="text-xs text-azulejo-600 mt-1 flex items-center gap-1">
-                            <Timer size={12} />
-                            <span>{t('bestTime')}: {stop.bestTime[locale]}</span>
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <a
-                  href={getRouteMapsUrl(selectedRoute.stops)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary mt-6 w-full justify-center"
-                >
-                  <ExternalLink size={16} />
-                  {t('fullRoute')}
-                </a>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );

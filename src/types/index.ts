@@ -35,6 +35,8 @@ export interface TouristRoute {
   id: string;
   title: Record<Locale, string>;
   description: Record<Locale, string>;
+  /** Presentación ampliada de la ruta en la página de detalle (historia, contexto) */
+  intro?: Record<Locale, string>;
   category: 'classic' | 'neighborhoods' | 'romantic' | 'food' | 'family' | 'culture' | 'nature' | 'shopping' | 'photos' | 'history' | 'legends' | 'art' | 'daytrip' | 'wine' | 'beach';
   /** Modo principal de la ruta */
   transport?: RouteTransport;
