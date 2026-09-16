@@ -78,6 +78,7 @@ export default function MapSection() {
         .openPopup();
 
       // Sight markers
+      const allPoints: [number, number][] = [[APARTMENT.lat, APARTMENT.lng]];
       SIGHTS.forEach(sight => {
         const icon = L.divIcon({
           html: `<div style="background:#2A5A8C;color:white;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.2);font-size:14px;">${CATEGORY_ICONS[sight.category] || '📍'}</div>`,
@@ -87,18 +88,27 @@ export default function MapSection() {
           popupAnchor: [0, -20],
         });
 
+        allPoints.push([sight.lat, sight.lng]);
         L.marker([sight.lat, sight.lng], { icon })
           .addTo(map)
           .bindPopup(`
-            <div style="min-width:200px;">
+            <div style="min-width:210px;">
               <strong style="font-size:14px;">${sight.name}</strong>
-              <p style="font-size:12px;color:#666;margin:4px 0;">${sight.description[locale].slice(0, 100)}...</p>
-              <p style="font-size:11px;color:#C25A3A;">🎟️ ${sight.entrance}</p>
-              <a href="https://maps.google.com/?q=${sight.lat},${sight.lng}" target="_blank"
-                 style="font-size:11px;color:#2A5A8C;text-decoration:none;">🗺️ ${t('openInMaps')}</a>
+              <p style="font-size:12px;color:#666;margin:4px 0;">${sight.description[locale].slice(0, 110)}...</p>
+              <p style="font-size:11px;color:#C25A3A;margin:2px 0;">🎟️ ${sight.entrance}</p>
+              <div style="display:flex;gap:10px;margin-top:4px;">
+                ${sight.url ? `<a href="${sight.url}" target="_blank" rel="noopener" style="font-size:11px;color:#2A5A8C;text-decoration:none;">🌐 Web</a>` : ''}
+                <a href="https://maps.google.com/?q=${sight.lat},${sight.lng}" target="_blank" rel="noopener"
+                   style="font-size:11px;color:#2A5A8C;text-decoration:none;">🗺️ ${t('openInMaps')}</a>
+              </div>
             </div>
           `);
       });
+
+      // Encuadrar todos los puntos (apartamento + monumentos)
+      if (allPoints.length > 1) {
+        map.fitBounds(L.latLngBounds(allPoints), { padding: [30, 30] });
+      }
 
       setMapLoaded(true);
     };

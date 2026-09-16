@@ -215,6 +215,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Torre del Oro',
         lat: 37.3824026, lng: -5.9963156,
         description: {
@@ -348,6 +360,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'A Sevilha verde nasceu das hortas do Alcázar e floresceu com a Exposição Ibero-Americana de 1929. Um só passeio leva dos românticos jardins de Murillo à Plaza de España, um semicírculo de 200 metros com canal navegável, e do parque María Luisa, pulmão de 34 hectares com pavões, aos pavilhões que hoje são museus. Ideal para famílias e para as horas mais quentes: quase todo o percurso é à sombra.',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Jardines de Murillo',
         lat: 37.3836847, lng: -5.9878272,
@@ -507,6 +531,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'El Rinconcillo (1670)',
         lat: 37.3933406, lng: -5.9882942,
         description: {
@@ -640,6 +676,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'Sevilha é a cidade do pôr do sol, e este passeio foi desenhado à volta dessa hora dourada. Os pátios silenciosos de Santa Cruz, o beco onde viveu Washington Irving e a margem do Guadalquivir quando o sol cai atrás de Triana. A rota termina no alto, com a cidade iluminada desde as Setas.',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Hospital de los Venerables',
         lat: 37.3852401, lng: -5.9903321,
@@ -775,6 +823,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Mercado de Feria',
         lat: 37.3995094, lng: -5.9915351,
         description: {
@@ -908,6 +968,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'A luz de Sevilha é diferente: mais quente, mais limpa, com uma hora dourada que os pintores descobriram há séculos e que os telemóveis não cansam. Esta rota foi pensada por e para fotógrafos: cada paragem é um enquadramento testado. Da simetria da Plaza de España ao pátio escondido do Cabildo.',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Plaza de España (galería alta)',
         lat: 37.3769743, lng: -5.9869398,
@@ -1067,6 +1139,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Monasterio de la Cartuja (CAAC)',
         lat: 37.3983819, lng: -6.0075971,
         description: {
@@ -1180,6 +1264,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'Sevilha tem mais palácios habitados do que qualquer cidade espanhola, e muitos continuam nas mãos das mesmas famílias nobres. Esta rota abre as portas que o turismo de massas ignora: a Casa de Pilatos e o seu caminho de 1521, os mosaicos romanos comprados ao metro pela condessa de Lebrija, o jardim dos Alba onde nasceu Machado.',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Casa de Pilatos',
         lat: 37.3902394, lng: -5.9872491,
@@ -1315,6 +1411,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Hospital de la Caridad',
         lat: 37.3840817, lng: -5.9952313,
         description: {
@@ -1428,6 +1536,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'Antes dos almóadas, antes dos visigodos, Sevilha foi romana durante seis séculos com o nome de Hispalis. Dessa cidade restam colunas de templos no meio das ruas, mosaicos sob as Setas e um aqueduto que funcionou dois mil anos. A rota atravessa a cidade romana e termina em Itálica, berço dos imperadores Trajano e Adriano.',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Columnas de la Calle Mármoles',
         lat: 37.3884414, lng: -5.9898758,
@@ -1547,6 +1667,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Museo de Bellas Artes',
         lat: 37.392416, lng: -6.0000135,
         description: {
@@ -1660,6 +1792,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'Os reis de Sevilha deixaram mais histórias do que estátuas. Um monarca ameaçou cortar todas as cabeças da cidade por um tijolo; outro saiu de noite para duelar e emparedou a cabeça do rival numa ruela; uma dama foi queimada viva numa lagoa por traição.',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Alameda de Hércules',
         lat: 37.3988837, lng: -5.9937356,
@@ -1795,6 +1939,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Capilla del Cristo del Cachorro (Triana)',
         lat: 37.3907001, lng: -6.0043609,
         description: {
@@ -1928,6 +2084,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'Entre 1147 e 1248 Sevilha foi capital de um império de Marraquexe a Tunes. Os almóadas construíram a Giralda, o pátio das Laranjeiras, a muralha de 166 torres e a corrente do rio; torres de minarete ainda espreitam atrás dos campanários. Esta rota lê a Sevilha de há 800 anos nas ruas de hoje.',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'La Giralda',
         lat: 37.385915, lng: -5.9931406,
@@ -2083,6 +2251,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Plaza Nueva y Ayuntamiento',
         lat: 37.3886108, lng: -5.9951145,
         description: {
@@ -2216,6 +2396,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'As receitas mais antigas de Sevilha não estão nos livros: vivem atrás de um torno de convento, onde as freiras de clausura as fazem há séculos sem serem vistas. As yemas de San Leandro, as tortas de azeite de Madre de Dios e os doces do Torno compram-se por uma janelinha giratória, em dinheiro.',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Convento de Santa Paula',
         lat: 37.3963357, lng: -5.9854488,
@@ -2351,6 +2543,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Iglesia de San Luis de los Franceses',
         lat: 37.3983609, lng: -5.9882691,
         description: {
@@ -2473,6 +2677,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'Elétrico T1 (Metrocentro): Plaza Nueva ↔ San Bernardo a cada 7-10 min, 1,40€ (0,38€ com cartão Multiviaje). Metro L1: estação Puerta de Jerez.',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Plaza Nueva (cabecera del tranvía)',
         lat: 37.3886108, lng: -5.9951145,
@@ -2598,6 +2814,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'Cruzeiros de 1h com partida no cais da Torre del Oro (várias empresas). Alternativa barata: o ferry de Los Remedios.',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Torre del Oro (embarcadero)',
         lat: 37.3824026, lng: -5.9963156,
@@ -2743,6 +2971,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Torre del Oro (estación Sevici)',
         lat: 37.3824026, lng: -5.9963156,
         url: 'https://www.sevici.es/',
@@ -2867,6 +3107,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Puerta de Jerez (estación de metro)',
         lat: 37.3817849, lng: -5.99436,
         url: 'https://www.metro-sevilla.es/',
@@ -2979,6 +3231,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'Autocarro M-124 da estação Plaza de Armas (para também em San Bernardo), a cada 30-60 min, ~40 min. De carro: A-4, saída Carmona, estacionamento gratuito junto à Puerta de Sevilla.',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Puerta de Sevilla',
         lat: 37.4711726, lng: -5.6411468,
@@ -3112,6 +3376,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Plaza de España',
         lat: 37.5411551, lng: -5.079263,
         url: 'https://www.ecija.es/',
@@ -3235,6 +3511,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'Autocarros diretos Sevilha-Osuna (~1h20), várias partidas por dia das estações Prado de San Sebastián e Plaza de Armas. De carro: A-92 em direção a Granada, saída Osuna (~1h).',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Plaza Mayor y Ayuntamiento',
         lat: 37.2373413, lng: -5.1033001,
@@ -3368,6 +3656,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Estación de Cazalla-Constantina',
         lat: 37.9327746, lng: -5.7044425,
         url: 'https://www.renfe.com/',
@@ -3479,6 +3779,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'Autocarros diretos Damas da Plaza de Armas (~2h). De carro: a A-376 pelos povoados brancos, uma das estradas mais bonitas da Andaluzia (~1h45).',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Puente Nuevo',
         lat: 36.7407148, lng: -5.1658765,
@@ -3611,6 +3923,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'Comboio Media Distancia de Santa Justa ou San Bernardo a Cádis (~1h40, desde 13€). Várias partidas por dia; a estação fica junto ao centro histórico.',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Catedral Nueva',
         lat: 36.5289521, lng: -6.2953183,
@@ -3745,6 +4069,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Bodegas González Byass (Tío Pepe)',
         lat: 36.6800737, lng: -6.1429525,
         url: 'https://www.gonzalezbyass.com/',
@@ -3877,6 +4213,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'De carro: A-4 em direção a Cádis e A-480 até Sanlúcar (~1h15). Doñana visita-se a partir do cais de Bajo de Guía (tours 4x4 ou barco, com marcação).',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Bajo de Guía',
         lat: 36.788167, lng: -6.3526541,
@@ -4011,6 +4359,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     },
     stops: [
       {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
+      {
         name: 'Mezquita-Catedral',
         lat: 37.8790259, lng: -4.7794532,
         url: 'https://www.mezquita-catedraldecordoba.es/',
@@ -4142,6 +4502,18 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       pt: 'De carro: A-4 em direção a Cádis e A-480/A-491 até Chipiona (~1h15). Estacionamento junto à praia fora de época; no verão, vá cedo.',
     },
     stops: [
+      {
+        name: 'Apartamento Esencia Sevilla',
+        lat: 37.3968636, lng: -5.9742189,
+        description: {
+          es: 'Punto de partida de la ruta. Sal desde el alojamiento hacia la primera parada.',
+          en: 'Route starting point. Leave the apartment towards the first stop.',
+          fr: 'Point de départ de la route. Partez du logement vers le premier arrêt.',
+          de: 'Startpunkt der Route. Geh von der Unterkunft zur ersten Station.',
+          it: 'Punto di partenza del percorso. Esci dall\'alloggio verso la prima tappa.',
+          pt: 'Ponto de partida da rota. Saia do alojamento em direção à primeira paragem.',
+        },
+      },
       {
         name: 'Faro de Chipiona',
         lat: 36.7379061, lng: -6.4421091,

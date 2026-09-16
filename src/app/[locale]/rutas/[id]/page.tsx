@@ -11,6 +11,7 @@ import {
 import { type Locale, locales } from '@/i18n';
 import { absoluteUrl, getRouteMapsUrl, cn } from '@/lib/utils';
 import { TOURIST_ROUTES } from '@/data/routes';
+import RouteMap from '@/components/RouteMapClient';
 import { APARTMENT } from '@/data/apartment';
 
 export function generateStaticParams() {
@@ -61,15 +62,6 @@ export default function RouteDetailPage({
   const related = TOURIST_ROUTES.filter((r) => r.category === route.category && r.id !== route.id).slice(0, 3);
   const fallbackRelated = TOURIST_ROUTES.filter((r) => r.id !== route.id).slice(0, 3);
   const relatedRoutes = related.length > 0 ? related : fallbackRelated;
-
-  // bbox para el mapa embebido (OSM): margen del 15% alrededor de las paradas
-  const lats = route.stops.map((s) => s.lat);
-  const lngs = route.stops.map((s) => s.lng);
-  const minLat = Math.min(...lats), maxLat = Math.max(...lats);
-  const minLng = Math.min(...lngs), maxLng = Math.max(...lngs);
-  const latPad = Math.max((maxLat - minLat) * 0.15, 0.002);
-  const lngPad = Math.max((maxLng - minLng) * 0.15, 0.002);
-  const mapSrc = `https://www.openstreetmap.org/export/embed.html?bbox=${minLng - lngPad}%2C${minLat - latPad}%2C${maxLng + lngPad}%2C${maxLat + latPad}&layer=mapnik&marker=${route.stops[0].lat}%2C${route.stops[0].lng}`;
 
   // curiosidades agregadas: tips + bestTime + historias de las paradas
   const curiosities = route.stops
@@ -275,17 +267,10 @@ export default function RouteDetailPage({
           </section>
         )}
 
-        {/* Mapa */}
+        {/* Mapa con todas las paradas */}
         <section className="mb-12">
-          <div className="rounded-2xl overflow-hidden shadow-medium border border-tinta/10 h-80">
-            <iframe
-              src={mapSrc}
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              title={`Mapa de ${route.title[locale]}`}
-            />
+          <div className="rounded-2xl overflow-hidden shadow-medium border border-tinta/10" style={{ height: '440px' }}>
+            <RouteMap stops={route.stops.map((s) => ({ name: s.name, lat: s.lat, lng: s.lng }))} />
           </div>
           <div className="mt-4 flex flex-col sm:flex-row gap-3">
             <a
