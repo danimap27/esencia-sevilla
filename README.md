@@ -1114,9 +1114,20 @@ Verifica `OPENROUTER_API_KEY` y `OPENROUTER_MODEL`. El endpoint `/api/chat` hace
 
 El endpoint `/api/weather` usa Open-Meteo (gratuito, sin API key). Si no carga, puede ser un problema de red o que las coordenadas (`NEXT_PUBLIC_APARTMENT_LAT/LNG`) son inválidas.
 
-### El tour 360° muestra "subir fotos"
+### El tour 360° muestra "Tour 360° — próximamente"
 
-Necesitas subir fotos equirectangulares (360°) a `public/tours-360/` con los nombres: `salon.jpg`, `dormitorio.jpg`, `cocina.jpg`, `bano.jpg`. Cualquier cámara 360° o móvil con modo panoramic produce este formato.
+El botón se desactiva automáticamente cuando no hay fotos en `public/tours-360/`. Para activarlo:
+
+```bash
+python3 scripts/add-360-photos.py --dir ~/mis-fotos-360/
+```
+
+El script valida que cada foto sea equirectangular (ratio 2:1), la redimensiona a 4096 px
+y la comprime a <500 KB, y la guarda con el nombre correcto (`salon.jpg`, `dormitorio.jpg`,
+`cocina.jpg`, `bano.jpg`). Después: `systemctl --user restart esencia-sevilla`.
+
+Para conseguir las fotos: cámara 360 (Insta360, Ricoh Theta), app móvil con modo fotosfera,
+o un fotógrafo profesional de tours virtuales. Se toman a la altura de los ojos (1,5 m).
 
 ### El cookie banner no aparece
 

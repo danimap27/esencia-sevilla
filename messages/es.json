@@ -117,7 +117,9 @@
     "virtualTour": "Tour virtual 360°",
     "close": "Cerrar",
     "prev": "Anterior",
-    "next": "Siguiente"
+    "next": "Siguiente",
+    "comingSoon": "Tour 360° — próximamente",
+    "noPhotos": "Estamos preparando el tour virtual 360°. Vuelve pronto para recorrer el apartamento como si estuvieras dentro."
   },
   "map": {
     "title": "Explora Sevilla desde tu apartamento",

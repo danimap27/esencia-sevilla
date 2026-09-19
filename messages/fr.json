@@ -117,7 +117,9 @@
     "virtualTour": "Visite virtuelle 360°",
     "close": "Fermer",
     "prev": "Précédent",
-    "next": "Suivant"
+    "next": "Suivant",
+    "comingSoon": "Visite 360° — bientôt disponible",
+    "noPhotos": "Nous préparons la visite virtuelle 360°. Revenez bientôt pour parcourir l'appartement comme si vous y étiez."
   },
   "map": {
     "title": "Explorez Séville depuis votre appartement",

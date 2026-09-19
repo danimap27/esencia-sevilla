@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
-import { X, ChevronLeft, ChevronRight, Expand } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Expand, Camera } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 // Pannellum is loaded via script tag (CDN) to avoid SSR issues
@@ -53,24 +53,48 @@ const TOUR_LABELS: Record<string, Record<string, string>> = {
   pt: { livingRoom: 'Sala', bedroom: 'Quarto', kitchen: 'Cozinha', bathroom: 'Casa de banho' },
 };
 
+// Asynchronous existence check for the tour images (at least one must exist)
+async function checkPhotosExist(): Promise<string[]> {
+  const results = await Promise.all(
+    TOUR_SCENES.map(async (scene) => {
+      try {
+        const res = await fetch(scene.image, { method: 'HEAD' });
+        return res.ok ? scene.image : null;
+      } catch {
+        return null;
+      }
+    })
+  );
+  return results.filter((x): x is string => x !== null);
+}
+
 export default function VirtualTour({ locale = 'es' }: { locale?: string }) {
   const t = useTranslations('gallery');
   const [isOpen, setIsOpen] = useState(false);
   const [currentScene, setCurrentScene] = useState(0);
   const [pannellumLoaded, setPannellumLoaded] = useState(false);
+  const [availableScenes, setAvailableScenes] = useState<TourScene[] | null>(null); // null = checking
   const viewerRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  // Check which 360 photos exist on the server
+  useEffect(() => {
+    checkPhotosExist().then((existing) => {
+      setAvailableScenes(TOUR_SCENES.filter((s) => existing.includes(s.image)));
+    });
+  }, []);
+
+  const hasPhotos = (availableScenes?.length ?? 0) > 0;
+  const scenes = availableScenes && availableScenes.length > 0 ? availableScenes : TOUR_SCENES;
 
   // Load Pannellum scripts
   useEffect(() => {
     if (isOpen && !pannellumLoaded) {
-      // Load CSS
       const link = document.createElement('link');
       link.rel = 'stylesheet';
       link.href = PANNELLUM_CSS;
       document.head.appendChild(link);
 
-      // Load JS
       const script = document.createElement('script');
       script.src = PANNELLUM_JS;
       script.async = true;
@@ -81,8 +105,8 @@ export default function VirtualTour({ locale = 'es' }: { locale?: string }) {
 
   // Initialize viewer when loaded
   useEffect(() => {
-    if (isOpen && pannellumLoaded && containerRef.current && window.pannellum) {
-      const scene = TOUR_SCENES[currentScene];
+    if (isOpen && pannellumLoaded && hasPhotos && containerRef.current && (window as any).pannellum) {
+      const scene = scenes[currentScene];
       try {
         if (viewerRef.current) {
           viewerRef.current.destroy();
@@ -98,10 +122,8 @@ export default function VirtualTour({ locale = 'es' }: { locale?: string }) {
           minHfov: 50,
           maxHfov: 150,
           showControls: true,
-          onLoad: () => {},
-          onError: (e: any) => {
-            // If image not found, show placeholder
-            console.warn('Tour image not found:', scene.image);
+          onError: () => {
+            console.warn('Tour image failed to load:', scene.image);
           },
         });
       } catch (e) {
@@ -117,14 +139,29 @@ export default function VirtualTour({ locale = 'es' }: { locale?: string }) {
         viewerRef.current = null;
       }
     };
-  }, [isOpen, pannellumLoaded, currentScene]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen, pannellumLoaded, currentScene, hasPhotos]);
 
   const labels = TOUR_LABELS[locale] || TOUR_LABELS.es;
+
+  // Without photos (checked) → disabled "coming soon" button
+  if (availableScenes !== null && !hasPhotos) {
+    return (
+      <button
+        disabled
+        title={t('noPhotos')}
+        className="group flex items-center gap-3 px-5 py-3 rounded-xl bg-tinta/50 text-crema/60 cursor-not-allowed text-sm font-medium"
+      >
+        <Camera size={18} className="text-terracota-400/50" />
+        {t('comingSoon')}
+      </button>
+    );
+  }
 
   if (!isOpen) {
     return (
       <button
-        onClick={() => setIsOpen(true)}
+        onClick={() => availableScenes !== null && setIsOpen(true)}
         className="group flex items-center gap-3 px-5 py-3 rounded-xl bg-tinta/90 hover:bg-tinta text-crema transition-colors text-sm font-medium"
       >
         <Expand size={18} className="text-terracota-400 group-hover:scale-110 transition-transform" />
@@ -142,12 +179,13 @@ export default function VirtualTour({ locale = 'es' }: { locale?: string }) {
             ES
           </div>
           <h3 className="font-serif text-lg text-crema">
-            {labels[TOUR_SCENES[currentScene].titleKey]}
+            {labels[scenes[currentScene].titleKey]}
           </h3>
         </div>
         <button
           onClick={() => setIsOpen(false)}
           className="p-2 rounded-lg hover:bg-crema/10 transition-colors"
+          aria-label={t('close')}
         >
           <X size={20} className="text-crema" />
         </button>
@@ -161,23 +199,18 @@ export default function VirtualTour({ locale = 'es' }: { locale?: string }) {
           className="w-full h-full"
         />
 
-        {/* Placeholder when image not available */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="text-center text-crema/30">
-            <p className="text-sm">📷 {locale === 'es' ? 'Sube fotos 360° en /public/tours-360/' : 'Upload 360° photos to /public/tours-360/'}</p>
-          </div>
-        </div>
-
         {/* Nav arrows */}
         <button
-          onClick={() => setCurrentScene((prev) => (prev - 1 + TOUR_SCENES.length) % TOUR_SCENES.length)}
+          onClick={() => setCurrentScene((prev) => (prev - 1 + scenes.length) % scenes.length)}
           className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-crema/10 backdrop-blur-sm border border-crema/20 text-crema hover:bg-crema/20 transition-colors"
+          aria-label={t('prev')}
         >
           <ChevronLeft size={24} />
         </button>
         <button
-          onClick={() => setCurrentScene((prev) => (prev + 1) % TOUR_SCENES.length)}
+          onClick={() => setCurrentScene((prev) => (prev + 1) % scenes.length)}
           className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-crema/10 backdrop-blur-sm border border-crema/20 text-crema hover:bg-crema/20 transition-colors"
+          aria-label={t('next')}
         >
           <ChevronRight size={24} />
         </button>
@@ -185,7 +218,7 @@ export default function VirtualTour({ locale = 'es' }: { locale?: string }) {
 
       {/* Scene thumbnails */}
       <div className="flex items-center justify-center gap-2 p-4 bg-tinta/95 border-t border-crema/10 overflow-x-auto">
-        {TOUR_SCENES.map((scene, idx) => (
+        {scenes.map((scene, idx) => (
           <button
             key={scene.id}
             onClick={() => setCurrentScene(idx)}

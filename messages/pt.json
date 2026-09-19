@@ -117,7 +117,9 @@
     "virtualTour": "Tour virtual 360°",
     "close": "Fechar",
     "prev": "Anterior",
-    "next": "Seguinte"
+    "next": "Seguinte",
+    "comingSoon": "Tour 360° — brevemente",
+    "noPhotos": "Estamos a preparar a visita virtual 360°. Volte em breve para percorrer o apartamento como se estivesse lá."
   },
   "map": {
     "title": "Explore Sevilha desde o seu apartamento",

@@ -117,7 +117,9 @@
     "virtualTour": "360° Virtuelle Tour",
     "close": "Schließen",
     "prev": "Zurück",
-    "next": "Weiter"
+    "next": "Weiter",
+    "comingSoon": "360°-Tour — bald verfügbar",
+    "noPhotos": "Wir bereiten den virtuellen 360°-Rundgang vor. Schau bald wieder vorbei."
   },
   "map": {
     "title": "Entdecken Sie Sevilla von Ihrer Wohnung aus",

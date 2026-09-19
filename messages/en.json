@@ -117,7 +117,9 @@
     "virtualTour": "Virtual 360° tour",
     "close": "Close",
     "prev": "Previous",
-    "next": "Next"
+    "next": "Next",
+    "comingSoon": "360° tour — coming soon",
+    "noPhotos": "We are preparing the 360° virtual tour. Come back soon to walk through the apartment as if you were there."
   },
   "map": {
     "title": "Explore Seville from your apartment",

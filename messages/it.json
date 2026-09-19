@@ -117,7 +117,9 @@
     "virtualTour": "Tour virtuale 360°",
     "close": "Chiudi",
     "prev": "Precedente",
-    "next": "Successivo"
+    "next": "Successivo",
+    "comingSoon": "Tour 360° — prossimamente",
+    "noPhotos": "Stiamo preparando il tour virtuale a 360°. Torna presto per esplorare l'appartamento come se fossi lì."
   },
   "map": {
     "title": "Esplora Siviglia dal tuo appartamento",
