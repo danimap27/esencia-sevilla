@@ -25,11 +25,24 @@ export default function Header() {
   const router = useRouter();
 
   const [isScrolled, setIsScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
 
+  // Home = hay hero a pantalla completa debajo → header transparente con texto claro arriba
+  const isHome = pathname === `/${locale}` || pathname === '/';
+  const onHero = isHome && !isScrolled && !mobileOpen;
+
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 20);
+    let lastY = window.scrollY;
+    const handleScroll = () => {
+      const y = window.scrollY;
+      setIsScrolled(y > 24);
+      // Auto-ocultar al bajar (a partir de 140px), reaparecer al subir
+      if (y > lastY && y > 140) setHidden(true);
+      else if (y < lastY - 4 || y <= 140) setHidden(false);
+      lastY = y;
+    };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -62,9 +75,14 @@ export default function Header() {
       <header
         className={cn(
           'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+          hidden && !mobileOpen && '-translate-y-full',
           isScrolled
             ? 'glass border-b border-crema-dark/30 shadow-soft'
-            : 'bg-transparent'
+            : onHero
+              ? 'bg-gradient-to-b from-tinta/80 via-tinta/40 to-transparent'
+              : isHome
+                ? 'bg-transparent'
+                : 'glass border-b border-crema-dark/30 shadow-soft'
         )}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
@@ -77,7 +95,10 @@ export default function Header() {
             <div className="w-8 h-8 rounded-lg bg-terracota-500 flex items-center justify-center text-white font-serif text-sm font-bold">
               ES
             </div>
-            <span className="font-serif text-lg font-semibold text-tinta hidden sm:block">
+            <span className={cn(
+              'font-serif text-lg font-semibold hidden sm:block transition-colors',
+              onHero ? 'text-white drop-shadow-sm' : 'text-tinta'
+            )}>
               Esencia Sevilla
             </span>
           </Link>
@@ -88,7 +109,12 @@ export default function Header() {
               <button
                 key={key}
                 onClick={() => handleNavClick(href)}
-                className="px-3 py-2 text-sm font-medium text-tinta/70 hover:text-tinta hover:bg-tinta/5 rounded-lg transition-colors"
+                className={cn(
+                  'px-3 py-2 text-sm font-medium rounded-lg transition-colors',
+                  onHero
+                    ? 'text-white/90 hover:text-white hover:bg-white/15 drop-shadow-sm'
+                    : 'text-tinta/70 hover:text-tinta hover:bg-tinta/5'
+                )}
               >
                 {t(key as keyof typeof t)}
               </button>
@@ -101,7 +127,12 @@ export default function Header() {
             <div className="relative">
               <button
                 onClick={() => setLangOpen(!langOpen)}
-                className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-tinta/70 hover:text-tinta hover:bg-tinta/5 rounded-lg transition-colors"
+                className={cn(
+                  'flex items-center gap-1.5 px-3 py-2 text-sm font-medium rounded-lg transition-colors',
+                  onHero
+                    ? 'text-white/90 hover:text-white hover:bg-white/15 drop-shadow-sm'
+                    : 'text-tinta/70 hover:text-tinta hover:bg-tinta/5'
+                )}
                 aria-label="Change language"
               >
                 <Globe size={16} />
@@ -146,7 +177,10 @@ export default function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden p-2 rounded-lg text-tinta hover:bg-tinta/5 transition-colors"
+              className={cn(
+                'md:hidden p-2 rounded-lg transition-colors',
+                onHero ? 'text-white hover:bg-white/15' : 'text-tinta hover:bg-tinta/5'
+              )}
               aria-label="Toggle menu"
             >
               {mobileOpen ? <X size={20} /> : <Menu size={20} />}

@@ -165,7 +165,7 @@ export default function Hero({ onScrollToBooking }: { onScrollToBooking?: () => 
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center pt-24 pb-20 px-4 sm:px-8 max-w-7xl mx-auto w-full">
+      <div className="relative z-10 flex-1 flex flex-col justify-center pt-24 pb-16 md:pb-20 px-4 sm:px-8 max-w-7xl mx-auto w-full">
         {/* Badge */}
         <div className="mb-6 animate-slide-up-fade" style={{ animationDelay: '0.1s' }}>
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 text-white text-sm font-medium hover:bg-white/20 transition-all duration-300">
@@ -176,7 +176,7 @@ export default function Hero({ onScrollToBooking }: { onScrollToBooking?: () => 
 
         {/* Main headline with text gradient */}
         <h1
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-white mb-4 max-w-3xl animate-slide-up-fade leading-[1.05]"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif text-white mb-4 max-w-3xl animate-slide-up-fade leading-[1.05]"
           style={{
             animationDelay: '0.2s',
             textShadow: '0 2px 40px rgba(0,0,0,0.3)',
@@ -251,7 +251,7 @@ export default function Hero({ onScrollToBooking }: { onScrollToBooking?: () => 
         </div>
 
         {/* Nearby landmarks */}
-        <div className="mt-10 flex flex-wrap gap-2 animate-slide-up-fade" style={{ animationDelay: '0.7s' }}>
+        <div className="mt-8 mb-4 flex flex-wrap gap-2 animate-slide-up-fade" style={{ animationDelay: '0.7s' }}>
           {NEARBY_LANDMARKS.slice(0, 5).map((landmark) => (
             <span
               key={landmark.name}
@@ -266,8 +266,8 @@ export default function Hero({ onScrollToBooking }: { onScrollToBooking?: () => 
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
+      {/* Scroll indicator — esquina inferior derecha para no tapar los landmarks */}
+      <div className="absolute bottom-6 right-6 z-10 hidden sm:block">
         <button
           onClick={() => document.querySelector('#galeria')?.scrollIntoView({ behavior: 'smooth' })}
           className="p-3 rounded-full bg-white/10 border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition-all duration-300 animate-bounce"
