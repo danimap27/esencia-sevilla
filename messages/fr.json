@@ -426,7 +426,9 @@
     "km": "km",
     "free": "Gratuit",
     "perNight": "/ nuit",
-    "euros": "€"
+    "euros": "€",
+    "showMore": "Voir plus",
+    "showLess": "Voir moins"
   },
   "seo": {
     "homeTitle": "Appartement Touristique à Séville près de Santa Justa | Esencia Sevilla",

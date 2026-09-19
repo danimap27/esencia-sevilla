@@ -426,7 +426,9 @@
     "km": "km",
     "free": "Gratis",
     "perNight": "/ noche",
-    "euros": "€"
+    "euros": "€",
+    "showMore": "Ver más",
+    "showLess": "Ver menos"
   },
   "seo": {
     "homeTitle": "Apartamento Turístico en Sevilla junto a Santa Justa | Esencia Sevilla",

@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
-import { MapPin, Clock, Footprints, ExternalLink } from 'lucide-react';
+import { MapPin, Clock, Footprints, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 import { NEARBY } from '@/data/sights';
 import { type Locale } from '@/i18n';
 import { cn } from '@/lib/utils';
@@ -22,18 +22,22 @@ const CATEGORY_ORDER = [
 
 export default function NearbySection() {
   const t = useTranslations('nearby');
+  const tCommon = useTranslations('common');
   const locale = useLocale() as Locale;
   const [cat, setCat] = useState<string>('all');
+  const [showAll, setShowAll] = useState(false);
 
   const categories = useMemo(() => {
     const present = new Set(NEARBY.map((p) => p.category));
     return CATEGORY_ORDER.filter((c) => present.has(c));
   }, []);
 
-  const items = useMemo(
+  const VISIBLE_LIMIT = 9;
+  const filteredItems = useMemo(
     () => NEARBY.filter((p) => cat === 'all' || p.category === cat),
     [cat]
   );
+  const items = showAll ? filteredItems : filteredItems.slice(0, VISIBLE_LIMIT);
 
   return (
     <section id="cerca" className="py-16 md:py-24 bg-crema-dark">
@@ -118,6 +122,26 @@ export default function NearbySection() {
             </div>
           ))}
         </div>
+
+        {/* Ver más / Ver menos (sitios cercanos) */}
+        {filteredItems.length > VISIBLE_LIMIT && (
+          <div className="mt-8 text-center">
+            <button
+              onClick={() => setShowAll((v) => !v)}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white border border-tinta/10 text-azulejo-700 hover:border-terracota-300 hover:text-terracota-600 font-medium text-sm transition-all shadow-card"
+            >
+              {showAll ? (
+                <>
+                  <ChevronUp size={16} /> {tCommon('showLess')}
+                </>
+              ) : (
+                <>
+                  <ChevronDown size={16} /> {tCommon('showMore')} (+{filteredItems.length - VISIBLE_LIMIT})
+                </>
+              )}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
-import { MapPin, Route, Bus, Clock, Footprints, Filter, ExternalLink, Lightbulb, Timer, Car, Globe, BookOpen } from 'lucide-react';
+import { MapPin, Route, Bus, Clock, Footprints, Filter, ExternalLink, Lightbulb, Timer, Car, Globe, BookOpen, ChevronDown, ChevronUp } from 'lucide-react';
 import { type Locale } from '@/i18n';
 import { SIGHTS, NEARBY, BUS_LINES } from '@/data/sights';
 import { TOURIST_ROUTES } from '@/data/routes';
@@ -21,12 +21,15 @@ const CATEGORY_ICONS: Record<string, string> = {
 
 export default function MapSection() {
   const t = useTranslations('map');
+  const tCommon = useTranslations('common');
   const locale = useLocale() as Locale;
   const mapRef = useRef<HTMLDivElement>(null);
   const [tab, setTab] = useState<Tab>('map');
   const [category, setCategory] = useState<SightCategory>('all');
   const [selectedSight, setSelectedSight] = useState<typeof SIGHTS[0] | null>(null);
+  const [selectedRoute, setSelectedRoute] = useState<typeof TOURIST_ROUTES[0] | null>(null);
   const [routeCat, setRouteCat] = useState<string>('all');
+  const [showAllSights, setShowAllSights] = useState(false);
   const [mapLoaded, setMapLoaded] = useState(false);
   const leafletMapRef = useRef<L.Map | null>(null);
 
@@ -127,6 +130,10 @@ export default function MapSection() {
     'all', 'monument', 'neighborhood', 'culture', 'food', 'nature', 'modern', 'fun'
   ].map(key => ({ key: key as SightCategory, label: t(`categories.${key}` as Parameters<typeof t>[0]) }));
 
+  const filteredSights = SIGHTS.filter((s) => category === 'all' || s.category === category);
+  const MAX_VISIBLE_SIGHTS = 12;
+  const visibleSights = showAllSights ? filteredSights : filteredSights.slice(0, MAX_VISIBLE_SIGHTS);
+
   return (
     <section id="mapa" className="py-16 md:py-24 bg-crema">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
@@ -200,9 +207,7 @@ export default function MapSection() {
 
             {/* Sights list */}
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {SIGHTS
-                .filter(s => category === 'all' || s.category === category)
-                .map(sight => (
+              {visibleSights.map(sight => (
                   <div
                     key={sight.id}
                     className="card p-4 cursor-pointer hover:-translate-y-1 transition-transform duration-200"
@@ -246,6 +251,26 @@ export default function MapSection() {
                   </div>
                 ))}
             </div>
+
+            {/* Ver más / Ver menos (monumentos) */}
+            {filteredSights.length > MAX_VISIBLE_SIGHTS && (
+              <div className="mt-6 text-center">
+                <button
+                  onClick={() => setShowAllSights((v) => !v)}
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white border border-tinta/10 text-azulejo-700 hover:border-terracota-300 hover:text-terracota-600 font-medium text-sm transition-all shadow-card"
+                >
+                  {showAllSights ? (
+                    <>
+                      <ChevronUp size={16} /> {tCommon('showLess')}
+                    </>
+                  ) : (
+                    <>
+                      <ChevronDown size={16} /> {tCommon('showMore')} (+{filteredSights.length - MAX_VISIBLE_SIGHTS})
+                    </>
+                  )}
+                </button>
+              </div>
+            )}
           </div>
         )}
 

@@ -426,7 +426,9 @@
     "km": "km",
     "free": "Gratis",
     "perNight": "/ Nacht",
-    "euros": "€"
+    "euros": "€",
+    "showMore": "Mehr anzeigen",
+    "showLess": "Weniger anzeigen"
   },
   "seo": {
     "homeTitle": "Touristenwohnung in Sevilla neben Santa Justa | Esencia Sevilla",
