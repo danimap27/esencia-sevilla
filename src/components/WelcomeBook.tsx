@@ -46,11 +46,12 @@ export default function WelcomeBook() {
   ];
 
   const recommendations = [
-    { name: 'Bar Luca', type: 'Tapas', distance: '2 min andando', note: 'Prueba el salmorejo y el flamenquín.' },
-    { name: 'La Tabla de las Tres B', type: 'Tapas', distance: '5 min andando', note: 'Gazpacho espectacular y queso curado.' },
-    { name: 'Cafetería Plásido', type: 'Cafetería', distance: '3 min andando', note: 'Mejor tostada de Hanna en la zona.' },
-    { name: 'Mercado de Feria', type: 'Mercado', distance: '4 min andando', note: 'Productos locales frescos, ambiente auténtico.' },
-    { name: 'Heladería Bardo', type: 'Heladería', distance: '3 min andando', note: 'Helado artesanal de tono anacardo.' },
+    { name: 'Bar Danubio', type: 'Bar de barrio', distance: '3 min andando', note: 'Desayunos y tapas de siempre, ambiente local.' },
+    { name: 'La Rosaleda', type: 'Restaurante andaluz', distance: '4 min andando', note: 'Menú del día casero, muy popular en la zona.' },
+    { name: 'Berenice Bistrot', type: 'Restaurante', distance: '2 min andando', note: 'Cocina de mercado en un local pequeño.' },
+    { name: 'Alimentación La Esquinita', type: 'Ultramarinos', distance: '2 min andando', note: 'Todo lo básico para la nevera.' },
+    { name: 'Panadería Polvillo', type: 'Panadería', distance: '9 min andando', note: 'Pan recién hecho y bollería.' },
+    { name: 'Mercadona', type: 'Supermercado', distance: '6 min andando', note: 'Compra completa cerca de casa.' },
   ];
 
   return (

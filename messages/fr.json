@@ -10,9 +10,9 @@
     "bookNow": "Réserver maintenant"
   },
   "hero": {
-    "badge": "Appartement Touristique — Centre de Séville",
-    "headline": "Votre maison au cœur de Séville",
-    "subheadline": "À quelques pas de la Cathédrale, de l'Alcázar et du quartier de Santa Cruz. Vivez Séville comme un local.",
+    "badge": "Appartement Touristique — Séville",
+    "headline": "Votre maison à Séville",
+    "subheadline": "À 7 minutes à pied de la gare AVE Santa Justa et à 10 minutes du centre historique en bus ou taxi. Vivez Séville comme un local.",
     "cta": "Voir les disponibilités",
     "ctaSecondary": "Voir les photos",
     "reviewsBadge": "{count} avis 5 étoiles",
@@ -24,7 +24,7 @@
       "checkin": "Arrivée autonome 24h",
       "wifi": "WiFi ultra-rapide",
       "ac": "Climatisation dans toutes les pièces",
-      "location": "Emplacement imbattable"
+      "location": "Près de Santa Justa (AVE)"
     }
   },
   "comparison": {
@@ -207,7 +207,7 @@
     "subtitle": "Tout ce que vous devez savoir avant d'arriver",
     "questions": {
       "q1": "Y a-t-il un parking près de l'appartement ?",
-      "a1": "Pas de parking privé dans l'immeuble. Le parking public le plus proche est le Parking Plaza Nueva (5 min à pied, environ 25€/jour). Nous recommandons les transports publics car le centre historique a un accès restreint aux véhicules.",
+      "a1": "Pas de parking privé dans l'immeuble. L'appartement est en dehors des zones d'accès restreint du centre : stationner à proximité est plus facile que dans la vieille ville. Pour visiter le centre (à environ 2 km), nous recommandons bus, taxi ou un parking du centre.",
       "q2": "Les animaux sont-ils acceptés ?",
       "a2": "Désolé, les animaux ne sont pas acceptés dans l'appartement pour respecter les autres voyageurs et maintenir la propreté.",
       "q3": "Comment fonctionne l'arrivée autonome ?",
@@ -229,7 +229,7 @@
       "q11": "Fumer est-il autorisé dans l'appartement ?",
       "a11": "Il est interdit de fumer dans l'appartement. Le non-respect de cette règle entraîne une pénalité de 150€.",
       "q12": "Comment puis-je rejoindre l'appartement depuis l'aéroport ?",
-      "a12": "L'option la plus pratique est le bus EA (Aéroport Express), qui part toutes les 30 minutes et coûte 4€. Il met environ 40 minutes jusqu'à Prado de San Sebastián, d'où l'appartement est à 10 minutes à pied. Nous proposons également un transfert privé depuis l'aéroport pour 35€.",
+      "a12": "L'option la plus simple est le bus EA (Airport Express), toutes les 15-30 minutes, 4€. Descendez à Santa Justa (environ 30-40 minutes) : l'appartement est à 7 minutes à pied. Nous proposons aussi un transfert privé depuis l'aéroport pour 35€.",
       "q13": "Que faire si j'ai un problème pendant mon séjour ?",
       "a13": "Nous sommes disponibles 24h/24 et 7j/7 par WhatsApp pour tout incident. En cas d'urgence : le 112 est le numéro d'urgence en Espagne.",
       "q14": "Les enterrements de vie de célibataire ou les fêtes sont-ils acceptés ?",
@@ -250,7 +250,7 @@
   },
   "location": {
     "title": "Où sommes-nous",
-    "subtitle": "Au cœur de Séville, tout est à pied",
+    "subtitle": "Bien connecté : AVE à 7 min à pied, centre à 10 min en bus ou taxi",
     "address": "Imaginero Luis Alvarez Duarte N7, 41008 Séville",
     "howToArrive": "Comment arriver",
     "fromAirport": "Depuis l'aéroport SVQ",
@@ -259,20 +259,20 @@
     "step": "Étape {n}",
     "arrivalSteps": {
       "airport": {
-        "step1": "Prenez le bus EA (Aéroport Express) à la sortie des arrivées — 4€",
-        "step2": "Descendez à Prado de San Sebastián (≈40 min)",
-        "step3": "Marchez 10 minutes vers le nord par Av. Menéndez Pelayo",
+        "step1": "Prenez le bus EA (Airport Express) à la sortie des arrivées — 4€",
+        "step2": "Descendez à Santa Justa (≈30-40 min)",
+        "step3": "Marchez 7 minutes vers le nord jusqu'à l'appartement",
         "step4": "Arrivez à Imaginero Luis Álvarez Duarte, 7"
       },
       "train": {
-        "step1": "Depuis Santa Justa, prenez le Métro Ligne 1 (direction Olivar de Quinto)",
-        "step2": "Descendez à Puerta Jerez (3 arrêts, 8 min)",
-        "step3": "Marchez 7 minutes jusqu'à l'appartement"
+        "step1": "Sortez de Santa Justa par la sortie Avenida de Kansas City",
+        "step2": "Marchez 7 minutes vers le nord le long de l'Avenida de Kansas City",
+        "step3": "Arrivez à Imaginero Luis Álvarez Duarte, 7"
       },
       "car": {
-        "step1": "Le centre de Séville a un accès restreint — parking recommandé : Parking Plaza Nueva",
+        "step1": "L'appartement est en dehors des zones d'accès restreint du centre : arriver en voiture est simple",
         "step2": "Entrez dans le GPS : Imaginero Luis Álvarez Duarte, 7, Séville",
-        "step3": "Zone de chargement/déchargement disponible devant l'immeuble"
+        "step3": "Zone de chargement devant l'immeuble ; stationnement dans le quartier"
       }
     }
   },
@@ -332,7 +332,7 @@
     "recommendations": "Recommandations de l'hôte"
   },
   "footer": {
-    "tagline": "Votre maison au cœur de Séville",
+    "tagline": "Votre maison à Séville",
     "registrationLabel": "Nº d'enregistrement touristique",
     "links": {
       "privacy": "Politique de Confidentialité",
@@ -423,8 +423,8 @@
     "euros": "€"
   },
   "seo": {
-    "homeTitle": "Appartement Touristique Séville Centre | Esencia Sevilla",
-    "homeDescription": "Louez le meilleur appartement touristique au centre de Séville. À 8 min de la Cathédrale et de l'Alcázar. Arrivée autonome, WiFi, climatisation. 10% moins cher que Booking !",
+    "homeTitle": "Appartement Touristique à Séville près de Santa Justa | Esencia Sevilla",
+    "homeDescription": "Louez un appartement touristique à Séville, à 7 min à pied de la gare AVE Santa Justa et à 10 min du centre historique. Arrivée autonome, WiFi, climatisation. 10% moins cher que Booking !",
     "guideTitle": "Guide Touristique Séville Gratuit | Carte, Itinéraires et Transport",
     "guideDescription": "Guide touristique complet et gratuit de Séville : carte interactive, itinéraires à pied, transport TUSSAM, restaurants et événements. Disponible hors ligne.",
     "blogTitle": "Blog de Voyages Séville | Guides et Conseils",

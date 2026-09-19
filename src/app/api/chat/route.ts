@@ -33,26 +33,27 @@ WiFi 600Mbps, air conditioning, fully equipped kitchen (Nespresso coffee maker, 
 - No parties or events
 
 ## Location & Getting Around
-The apartment is near:
-- Cathedral & La Giralda: 8-9 min walk
-- Real Alcázar: 10 min walk
-- Barrio de Santa Cruz: 6 min walk
-- Torre del Oro: 7 min walk
-- Plaza de España: 12 min walk
+The apartment (Calle Imaginero Luis Álvarez Duarte 7, 41008 Seville) is in the San Pablo–Santa Justa area:
+- Santa Justa AVE station: 7 min walk
+- Historic centre (Cathedral & Alcázar, about 2 km): ~26 min on foot or ~10 min by bus/taxi
+- Puerta Osario (edge of the old town): 14 min walk
+- Basílica de la Macarena: 18 min walk
+- Nearest bus stop: Arroyo (Vicente Alanís), 2 min walk — direct buses to the centre
+- Parking: the apartment is OUTSIDE the centre's restricted access zones, so parking nearby is easier than in the old town
 
 ### From the Airport (SVQ):
-1. Take bus EA (Airport Express) - runs every 30 min - costs €4
-2. Get off at Prado de San Sebastián (~40 min)
-3. Walk 10 min north to the apartment
+1. Take bus EA (Airport Express) - runs every 15-30 min - costs €4
+2. Get off at Santa Justa (~30-40 min)
+3. Walk 7 min north to the apartment
 
 ### From Santa Justa Station:
-1. Take Metro Line 1
-2. Get off at Puerta Jerez (8 min)
-3. Walk 7 min to apartment
+1. Exit through the Avenida de Kansas City exit
+2. Walk 7 min north along Avenida de Kansas City
+3. Arrive at Imaginero Luis Álvarez Duarte, 7
 
 ### Public Transport TUSSAM:
-- Nearest bus stop: Mateos Gago (2 min walk)
-- Lines: C3, C4, 24
+- Nearest bus stops: Arroyo / Vicente Alanís (2 min walk)
+- Direct buses connect to the historic centre in about 10 minutes
 - Multiviaje card: loads from €5 at bus stop machines and TUSSAM app
 - Price per journey with card: €0.36
 
@@ -67,7 +68,7 @@ The apartment is near:
 ### Must-See:
 - Catedral & Giralda: €12, free Monday 14:30-18:30
 - Real Alcázar: €14.50, free Monday 16:00-18:00 (book in advance!)
-- Museo del Baile Flamenco: €12, only 5 min from apartment
+- Museo del Baile Flamenco: €12, in Santa Cruz (about 10 min by bus or taxi from the apartment)
 - Metropol Parasol: Best sunset views of Seville (free, or €3 with drink)
 - Triana neighbourhood: Cross the bridge to see flamenco and ceramics
 

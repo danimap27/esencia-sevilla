@@ -10,9 +10,9 @@
     "bookNow": "Prenota ora"
   },
   "hero": {
-    "badge": "Appartamento Turistico — Centro di Siviglia",
-    "headline": "La tua casa nel cuore di Siviglia",
-    "subheadline": "A pochi passi dalla Cattedrale, dall'Alcázar e dal quartiere di Santa Cruz. Vivi Siviglia come un locale.",
+    "badge": "Appartamento Turistico — Siviglia",
+    "headline": "La tua casa a Siviglia",
+    "subheadline": "A 7 minuti a piedi dalla stazione AVE Santa Justa e a 10 minuti dal centro storico in bus o taxi. Vivi Siviglia come un local.",
     "cta": "Verifica disponibilità",
     "ctaSecondary": "Vedi foto",
     "reviewsBadge": "{count} recensioni 5 stelle",
@@ -24,7 +24,7 @@
       "checkin": "Check-in autonomo 24h",
       "wifi": "WiFi ultrarapido",
       "ac": "A/C in tutte le stanze",
-      "location": "Posizione ineguagliabile"
+      "location": "Accanto a Santa Justa (AVE)"
     }
   },
   "comparison": {
@@ -207,7 +207,7 @@
     "subtitle": "Tutto ciò che devi sapere prima di arrivare",
     "questions": {
       "q1": "C'è un parcheggio vicino all'appartamento?",
-      "a1": "Non c'è parcheggio privato nell'edificio. Il parcheggio pubblico più vicino è Parking Plaza Nueva (5 min a piedi, circa 25€/giorno). Consigliamo i trasporti pubblici poiché il centro storico ha accesso limitato ai veicoli.",
+      "a1": "Nessun parcheggio privato nell'edificio. L'appartamento è fuori dalle zone a traffico limitato del centro: parcheggiare in zona è più facile che nel centro storico. Per visitare il centro (a circa 2 km) consigliamo bus, taxi o un parcheggio del centro.",
       "q2": "Si accettano animali?",
       "a2": "Spiacenti, non si accettano animali nell'appartamento per rispettare gli altri ospiti e mantenere la pulizia.",
       "q3": "Come funziona il check-in autonomo?",
@@ -229,7 +229,7 @@
       "q11": "È permesso fumare nell'appartamento?",
       "a11": "Non è permesso fumare nell'appartamento. Il mancato rispetto di questa regola comporta una penalità di 150€.",
       "q12": "Come arrivo dall'aeroporto all'appartamento?",
-      "a12": "L'opzione più comoda è l'autobus EA (Aeroporto Express), che parte ogni 30 minuti e costa 4€. Impiega circa 40 minuti fino a Prado de San Sebastián, da dove l'appartamento è a 10 minuti a piedi. Offriamo anche un trasferimento privato dall'aeroporto per 35€.",
+      "a12": "L'opzione più comoda è il bus EA (Airport Express), ogni 15-30 minuti, 4€. Scendi a Santa Justa (circa 30-40 minuti): da lì l'appartamento è a 7 minuti a piedi. Offriamo anche un transfer privato dall'aeroporto per 35€.",
       "q13": "Cosa faccio se ho un problema durante il soggiorno?",
       "a13": "Siamo disponibili 24/7 su WhatsApp per qualsiasi evenienza. In caso di emergenza: il 112 è il numero di emergenza in Spagna.",
       "q14": "Si accettano addii al celibato/nubilato o feste?",
@@ -250,7 +250,7 @@
   },
   "location": {
     "title": "Dove siamo",
-    "subtitle": "Nel cuore di Siviglia, tutto a piedi",
+    "subtitle": "Ben collegato: AVE a 7 min a piedi, centro a 10 min in bus o taxi",
     "address": "Imaginero Luis Alvarez Duarte N7, 41008 Siviglia",
     "howToArrive": "Come arrivare",
     "fromAirport": "Dall'aeroporto SVQ",
@@ -259,20 +259,20 @@
     "step": "Passo {n}",
     "arrivalSteps": {
       "airport": {
-        "step1": "Prendi l'autobus EA (Aeroporto Express) all'uscita degli arrivi — 4€",
-        "step2": "Scendi a Prado de San Sebastián (≈40 min)",
-        "step3": "Cammina 10 minuti verso nord per Av. Menéndez Pelayo",
+        "step1": "Prendi il bus EA (Airport Express) all'uscita arrivi — 4€",
+        "step2": "Scendi a Santa Justa (≈30-40 min)",
+        "step3": "Cammina 7 minuti verso nord fino all'appartamento",
         "step4": "Arriva a Imaginero Luis Álvarez Duarte, 7"
       },
       "train": {
-        "step1": "Da Santa Justa prendi la Metro Linea 1 (direzione Olivar de Quinto)",
-        "step2": "Scendi a Puerta Jerez (3 fermate, 8 min)",
-        "step3": "Cammina 7 minuti fino all'appartamento"
+        "step1": "Esci da Santa Justa dall'uscita Avenida de Kansas City",
+        "step2": "Cammina 7 minuti verso nord lungo l'Avenida de Kansas City",
+        "step3": "Arrivi a Imaginero Luis Álvarez Duarte, 7"
       },
       "car": {
-        "step1": "Il centro di Siviglia ha accesso limitato — parcheggio consigliato: Parking Plaza Nueva",
+        "step1": "L'appartamento è fuori dalle zone a traffico limitato del centro: arrivare in auto è semplice",
         "step2": "Inserisci nel GPS: Imaginero Luis Álvarez Duarte, 7, Siviglia",
-        "step3": "Zona di carico/scarico disponibile davanti all'edificio"
+        "step3": "Zona di carico/scarico davanti all'edificio; parcheggio in zona"
       }
     }
   },
@@ -332,7 +332,7 @@
     "recommendations": "Consigli dell'host"
   },
   "footer": {
-    "tagline": "La tua casa nel cuore di Siviglia",
+    "tagline": "La tua casa a Siviglia",
     "registrationLabel": "Nº Registrazione Turistica",
     "links": {
       "privacy": "Informativa sulla Privacy",
@@ -423,8 +423,8 @@
     "euros": "€"
   },
   "seo": {
-    "homeTitle": "Appartamento Turistico Siviglia Centro | Esencia Sevilla",
-    "homeDescription": "Affitta il miglior appartamento turistico nel centro di Siviglia. A 8 min dalla Cattedrale e dall'Alcázar. Check-in autonomo, WiFi, A/C. 10% più economico di Booking!",
+    "homeTitle": "Appartamento Turistico a Siviglia vicino a Santa Justa | Esencia Sevilla",
+    "homeDescription": "Affitta un appartamento turistico a Siviglia, a 7 min a piedi dalla stazione AVE Santa Justa e a 10 min dal centro storico. Check-in autonomo, WiFi, A/C. 10% più economico di Booking!",
     "guideTitle": "Guida Turistica Siviglia Gratuita | Mappa, Itinerari e Trasporti",
     "guideDescription": "Guida turistica completa e gratuita di Siviglia: mappa interattiva, itinerari a piedi, trasporti TUSSAM, ristoranti ed eventi. Disponibile offline.",
     "blogTitle": "Blog di Viaggi Siviglia | Guide e Consigli",

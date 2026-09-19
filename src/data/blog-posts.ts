@@ -27,7 +27,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 Sevilla es una ciudad que se vive, no solo se visita. Tres días son suficientes para descubrir lo esencial, pero te dejarán con ganas de más.
 
-## Día 1: El corazón de Sevilla
+## Día 1: El centro histórico
 
 **Mañana:** Comienza por la **Catedral de Sevilla** y la **Giralda**. Sube los 34 rampas (sin escaleras) de la torre para una vista panorámica de la ciudad. La Catedral es la más grande del mundo por superficie y alberga la tumba de Cristóbal Colón.
 
@@ -61,7 +61,7 @@ Sevilla es una ciudad que se vive, no solo se visita. Tres días son suficientes
 
 Seville is a city to be lived, not just visited. Three days are enough to discover the essentials, but they will leave you wanting more.
 
-## Day 1: The heart of Seville
+## Day 1: The historic centre
 
 **Morning:** Start with the **Seville Cathedral** and the **Giralda**. Climb the 34 ramps (no stairs) of the tower for a panoramic view. The Cathedral is the largest in the world by area and houses Columbus's tomb.
 
@@ -93,7 +93,7 @@ Seville is a city to be lived, not just visited. Three days are enough to discov
 
 Séville est une ville qui se vit, pas seulement qui se visite. Trois jours suffisent pour découvrir l'essentiel.
 
-## Jour 1 : Le cœur de Séville
+## Jour 1 : Le centre historique
 
 **Matin :** Commencez par la **Cathédrale de Séville** et la **Giralda**. Montez les 34 rampes pour une vue panoramique.
 
@@ -422,7 +422,7 @@ La zona alrededor de la Catedral de Sevilla es uno de los mejores lugares para i
 
 ## Tapas imprescindibles
 
-1. **Salmorejo**: Crema fría de tomate y pan. El mejor de Sevilla está en La Tabla.
+1. **Salmorejo**: Crema fría de tomate y pan. El mejor de Sevilla está en Casa Morales.
 2. **Pescaíto frito**: Variedad de pescado frito. Punto clave de la gastronomía sevillana.
 3. **Espinacas con garbanzos**: Plato tradicional andaluz.
 4. **Flamenquín**: Jamón serrano envuelto en cerdo rebozado.
@@ -430,17 +430,17 @@ La zona alrededor de la Catedral de Sevilla es uno de los mejores lugares para i
 
 ## Nuestros sitios favoritos
 
-### La Tabla de las Tres B
-- **Especialidad**: Salmorejo, queso curado
+### Casa Morales (1836)
+- **Especialidad**: Tapas tradicionales, vino de la casa
 - **Precio**: €€ (moderado)
 - **Distancia de la Catedral**: 5 min andando
 - **Ambiente**: Tablao de barrio, auténtico
 - **Recomendación**: Ve temprano, se llena rápido
 
-### Bar Luca
-- **Especialidad**: Tapas clásicas, pescaíto frito
+### Bodeguita Antonio Romero
+- **Especialidad**: Montaditos y carrillada
 - **Precio**: €€
-- **Distancia**: 2 min from la Catedral
+- **Distancia**: 4 min andando
 - **Ambiente**: Familiar, animado
 - **Recomendación**: Prueba el salmorejo y el flamenquín
 
@@ -486,13 +486,13 @@ The area around Seville Cathedral is one of the best places for tapas. Here are 
 
 ## Our favorite spots
 
-### La Tabla de las Tres B
+### Casa Morales (1836)
 - **Specialty**: Salmorejo, aged cheese
 - **Price**: €€
 - **Distance from Cathedral**: 5 min walk
 - **Recommendation**: Go early, it fills up fast
 
-### Bar Luca
+### Bodeguita Antonio Romero
 - **Specialty**: Classic tapas, fried fish
 - **Price**: €€
 - **Distance**: 2 min from Cathedral
@@ -528,12 +528,12 @@ Le quartier autour de la Cathédrale de Séville est l'un des meilleurs endroits
 
 ## Nos adresses favorites
 
-### La Tabla de las Tres B
+### Casa Morales (1836)
 - **Spécialité** : Salmorejo, fromage affiné
 - **Prix** : €€
 - **Distance** : 5 min à pied
 
-### Bar Luca
+### Bodeguita Antonio Romero
 - **Spécialité** : Tapas classiques
 - **Prix** : €€
 - **Distance** : 2 min de la Cathédrale

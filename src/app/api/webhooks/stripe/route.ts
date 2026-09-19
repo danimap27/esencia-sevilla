@@ -139,7 +139,7 @@ async function sendConfirmationEmail(params: ConfirmationEmailParams) {
         <div style="max-width:600px;margin:0 auto;background:white;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(43,30,21,0.1);">
           <div style="background:#C25A3A;padding:32px;text-align:center;">
             <h1 style="color:white;font-family:Georgia,serif;margin:0;font-size:28px;">Esencia Sevilla</h1>
-            <p style="color:rgba(255,255,255,0.8);margin:8px 0 0;">Tu apartamento en el corazón de Sevilla</p>
+            <p style="color:rgba(255,255,255,0.8);margin:8px 0 0;">Tu apartamento en Sevilla</p>
           </div>
           <div style="padding:32px;">
             <h2 style="color:#2B1E15;font-family:Georgia,serif;">¡Hola ${name}! 🌟</h2>

@@ -60,7 +60,7 @@ export async function generateMetadata({
           url: absoluteUrl('/og-image.jpg'),
           width: 1200,
           height: 630,
-          alt: `${APARTMENT.name} — Apartamento turístico en el centro de Sevilla`,
+          alt: `${APARTMENT.name} — Apartamento turístico en Sevilla junto a Santa Justa`,
         },
       ],
     },
@@ -98,7 +98,7 @@ function StructuredData({ locale }: { locale: Locale }) {
     '@type': 'LodgingBusiness',
     '@id': absoluteUrl(`/${locale}`),
     name: APARTMENT.name,
-    description: 'Apartamento turístico en el corazón de Sevilla, a pasos de la Catedral y el Real Alcázar.',
+    description: 'Apartamento turístico en Sevilla, a 7 minutos andando de la estación AVE Santa Justa y a 10 minutos del centro histórico en bus o taxi.',
     url: absoluteUrl(`/${locale}`),
     image: [absoluteUrl('/og-image.jpg'), absoluteUrl('/fotos/foto1.jpg')],
     address: {

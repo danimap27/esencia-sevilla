@@ -10,9 +10,9 @@
     "bookNow": "Reservar ahora"
   },
   "hero": {
-    "badge": "Apartamento Turístico — Centro de Sevilla",
-    "headline": "Tu hogar en el corazón de Sevilla",
-    "subheadline": "A pasos de la Catedral, el Alcázar y el Barrio de Santa Cruz. Vive Sevilla como un local.",
+    "badge": "Apartamento Turístico — Sevilla",
+    "headline": "Tu hogar en Sevilla",
+    "subheadline": "A 7 minutos andando de la estación AVE Santa Justa y a 10 minutos del centro histórico en bus o taxi. Vive Sevilla como un local.",
     "cta": "Ver disponibilidad",
     "ctaSecondary": "Ver fotos",
     "reviewsBadge": "{count} reseñas de 5 estrellas",
@@ -24,7 +24,7 @@
       "checkin": "Check-in autónomo 24h",
       "wifi": "WiFi ultrarrápido",
       "ac": "A/C en todas las habitaciones",
-      "location": "Ubicación inmejorable"
+      "location": "Junto a Santa Justa (AVE)"
     }
   },
   "comparison": {
@@ -207,7 +207,7 @@
     "subtitle": "Todo lo que necesitas saber antes de llegar",
     "questions": {
       "q1": "¿Hay parking cerca del apartamento?",
-      "a1": "No hay parking privado en el edificio. El parking público más cercano es el Parking Plaza Nueva (5 min andando, aprox. 25€/día). Recomendamos venir en transporte público ya que el centro histórico tiene acceso restringido para vehículos.",
+      "a1": "No hay parking privado en el edificio. El apartamento está fuera de las zonas de acceso restringido del centro, así que aparcar en la zona es más fácil que en el casco histórico. Para visitar el centro (a unos 2 km) recomendamos bus, taxi o dejar el coche en un parking del centro.",
       "q2": "¿Se admiten mascotas?",
       "a2": "Lo sentimos, no se admiten mascotas en el apartamento para respetar a otros huéspedes y mantener la limpieza.",
       "q3": "¿Cómo funciona el check-in autónomo?",
@@ -229,7 +229,7 @@
       "q11": "¿Está permitido fumar en el apartamento?",
       "a11": "No está permitido fumar dentro del apartamento. El incumplimiento de esta norma conlleva una penalización de 150€.",
       "q12": "¿Cómo llego desde el aeropuerto?",
-      "a12": "La opción más cómoda es el autobús EA (Aeropuerto Express), que sale cada 30 minutos y cuesta 4€. Tarda unos 40 minutos hasta Prado de San Sebastián, desde donde el apartamento está a 10 minutos andando. También ofrecemos traslado privado desde el aeropuerto por 35€.",
+      "a12": "La opción más cómoda es el autobús EA (Aeropuerto Express), que sale cada 15-30 minutos y cuesta 4€. Bájate en la parada de Santa Justa (unos 30-40 minutos) y desde allí el apartamento está a 7 minutos andando. También ofrecemos traslado privado desde el aeropuerto por 35€.",
       "q13": "¿Qué pasa si tengo algún problema durante mi estancia?",
       "a13": "Estamos disponibles 24/7 por WhatsApp para cualquier incidencia. En caso de emergencia: el número 112 es el de emergencias en España.",
       "q14": "¿Se admiten despedidas de soltero/a o fiestas?",
@@ -250,7 +250,7 @@
   },
   "location": {
     "title": "Dónde estamos",
-    "subtitle": "En el corazón de Sevilla, a pie de todo",
+    "subtitle": "Bien conectado: AVE a 7 min andando y centro a 10 min en bus o taxi",
     "address": "Imaginero Luis Alvarez Duarte N7, 41008 Sevilla",
     "howToArrive": "Cómo llegar",
     "fromAirport": "Desde el Aeropuerto SVQ",
@@ -260,19 +260,19 @@
     "arrivalSteps": {
       "airport": {
         "step1": "Toma el autobús EA (Aeropuerto Express) en la salida de llegadas — 4€",
-        "step2": "Bájate en Prado de San Sebastián (≈40 min)",
-        "step3": "Camina 10 minutos hacia el norte por Av. Menéndez Pelayo",
+        "step2": "Bájate en Santa Justa (≈30-40 min)",
+        "step3": "Camina 7 minutos hacia el norte hasta el apartamento",
         "step4": "Llega a Imaginero Luis Álvarez Duarte, 7"
       },
       "train": {
-        "step1": "Desde Santa Justa toma el Metro Línea 1 (dirección Olivar de Quinto)",
-        "step2": "Bájate en Puerta Jerez (3 paradas, 8 min)",
-        "step3": "Camina 7 minutos hasta el apartamento"
+        "step1": "Sal de Santa Justa por la salida de Avenida de Kansas City",
+        "step2": "Camina 7 minutos hacia el norte por la Avenida de Kansas City",
+        "step3": "Llega a Imaginero Luis Álvarez Duarte, 7"
       },
       "car": {
-        "step1": "El centro de Sevilla tiene acceso restringido — parking recomendado: Parking Plaza Nueva",
+        "step1": "El apartamento está fuera de las restricciones de acceso del centro: llegar en coche es sencillo",
         "step2": "Introduce en el GPS: Imaginero Luis Álvarez Duarte, 7, Sevilla",
-        "step3": "Zona de carga/descarga disponible frente al edificio"
+        "step3": "Zona de carga/descarga frente al edificio; aparcamiento en la zona"
       }
     }
   },
@@ -332,7 +332,7 @@
     "recommendations": "Recomendaciones del anfitrión"
   },
   "footer": {
-    "tagline": "Tu hogar en el corazón de Sevilla",
+    "tagline": "Tu hogar en Sevilla",
     "registrationLabel": "Nº Registro Turístico",
     "links": {
       "privacy": "Política de Privacidad",
@@ -423,8 +423,8 @@
     "euros": "€"
   },
   "seo": {
-    "homeTitle": "Apartamento Turístico Sevilla Centro | Esencia Sevilla",
-    "homeDescription": "Alquila el mejor apartamento turístico en el centro de Sevilla. A 8 min de la Catedral y el Alcázar. Check-in autónomo, WiFi, A/C. ¡10% más barato que Booking!",
+    "homeTitle": "Apartamento Turístico en Sevilla junto a Santa Justa | Esencia Sevilla",
+    "homeDescription": "Alquila un apartamento turístico en Sevilla a 7 min andando de la estación AVE Santa Justa y a 10 min del centro histórico. Check-in autónomo, WiFi, A/C. ¡10% más barato que Booking!",
     "guideTitle": "Guía Turística Sevilla Gratis | Mapa, Rutas y Transporte",
     "guideDescription": "Guía turística completa y gratuita de Sevilla: mapa interactivo, rutas a pie, transporte TUSSAM, restaurantes y eventos. Disponible offline.",
     "blogTitle": "Blog de Viajes Sevilla | Guías y Consejos",

@@ -10,9 +10,9 @@
     "bookNow": "Reservar agora"
   },
   "hero": {
-    "badge": "Apartamento Turístico — Centro de Sevilha",
-    "headline": "Sua casa no coração de Sevilha",
-    "subheadline": "A poucos passos da Catedral, do Alcázar e do bairro de Santa Cruz. Viva Sevilha como um local.",
+    "badge": "Apartamento Turístico — Sevilha",
+    "headline": "A sua casa em Sevilha",
+    "subheadline": "A 7 minutos a pé da estação AVE Santa Justa e a 10 minutos do centro histórico de autocarro ou táxi. Viva Sevilha como um local.",
     "cta": "Ver disponibilidade",
     "ctaSecondary": "Ver fotos",
     "reviewsBadge": "{count} avaliações 5 estrelas",
@@ -24,7 +24,7 @@
       "checkin": "Check-in autónomo 24h",
       "wifi": "WiFi ultrarrápido",
       "ac": "A/C em todos os quartos",
-      "location": "Localização incomparável"
+      "location": "Junto a Santa Justa (AVE)"
     }
   },
   "comparison": {
@@ -207,7 +207,7 @@
     "subtitle": "Tudo o que precisa de saber antes de chegar",
     "questions": {
       "q1": "Há estacionamento perto do apartamento?",
-      "a1": "Não há estacionamento privado no edifício. O estacionamento público mais próximo é o Parking Plaza Nueva (5 min a pé, aprox. 25€/dia). Recomendamos transporte público já que o centro histórico tem acesso restrito a veículos.",
+      "a1": "Não há estacionamento privado no edifício. O apartamento está fora das zonas de acesso restrito do centro, por isso estacionar na zona é mais fácil do que no centro histórico. Para visitar o centro (a cerca de 2 km) recomendamos autocarro, táxi ou um parque no centro.",
       "q2": "Aceitam-se animais de estimação?",
       "a2": "Lamentamos, não se aceitam animais no apartamento para respeitar outros hóspedes e manter a limpeza.",
       "q3": "Como funciona o check-in autónomo?",
@@ -229,7 +229,7 @@
       "q11": "É permitido fumar no apartamento?",
       "a11": "Não é permitido fumar dentro do apartamento. O incumprimento desta regra implica uma penalização de 150€.",
       "q12": "Como chego do aeroporto ao apartamento?",
-      "a12": "A opção mais conveniente é o autocarro EA (Aeroporto Express), que sai a cada 30 minutos e custa 4€. Demora cerca de 40 minutos até Prado de San Sebastián, de onde o apartamento está a 10 minutos a pé. Oferecemos também transfer privado do aeroporto por 35€.",
+      "a12": "A opção mais cómoda é o autocarro EA (Airport Express), a cada 15-30 minutos, 4€. Saia em Santa Justa (cerca de 30-40 minutos) e daí o apartamento fica a 7 minutos a pé. Também oferecemos transfer privado do aeroporto por 35€.",
       "q13": "O que faço se tiver algum problema durante a minha estadia?",
       "a13": "Estamos disponíveis 24/7 por WhatsApp para qualquer incidência. Em caso de emergência: o 112 é o número de emergências em Espanha.",
       "q14": "Aceitam-se despedidas de solteiro/a ou festas?",
@@ -250,7 +250,7 @@
   },
   "location": {
     "title": "Onde estamos",
-    "subtitle": "No coração de Sevilha, tudo a pé",
+    "subtitle": "Bem ligado: AVE a 7 min a pé e centro a 10 min de autocarro ou táxi",
     "address": "Imaginero Luis Alvarez Duarte N7, 41008 Sevilha",
     "howToArrive": "Como chegar",
     "fromAirport": "Do Aeroporto SVQ",
@@ -259,20 +259,20 @@
     "step": "Passo {n}",
     "arrivalSteps": {
       "airport": {
-        "step1": "Tome o autocarro EA (Aeroporto Express) na saída de chegadas — 4€",
-        "step2": "Desça em Prado de San Sebastián (≈40 min)",
-        "step3": "Camine 10 minutos para norte pela Av. Menéndez Pelayo",
+        "step1": "Tome o autocarro EA (Airport Express) à saída das chegadas — 4€",
+        "step2": "Saia em Santa Justa (≈30-40 min)",
+        "step3": "Caminhe 7 minutos para norte até ao apartamento",
         "step4": "Chegue a Imaginero Luis Álvarez Duarte, 7"
       },
       "train": {
-        "step1": "De Santa Justa tome o Metro Linha 1 (direção Olivar de Quinto)",
-        "step2": "Desça em Puerta Jerez (3 paragens, 8 min)",
-        "step3": "Camine 7 minutos até ao apartamento"
+        "step1": "Saia de Santa Justa pela saída da Avenida de Kansas City",
+        "step2": "Caminhe 7 minutos para norte pela Avenida de Kansas City",
+        "step3": "Chega a Imaginero Luis Álvarez Duarte, 7"
       },
       "car": {
-        "step1": "O centro de Sevilha tem acesso restrito — estacionamento recomendado: Parking Plaza Nueva",
+        "step1": "O apartamento está fora das restrições de acesso do centro: chegar de carro é simples",
         "step2": "Introduza no GPS: Imaginero Luis Álvarez Duarte, 7, Sevilha",
-        "step3": "Zona de carga/descarga disponível em frente ao edifício"
+        "step3": "Zona de carga/descarga em frente ao edifício; estacionamento na zona"
       }
     }
   },
@@ -332,7 +332,7 @@
     "recommendations": "Recomendações do anfitrião"
   },
   "footer": {
-    "tagline": "Sua casa no coração de Sevilha",
+    "tagline": "A sua casa em Sevilha",
     "registrationLabel": "Nº Registo Turístico",
     "links": {
       "privacy": "Política de Privacidade",
@@ -423,8 +423,8 @@
     "euros": "€"
   },
   "seo": {
-    "homeTitle": "Apartamento Turístico Sevilha Centro | Esencia Sevilla",
-    "homeDescription": "Alugue o melhor apartamento turístico no centro de Sevilha. A 8 min da Catedral e do Alcázar. Check-in autónomo, WiFi, A/C. 10% mais barato que Booking!",
+    "homeTitle": "Apartamento Turístico em Sevilha junto a Santa Justa | Esencia Sevilla",
+    "homeDescription": "Alugue um apartamento turístico em Sevilha, a 7 min a pé da estação AVE Santa Justa e a 10 min do centro histórico. Check-in autónomo, WiFi, A/C. 10% mais barato que a Booking!",
     "guideTitle": "Guia Turística Sevilha Grátis | Mapa, Rotas e Transporte",
     "guideDescription": "Guia turística completa e gratuita de Sevilha: mapa interativo, rotas a pé, transporte TUSSAM, restaurantes e eventos. Disponível offline.",
     "blogTitle": "Blog de Viagens Sevilha | Guias e Conselhos",

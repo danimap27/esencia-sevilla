@@ -10,12 +10,12 @@ export const REVIEWS: Review[] = [
     date: '2025-10-15',
     source: 'booking',
     text: {
-      es: 'Apartamento absolutamente encantador en el corazón de Sevilla. La decoración es preciosa con mucho gusto andaluz. La localización es perfecta, a pocos minutos de todos los monumentos. Carlos, el anfitrión, fue muy atento y respondió enseguida. ¡Volveremos!',
-      en: 'Absolutely charming apartment in the heart of Seville. The decor is beautiful with lots of Andalusian taste. The location is perfect, a few minutes from all the monuments. Carlos, the host, was very attentive and responded immediately. We\'ll be back!',
-      fr: 'Appartement absolument charmant au cœur de Séville. La décoration est magnifique avec beaucoup de goût andalou. L\'emplacement est parfait, à quelques minutes de tous les monuments. Carlos, l\'hôte, a été très attentif. On reviendra!',
+      es: 'Apartamento absolutamente encantador en Sevilla. La decoración es preciosa con mucho gusto andaluz. La localización es práctica: bien conectada con el centro y los monumentos. Carlos, el anfitrión, fue muy atento y respondió enseguida. ¡Volveremos!',
+      en: 'Absolutely charming apartment in Seville. The decor is beautiful with lots of Andalusian taste. The location is practical: well connected to the centre and the monuments. Carlos, the host, was very attentive and responded immediately. We\'ll be back!',
+      fr: 'Appartement absolument charmant à Séville. La décoration est magnifique avec beaucoup de goût andalou. L\'emplacement est parfait, à quelques minutes de tous les monuments. Carlos, l\'hôte, a été très attentif. On reviendra!',
       de: 'Absolut charmante Wohnung im Herzen Sevillas. Die Einrichtung ist wunderschön mit viel andalusischem Geschmack. Die Lage ist perfekt. Carlos, der Gastgeber, war sehr aufmerksam. Wir kommen wieder!',
-      it: 'Appartamento assolutamente incantevole nel cuore di Siviglia. L\'arredamento è bellissimo con molto gusto andaluso. La posizione è perfetta. Carlos, l\'host, è stato molto attento. Torneremo!',
-      pt: 'Apartamento absolutamente encantador no coração de Sevilha. A decoração é linda com muito gosto andaluz. A localização é perfeita. Carlos, o anfitrião, foi muito atencioso. Voltaremos!',
+      it: 'Appartamento assolutamente incantevole a Siviglia. L\'arredamento è bellissimo con molto gusto andaluso. La posizione è perfetta. Carlos, l\'host, è stato molto attento. Torneremo!',
+      pt: 'Apartamento absolutamente encantador em Sevilha. A decoração é linda com muito gosto andaluz. A localização é perfeita. Carlos, o anfitrião, foi muito atencioso. Voltaremos!',
     },
   },
   {
@@ -44,8 +44,8 @@ export const REVIEWS: Review[] = [
     date: '2025-08-10',
     source: 'airbnb',
     text: {
-      es: 'Estuvimos durante la Feria de Abril y fue una experiencia mágica. El apartamento aguantó el calor perfectamente con el A/C. La ubicación es IDEAL para moverse por toda Sevilla. El libro de bienvenida con las recomendaciones del propietario fue genial.',
-      en: 'We stayed during the April Fair and it was a magical experience. The apartment handled the heat perfectly with A/C. The location is IDEAL for getting around Seville. The welcome book with the owner\'s recommendations was great.',
+      es: 'Estuvimos durante la Feria de Abril y fue una experiencia mágica. El apartamento aguantó el calor perfectamente con el A/C. La ubicación es práctica para moverse por toda Sevilla, con el bus al lado. El libro de bienvenida con las recomendaciones del propietario fue genial.',
+      en: 'We stayed during the April Fair and it was a magical experience. The apartment handled the heat perfectly with A/C. The location is practical for getting around Seville, with the bus nearby. The welcome book with the owner\'s recommendations was great.',
       fr: 'Nous avons séjourné pendant la Foire d\'Avril et c\'était une expérience magique. L\'appartement a parfaitement géré la chaleur avec la climatisation. L\'emplacement est IDÉAL.',
       de: 'Wir waren während der Aprilmesse hier und es war eine magische Erfahrung. Die Wohnung meisterte die Hitze mit Klimaanlage perfekt. Die Lage ist IDEAL.',
       it: 'Abbiamo soggiornato durante la Fiera di Aprile ed è stata un\'esperienza magica. L\'appartamento ha gestito perfettamente il caldo con l\'aria condizionata. La posizione è IDEALE.',

@@ -10,9 +10,9 @@
     "bookNow": "Book now"
   },
   "hero": {
-    "badge": "Tourist Apartment — Seville City Centre",
-    "headline": "Your home in the heart of Seville",
-    "subheadline": "Steps from the Cathedral, Alcázar and Santa Cruz neighbourhood. Experience Seville like a local.",
+    "badge": "Tourist Apartment — Seville",
+    "headline": "Your home in Seville",
+    "subheadline": "A 7-minute walk from Santa Justa AVE station and 10 minutes from the historic centre by bus or taxi. Experience Seville like a local.",
     "cta": "Check availability",
     "ctaSecondary": "View photos",
     "reviewsBadge": "{count} five-star reviews",
@@ -24,7 +24,7 @@
       "checkin": "Self check-in 24h",
       "wifi": "Ultra-fast WiFi",
       "ac": "A/C in all rooms",
-      "location": "Unbeatable location"
+      "location": "Next to Santa Justa (AVE)"
     }
   },
   "comparison": {
@@ -207,7 +207,7 @@
     "subtitle": "Everything you need to know before you arrive",
     "questions": {
       "q1": "Is there parking near the apartment?",
-      "a1": "There is no private parking in the building. The nearest public car park is Parking Plaza Nueva (5 min walk, approx. €25/day). We recommend using public transport as the historic centre has restricted vehicle access.",
+      "a1": "There is no private parking in the building. The apartment is outside the city centre's restricted access zones, so parking nearby is easier than in the old town. To visit the centre (about 2 km away) we recommend bus, taxi or leaving the car in a city-centre car park.",
       "q2": "Are pets allowed?",
       "a2": "We're sorry, pets are not allowed in the apartment to respect other guests and maintain cleanliness.",
       "q3": "How does self check-in work?",
@@ -229,7 +229,7 @@
       "q11": "Is smoking allowed in the apartment?",
       "a11": "Smoking is not allowed inside the apartment. Violation of this rule results in a €150 penalty.",
       "q12": "How do I get from the airport?",
-      "a12": "The most convenient option is the EA bus (Airport Express), which runs every 30 minutes and costs €4. It takes about 40 minutes to Prado de San Sebastián, from where the apartment is a 10-minute walk. We also offer private airport transfers for €35.",
+      "a12": "The easiest option is the EA bus (Airport Express), running every 15-30 minutes for €4. Get off at Santa Justa (about 30-40 minutes) and from there the apartment is a 7-minute walk. We also offer a private airport transfer for €35.",
       "q13": "What if I have a problem during my stay?",
       "a13": "We are available 24/7 via WhatsApp for any issue. In case of emergency: 112 is the emergency number in Spain.",
       "q14": "Are stag/hen parties or events allowed?",
@@ -250,7 +250,7 @@
   },
   "location": {
     "title": "Where we are",
-    "subtitle": "In the heart of Seville, walkable to everything",
+    "subtitle": "Well connected: AVE 7 min on foot, centre 10 min by bus or taxi",
     "address": "Imaginero Luis Alvarez Duarte N7, 41008 Seville",
     "howToArrive": "How to get here",
     "fromAirport": "From Seville Airport (SVQ)",
@@ -259,20 +259,20 @@
     "step": "Step {n}",
     "arrivalSteps": {
       "airport": {
-        "step1": "Take bus EA (Airport Express) from arrivals exit — €4",
-        "step2": "Get off at Prado de San Sebastián (≈40 min)",
-        "step3": "Walk 10 minutes north along Av. Menéndez Pelayo",
+        "step1": "Take the EA bus (Airport Express) at the arrivals exit — €4",
+        "step2": "Get off at Santa Justa (≈30-40 min)",
+        "step3": "Walk 7 minutes north to the apartment",
         "step4": "Arrive at Imaginero Luis Álvarez Duarte, 7"
       },
       "train": {
-        "step1": "From Santa Justa take Metro Line 1 (towards Olivar de Quinto)",
-        "step2": "Get off at Puerta Jerez (3 stops, 8 min)",
-        "step3": "Walk 7 minutes to the apartment"
+        "step1": "Exit Santa Justa station through the Avenida de Kansas City exit",
+        "step2": "Walk 7 minutes north along Avenida de Kansas City",
+        "step3": "Arrive at Imaginero Luis Álvarez Duarte, 7"
       },
       "car": {
-        "step1": "Seville city centre has restricted access — recommended car park: Parking Plaza Nueva",
+        "step1": "The apartment is outside the centre's restricted access zones: arriving by car is easy",
         "step2": "Enter GPS: Imaginero Luis Álvarez Duarte, 7, Seville",
-        "step3": "Loading/unloading zone available in front of the building"
+        "step3": "Loading area in front of the building; street parking nearby"
       }
     }
   },
@@ -332,7 +332,7 @@
     "recommendations": "Host's recommendations"
   },
   "footer": {
-    "tagline": "Your home in the heart of Seville",
+    "tagline": "Your home in Seville",
     "registrationLabel": "Tourist Registration No.",
     "links": {
       "privacy": "Privacy Policy",
@@ -423,8 +423,8 @@
     "euros": "€"
   },
   "seo": {
-    "homeTitle": "Tourist Apartment Seville Centre | Esencia Sevilla",
-    "homeDescription": "Book the best tourist apartment in Seville city centre. 8 min from the Cathedral & Alcázar. Self check-in, WiFi, A/C. 10% cheaper than Booking!",
+    "homeTitle": "Tourist Apartment in Seville next to Santa Justa | Esencia Sevilla",
+    "homeDescription": "Rent a tourist apartment in Seville, a 7-minute walk from Santa Justa AVE station and 10 minutes from the historic centre. Self check-in, WiFi, A/C. 10% cheaper than Booking!",
     "guideTitle": "Free Seville Tourist Guide | Map, Routes & Transport",
     "guideDescription": "Complete free tourist guide to Seville: interactive map, walking routes, TUSSAM transport, restaurants and events. Available offline.",
     "blogTitle": "Seville Travel Blog | Guides & Tips",

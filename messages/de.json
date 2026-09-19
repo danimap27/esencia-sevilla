@@ -10,9 +10,9 @@
     "bookNow": "Jetzt buchen"
   },
   "hero": {
-    "badge": "Ferienwohnung — Zentrum von Sevilla",
-    "headline": "Ihr Zuhause im Herzen von Sevilla",
-    "subheadline": "Nur wenige Schritte von der Kathedrale, dem Alcázar und dem Santa Cruz Viertel. Erleben Sie Sevilla wie ein Einheimischer.",
+    "badge": "Touristenwohnung — Sevilla",
+    "headline": "Dein Zuhause in Sevilla",
+    "subheadline": "7 Gehminuten vom AVE-Bahnhof Santa Justa und 10 Minuten vom historischen Zentrum mit Bus oder Taxi. Erlebe Sevilla wie ein Einheimischer.",
     "cta": "Verfügbarkeit prüfen",
     "ctaSecondary": "Fotos ansehen",
     "reviewsBadge": "{count} 5-Sterne-Bewertungen",
@@ -24,7 +24,7 @@
       "checkin": "Selbstcheck-in 24h",
       "wifi": "Ultra-schnelles WiFi",
       "ac": "Klimaanlage in allen Räumen",
-      "location": "Top Lage"
+      "location": "Neben Santa Justa (AVE)"
     }
   },
   "comparison": {
@@ -207,7 +207,7 @@
     "subtitle": "Alles, was Sie vor der Ankunft wissen müssen",
     "questions": {
       "q1": "Gibt es einen Parkplatz in der Nähe der Wohnung?",
-      "a1": "Kein privater Parkplatz im Gebäude. Der nächstgelegene öffentliche Parkplatz ist Parking Plaza Nueva (5 Min. zu Fuß, ca. 25€/Tag). Wir empfehlen die Nutzung öffentlicher Verkehrsmittel, da das historische Zentrum eingeschränkter Fahrzeugzufahrt hat.",
+      "a1": "Kein privater Parkplatz im Gebäude. Die Wohnung liegt außerhalb der eingeschränkten Zufahrtszonen des Zentrums – Parken in der Nähe ist einfacher als in der Altstadt. Für das Zentrum (ca. 2 km) empfehlen wir Bus, Taxi oder ein Parkhaus im Zentrum.",
       "q2": "Sind Haustiere erlaubt?",
       "a2": "Leider sind Haustiere in der Wohnung nicht erlaubt, um andere Gäste zu respektieren und die Sauberkeit zu wahren.",
       "q3": "Wie funktioniert der Selbstcheck-in?",
@@ -229,7 +229,7 @@
       "q11": "Ist Rauchen in der Wohnung erlaubt?",
       "a11": "Rauchen in der Wohnung ist nicht erlaubt. Bei Verstößen gegen diese Regel wird eine Strafe von 150€ fällig.",
       "q12": "Wie komme ich vom Flughafen zur Wohnung?",
-      "a12": "Die bequemste Option ist der Bus EA (Flughafen Express), der alle 30 Minuten fährt und 4€ kostet. Er braucht ca. 40 Minuten bis Prado de San Sebastián, von wo die Wohnung 10 Minuten zu Fuß entfernt ist. Wir bieten auch einen privaten Flughafentransfer für 35€ an.",
+      "a12": "Am einfachsten ist der EA-Bus (Airport Express), alle 15-30 Minuten, 4€. Steig an Santa Justa aus (ca. 30-40 Minuten) – von dort sind es 7 Gehminuten zur Wohnung. Wir bieten auch einen privaten Flughafentransfer für 35€.",
       "q13": "Was passiert, wenn ich ein Problem während meines Aufenthalts habe?",
       "a13": "Wir sind 24/7 per WhatsApp für alle Vorfälle erreichbar. Im Notfall: die 112 ist die Notrufnummer in Spanien.",
       "q14": "Werden Junggesellenabschiede oder Partys akzeptiert?",
@@ -250,7 +250,7 @@
   },
   "location": {
     "title": "Wo wir sind",
-    "subtitle": "Im Herzen von Sevilla, alles zu Fuß erreichbar",
+    "subtitle": "Gut angebunden: AVE 7 Min. zu Fuß, Zentrum 10 Min. mit Bus oder Taxi",
     "address": "Imaginero Luis Alvarez Duarte N7, 41008 Sevilla",
     "howToArrive": "Anreise",
     "fromAirport": "Vom Flughafen SVQ",
@@ -259,20 +259,20 @@
     "step": "Schritt {n}",
     "arrivalSteps": {
       "airport": {
-        "step1": "Nehmen Sie den Bus EA (Flughafen Express) am Ausgang der Ankunft — 4€",
-        "step2": "Steigen Sie am Prado de San Sebastián aus (≈40 Min.)",
-        "step3": "Laufen Sie 10 Minuten nach Norden die Av. Menéndez Pelayo entlang",
+        "step1": "Nimm den EA-Bus (Airport Express) am Ankunftsausgang — 4€",
+        "step2": "Steig an Santa Justa aus (≈30-40 Min.)",
+        "step3": "Geh 7 Minuten nach Norden bis zur Wohnung",
         "step4": "Arrive at Imaginero Luis Álvarez Duarte, 7"
       },
       "train": {
-        "step1": "Von Santa Justa nehmen Sie die Metro Linie 1 (Richtung Olivar de Quinto)",
-        "step2": "Steigen Sie an Puerta Jerez aus (3 Stationen, 8 Min.)",
-        "step3": "Laufen Sie 7 Minuten zur Wohnung"
+        "step1": "Verlasse Santa Justa durch den Ausgang Avenida de Kansas City",
+        "step2": "Geh 7 Minuten nach Norden entlang der Avenida de Kansas City",
+        "step3": "Du kommst an der Imaginero Luis Álvarez Duarte 7 an"
       },
       "car": {
-        "step1": "Das Zentrum von Sevilla hat eingeschränkte Zufahrt — empfohlener Parkplatz: Parking Plaza Nueva",
+        "step1": "Die Wohnung liegt außerhalb der eingeschränkten Zufahrtszonen: Die Anreise mit dem Auto ist einfach",
         "step2": "Geben Sie ins GPS ein: Imaginero Luis Álvarez Duarte, 7, Sevilla",
-        "step3": "Ladezone vor dem Gebäude verfügbar"
+        "step3": "Ladezone vor dem Gebäude; Parken im Viertel möglich"
       }
     }
   },
@@ -332,7 +332,7 @@
     "recommendations": "Empfehlungen des Gastgebers"
   },
   "footer": {
-    "tagline": "Ihr Zuhause im Herzen von Sevilla",
+    "tagline": "Dein Zuhause in Sevilla",
     "registrationLabel": "Touristische Registrierungsnummer",
     "links": {
       "privacy": "Datenschutzrichtlinie",
@@ -423,8 +423,8 @@
     "euros": "€"
   },
   "seo": {
-    "homeTitle": "Ferienwohnung Sevilla Zentrum | Esencia Sevilla",
-    "homeDescription": "Mieten Sie die beste Ferienwohnung im Zentrum von Sevilla. 8 Min. von der Kathedrale und dem Alcázar. Selbstcheck-in, WiFi, Klimaanlage. 10% günstiger als Booking!",
+    "homeTitle": "Touristenwohnung in Sevilla neben Santa Justa | Esencia Sevilla",
+    "homeDescription": "Miete eine Touristenwohnung in Sevilla, 7 Gehminuten vom AVE-Bahnhof Santa Justa und 10 Minuten vom historischen Zentrum. Selbst-Check-in, WiFi, A/C. 10% günstiger als Booking!",
     "guideTitle": "Kostenloser Reiseführer Sevilla | Karte, Routen und Transport",
     "guideDescription": "Vollständiger und kostenloser Reiseführer von Sevilla: interaktive Karte, Fußrouten, TUSSAM-Transport, Restaurants und Events. Offline verfügbar.",
     "blogTitle": "Sevilla Reise-Blog | Guides und Tipps",
