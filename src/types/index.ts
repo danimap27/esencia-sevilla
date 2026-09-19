@@ -52,7 +52,7 @@ export interface TouristRoute {
 export interface NearbyPlace {
   id: string;
   name: string;
-  category: 'supermarket' | 'bar' | 'restaurant' | 'pharmacy' | 'bus' | 'atm' | 'cafe' | 'bakery' | 'tussam';
+  category: 'supermarket' | 'bar' | 'restaurant' | 'pharmacy' | 'bus' | 'atm' | 'cafe' | 'bakery' | 'tussam' | 'tobacco' | 'taxi' | 'bank' | 'convenience' | 'fast_food' | 'laundry';
   lat: number;
   lng: number;
   address?: string;

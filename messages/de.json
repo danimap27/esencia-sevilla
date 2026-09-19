@@ -7,7 +7,8 @@
     "reviews": "Bewertungen",
     "faq": "FAQ",
     "blog": "Blog",
-    "bookNow": "Jetzt buchen"
+    "bookNow": "Jetzt buchen",
+    "nearby": "In der Nähe"
   },
   "hero": {
     "badge": "Touristenwohnung — Sevilla",
@@ -444,5 +445,28 @@
     "rejectAll": "Nicht wesentliche ablehnen",
     "savePrefs": "Einstellungen speichern",
     "close": "Schließen"
+  },
+  "nearby": {
+    "title": "Alles Wichtige in der Nähe",
+    "subtitle": "Services, Geschäfte und Verkehrsmittel nur wenige Gehminuten von der Wohnung",
+    "minWalk": "{min} Min. zu Fuß",
+    "openInMaps": "Auf Google Maps ansehen",
+    "categories": {
+      "supermarket": "Supermärkte",
+      "convenience": "Läden",
+      "bakery": "Bäckereien",
+      "pharmacy": "Apotheken",
+      "tobacco": "Tabakläden",
+      "bank": "Banken",
+      "atm": "Geldautomaten",
+      "bus": "Bushaltestellen",
+      "taxi": "Taxis",
+      "tussam": "Zug / Bahnhof",
+      "restaurant": "Restaurants",
+      "bar": "Bars",
+      "fast_food": "Fast Food",
+      "laundry": "Wäscherei"
+    },
+    "all": "Alle"
   }
 }

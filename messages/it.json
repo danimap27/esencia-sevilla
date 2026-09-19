@@ -7,7 +7,8 @@
     "reviews": "Recensioni",
     "faq": "FAQ",
     "blog": "Blog",
-    "bookNow": "Prenota ora"
+    "bookNow": "Prenota ora",
+    "nearby": "Vicino"
   },
   "hero": {
     "badge": "Appartamento Turistico — Siviglia",
@@ -444,5 +445,28 @@
     "rejectAll": "Rifiuta non essenziali",
     "savePrefs": "Salva preferenze",
     "close": "Chiudi"
+  },
+  "nearby": {
+    "title": "Tutto ciò che serve, qui vicino",
+    "subtitle": "Servizi, negozi e trasporti a pochi minuti a piedi dall'appartamento",
+    "minWalk": "{min} min a piedi",
+    "openInMaps": "Vedi su Google Maps",
+    "categories": {
+      "supermarket": "Supermercati",
+      "convenience": "Negozi",
+      "bakery": "Panetterie",
+      "pharmacy": "Farmacie",
+      "tobacco": "Tabaccherie",
+      "bank": "Banche",
+      "atm": "Bancomat",
+      "bus": "Fermate bus",
+      "taxi": "Taxi",
+      "tussam": "Treno / Stazione",
+      "restaurant": "Ristoranti",
+      "bar": "Bar",
+      "fast_food": "Fast food",
+      "laundry": "Lavanderia"
+    },
+    "all": "Tutti"
   }
 }

@@ -12,6 +12,7 @@ const NAV_ITEMS = [
   { key: 'gallery', href: '#galeria' },
   { key: 'booking', href: '#reservar' },
   { key: 'map', href: '#mapa' },
+  { key: 'nearby', href: '#cerca' },
   { key: 'reviews', href: '#resenas' },
   { key: 'faq', href: '#faq' },
   { key: 'blog', href: '/blog' },

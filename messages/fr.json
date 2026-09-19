@@ -7,7 +7,8 @@
     "reviews": "Avis",
     "faq": "FAQ",
     "blog": "Blog",
-    "bookNow": "Réserver maintenant"
+    "bookNow": "Réserver maintenant",
+    "nearby": "À côté"
   },
   "hero": {
     "badge": "Appartement Touristique — Séville",
@@ -444,5 +445,28 @@
     "rejectAll": "Refuser non essentielles",
     "savePrefs": "Enregistrer les préférences",
     "close": "Fermer"
+  },
+  "nearby": {
+    "title": "Tout ce qu'il faut, à côté",
+    "subtitle": "Services, commerces et transports à quelques minutes à pied de l'appartement",
+    "minWalk": "{min} min à pied",
+    "openInMaps": "Voir sur Google Maps",
+    "categories": {
+      "supermarket": "Supermarchés",
+      "convenience": "Commerces",
+      "bakery": "Boulangeries",
+      "pharmacy": "Pharmacies",
+      "tobacco": "Bureaux de tabac",
+      "bank": "Banques",
+      "atm": "Distributeurs",
+      "bus": "Arrêts de bus",
+      "taxi": "Taxis",
+      "tussam": "Train / Gare",
+      "restaurant": "Restaurants",
+      "bar": "Bars",
+      "fast_food": "Restauration rapide",
+      "laundry": "Pressing"
+    },
+    "all": "Tous"
   }
 }

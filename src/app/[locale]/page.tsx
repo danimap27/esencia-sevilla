@@ -16,6 +16,7 @@ import FAQ from '@/components/FAQ';
 import Reviews from '@/components/Reviews';
 import EventsSection from '@/components/EventsSection';
 import LocationSection from '@/components/LocationSection';
+import NearbySection from '@/components/NearbySection';
 import Footer from '@/components/Footer';
 
 const MapSection = dynamic(() => import('@/components/MapSection'), {
@@ -178,6 +179,7 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
         <EventsSection />
         <Reviews />
         <LocationSection />
+        <NearbySection />
         <FAQ />
       </main>
       <Footer />

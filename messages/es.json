@@ -7,7 +7,8 @@
     "reviews": "Reseñas",
     "faq": "FAQ",
     "blog": "Blog",
-    "bookNow": "Reservar ahora"
+    "bookNow": "Reservar ahora",
+    "nearby": "Cerca"
   },
   "hero": {
     "badge": "Apartamento Turístico — Sevilla",
@@ -444,5 +445,28 @@
     "rejectAll": "Rechazar no esenciales",
     "savePrefs": "Guardar preferencias",
     "close": "Cerrar"
+  },
+  "nearby": {
+    "title": "Todo lo que necesitas, cerca",
+    "subtitle": "Servicios, tiendas y transporte a pocos minutos andando del apartamento",
+    "minWalk": "{min} min andando",
+    "openInMaps": "Ver en Google Maps",
+    "categories": {
+      "supermarket": "Supermercados",
+      "convenience": "Tiendas",
+      "bakery": "Panaderías",
+      "pharmacy": "Farmacias",
+      "tobacco": "Estancos",
+      "bank": "Bancos",
+      "atm": "Cajeros",
+      "bus": "Paradas de bus",
+      "taxi": "Taxis",
+      "tussam": "Tren / Estación",
+      "restaurant": "Restaurantes",
+      "bar": "Bares",
+      "fast_food": "Comida rápida",
+      "laundry": "Lavandería"
+    },
+    "all": "Todos"
   }
 }

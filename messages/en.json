@@ -7,7 +7,8 @@
     "reviews": "Reviews",
     "faq": "FAQ",
     "blog": "Blog",
-    "bookNow": "Book now"
+    "bookNow": "Book now",
+    "nearby": "Nearby"
   },
   "hero": {
     "badge": "Tourist Apartment — Seville",
@@ -444,5 +445,28 @@
     "rejectAll": "Reject non-essential",
     "savePrefs": "Save preferences",
     "close": "Close"
+  },
+  "nearby": {
+    "title": "Everything you need, nearby",
+    "subtitle": "Services, shops and transport just minutes on foot from the apartment",
+    "minWalk": "{min} min walk",
+    "openInMaps": "View on Google Maps",
+    "categories": {
+      "supermarket": "Supermarkets",
+      "convenience": "Shops",
+      "bakery": "Bakeries",
+      "pharmacy": "Pharmacies",
+      "tobacco": "Tobacconists",
+      "bank": "Banks",
+      "atm": "ATMs",
+      "bus": "Bus stops",
+      "taxi": "Taxis",
+      "tussam": "Train / Station",
+      "restaurant": "Restaurants",
+      "bar": "Bars",
+      "fast_food": "Fast food",
+      "laundry": "Laundry"
+    },
+    "all": "All"
   }
 }

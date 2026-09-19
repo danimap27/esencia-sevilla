@@ -7,7 +7,8 @@
     "reviews": "Avaliações",
     "faq": "FAQ",
     "blog": "Blog",
-    "bookNow": "Reservar agora"
+    "bookNow": "Reservar agora",
+    "nearby": "Perto"
   },
   "hero": {
     "badge": "Apartamento Turístico — Sevilha",
@@ -444,5 +445,28 @@
     "rejectAll": "Recusar não essenciais",
     "savePrefs": "Guardar preferências",
     "close": "Fechar"
+  },
+  "nearby": {
+    "title": "Tudo o que precisa, por perto",
+    "subtitle": "Serviços, lojas e transportes a poucos minutos a pé do apartamento",
+    "minWalk": "{min} min a pé",
+    "openInMaps": "Ver no Google Maps",
+    "categories": {
+      "supermarket": "Supermercados",
+      "convenience": "Lojas",
+      "bakery": "Padarias",
+      "pharmacy": "Farmácias",
+      "tobacco": "Estancos",
+      "bank": "Bancos",
+      "atm": "Multibancos",
+      "bus": "Paragens de autocarro",
+      "taxi": "Táxis",
+      "tussam": "Comboio / Estação",
+      "restaurant": "Restaurantes",
+      "bar": "Bares",
+      "fast_food": "Comida rápida",
+      "laundry": "Lavandaria"
+    },
+    "all": "Todos"
   }
 }
