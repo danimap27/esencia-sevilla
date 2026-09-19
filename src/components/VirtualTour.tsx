@@ -24,9 +24,27 @@ const TOUR_SCENES: TourScene[] = [
     yaw: 0,
   },
   {
+    id: 'living-room-2',
+    titleKey: 'livingRoom2',
+    image: '/tours-360/salon-2.jpg',
+    yaw: 0,
+  },
+  {
     id: 'bedroom',
     titleKey: 'bedroom',
     image: '/tours-360/dormitorio.jpg',
+    yaw: 90,
+  },
+  {
+    id: 'bedroom-2',
+    titleKey: 'bedroom2',
+    image: '/tours-360/dormitorio-2.jpg',
+    yaw: 90,
+  },
+  {
+    id: 'bedroom-3',
+    titleKey: 'bedroom3',
+    image: '/tours-360/dormitorio-3.jpg',
     yaw: 90,
   },
   {
@@ -45,12 +63,12 @@ const TOUR_SCENES: TourScene[] = [
 
 // Tour labels in 6 languages (local since they're UI-only labels)
 const TOUR_LABELS: Record<string, Record<string, string>> = {
-  es: { livingRoom: 'Salón', bedroom: 'Dormitorio', kitchen: 'Cocina', bathroom: 'Baño' },
-  en: { livingRoom: 'Living Room', bedroom: 'Bedroom', kitchen: 'Kitchen', bathroom: 'Bathroom' },
-  fr: { livingRoom: 'Salon', bedroom: 'Chambre', kitchen: 'Cuisine', bathroom: 'Salle de bain' },
-  de: { livingRoom: 'Wohnzimmer', bedroom: 'Schlafzimmer', kitchen: 'Küche', bathroom: 'Badezimmer' },
-  it: { livingRoom: 'Soggiorno', bedroom: 'Camera', kitchen: 'Cucina', bathroom: 'Bagno' },
-  pt: { livingRoom: 'Sala', bedroom: 'Quarto', kitchen: 'Cozinha', bathroom: 'Casa de banho' },
+  es: { livingRoom: 'Salón', livingRoom2: 'Salón · 2', bedroom: 'Dormitorio', bedroom2: 'Dormitorio · 2', bedroom3: 'Dormitorio · 3', kitchen: 'Cocina', bathroom: 'Baño' },
+  en: { livingRoom: 'Living Room', livingRoom2: 'Living Room · 2', bedroom: 'Bedroom', bedroom2: 'Bedroom · 2', bedroom3: 'Bedroom · 3', kitchen: 'Kitchen', bathroom: 'Bathroom' },
+  fr: { livingRoom: 'Salon', livingRoom2: 'Salon · 2', bedroom: 'Chambre', bedroom2: 'Chambre · 2', bedroom3: 'Chambre · 3', kitchen: 'Cuisine', bathroom: 'Salle de bain' },
+  de: { livingRoom: 'Wohnzimmer', livingRoom2: 'Wohnzimmer · 2', bedroom: 'Schlafzimmer', bedroom2: 'Schlafzimmer · 2', bedroom3: 'Schlafzimmer · 3', kitchen: 'Küche', bathroom: 'Badezimmer' },
+  it: { livingRoom: 'Soggiorno', livingRoom2: 'Soggiorno · 2', bedroom: 'Camera', bedroom2: 'Camera · 2', bedroom3: 'Camera · 3', kitchen: 'Cucina', bathroom: 'Bagno' },
+  pt: { livingRoom: 'Sala', livingRoom2: 'Sala · 2', bedroom: 'Quarto', bedroom2: 'Quarto · 2', bedroom3: 'Quarto · 3', kitchen: 'Cozinha', bathroom: 'Casa de banho' },
 };
 
 // Asynchronous existence check for the tour images (at least one must exist)

@@ -11,11 +11,12 @@ Qué hace:
   1. Valida que cada imagen sea equirectangular (ratio ancho/alto ≈ 2:1)
   2. La redimensiona a máx. 4096 px de ancho y la comprime (JPG q82) para que
      el tour cargue rápido en móvil
-  3. La guarda en public/tours-360/ con el nombre de escena correcto
-     (salon, dormitorio, cocina, bano) detectado por el nombre del archivo
+  3. La guarda en public/tours-360/ con el nombre de escena correcto detectado
+     por el nombre del archivo. Varias fotos de la misma habitación se numeran
+     con sufijo: salon.jpg, salon-2.jpg, dormitorio.jpg, dormitorio-2.jpg...
 
-Consejo: haz las fotos con una cámara 360 (Insta360, Ricoh Theta) o una app
-equirectangular, a la altura de los ojos (1,5 m) y con buena luz.
+Convención de nombres en el componente (VirtualTour.tsx):
+  salon[.jpg|-2.jpg] · dormitorio[.jpg|-2.jpg|-3.jpg] · cocina.jpg · bano.jpg
 """
 import argparse
 import os
@@ -23,6 +24,7 @@ import sys
 
 try:
     from PIL import Image
+    Image.MAX_IMAGE_PIXELS = None  # las fotos Insta360 pueden ser de 120 MP (legítimas)
 except ImportError:
     print("Falta Pillow. Instálalo con: uv pip install pillow  (o pip install pillow)")
     sys.exit(1)
@@ -35,7 +37,7 @@ SCENE_KEYWORDS = {
     "salon": ["salon", "salón", "living", "sala"],
     "dormitorio": ["dormitorio", "bedroom", "habitacion", "habitación", "cuarto"],
     "cocina": ["cocina", "kitchen"],
-    "bano": ["bano", "baño", "bathroom", "bath"],
+    "bano": ["bano", "baño", "banyo", "bathroom", "bath"],
 }
 
 MAX_WIDTH = 4096
@@ -51,7 +53,25 @@ def detect_scene(filename: str) -> str | None:
     return None
 
 
-def process_image(path: str, scene: str) -> bool:
+def next_dest_name(scene: str, counters: dict) -> str:
+    """Primera foto de una escena → <escena>.jpg; siguientes → <escena>-N.jpg (N≥2).
+    También cuenta las que ya existen en disco para no pisarlas."""
+    n = counters.get(scene, 0)
+    # si la base ya existe en disco y no la hemos escrito en esta ejecución, empezar en 2
+    if n == 0:
+        if not os.path.exists(os.path.join(DEST, f"{scene}.jpg")):
+            counters[scene] = 1
+            return f"{scene}.jpg"
+        n = 2
+        while os.path.exists(os.path.join(DEST, f"{scene}-{n}.jpg")):
+            n += 1
+    else:
+        n += 1
+    counters[scene] = n
+    return f"{scene}-{n}.jpg"
+
+
+def process_image(path: str, scene: str, counters: dict) -> bool:
     try:
         im = Image.open(path)
         im = im.convert("RGB")
@@ -73,10 +93,11 @@ def process_image(path: str, scene: str) -> bool:
         resample = getattr(Image, "Resampling", Image).LANCZOS
         im = im.resize((MAX_WIDTH, nh), resample)
 
-    out = os.path.join(DEST, f"{scene}.jpg")
+    name = next_dest_name(scene, counters)
+    out = os.path.join(DEST, name)
     im.save(out, "JPEG", quality=QUALITY, optimize=True, progressive=True)
     kb = os.path.getsize(out) // 1024
-    print(f"  ✓ {os.path.basename(path)} → tours-360/{scene}.jpg ({im.width}x{im.height}, {kb} KB)")
+    print(f"  ✓ {os.path.basename(path)} → tours-360/{name} ({im.width}x{im.height}, {kb} KB)")
     return True
 
 
@@ -84,8 +105,10 @@ def main():
     ap = argparse.ArgumentParser(description="Integrar fotos 360° en el tour del apartamento")
     ap.add_argument("files", nargs="*", help="archivos de imagen")
     ap.add_argument("--dir", help="carpeta con fotos (se cogen todas las imágenes)")
-    ap.add_argument("--order", nargs=4, metavar=("SALON", "DORM", "COCINA", "BANO"),
+    ap.add_argument("--order", nargs="+", metavar="ESCENA",
                     help="asignar escenas por orden de archivo si el nombre no las identifica")
+    ap.add_argument("--fresh", action="store_true",
+                    help="borrar las fotos existentes del tour antes de integrar")
     args = ap.parse_args()
 
     paths = list(args.files)
@@ -101,31 +124,33 @@ def main():
         sys.exit(1)
 
     os.makedirs(DEST, exist_ok=True)
+    if args.fresh:
+        for f in os.listdir(DEST):
+            if f.endswith(".jpg"):
+                os.remove(os.path.join(DEST, f))
+        print("(modo --fresh: fotos anteriores borradas)\n")
+
     print(f"Destino: {DEST}\n")
 
-    used = set()
+    counters: dict = {}
+    order_queue = list(args.order) if args.order else []
     ok = 0
-    for i, p in enumerate(paths):
+    for p in paths:
         p = os.path.expanduser(p)
         if not os.path.isfile(p):
             print(f"  ✗ {p}: no existe")
             continue
         scene = detect_scene(os.path.basename(p))
-        if scene is None and args.order:
-            # asignación posicional: 1º salon, 2º dormitorio, 3º cocina, 4º bano
-            remaining = [s for s in args.order if s not in used]
-            scene = remaining[0] if remaining else None
+        if scene is None and order_queue:
+            scene = order_queue.pop(0)
         if scene is None:
             print(f"  ? {os.path.basename(p)}: no se identifica la escena — renómbralo (p.ej. salon.jpg) o usa --order")
             continue
-        if scene in used:
-            print(f"  ⚠ {os.path.basename(p)}: escena '{scene}' duplicada — se sobreescribe")
-        if process_image(p, scene):
-            used.add(scene)
+        if process_image(p, scene, counters):
             ok += 1
 
     print(f"\n{ok} foto(s) integradas.")
-    missing = [s for s in SCENE_KEYWORDS if s not in used]
+    missing = [s for s in SCENE_KEYWORDS if not any(f.startswith(s) for f in os.listdir(DEST))]
     if missing:
         print(f"Escenas sin foto: {', '.join(missing)}")
     print("\nSiguiente paso: reinicia el sitio (systemctl --user restart esencia-sevilla) y el botón")
