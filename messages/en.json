@@ -119,7 +119,10 @@
     "prev": "Previous",
     "next": "Next",
     "comingSoon": "360° tour — coming soon",
-    "noPhotos": "We are preparing the 360° virtual tour. Come back soon to walk through the apartment as if you were there."
+    "noPhotos": "We are preparing the 360° virtual tour. Come back soon to walk through the apartment as if you were there.",
+    "tourDesc": "Walk through every room before you arrive: living room, bedrooms, kitchen and bathroom in 360°, as if you were already inside.",
+    "tourCta": "Explore the tour",
+    "tourViews": "{count} 360° views"
   },
   "map": {
     "title": "Explore Seville from your apartment",

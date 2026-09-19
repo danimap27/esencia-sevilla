@@ -119,7 +119,10 @@
     "prev": "Précédent",
     "next": "Suivant",
     "comingSoon": "Visite 360° — bientôt disponible",
-    "noPhotos": "Nous préparons la visite virtuelle 360°. Revenez bientôt pour parcourir l'appartement comme si vous y étiez."
+    "noPhotos": "Nous préparons la visite virtuelle 360°. Revenez bientôt pour parcourir l'appartement comme si vous y étiez.",
+    "tourDesc": "Parcourez chaque pièce avant d'arriver : salon, chambres, cuisine et salle de bain en 360°, comme si vous y étiez.",
+    "tourCta": "Explorer la visite",
+    "tourViews": "{count} vues à 360°"
   },
   "map": {
     "title": "Explorez Séville depuis votre appartement",

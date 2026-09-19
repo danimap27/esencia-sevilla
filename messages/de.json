@@ -119,7 +119,10 @@
     "prev": "Zurück",
     "next": "Weiter",
     "comingSoon": "360°-Tour — bald verfügbar",
-    "noPhotos": "Wir bereiten den virtuellen 360°-Rundgang vor. Schau bald wieder vorbei."
+    "noPhotos": "Wir bereiten den virtuellen 360°-Rundgang vor. Schau bald wieder vorbei.",
+    "tourDesc": "Geh durch jedes Zimmer, bevor du ankommst: Wohnzimmer, Schlafzimmer, Küche und Bad in 360°, als wärst du schon da.",
+    "tourCta": "Tour erkunden",
+    "tourViews": "{count} 360°-Ansichten"
   },
   "map": {
     "title": "Entdecken Sie Sevilla von Ihrer Wohnung aus",

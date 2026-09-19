@@ -119,7 +119,10 @@
     "prev": "Anterior",
     "next": "Seguinte",
     "comingSoon": "Tour 360° — brevemente",
-    "noPhotos": "Estamos a preparar a visita virtual 360°. Volte em breve para percorrer o apartamento como se estivesse lá."
+    "noPhotos": "Estamos a preparar a visita virtual 360°. Volte em breve para percorrer o apartamento como se estivesse lá.",
+    "tourDesc": "Percorra cada divisão antes de chegar: sala, quartos, cozinha e casa de banho em 360°, como se já estivesse lá.",
+    "tourCta": "Explorar o tour",
+    "tourViews": "{count} vistas em 360°"
   },
   "map": {
     "title": "Explore Sevilha desde o seu apartamento",

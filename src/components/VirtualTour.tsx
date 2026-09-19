@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
-import { X, ChevronLeft, ChevronRight, Expand, Camera } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Camera, Rotate3d, Play } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 // Pannellum is loaded via script tag (CDN) to avoid SSR issues
@@ -162,30 +162,58 @@ export default function VirtualTour({ locale = 'es' }: { locale?: string }) {
 
   const labels = TOUR_LABELS[locale] || TOUR_LABELS.es;
 
-  // Without photos (checked) → disabled "coming soon" button
-  if (availableScenes !== null && !hasPhotos) {
-    return (
-      <button
-        disabled
-        title={t('noPhotos')}
-        className="group flex items-center gap-3 px-5 py-3 rounded-xl bg-tinta/50 text-crema/60 cursor-not-allowed text-sm font-medium"
-      >
-        <Camera size={18} className="text-terracota-400/50" />
-        {t('comingSoon')}
-      </button>
-    );
-  }
+  // Sección visible cuando el tour está cerrado (o aún sin fotos)
+  const closedView = (
+    <section id="tour360" className="py-14 md:py-20 bg-crema-dark">
+      <div className="max-w-5xl mx-auto px-4 sm:px-8">
+        <div className="card overflow-hidden">
+          <div className="flex flex-col md:flex-row items-stretch">
+            {/* Lado decorativo */}
+            <div className="md:w-64 flex-shrink-0 bg-gradient-to-br from-azulejo-500 to-azulejo-700 flex items-center justify-center py-8 md:py-0">
+              <div className="flex flex-col items-center gap-3 text-white">
+                <div className="w-16 h-16 rounded-full bg-white/15 border border-white/25 flex items-center justify-center">
+                  <Rotate3d size={34} />
+                </div>
+                {hasPhotos && (
+                  <span className="text-sm font-semibold bg-azulejo-900/60 border border-white/30 rounded-full px-3.5 py-1.5 text-white">
+                    {t('tourViews', { count: scenes.length })}
+                  </span>
+                )}
+              </div>
+            </div>
+
+            {/* Contenido */}
+            <div className="flex-1 p-6 md:p-8">
+              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-tinta mb-2">
+                {t('virtualTour')}
+              </h2>
+              <p className="text-tinta/70 leading-relaxed mb-6 max-w-xl">
+                {hasPhotos ? t('tourDesc') : t('noPhotos')}
+              </p>
+
+              {hasPhotos ? (
+                <button
+                  onClick={() => setIsOpen(true)}
+                  className="inline-flex items-center gap-3 px-7 py-3.5 rounded-xl bg-terracota-500 hover:bg-terracota-600 text-white font-semibold shadow-medium hover:shadow-large hover:scale-[1.02] active:scale-[0.98] transition-all"
+                >
+                  <Play size={18} fill="currentColor" />
+                  {t('tourCta')}
+                </button>
+              ) : (
+                <span className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-tinta/10 text-tinta/50 font-medium text-sm cursor-not-allowed">
+                  <Camera size={16} />
+                  {t('comingSoon')}
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 
   if (!isOpen) {
-    return (
-      <button
-        onClick={() => availableScenes !== null && setIsOpen(true)}
-        className="group flex items-center gap-3 px-5 py-3 rounded-xl bg-tinta/90 hover:bg-tinta text-crema transition-colors text-sm font-medium"
-      >
-        <Expand size={18} className="text-terracota-400 group-hover:scale-110 transition-transform" />
-        {t('virtualTour')}
-      </button>
-    );
+    return closedView;
   }
 
   return (

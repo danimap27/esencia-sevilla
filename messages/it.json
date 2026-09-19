@@ -119,7 +119,10 @@
     "prev": "Precedente",
     "next": "Successivo",
     "comingSoon": "Tour 360° — prossimamente",
-    "noPhotos": "Stiamo preparando il tour virtuale a 360°. Torna presto per esplorare l'appartamento come se fossi lì."
+    "noPhotos": "Stiamo preparando il tour virtuale a 360°. Torna presto per esplorare l'appartamento come se fossi lì.",
+    "tourDesc": "Esplora ogni stanza prima di arrivare: soggiorno, camere, cucina e bagno a 360°, come se fossi già dentro.",
+    "tourCta": "Esplora il tour",
+    "tourViews": "{count} viste a 360°"
   },
   "map": {
     "title": "Esplora Siviglia dal tuo appartamento",
