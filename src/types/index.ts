@@ -2,6 +2,8 @@ import { Locale } from '@/i18n';
 
 export type { Locale };
 
+export type SightZone = 'centro' | 'santa-cruz' | 'paseo-rio' | 'triana' | 'macarena' | 'cartuja';
+
 export interface Sight {
   id: string;
   name: string;
@@ -10,6 +12,8 @@ export interface Sight {
   lng: number;
   description: Record<Locale, string>;
   entrance: string;
+  /** Zona de la ciudad para agrupar los sitios en el mapa */
+  zone?: SightZone;
   url?: string;
   image?: string;
   walkMinutes?: number;

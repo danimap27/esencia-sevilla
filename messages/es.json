@@ -1,479 +1,489 @@
 {
-  "nav": {
-    "gallery": "Fotos",
-    "booking": "Reservar",
-    "map": "Mapa",
-    "guide": "Guía",
-    "reviews": "Reseñas",
-    "faq": "FAQ",
-    "blog": "Blog",
-    "bookNow": "Reservar ahora",
-    "nearby": "Cerca"
-  },
-  "hero": {
-    "badge": "Apartamento Turístico — Sevilla",
-    "headline": "Tu hogar en Sevilla",
-    "subheadline": "A 7 minutos andando de la estación AVE Santa Justa y a 10 minutos del centro histórico en bus o taxi. Vive Sevilla como un local.",
-    "cta": "Ver disponibilidad",
-    "ctaSecondary": "Ver fotos",
-    "reviewsBadge": "{count} reseñas de 5 estrellas",
-    "ratingLabel": "Puntuación media",
-    "savingsBadge": "Ahorra {amount}€ vs Booking",
-    "savingsDesc": "Reservando directamente",
-    "registrationLabel": "Nº Registro Turístico",
-    "trustBadges": {
-      "checkin": "Check-in autónomo 24h",
-      "wifi": "WiFi ultrarrápido",
-      "ac": "A/C en todas las habitaciones",
-      "location": "Junto a Santa Justa (AVE)"
-    }
-  },
-  "comparison": {
-    "title": "¿Por qué reservar aquí?",
-    "subtitle": "Comparativa directa con Booking.com",
-    "feature": "Característica",
-    "direct": "Esencia Sevilla",
-    "booking": "Booking.com",
-    "rows": {
-      "price": "Precio",
-      "priceDirect": "10% más barato",
-      "priceBooking": "Precio completo",
-      "cancellation": "Cancelación",
-      "cancellationDirect": "No reembolsable",
-      "cancellationBooking": "Gratuita (precio mayor)",
-      "communication": "Comunicación",
-      "communicationDirect": "Directa con el anfitrión",
-      "communicationBooking": "A través de plataforma",
-      "extras": "Extras incluidos",
-      "extrasDirect": "Libro bienvenida, guía QR, chat IA",
-      "extrasBooking": "Solo alojamiento",
-      "checkin": "Instrucciones llegada",
-      "checkinDirect": "Personalizadas + mapa",
-      "checkinBooking": "Estándar"
-    }
-  },
-  "booking": {
-    "title": "Reservar",
-    "subtitle": "Elige tus fechas y obtén el mejor precio",
-    "checkIn": "Entrada",
-    "checkOut": "Salida",
-    "guests": "Huéspedes",
-    "guestCount": "{count} huésped",
-    "guestsCount": "{count} huéspedes",
-    "nights": "{count} noche",
-    "nightsPlural": "{count} noches",
-    "pricePerNight": "por noche",
-    "selectDates": "Selecciona las fechas",
-    "minStay": "Estancia mínima: 2 noches",
-    "unavailable": "No disponible",
-    "available": "Disponible",
-    "today": "Hoy",
-    "breakdown": {
-      "title": "Desglose del precio",
-      "perNight": "{price}€ × {nights} noches",
-      "cleaning": "Tasa de limpieza",
-      "touristTax": "Tasa turística",
-      "upsells": "Extras seleccionados",
-      "discount": "Descuento",
-      "total": "Total",
-      "bookingComparison": "En Booking pagarías",
-      "savings": "Tu ahorro"
-    },
-    "upsells": {
-      "title": "Mejora tu estancia",
-      "add": "Añadir",
-      "added": "Añadido",
-      "airportTransfer": "Traslado aeropuerto",
-      "airportTransferDesc": "Recogida en SVQ, llegada a tu hora",
-      "welcomePack": "Pack bienvenida",
-      "welcomePackDesc": "Productos locales artesanales de Sevilla",
-      "lateCheckout": "Late check-out (hasta 14:00)",
-      "lateCheckoutDesc": "Disfruta de la mañana sin prisas",
-      "travelCot": "Cuna de viaje",
-      "travelCotDesc": "Para bebés hasta 2 años",
-      "romanticPack": "Pack romántico",
-      "romanticPackDesc": "Vino andaluz + flores + nota personalizada"
-    },
-    "coupon": {
-      "label": "Código de descuento",
-      "placeholder": "ESENCIA10",
-      "apply": "Aplicar",
-      "invalid": "Código no válido",
-      "applied": "¡Descuento aplicado!"
-    },
-    "nonRefundable": "Esta tarifa es NO REEMBOLSABLE",
-    "nonRefundableNote": "Obtén cancelación gratuita reservando en",
-    "bookButton": "Reservar ahora — {total}€",
-    "bookingRedirect": "Reservar con cancelación gratuita en Booking.com",
-    "processing": "Procesando...",
-    "noAvailability": "Sin disponibilidad en estas fechas",
-    "contactUs": "Contactar para disponibilidad especial",
-    "cta": "Reservar"
-  },
-  "gallery": {
-    "title": "El apartamento",
-    "subtitle": "Espacios diseñados para el descanso y el disfrute",
-    "viewAll": "Ver todas las fotos",
-    "virtualTour": "Tour virtual 360°",
-    "close": "Cerrar",
-    "prev": "Anterior",
-    "next": "Siguiente",
-    "comingSoon": "Tour 360° — próximamente",
-    "noPhotos": "Estamos preparando el tour virtual 360°. Vuelve pronto para recorrer el apartamento como si estuvieras dentro.",
-    "tourDesc": "Recorre cada habitación antes de llegar: salón, dormitorios, cocina y baño en 360°, como si ya estuvieras dentro.",
-    "tourCta": "Explorar el tour",
-    "tourViews": "{count} vistas en 360°"
-  },
-  "map": {
-    "title": "Explora Sevilla desde tu apartamento",
-    "subtitle": "Rutas, monumentos y secretos locales",
-    "tabs": {
-      "map": "Mapa interactivo",
-      "routes": "Rutas a pie",
-      "transport": "Transporte"
-    },
-    "categories": {
-      "all": "Todos",
-      "monument": "Monumentos",
-      "neighborhood": "Barrios",
-      "culture": "Cultura",
-      "food": "Gastronomía",
-      "nature": "Naturaleza",
-      "modern": "Moderno",
-      "fun": "Ocio"
-    },
-    "openInMaps": "Abrir en Google Maps",
-    "entranceFree": "Entrada libre",
-    "minutesWalk": "{min} min andando",
-    "routeDetails": "Ver ruta completa",
-    "routeCategories": {
-      "classic": "Clásica",
-      "neighborhoods": "Barrios",
-      "romantic": "Romántica",
-      "food": "Gastronómica",
-      "family": "Familiar",
-      "culture": "Cultural",
-      "nature": "Naturaleza",
-      "shopping": "Compras",
-      "photos": "Fotográfica",
-      "history": "Historia",
-      "legends": "Leyendas",
-      "art": "Arte",
-      "daytrip": "Excursión",
-      "wine": "Vino",
-      "beach": "Playa"
-    },
-    "transport": {
-      "title": "Cómo moverte por Sevilla",
-      "multiviaje": "Tarjeta Multiviaje TUSSAM",
-      "multiviajePrices": "Recarga desde 5€ en máquinas de las paradas y app TUSSAM",
-      "nearestStop": "Parada más cercana al apartamento",
-      "lines": "Líneas disponibles",
-      "frequency": "Frecuencia",
-      "price": "Precio"
-    },
-    "fullRoute": "Ruta completa en Google Maps",
-    "bestTime": "Mejor hora",
-    "routeTransport": {
-      "walking": "A pie",
-      "public": "Transporte público",
-      "car": "En coche"
-    },
-    "howToGet": "Cómo llegar",
-    "historyLabel": "Historia",
-    "officialWeb": "Web oficial",
-    "filterAll": "Todas",
-    "filterBy": "Filtrar por tipo"
-  },
-  "events": {
-    "title": "Sevilla te espera",
-    "subtitle": "Eventos y festivales del año",
-    "highSeason": "Temporada alta — reserva con antelación",
-    "limitedAvailability": "Disponibilidad limitada en estas fechas",
-    "viewMore": "Más información",
-    "bookForEvent": "Reservar para este evento",
-    "now": "En curso",
-    "startsIn": "Empieza en {days} días."
-  },
-  "reviews": {
-    "title": "Lo que dicen nuestros huéspedes",
-    "subtitle": "Más de {count} reseñas verificadas",
-    "overallRating": "Puntuación global",
-    "basedOn": "basado en {count} reseñas",
-    "leaveReview": "Dejar una reseña",
-    "sources": {
-      "google": "Google Reviews",
-      "booking": "Booking.com",
-      "airbnb": "Airbnb",
-      "direct": "Reserva directa"
-    }
-  },
-  "faq": {
-    "title": "Preguntas frecuentes",
-    "subtitle": "Todo lo que necesitas saber antes de llegar",
-    "questions": {
-      "q1": "¿Hay parking cerca del apartamento?",
-      "a1": "No hay parking privado en el edificio. El apartamento está fuera de las zonas de acceso restringido del centro, así que aparcar en la zona es más fácil que en el casco histórico. Para visitar el centro (a unos 2 km) recomendamos bus, taxi o dejar el coche en un parking del centro.",
-      "q2": "¿Se admiten mascotas?",
-      "a2": "Lo sentimos, no se admiten mascotas en el apartamento para respetar a otros huéspedes y mantener la limpieza.",
-      "q3": "¿Cómo funciona el check-in autónomo?",
-      "a3": "24h antes de tu llegada recibirás un mensaje por WhatsApp y email con el código de la caja de seguridad donde están las llaves. No es necesario coordinarse con nadie. Puedes llegar a cualquier hora entre las 16:00 y las 23:00.",
-      "q4": "¿Qué incluye la limpieza final?",
-      "a4": "La tasa de limpieza (60€) incluye limpieza completa del apartamento, cambio de sábanas y toallas, y reposición de artículos de baño. Durante la estancia no se incluye servicio de limpieza diaria (disponible por 30€/día extra).",
-      "q5": "¿Hay aire acondicionado?",
-      "a5": "Sí, el apartamento tiene aire acondicionado en todas las estancias (salón y dormitorios). Es imprescindible en verano cuando las temperaturas pueden superar los 40°C en Sevilla.",
-      "q6": "¿Cuál es la capacidad máxima del apartamento?",
-      "a6": "El apartamento tiene capacidad para 4 huéspedes: una habitación doble con cama de matrimonio y otra habitación con dos camas individuales.",
-      "q7": "¿Se puede alojar un bebé?",
-      "a7": "¡Por supuesto! Podemos proporcionar una cuna de viaje por 15€ adicionales (seleccionable al reservar). El apartamento es apto para niños de todas las edades.",
-      "q8": "¿Hay WiFi? ¿Es rápido?",
-      "a8": "Sí, el apartamento dispone de WiFi de fibra óptica de alta velocidad (600 Mbps). El nombre de la red y la contraseña se encuentran en el libro de bienvenida.",
-      "q9": "¿A qué hora es el check-in y el check-out?",
-      "a9": "Check-in: a partir de las 16:00h. Check-out: antes de las 11:00h. Si tu vuelo llega antes, puedes dejar las maletas gratuitamente y explorar la ciudad. Late check-out hasta las 14:00h disponible por 20€ (según disponibilidad).",
-      "q10": "¿El apartamento tiene cocina equipada?",
-      "a10": "Sí, la cocina está completamente equipada: nevera, vitrocerámica, microondas, cafetera (cápsulas Nespresso), tostadora, hervidor, utensilios completos y vajilla para 4 personas.",
-      "q11": "¿Está permitido fumar en el apartamento?",
-      "a11": "No está permitido fumar dentro del apartamento. El incumplimiento de esta norma conlleva una penalización de 150€.",
-      "q12": "¿Cómo llego desde el aeropuerto?",
-      "a12": "La opción más cómoda es el autobús EA (Aeropuerto Express), que sale cada 15-30 minutos y cuesta 4€. Bájate en la parada de Santa Justa (unos 30-40 minutos) y desde allí el apartamento está a 7 minutos andando. También ofrecemos traslado privado desde el aeropuerto por 35€.",
-      "q13": "¿Qué pasa si tengo algún problema durante mi estancia?",
-      "a13": "Estamos disponibles 24/7 por WhatsApp para cualquier incidencia. En caso de emergencia: el número 112 es el de emergencias en España.",
-      "q14": "¿Se admiten despedidas de soltero/a o fiestas?",
-      "a14": "No se permiten fiestas ni eventos que puedan molestar a los vecinos. Sevilla tiene muchas opciones de ocio nocturno, pero el apartamento es exclusivamente para descanso.",
-      "q15": "¿El apartamento tiene ascensor?",
-      "a15": "Sí, el edificio dispone de ascensor.",
-      "q16": "¿Hay lavadora?",
-      "a16": "Sí, el apartamento dispone de lavadora con detergente incluido.",
-      "q17": "¿Puedo hacer el check-out tarde si mi vuelo es por la tarde?",
-      "a17": "El check-out estándar es antes de las 11:00h. Si necesitas más tiempo, el late check-out hasta las 14:00h está disponible por 20€ sujeto a disponibilidad. Para salidas más tarde, puedes dejar el equipaje guardado en el apartamento.",
-      "q18": "¿El apartamento está adaptado para personas con movilidad reducida?",
-      "a18": "El edificio tiene ascensor. El apartamento está en la planta 3ª. Existe un escalón de acceso al edificio. Si tienes necesidades especiales, consúltanos antes de reservar.",
-      "q19": "¿Cómo funciona el pre-check-in online?",
-      "a19": "Al confirmar tu reserva recibirás un enlace para completar el pre-check-in: datos del pasaporte, hora estimada de llegada y preferencias. Esto nos permite preparar todo para tu llegada y cumplir con la normativa española de registro de viajeros.",
-      "q20": "¿Cuál es el número de registro turístico del apartamento?",
-      "a20": "Número de registro turístico de la Junta de Andalucía: AT/SE/03584. Puedes verificarlo en el Registro de Turismo de Andalucía."
-    }
-  },
-  "location": {
-    "title": "Dónde estamos",
-    "subtitle": "Bien conectado: AVE a 7 min andando y centro a 10 min en bus o taxi",
-    "address": "Imaginero Luis Alvarez Duarte N7, 41008 Sevilla",
-    "howToArrive": "Cómo llegar",
-    "fromAirport": "Desde el Aeropuerto SVQ",
-    "fromStation": "Desde Santa Justa (Renfe)",
-    "byCar": "En coche",
-    "step": "Paso {n}",
-    "arrivalSteps": {
-      "airport": {
-        "step1": "Toma el autobús EA (Aeropuerto Express) en la salida de llegadas — 4€",
-        "step2": "Bájate en Santa Justa (≈30-40 min)",
-        "step3": "Camina 7 minutos hacia el norte hasta el apartamento",
-        "step4": "Llega a Imaginero Luis Álvarez Duarte, 7"
-      },
-      "train": {
-        "step1": "Sal de Santa Justa por la salida de Avenida de Kansas City",
-        "step2": "Camina 7 minutos hacia el norte por la Avenida de Kansas City",
-        "step3": "Llega a Imaginero Luis Álvarez Duarte, 7"
-      },
-      "car": {
-        "step1": "El apartamento está fuera de las restricciones de acceso del centro: llegar en coche es sencillo",
-        "step2": "Introduce en el GPS: Imaginero Luis Álvarez Duarte, 7, Sevilla",
-        "step3": "Zona de carga/descarga frente al edificio; aparcamiento en la zona"
-      }
-    }
-  },
-  "chat": {
-    "title": "Asistente Esencia Sevilla",
-    "subtitle": "Pregúntame sobre el apartamento, Sevilla o tu reserva",
-    "placeholder": "Escribe tu pregunta...",
-    "send": "Enviar",
-    "welcome": "¡Hola! Soy el asistente virtual de Esencia Sevilla. Puedo ayudarte con información sobre el apartamento, recomendaciones en Sevilla, transporte o tu reserva. ¿En qué puedo ayudarte?",
-    "suggestions": [
-      "¿A qué hora es el check-in?",
-      "¿Cuál es el WiFi?",
-      "¿Cómo llego desde el aeropuerto?",
-      "¿Qué restaurantes recomiendas cerca?"
-    ],
-    "typing": "Escribiendo...",
-    "error": "Error al conectar. Por favor, inténtalo de nuevo.",
-    "poweredBy": "Asistido por IA"
-  },
-  "guestPortal": {
-    "title": "Portal del Huésped",
-    "subtitle": "Completa tu pre-check-in",
-    "countdown": "Faltan {days} días para tu estancia",
-    "countdownToday": "¡Tu estancia empieza hoy!",
-    "preCheckin": {
-      "title": "Pre-check-in online",
-      "subtitle": "Completa tus datos para una llegada sin esperas",
-      "documentType": "Tipo de documento",
-      "passport": "Pasaporte",
-      "dni": "DNI",
-      "nie": "NIE",
-      "documentNumber": "Número de documento",
-      "documentExpiry": "Fecha de caducidad",
-      "nationality": "Nacionalidad",
-      "arrivalTime": "Hora estimada de llegada",
-      "specialRequests": "Peticiones especiales (opcional)",
-      "addGuest": "Añadir huésped",
-      "guestN": "Huésped {n}",
-      "firstName": "Nombre",
-      "lastName": "Apellidos",
-      "birthDate": "Fecha de nacimiento",
-      "submit": "Confirmar pre-check-in",
-      "success": "¡Pre-check-in completado! Recibirás el código de acceso 24h antes de tu llegada.",
-      "legalNote": "Datos requeridos por la Ley Orgánica de Seguridad Ciudadana (España) para el registro de viajeros."
-    }
-  },
-  "welcomeBook": {
-    "title": "Libro de Bienvenida",
-    "wifi": "WiFi",
-    "wifiPassword": "Contraseña",
-    "checkIn": "Check-in",
-    "checkOut": "Check-out",
-    "rules": "Normas de la casa",
-    "emergencies": "Emergencias",
-    "appliances": "Electrodomésticos",
-    "checkoutSteps": "Pasos para el check-out",
-    "recommendations": "Recomendaciones del anfitrión"
-  },
-  "footer": {
-    "tagline": "Tu hogar en Sevilla",
-    "registrationLabel": "Nº Registro Turístico",
-    "links": {
-      "privacy": "Política de Privacidad",
-      "terms": "Términos y Condiciones",
-      "cookies": "Política de Cookies",
-      "blog": "Blog",
-      "guide": "Guía Turística"
-    },
-    "contact": "Contacto",
-    "followUs": "Síguenos",
-    "copyright": "© {year} Esencia Sevilla. Todos los derechos reservados.",
-    "madeWith": "Hecho con amor en Sevilla"
-  },
-  "blog": {
-    "title": "El Blog de Esencia Sevilla",
-    "subtitle": "Guías, consejos y secretos para descubrir Sevilla",
-    "readMore": "Leer más",
-    "minRead": "{min} min de lectura",
-    "relatedPosts": "Artículos relacionados",
-    "posts": {
-      "que": {
-        "title": "Qué ver en Sevilla en 3 días",
-        "excerpt": "La guía definitiva para 3 días en Sevilla: Catedral, Alcázar, Triana, Plaza de España y mucho más."
-      },
-      "sevilla": {
-        "title": "Sevilla con niños: guía completa",
-        "excerpt": "Parques, museos interactivos y actividades para disfrutar Sevilla en familia."
-      },
-      "semana": {
-        "title": "Semana Santa en Sevilla: consejos para turistas",
-        "excerpt": "Todo lo que necesitas saber para vivir la Semana Santa sevillana como un local."
-      },
-      "como": {
-        "title": "Cómo moverse por Sevilla en autobús",
-        "excerpt": "Guía completa del transporte público sevillano: TUSSAM, tarjetas, rutas y consejos."
-      },
-      "mejores": {
-        "title": "Las mejores tapas cerca de la Catedral",
-        "excerpt": "Nuestra selección personal de las mejores tabernas y tapas del centro de Sevilla."
-      }
-    }
-  },
-  "admin": {
-    "title": "Panel de Propietario",
-    "dashboard": "Dashboard",
-    "bookings": "Reservas",
-    "calendar": "Calendario",
-    "reviews": "Reseñas",
-    "settings": "Configuración",
-    "qrGuide": "QR Guía Turística",
-    "revenue": "Ingresos del mes",
-    "occupancy": "Ocupación",
-    "avgNight": "Precio medio/noche",
-    "blockDates": "Bloquear fechas",
-    "downloadQR": "Descargar QR en alta resolución",
-    "logout": "Cerrar sesión"
-  },
-  "guide": {
-    "title": "Guía Turística Esencia Sevilla",
-    "subtitle": "Todo lo que necesitas para disfrutar Sevilla",
-    "offline": "Disponible sin conexión",
-    "sections": {
-      "map": "Mapa",
-      "transport": "Transporte",
-      "restaurants": "Restaurantes",
-      "events": "Eventos",
-      "apartment": "El Apartamento",
-      "emergency": "Emergencias"
-    }
-  },
-  "common": {
-    "loading": "Cargando...",
-    "error": "Ha ocurrido un error",
-    "retry": "Intentar de nuevo",
-    "close": "Cerrar",
-    "save": "Guardar",
-    "cancel": "Cancelar",
-    "confirm": "Confirmar",
-    "back": "Volver",
-    "next": "Siguiente",
-    "previous": "Anterior",
-    "seeAll": "Ver todos",
-    "learnMore": "Más información",
-    "minutes": "min",
-    "km": "km",
-    "free": "Gratis",
-    "perNight": "/ noche",
-    "euros": "€",
-    "showMore": "Ver más",
-    "showLess": "Ver menos"
-  },
-  "seo": {
-    "homeTitle": "Apartamento Turístico en Sevilla junto a Santa Justa | Esencia Sevilla",
-    "homeDescription": "Alquila un apartamento turístico en Sevilla a 7 min andando de la estación AVE Santa Justa y a 10 min del centro histórico. Check-in autónomo, WiFi, A/C. ¡10% más barato que Booking!",
-    "guideTitle": "Guía Turística Sevilla Gratis | Mapa, Rutas y Transporte",
-    "guideDescription": "Guía turística completa y gratuita de Sevilla: mapa interactivo, rutas a pie, transporte TUSSAM, restaurantes y eventos. Disponible offline.",
-    "blogTitle": "Blog de Viajes Sevilla | Guías y Consejos",
-    "blogDescription": "Las mejores guías de viaje para Sevilla: qué ver, dónde comer, cómo moverse. Consejos de locales para vivir Sevilla como un auténtico sevillano."
-  },
-  "cookies": {
-    "title": "Uso de cookies",
-    "description": "Usamos cookies para mejorar tu experiencia y analizar el tráfico. Puedes aceptar, rechazar o personalizar tu configuración.",
-    "customize": "Personalizar preferencias",
-    "necessary": "Necesarias",
-    "necessaryDesc": "Requeridas para el funcionamiento. No se pueden desactivar.",
-    "analytics": "Analíticas",
-    "analyticsDesc": "Google Analytics para entender cómo usas la web.",
-    "marketing": "Marketing",
-    "marketingDesc": "Meta Pixel para medir campañas publicitarias.",
-    "acceptAll": "Aceptar todas",
-    "rejectAll": "Rechazar no esenciales",
-    "savePrefs": "Guardar preferencias",
-    "close": "Cerrar"
-  },
-  "nearby": {
-    "title": "Todo lo que necesitas, cerca",
-    "subtitle": "Servicios, tiendas y transporte a pocos minutos andando del apartamento",
-    "minWalk": "{min} min andando",
-    "openInMaps": "Ver en Google Maps",
-    "categories": {
-      "supermarket": "Supermercados",
-      "convenience": "Tiendas",
-      "bakery": "Panaderías",
-      "pharmacy": "Farmacias",
-      "tobacco": "Estancos",
-      "bank": "Bancos",
-      "atm": "Cajeros",
-      "bus": "Paradas de bus",
-      "taxi": "Taxis",
-      "tussam": "Tren / Estación",
-      "restaurant": "Restaurantes",
-      "bar": "Bares",
-      "fast_food": "Comida rápida",
-      "laundry": "Lavandería"
-    },
-    "all": "Todos"
+ "nav": {
+  "gallery": "Fotos",
+  "booking": "Reservar",
+  "map": "Mapa",
+  "guide": "Guía",
+  "reviews": "Reseñas",
+  "faq": "FAQ",
+  "blog": "Blog",
+  "bookNow": "Reservar ahora",
+  "nearby": "Cerca"
+ },
+ "hero": {
+  "badge": "Apartamento Turístico — Sevilla",
+  "headline": "Tu hogar en Sevilla",
+  "subheadline": "A 7 minutos andando de la estación AVE Santa Justa y a 10 minutos del centro histórico en bus o taxi. Vive Sevilla como un local.",
+  "cta": "Ver disponibilidad",
+  "ctaSecondary": "Ver fotos",
+  "reviewsBadge": "{count} reseñas de 5 estrellas",
+  "ratingLabel": "Puntuación media",
+  "savingsBadge": "Ahorra {amount}€ vs Booking",
+  "savingsDesc": "Reservando directamente",
+  "registrationLabel": "Nº Registro Turístico",
+  "trustBadges": {
+   "checkin": "Check-in autónomo 24h",
+   "wifi": "WiFi ultrarrápido",
+   "ac": "A/C en todas las habitaciones",
+   "location": "Junto a Santa Justa (AVE)"
   }
+ },
+ "comparison": {
+  "title": "¿Por qué reservar aquí?",
+  "subtitle": "Comparativa directa con Booking.com",
+  "feature": "Característica",
+  "direct": "Esencia Sevilla",
+  "booking": "Booking.com",
+  "rows": {
+   "price": "Precio",
+   "priceDirect": "10% más barato",
+   "priceBooking": "Precio completo",
+   "cancellation": "Cancelación",
+   "cancellationDirect": "No reembolsable",
+   "cancellationBooking": "Gratuita (precio mayor)",
+   "communication": "Comunicación",
+   "communicationDirect": "Directa con el anfitrión",
+   "communicationBooking": "A través de plataforma",
+   "extras": "Extras incluidos",
+   "extrasDirect": "Libro bienvenida, guía QR, chat IA",
+   "extrasBooking": "Solo alojamiento",
+   "checkin": "Instrucciones llegada",
+   "checkinDirect": "Personalizadas + mapa",
+   "checkinBooking": "Estándar"
+  }
+ },
+ "booking": {
+  "title": "Reservar",
+  "subtitle": "Elige tus fechas y obtén el mejor precio",
+  "checkIn": "Entrada",
+  "checkOut": "Salida",
+  "guests": "Huéspedes",
+  "guestCount": "{count} huésped",
+  "guestsCount": "{count} huéspedes",
+  "nights": "{count} noche",
+  "nightsPlural": "{count} noches",
+  "pricePerNight": "por noche",
+  "selectDates": "Selecciona las fechas",
+  "minStay": "Estancia mínima: 2 noches",
+  "unavailable": "No disponible",
+  "available": "Disponible",
+  "today": "Hoy",
+  "breakdown": {
+   "title": "Desglose del precio",
+   "perNight": "{price}€ × {nights} noches",
+   "cleaning": "Tasa de limpieza",
+   "touristTax": "Tasa turística",
+   "upsells": "Extras seleccionados",
+   "discount": "Descuento",
+   "total": "Total",
+   "bookingComparison": "En Booking pagarías",
+   "savings": "Tu ahorro"
+  },
+  "upsells": {
+   "title": "Mejora tu estancia",
+   "add": "Añadir",
+   "added": "Añadido",
+   "airportTransfer": "Traslado aeropuerto",
+   "airportTransferDesc": "Recogida en SVQ, llegada a tu hora",
+   "welcomePack": "Pack bienvenida",
+   "welcomePackDesc": "Productos locales artesanales de Sevilla",
+   "lateCheckout": "Late check-out (hasta 14:00)",
+   "lateCheckoutDesc": "Disfruta de la mañana sin prisas",
+   "travelCot": "Cuna de viaje",
+   "travelCotDesc": "Para bebés hasta 2 años",
+   "romanticPack": "Pack romántico",
+   "romanticPackDesc": "Vino andaluz + flores + nota personalizada"
+  },
+  "coupon": {
+   "label": "Código de descuento",
+   "placeholder": "ESENCIA10",
+   "apply": "Aplicar",
+   "invalid": "Código no válido",
+   "applied": "¡Descuento aplicado!"
+  },
+  "nonRefundable": "Esta tarifa es NO REEMBOLSABLE",
+  "nonRefundableNote": "Obtén cancelación gratuita reservando en",
+  "bookButton": "Reservar ahora — {total}€",
+  "bookingRedirect": "Reservar con cancelación gratuita en Booking.com",
+  "processing": "Procesando...",
+  "noAvailability": "Sin disponibilidad en estas fechas",
+  "contactUs": "Contactar para disponibilidad especial",
+  "cta": "Reservar"
+ },
+ "gallery": {
+  "title": "El apartamento",
+  "subtitle": "Espacios diseñados para el descanso y el disfrute",
+  "viewAll": "Ver todas las fotos",
+  "virtualTour": "Tour virtual 360°",
+  "close": "Cerrar",
+  "prev": "Anterior",
+  "next": "Siguiente",
+  "comingSoon": "Tour 360° — próximamente",
+  "noPhotos": "Estamos preparando el tour virtual 360°. Vuelve pronto para recorrer el apartamento como si estuvieras dentro.",
+  "tourDesc": "Recorre cada habitación antes de llegar: salón, dormitorios, cocina y baño en 360°, como si ya estuvieras dentro.",
+  "tourCta": "Explorar el tour",
+  "tourViews": "{count} vistas en 360°"
+ },
+ "map": {
+  "title": "Explora Sevilla desde tu apartamento",
+  "subtitle": "Rutas, monumentos y secretos locales",
+  "tabs": {
+   "map": "Mapa interactivo",
+   "routes": "Rutas a pie",
+   "transport": "Transporte"
+  },
+  "categories": {
+   "all": "Todos",
+   "monument": "Monumentos",
+   "neighborhood": "Barrios",
+   "culture": "Cultura",
+   "food": "Gastronomía",
+   "nature": "Naturaleza",
+   "modern": "Moderno",
+   "fun": "Ocio"
+  },
+  "openInMaps": "Abrir en Google Maps",
+  "entranceFree": "Entrada libre",
+  "minutesWalk": "{min} min andando",
+  "routeDetails": "Ver ruta completa",
+  "routeCategories": {
+   "classic": "Clásica",
+   "neighborhoods": "Barrios",
+   "romantic": "Romántica",
+   "food": "Gastronómica",
+   "family": "Familiar",
+   "culture": "Cultural",
+   "nature": "Naturaleza",
+   "shopping": "Compras",
+   "photos": "Fotográfica",
+   "history": "Historia",
+   "legends": "Leyendas",
+   "art": "Arte",
+   "daytrip": "Excursión",
+   "wine": "Vino",
+   "beach": "Playa"
+  },
+  "transport": {
+   "title": "Cómo moverte por Sevilla",
+   "multiviaje": "Tarjeta Multiviaje TUSSAM",
+   "multiviajePrices": "Recarga desde 5€ en máquinas de las paradas y app TUSSAM",
+   "nearestStop": "Parada más cercana al apartamento",
+   "lines": "Líneas disponibles",
+   "frequency": "Frecuencia",
+   "price": "Precio"
+  },
+  "fullRoute": "Ruta completa en Google Maps",
+  "bestTime": "Mejor hora",
+  "routeTransport": {
+   "walking": "A pie",
+   "public": "Transporte público",
+   "car": "En coche"
+  },
+  "howToGet": "Cómo llegar",
+  "historyLabel": "Historia",
+  "officialWeb": "Web oficial",
+  "filterAll": "Todas",
+  "filterBy": "Filtrar por tipo",
+  "zoneLabel": "Zona",
+  "zones": {
+   "all": "Todas",
+   "centro": "Casco Antiguo",
+   "santa-cruz": "Santa Cruz & María Luisa",
+   "paseo-rio": "Paseo del Río",
+   "triana": "Triana",
+   "macarena": "Macarena & Alameda",
+   "cartuja": "Cartuja & Isla"
+  }
+ },
+ "events": {
+  "title": "Sevilla te espera",
+  "subtitle": "Eventos y festivales del año",
+  "highSeason": "Temporada alta — reserva con antelación",
+  "limitedAvailability": "Disponibilidad limitada en estas fechas",
+  "viewMore": "Más información",
+  "bookForEvent": "Reservar para este evento",
+  "now": "En curso",
+  "startsIn": "Empieza en {days} días."
+ },
+ "reviews": {
+  "title": "Lo que dicen nuestros huéspedes",
+  "subtitle": "Más de {count} reseñas verificadas",
+  "overallRating": "Puntuación global",
+  "basedOn": "basado en {count} reseñas",
+  "leaveReview": "Dejar una reseña",
+  "sources": {
+   "google": "Google Reviews",
+   "booking": "Booking.com",
+   "airbnb": "Airbnb",
+   "direct": "Reserva directa"
+  }
+ },
+ "faq": {
+  "title": "Preguntas frecuentes",
+  "subtitle": "Todo lo que necesitas saber antes de llegar",
+  "questions": {
+   "q1": "¿Hay parking cerca del apartamento?",
+   "a1": "No hay parking privado en el edificio. El apartamento está fuera de las zonas de acceso restringido del centro, así que aparcar en la zona es más fácil que en el casco histórico. Para visitar el centro (a unos 2 km) recomendamos bus, taxi o dejar el coche en un parking del centro.",
+   "q2": "¿Se admiten mascotas?",
+   "a2": "Lo sentimos, no se admiten mascotas en el apartamento para respetar a otros huéspedes y mantener la limpieza.",
+   "q3": "¿Cómo funciona el check-in autónomo?",
+   "a3": "24h antes de tu llegada recibirás un mensaje por WhatsApp y email con el código de la caja de seguridad donde están las llaves. No es necesario coordinarse con nadie. Puedes llegar a cualquier hora entre las 16:00 y las 23:00.",
+   "q4": "¿Qué incluye la limpieza final?",
+   "a4": "La tasa de limpieza (60€) incluye limpieza completa del apartamento, cambio de sábanas y toallas, y reposición de artículos de baño. Durante la estancia no se incluye servicio de limpieza diaria (disponible por 30€/día extra).",
+   "q5": "¿Hay aire acondicionado?",
+   "a5": "Sí, el apartamento tiene aire acondicionado en todas las estancias (salón y dormitorios). Es imprescindible en verano cuando las temperaturas pueden superar los 40°C en Sevilla.",
+   "q6": "¿Cuál es la capacidad máxima del apartamento?",
+   "a6": "El apartamento tiene capacidad para 4 huéspedes: una habitación doble con cama de matrimonio y otra habitación con dos camas individuales.",
+   "q7": "¿Se puede alojar un bebé?",
+   "a7": "¡Por supuesto! Podemos proporcionar una cuna de viaje por 15€ adicionales (seleccionable al reservar). El apartamento es apto para niños de todas las edades.",
+   "q8": "¿Hay WiFi? ¿Es rápido?",
+   "a8": "Sí, el apartamento dispone de WiFi de fibra óptica de alta velocidad (600 Mbps). El nombre de la red y la contraseña se encuentran en el libro de bienvenida.",
+   "q9": "¿A qué hora es el check-in y el check-out?",
+   "a9": "Check-in: a partir de las 16:00h. Check-out: antes de las 11:00h. Si tu vuelo llega antes, puedes dejar las maletas gratuitamente y explorar la ciudad. Late check-out hasta las 14:00h disponible por 20€ (según disponibilidad).",
+   "q10": "¿El apartamento tiene cocina equipada?",
+   "a10": "Sí, la cocina está completamente equipada: nevera, vitrocerámica, microondas, cafetera (cápsulas Nespresso), tostadora, hervidor, utensilios completos y vajilla para 4 personas.",
+   "q11": "¿Está permitido fumar en el apartamento?",
+   "a11": "No está permitido fumar dentro del apartamento. El incumplimiento de esta norma conlleva una penalización de 150€.",
+   "q12": "¿Cómo llego desde el aeropuerto?",
+   "a12": "La opción más cómoda es el autobús EA (Aeropuerto Express), que sale cada 15-30 minutos y cuesta 4€. Bájate en la parada de Santa Justa (unos 30-40 minutos) y desde allí el apartamento está a 7 minutos andando. También ofrecemos traslado privado desde el aeropuerto por 35€.",
+   "q13": "¿Qué pasa si tengo algún problema durante mi estancia?",
+   "a13": "Estamos disponibles 24/7 por WhatsApp para cualquier incidencia. En caso de emergencia: el número 112 es el de emergencias en España.",
+   "q14": "¿Se admiten despedidas de soltero/a o fiestas?",
+   "a14": "No se permiten fiestas ni eventos que puedan molestar a los vecinos. Sevilla tiene muchas opciones de ocio nocturno, pero el apartamento es exclusivamente para descanso.",
+   "q15": "¿El apartamento tiene ascensor?",
+   "a15": "Sí, el edificio dispone de ascensor.",
+   "q16": "¿Hay lavadora?",
+   "a16": "Sí, el apartamento dispone de lavadora con detergente incluido.",
+   "q17": "¿Puedo hacer el check-out tarde si mi vuelo es por la tarde?",
+   "a17": "El check-out estándar es antes de las 11:00h. Si necesitas más tiempo, el late check-out hasta las 14:00h está disponible por 20€ sujeto a disponibilidad. Para salidas más tarde, puedes dejar el equipaje guardado en el apartamento.",
+   "q18": "¿El apartamento está adaptado para personas con movilidad reducida?",
+   "a18": "El edificio tiene ascensor. El apartamento está en la planta 3ª. Existe un escalón de acceso al edificio. Si tienes necesidades especiales, consúltanos antes de reservar.",
+   "q19": "¿Cómo funciona el pre-check-in online?",
+   "a19": "Al confirmar tu reserva recibirás un enlace para completar el pre-check-in: datos del pasaporte, hora estimada de llegada y preferencias. Esto nos permite preparar todo para tu llegada y cumplir con la normativa española de registro de viajeros.",
+   "q20": "¿Cuál es el número de registro turístico del apartamento?",
+   "a20": "Número de registro turístico de la Junta de Andalucía: AT/SE/03584. Puedes verificarlo en el Registro de Turismo de Andalucía."
+  }
+ },
+ "location": {
+  "title": "Dónde estamos",
+  "subtitle": "Bien conectado: AVE a 7 min andando y centro a 10 min en bus o taxi",
+  "address": "Imaginero Luis Alvarez Duarte N7, 41008 Sevilla",
+  "howToArrive": "Cómo llegar",
+  "fromAirport": "Desde el Aeropuerto SVQ",
+  "fromStation": "Desde Santa Justa (Renfe)",
+  "byCar": "En coche",
+  "step": "Paso {n}",
+  "arrivalSteps": {
+   "airport": {
+    "step1": "Toma el autobús EA (Aeropuerto Express) en la salida de llegadas — 4€",
+    "step2": "Bájate en Santa Justa (≈30-40 min)",
+    "step3": "Camina 7 minutos hacia el norte hasta el apartamento",
+    "step4": "Llega a Imaginero Luis Álvarez Duarte, 7"
+   },
+   "train": {
+    "step1": "Sal de Santa Justa por la salida de Avenida de Kansas City",
+    "step2": "Camina 7 minutos hacia el norte por la Avenida de Kansas City",
+    "step3": "Llega a Imaginero Luis Álvarez Duarte, 7"
+   },
+   "car": {
+    "step1": "El apartamento está fuera de las restricciones de acceso del centro: llegar en coche es sencillo",
+    "step2": "Introduce en el GPS: Imaginero Luis Álvarez Duarte, 7, Sevilla",
+    "step3": "Zona de carga/descarga frente al edificio; aparcamiento en la zona"
+   }
+  }
+ },
+ "chat": {
+  "title": "Asistente Esencia Sevilla",
+  "subtitle": "Pregúntame sobre el apartamento, Sevilla o tu reserva",
+  "placeholder": "Escribe tu pregunta...",
+  "send": "Enviar",
+  "welcome": "¡Hola! Soy el asistente virtual de Esencia Sevilla. Puedo ayudarte con información sobre el apartamento, recomendaciones en Sevilla, transporte o tu reserva. ¿En qué puedo ayudarte?",
+  "suggestions": [
+   "¿A qué hora es el check-in?",
+   "¿Cuál es el WiFi?",
+   "¿Cómo llego desde el aeropuerto?",
+   "¿Qué restaurantes recomiendas cerca?"
+  ],
+  "typing": "Escribiendo...",
+  "error": "Error al conectar. Por favor, inténtalo de nuevo.",
+  "poweredBy": "Asistido por IA"
+ },
+ "guestPortal": {
+  "title": "Portal del Huésped",
+  "subtitle": "Completa tu pre-check-in",
+  "countdown": "Faltan {days} días para tu estancia",
+  "countdownToday": "¡Tu estancia empieza hoy!",
+  "preCheckin": {
+   "title": "Pre-check-in online",
+   "subtitle": "Completa tus datos para una llegada sin esperas",
+   "documentType": "Tipo de documento",
+   "passport": "Pasaporte",
+   "dni": "DNI",
+   "nie": "NIE",
+   "documentNumber": "Número de documento",
+   "documentExpiry": "Fecha de caducidad",
+   "nationality": "Nacionalidad",
+   "arrivalTime": "Hora estimada de llegada",
+   "specialRequests": "Peticiones especiales (opcional)",
+   "addGuest": "Añadir huésped",
+   "guestN": "Huésped {n}",
+   "firstName": "Nombre",
+   "lastName": "Apellidos",
+   "birthDate": "Fecha de nacimiento",
+   "submit": "Confirmar pre-check-in",
+   "success": "¡Pre-check-in completado! Recibirás el código de acceso 24h antes de tu llegada.",
+   "legalNote": "Datos requeridos por la Ley Orgánica de Seguridad Ciudadana (España) para el registro de viajeros."
+  }
+ },
+ "welcomeBook": {
+  "title": "Libro de Bienvenida",
+  "wifi": "WiFi",
+  "wifiPassword": "Contraseña",
+  "checkIn": "Check-in",
+  "checkOut": "Check-out",
+  "rules": "Normas de la casa",
+  "emergencies": "Emergencias",
+  "appliances": "Electrodomésticos",
+  "checkoutSteps": "Pasos para el check-out",
+  "recommendations": "Recomendaciones del anfitrión"
+ },
+ "footer": {
+  "tagline": "Tu hogar en Sevilla",
+  "registrationLabel": "Nº Registro Turístico",
+  "links": {
+   "privacy": "Política de Privacidad",
+   "terms": "Términos y Condiciones",
+   "cookies": "Política de Cookies",
+   "blog": "Blog",
+   "guide": "Guía Turística"
+  },
+  "contact": "Contacto",
+  "followUs": "Síguenos",
+  "copyright": "© {year} Esencia Sevilla. Todos los derechos reservados.",
+  "madeWith": "Hecho con amor en Sevilla"
+ },
+ "blog": {
+  "title": "El Blog de Esencia Sevilla",
+  "subtitle": "Guías, consejos y secretos para descubrir Sevilla",
+  "readMore": "Leer más",
+  "minRead": "{min} min de lectura",
+  "relatedPosts": "Artículos relacionados",
+  "posts": {
+   "que": {
+    "title": "Qué ver en Sevilla en 3 días",
+    "excerpt": "La guía definitiva para 3 días en Sevilla: Catedral, Alcázar, Triana, Plaza de España y mucho más."
+   },
+   "sevilla": {
+    "title": "Sevilla con niños: guía completa",
+    "excerpt": "Parques, museos interactivos y actividades para disfrutar Sevilla en familia."
+   },
+   "semana": {
+    "title": "Semana Santa en Sevilla: consejos para turistas",
+    "excerpt": "Todo lo que necesitas saber para vivir la Semana Santa sevillana como un local."
+   },
+   "como": {
+    "title": "Cómo moverse por Sevilla en autobús",
+    "excerpt": "Guía completa del transporte público sevillano: TUSSAM, tarjetas, rutas y consejos."
+   },
+   "mejores": {
+    "title": "Las mejores tapas cerca de la Catedral",
+    "excerpt": "Nuestra selección personal de las mejores tabernas y tapas del centro de Sevilla."
+   }
+  }
+ },
+ "admin": {
+  "title": "Panel de Propietario",
+  "dashboard": "Dashboard",
+  "bookings": "Reservas",
+  "calendar": "Calendario",
+  "reviews": "Reseñas",
+  "settings": "Configuración",
+  "qrGuide": "QR Guía Turística",
+  "revenue": "Ingresos del mes",
+  "occupancy": "Ocupación",
+  "avgNight": "Precio medio/noche",
+  "blockDates": "Bloquear fechas",
+  "downloadQR": "Descargar QR en alta resolución",
+  "logout": "Cerrar sesión"
+ },
+ "guide": {
+  "title": "Guía Turística Esencia Sevilla",
+  "subtitle": "Todo lo que necesitas para disfrutar Sevilla",
+  "offline": "Disponible sin conexión",
+  "sections": {
+   "map": "Mapa",
+   "transport": "Transporte",
+   "restaurants": "Restaurantes",
+   "events": "Eventos",
+   "apartment": "El Apartamento",
+   "emergency": "Emergencias"
+  }
+ },
+ "common": {
+  "loading": "Cargando...",
+  "error": "Ha ocurrido un error",
+  "retry": "Intentar de nuevo",
+  "close": "Cerrar",
+  "save": "Guardar",
+  "cancel": "Cancelar",
+  "confirm": "Confirmar",
+  "back": "Volver",
+  "next": "Siguiente",
+  "previous": "Anterior",
+  "seeAll": "Ver todos",
+  "learnMore": "Más información",
+  "minutes": "min",
+  "km": "km",
+  "free": "Gratis",
+  "perNight": "/ noche",
+  "euros": "€",
+  "showMore": "Ver más",
+  "showLess": "Ver menos"
+ },
+ "seo": {
+  "homeTitle": "Apartamento Turístico en Sevilla junto a Santa Justa | Esencia Sevilla",
+  "homeDescription": "Alquila un apartamento turístico en Sevilla a 7 min andando de la estación AVE Santa Justa y a 10 min del centro histórico. Check-in autónomo, WiFi, A/C. ¡10% más barato que Booking!",
+  "guideTitle": "Guía Turística Sevilla Gratis | Mapa, Rutas y Transporte",
+  "guideDescription": "Guía turística completa y gratuita de Sevilla: mapa interactivo, rutas a pie, transporte TUSSAM, restaurantes y eventos. Disponible offline.",
+  "blogTitle": "Blog de Viajes Sevilla | Guías y Consejos",
+  "blogDescription": "Las mejores guías de viaje para Sevilla: qué ver, dónde comer, cómo moverse. Consejos de locales para vivir Sevilla como un auténtico sevillano."
+ },
+ "cookies": {
+  "title": "Uso de cookies",
+  "description": "Usamos cookies para mejorar tu experiencia y analizar el tráfico. Puedes aceptar, rechazar o personalizar tu configuración.",
+  "customize": "Personalizar preferencias",
+  "necessary": "Necesarias",
+  "necessaryDesc": "Requeridas para el funcionamiento. No se pueden desactivar.",
+  "analytics": "Analíticas",
+  "analyticsDesc": "Google Analytics para entender cómo usas la web.",
+  "marketing": "Marketing",
+  "marketingDesc": "Meta Pixel para medir campañas publicitarias.",
+  "acceptAll": "Aceptar todas",
+  "rejectAll": "Rechazar no esenciales",
+  "savePrefs": "Guardar preferencias",
+  "close": "Cerrar"
+ },
+ "nearby": {
+  "title": "Todo lo que necesitas, cerca",
+  "subtitle": "Servicios, tiendas y transporte a pocos minutos andando del apartamento",
+  "minWalk": "{min} min andando",
+  "openInMaps": "Ver en Google Maps",
+  "categories": {
+   "supermarket": "Supermercados",
+   "convenience": "Tiendas",
+   "bakery": "Panaderías",
+   "pharmacy": "Farmacias",
+   "tobacco": "Estancos",
+   "bank": "Bancos",
+   "atm": "Cajeros",
+   "bus": "Paradas de bus",
+   "taxi": "Taxis",
+   "tussam": "Tren / Estación",
+   "restaurant": "Restaurantes",
+   "bar": "Bares",
+   "fast_food": "Comida rápida",
+   "laundry": "Lavandería"
+  },
+  "all": "Todos"
+ }
 }

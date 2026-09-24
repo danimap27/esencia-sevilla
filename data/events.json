@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-15",
-  "source": "manual-verified",
+  "updatedAt": "2026-09-21",
+  "source": "hermes-cron",
   "events": [
     {
       "id": "bienal-flamenco-2026",
@@ -34,68 +34,6 @@
       "isHighSeason": false
     },
     {
-      "id": "pop-caac-2026",
-      "title": {
-        "es": "Pop CAAC 2026",
-        "en": "Pop CAAC 2026",
-        "fr": "Pop CAAC 2026",
-        "de": "Pop CAAC 2026",
-        "it": "Pop CAAC 2026",
-        "pt": "Pop CAAC 2026"
-      },
-      "description": {
-        "es": "El ciclo de conciertos del Centro Andaluz de Arte Contemporáneo en la pradera del Monasterio de la Cartuja: La M.O.D.A., Amaia y más, con el claustro de fondo.",
-        "en": "The concert series of the Andalusian Contemporary Art Centre on the lawns of the Cartuja Monastery: La M.O.D.A., Amaia and more, with the cloister as backdrop.",
-        "fr": "Le cycle de concerts du Centre Andalou d'Art Contemporain sur la prairie du Monastère de la Cartuja : La M.O.D.A., Amaia et plus.",
-        "de": "Die Konzertreihe des Zentrums für zeitgenössische Kunst auf der Wiese des Cartuja-Klosters: La M.O.D.A., Amaia und mehr.",
-        "it": "Il ciclo di concerti del Centro Andaluso di Arte Contemporanea sul prato del Monastero della Cartuja: La M.O.D.A., Amaia e altri.",
-        "pt": "O ciclo de concertos do Centro Andaluz de Arte Contemporânea no relvado do Mosteiro da Cartuja: La M.O.D.A., Amaia e mais."
-      },
-      "startDate": "2026-09-10",
-      "endDate": "2026-09-19",
-      "category": "music",
-      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Monasterio_de_la_Cartuja%2C_Sevilla.jpg/960px-Monasterio_de_la_Cartuja%2C_Sevilla.jpg",
-      "url": "https://www.caac.es/",
-      "location": {
-        "name": "Monasterio de la Cartuja (CAAC)",
-        "address": "Av. Américo Vespucio 2",
-        "lat": 37.3983819,
-        "lng": -6.0075971
-      },
-      "isHighSeason": false
-    },
-    {
-      "id": "noches-alcazar-2026",
-      "title": {
-        "es": "Noches en los Jardines del Real Alcázar",
-        "en": "Nights in the Gardens of the Royal Alcázar",
-        "fr": "Nuits dans les Jardins de l'Alcázar Royal",
-        "de": "Nächte in den Gärten des Real Alcázar",
-        "it": "Notti nei Giardini del Real Alcázar",
-        "pt": "Noites nos Jardins do Real Alcázar"
-      },
-      "description": {
-        "es": "Conciertos al aire libre entre palacios y naranjos: música antigua, clásica, flamenco y world music en los jardines históricos, solo con entrada anticipada (7€). Últimas fechas de la temporada.",
-        "en": "Open-air concerts among palaces and orange trees: early, classical, flamenco and world music in the historic gardens, advance tickets only (€7). Last dates of the season.",
-        "fr": "Concerts en plein air entre palais et orangers : musique ancienne, classique, flamenco et world music dans les jardins historiques, billets en avance uniquement (7€).",
-        "de": "Open-Air-Konzerte zwischen Palästen und Orangenbäumen: Alte Musik, Klassik, Flamenco und World Music, nur mit Vorverkauf (7€).",
-        "it": "Concerti all'aperto tra palazzi e aranci: musica antica, classica, flamenco e world music nei giardini storici, solo con biglietto anticipato (7€).",
-        "pt": "Concertos ao ar livre entre palácios e laranjeiras: música antiga, clássica, flamenco e world music nos jardins históricos, só com bilhete antecipado (7€)."
-      },
-      "startDate": "2026-06-25",
-      "endDate": "2026-09-19",
-      "category": "music",
-      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/JardinLasDamas_Alcazar_Seville.jpg/960px-JardinLasDamas_Alcazar_Seville.jpg",
-      "url": "https://www.alcazarsevilla.org/",
-      "location": {
-        "name": "Jardines del Real Alcázar",
-        "address": "Patio de Banderas s/n",
-        "lat": 37.3832105,
-        "lng": -5.9901835
-      },
-      "isHighSeason": false
-    },
-    {
       "id": "festival-del-patio-2026",
       "title": {
         "es": "Festival del Patio + Metrópolis",
@@ -116,7 +54,7 @@
       "startDate": "2026-09-11",
       "endDate": "2026-10-03",
       "category": "music",
-      "image": "https://www.festivaldelpatio.es/wp-content/uploads/2026/07/Festival-Patio-metropolis-Diputacion.jpg",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Palacio_de_la_Diputaci%C3%B3n_Provincial.jpg/960px-Palacio_de_la_Diputaci%C3%B3n_Provincial.jpg",
       "url": "https://www.festivaldelpatio.es/",
       "location": {
         "name": "Patio de la Diputación",
@@ -147,7 +85,7 @@
       "startDate": "2026-09-29",
       "endDate": "2026-09-29",
       "category": "sports",
-      "image": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=800",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Seville_Ram%C3%B3n_S%C3%A1nchez_Pizju%C3%A1n_Stadium_1.jpg",
       "url": "https://sevillafc.es/",
       "location": {
         "name": "Estadio Ramón Sánchez Pizjuán",
@@ -156,6 +94,159 @@
         "lng": -5.9706309
       },
       "isHighSeason": true
+    },
+    {
+      "id": "noche-en-blanco-2026",
+      "title": {
+        "es": "Noche en Blanco de Sevilla",
+        "en": "White Night in Seville",
+        "fr": "Nuit blanche à Séville",
+        "de": "Weiße Nacht in Sevilla",
+        "it": "Notte Bianca a Siviglia",
+        "pt": "Noite Branca em Sevilha"
+      },
+      "description": {
+        "es": "Sevilla celebra su gran noche de la cultura con más de 140 actividades hasta la madrugada: rutas urbanas, visitas teatralizadas a monumentos, música en directo y galerías abiertas en toda la ciudad. En esta 13ª edición, la programación llega también a Carmona y Alcalá de Guadaíra.",
+        "en": "Seville celebrates its big night of culture with 140+ activities into the small hours: urban routes, theatrical visits to monuments, live music and galleries open across the city. This 13th edition also brings programming to Carmona and Alcalá de Guadaíra.",
+        "fr": "Séville célèbre sa grande nuit de la culture avec plus de 140 activités jusqu'au bout de la nuit : parcours urbains, visites théâtralisées de monuments, musique live et galeries ouvertes dans toute la ville. Cette 13e édition s'étend aussi à Carmona et Alcalá de Guadaíra.",
+        "de": "Sevilla feiert seine große Nacht der Kultur mit über 140 Aktivitäten bis in die frühen Morgenstunden: Stadtrundgänge, theatralische Besichtigungen von Monumenten, Live-Musik und geöffnete Galerien in der ganzen Stadt. Die 13. Ausgabe bietet auch Programm in Carmona und Alcalá de Guadaíra.",
+        "it": "Siviglia celebra la sua grande notte della cultura con oltre 140 attività fino a tarda notte: itinerari urbani, visite teatralizzate ai monumenti, musica dal vivo e gallerie aperte in tutta la città. Questa 13ª edizione arriva anche a Carmona e Alcalá de Guadaíra.",
+        "pt": "Sevilha celebra a sua grande noite da cultura com mais de 140 atividades até de madrugada: rotas urbanas, visitas teatralizadas a monumentos, música ao vivo e galerias abertas por toda a cidade. Esta 13ª edição leva também programação a Carmona e Alcalá de Guadaíra."
+      },
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "category": "culture",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Metropol_Parasol_at_night_-_Seville.JPG/960px-Metropol_Parasol_at_night_-_Seville.JPG",
+      "url": "https://nocheenblanco.org/",
+      "location": {
+        "name": "Centro histórico (múltiples espacios)",
+        "address": "Plaza Nueva",
+        "lat": 37.3886108,
+        "lng": -5.9951145
+      },
+      "isHighSeason": false
+    },
+    {
+      "id": "jorge-drexler-taraca-2026",
+      "title": {
+        "es": "Jorge Drexler – Gira «Taracá»",
+        "en": "Jorge Drexler – 'Taracá' Tour",
+        "fr": "Jorge Drexler – Tournée « Taracá »",
+        "de": "Jorge Drexler – Tour 'Taracá'",
+        "it": "Jorge Drexler – Tour «Taracá»",
+        "pt": "Jorge Drexler – Digressão «Taracá»"
+      },
+      "description": {
+        "es": "El cantautor uruguayo, ganador del Óscar por «Al otro lado del río» y gran referente de la canción latinoamericana, presenta su gira «Taracá» en el Cartuja Center CITE: poesía, guitarra y ritmos rioplatenses en directo.",
+        "en": "The Uruguayan singer-songwriter, Oscar winner for 'Al otro lado del río' and a leading voice of Latin American songwriting, brings his 'Taracá' tour to the Cartuja Center CITE: poetry, guitar and Rioplatense rhythms live.",
+        "fr": "L'auteur-compositeur-interprète uruguayen, lauréat d'un Oscar pour « Al otro lado del río » et grande voix de la chanson latino-américaine, présente sa tournée « Taracá » au Cartuja Center CITE : poésie, guitare et rythmes du Río de la Plata en concert.",
+        "de": "Der uruguayische Singer-Songwriter, Oscar-Preisträger für 'Al otro lado del río' und eine der großen Stimmen des lateinamerikanischen Lieds, präsentiert seine 'Taracá'-Tour im Cartuja Center CITE: Poesie, Gitarre und Río-de-la-Plata-Rhythmen live.",
+        "it": "Il cantautore uruguaiano, premio Oscar per «Al otro lado del río» e grande voce della canzone latinoamericana, porta il suo tour «Taracá» al Cartuja Center CITE: poesia, chitarra e ritmi del Río de la Plata dal vivo.",
+        "pt": "O cantautor uruguaio, vencedor do Óscar por «Al otro lado del río» e grande voz da canção latino-americana, apresenta a sua digressão «Taracá» no Cartuja Center CITE: poesia, guitarra e ritmos do Río de la Plata ao vivo."
+      },
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "category": "music",
+      "image": "https://www.giglon.com/documents/10180/30003/3-86806x1-nfhld.jpg/f84fefcd-ee8d-4f62-8b80-a31fb4eb3ac6",
+      "url": "https://cartujacenter.com/actualidad/programacion-cartuja-center-sevilla-octubre-2026-conciertos-teatros-y-espectaculos/",
+      "location": {
+        "name": "Cartuja Center CITE",
+        "address": "Calle Albert Einstein (PCT Cartuja)",
+        "lat": 37.4045749,
+        "lng": -6.0078013
+      },
+      "isHighSeason": false
+    },
+    {
+      "id": "felise-2026",
+      "title": {
+        "es": "Feria del Libro de Sevilla (FELISE)",
+        "en": "Seville Book Fair (FELISE)",
+        "fr": "Foire du Livre de Séville (FELISE)",
+        "de": "Buchmesse Sevilla (FELISE)",
+        "it": "Fiera del Libro di Siviglia (FELISE)",
+        "pt": "Feira do Livro de Sevilha (FELISE)"
+      },
+      "description": {
+        "es": "El gran evento literario del otoño: casetas de librerías y editoriales en los Jardines de Murillo, con firmas de autores, presentaciones y actividades para todos los públicos. La edición de 2025 superó los 130.000 visitantes.",
+        "en": "The season's big literary event: bookshop and publisher stands in the Murillo Gardens, with author signings, presentations and activities for all ages. The 2025 edition drew more than 130,000 visitors.",
+        "fr": "Le grand rendez-vous littéraire de l'automne : stands de librairies et d'éditeurs dans les jardins de Murillo, avec dédicaces, présentations et animations pour tous. L'édition 2025 a dépassé les 130 000 visiteurs.",
+        "de": "Das große Literaturereignis des Herbstes: Stände von Buchhandlungen und Verlagen in den Jardines de Murillo, mit Autogrammstunden, Präsentationen und Aktivitäten für alle. Die Ausgabe 2025 zog mehr als 130.000 Besucher an.",
+        "it": "Il grande evento letterario dell'autunno: stand di librerie ed editori nei Giardini di Murillo, con firmacopie, presentazioni e attività per tutti. L'edizione 2025 ha superato i 130.000 visitatori.",
+        "pt": "O grande evento literário do outono: bancas de livrarias e editoras nos Jardins de Murillo, com sessões de autógrafos, apresentações e atividades para todos os públicos. A edição de 2025 ultrapassou os 130.000 visitantes."
+      },
+      "startDate": "2026-10-28",
+      "endDate": "2026-11-08",
+      "category": "culture",
+      "image": "https://www.felise.es/wp-content/uploads/2025/11/IMG_3173-683x1024.jpg",
+      "url": "https://www.felise.es/",
+      "location": {
+        "name": "Jardines de Murillo",
+        "lat": 37.3836847,
+        "lng": -5.9878272
+      },
+      "isHighSeason": false
+    },
+    {
+      "id": "seff-2026",
+      "title": {
+        "es": "Festival de Cine Europeo de Sevilla (SEFF)",
+        "en": "Seville European Film Festival (SEFF)",
+        "fr": "Festival du Cinéma Européen de Séville (SEFF)",
+        "de": "Europäisches Filmfestival Sevilla (SEFF)",
+        "it": "Festival del Cinema Europeo di Siviglia (SEFF)",
+        "pt": "Festival de Cinema Europeu de Sevilha (SEFF)"
+      },
+      "description": {
+        "es": "El cine europeo toma la ciudad en la 23ª edición del festival: estrenos, galas y alfombra roja en el Teatro Lope de Vega y los cines del centro, con «Viva Carmen» como película inaugural. Una semana para cruzarse con directores y estrellas del cine europeo.",
+        "en": "European cinema takes over the city for the festival's 23rd edition: premieres, galas and red carpet at the Teatro Lope de Vega and downtown cinemas, opening with 'Viva Carmen'. A week to meet European filmmakers and stars.",
+        "fr": "Le cinéma européen s'empare de la ville pour la 23e édition du festival : avant-premières, galas et tapis rouge au Teatro Lope de Vega et dans les cinémas du centre, avec « Viva Carmen » en ouverture. Une semaine pour croiser réalisateurs et stars du cinéma européen.",
+        "de": "Das europäische Kino erobert die Stadt zur 23. Ausgabe des Festivals: Premieren, Galas und roter Teppich im Teatro Lope de Vega und in den Innenstadtkinos, eröffnet mit 'Viva Carmen'. Eine Woche, um europäische Regisseure und Stars zu treffen.",
+        "it": "Il cinema europeo conquista la città per la 23ª edizione del festival: anteprime, gala e red carpet al Teatro Lope de Vega e nei cinema del centro, con «Viva Carmen» in apertura. Una settimana per incontrare registi e star del cinema europeo.",
+        "pt": "O cinema europeu toma a cidade na 23ª edição do festival: estreias, galas e tapete vermelho no Teatro Lope de Vega e nos cinemas do centro, com «Viva Carmen» na abertura. Uma semana para cruzar-se com realizadores e estrelas do cinema europeu."
+      },
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-14",
+      "category": "culture",
+      "image": "https://festivalcinesevilla.eu/sites/default/files/styles/horizontal/public/2026-09/6f308704-e365-45e4-abb6-31f157602260.jpeg?itok=j8ufkhmX",
+      "url": "https://festivalcinesevilla.eu/",
+      "location": {
+        "name": "Teatro Lope de Vega",
+        "address": "Av. de María Luisa s/n",
+        "lat": 37.3786363,
+        "lng": -5.9908003
+      },
+      "isHighSeason": false
+    },
+    {
+      "id": "navidad-sevilla-2026",
+      "title": {
+        "es": "Navidad en Sevilla",
+        "en": "Christmas in Seville",
+        "fr": "Noël à Séville",
+        "de": "Weihnachten in Sevilla",
+        "it": "Natale a Siviglia",
+        "pt": "Natal em Sevilha"
+      },
+      "description": {
+        "es": "Iluminación espectacular, mercadillos navideños, belenes y la Cabalgata de Reyes el 5 de enero. El centro se llena de vida y castañas asadas.",
+        "en": "Spectacular lighting, Christmas markets, nativity scenes and the Three Kings Parade on January 5th. The centre fills with life and roasted chestnuts.",
+        "fr": "Illuminations spectaculaires, marchés de Noël, crèches et le défilé des Rois Mages le 5 janvier.",
+        "de": "Spektakuläre Beleuchtung, Weihnachtsmärkte, Krippen und der Dreikönigsumzug am 5. Januar.",
+        "it": "Illuminazioni spettacolari, mercatini di Natale, presepi e la Cavalcata dei Re il 5 gennaio.",
+        "pt": "Iluminação espetacular, mercados de Natal, presépios e a Cavalgada dos Reis a 5 de janeiro."
+      },
+      "startDate": "2026-12-08",
+      "endDate": "2027-01-06",
+      "category": "festival",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Seville_city_at_Christmas_night_%286570969587%29.jpg/960px-Seville_city_at_Christmas_night_%286570969587%29.jpg",
+      "url": "https://www.sevilla.org",
+      "location": {
+        "name": "Centro histórico (Avenida de la Constitución)",
+        "lat": 37.3858,
+        "lng": -5.994
+      },
+      "isHighSeason": false
     },
     {
       "id": "semana-santa-2027",
@@ -210,7 +301,7 @@
       "endDate": "2027-04-25",
       "category": "festival",
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Interior_caseta_feria_abril_2009.jpg/960px-Interior_caseta_feria_abril_2009.jpg",
-      "url": "https://www.sevilla.org/feria",
+      "url": "https://www.sevilla.org/ciudad/fiestas-de-la-ciudad",
       "location": {
         "name": "Real de la Feria (Los Remedios)",
         "address": "Calle Antonio Bienvenida s/n",
@@ -218,36 +309,6 @@
         "lng": -6.0058
       },
       "isHighSeason": true
-    },
-    {
-      "id": "navidad-sevilla-2026",
-      "title": {
-        "es": "Navidad en Sevilla",
-        "en": "Christmas in Seville",
-        "fr": "Noël à Séville",
-        "de": "Weihnachten in Sevilla",
-        "it": "Natale a Siviglia",
-        "pt": "Natal em Sevilha"
-      },
-      "description": {
-        "es": "Iluminación espectacular, mercadillos navideños, belenes y la Cabalgata de Reyes el 5 de enero. El centro se llena de vida y castañas asadas.",
-        "en": "Spectacular lighting, Christmas markets, nativity scenes and the Three Kings Parade on January 5th. The centre fills with life and roasted chestnuts.",
-        "fr": "Illuminations spectaculaires, marchés de Noël, crèches et le défilé des Rois Mages le 5 janvier.",
-        "de": "Spektakuläre Beleuchtung, Weihnachtsmärkte, Krippen und der Dreikönigsumzug am 5. Januar.",
-        "it": "Illuminazioni spettacolari, mercatini di Natale, presepi e la Cavalcata dei Re il 5 gennaio.",
-        "pt": "Iluminação espetacular, mercados de Natal, presépios e a Cavalgada dos Reis a 5 de janeiro."
-      },
-      "startDate": "2026-12-08",
-      "endDate": "2027-01-06",
-      "category": "festival",
-      "image": "https://images.unsplash.com/photo-1545048702-79362596cdc9?w=800",
-      "url": "https://www.sevilla.org",
-      "location": {
-        "name": "Centro histórico (Avenida de la Constitución)",
-        "lat": 37.3858,
-        "lng": -5.994
-      },
-      "isHighSeason": false
     }
   ]
 }

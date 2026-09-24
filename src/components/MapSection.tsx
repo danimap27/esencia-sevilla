@@ -31,7 +31,32 @@ export default function MapSection() {
   const [routeCat, setRouteCat] = useState<string>('all');
   const [showAllSights, setShowAllSights] = useState(false);
   const [mapLoaded, setMapLoaded] = useState(false);
+  const [zone, setZone] = useState<string>('all');
   const leafletMapRef = useRef<L.Map | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const sightsLayerRef = useRef<any>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const makeSightMarker = (L: any, sight: (typeof SIGHTS)[0]) => {
+    const icon = L.divIcon({
+      html: `<div style="background:#2A5A8C;color:white;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.2);font-size:14px;">${CATEGORY_ICONS[sight.category] || '📍'}</div>`,
+      className: '',
+      iconSize: [32, 32],
+      iconAnchor: [16, 16],
+      popupAnchor: [0, -20],
+    });
+    return L.marker([sight.lat, sight.lng], { icon }).bindPopup(`
+            <div style="min-width:210px;">
+              <strong style="font-size:14px;">${sight.name}</strong>
+              <p style="font-size:12px;color:#666;margin:4px 0;">${sight.description[locale].slice(0, 110)}...</p>
+              <p style="font-size:11px;color:#C25A3A;margin:2px 0;">🎟️ ${sight.entrance}</p>
+              <div style="display:flex;gap:10px;margin-top:4px;">
+                ${sight.url ? `<a href="${sight.url}" target="_blank" rel="noopener" style="font-size:11px;color:#2A5A8C;text-decoration:none;">🌐 Web</a>` : ''}
+                <a href="https://maps.google.com/?q=${sight.lat},${sight.lng}" target="_blank" rel="noopener"
+                   style="font-size:11px;color:#2A5A8C;text-decoration:none;">🗺️ ${t('openInMaps')}</a>
+              </div>
+            </div>
+          `);
+  };
 
   // Initialize Leaflet map
   useEffect(() => {
@@ -80,32 +105,13 @@ export default function MapSection() {
         .bindPopup(`<strong>${APARTMENT.name}</strong><br/><small>${APARTMENT.address}</small>`)
         .openPopup();
 
-      // Sight markers
+      // Sight markers (dentro de un layer que se puede re-filtrar)
       const allPoints: [number, number][] = [[APARTMENT.lat, APARTMENT.lng]];
+      const sightsLayer = L.layerGroup().addTo(map);
+      sightsLayerRef.current = sightsLayer;
       SIGHTS.forEach(sight => {
-        const icon = L.divIcon({
-          html: `<div style="background:#2A5A8C;color:white;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.2);font-size:14px;">${CATEGORY_ICONS[sight.category] || '📍'}</div>`,
-          className: '',
-          iconSize: [32, 32],
-          iconAnchor: [16, 16],
-          popupAnchor: [0, -20],
-        });
-
         allPoints.push([sight.lat, sight.lng]);
-        L.marker([sight.lat, sight.lng], { icon })
-          .addTo(map)
-          .bindPopup(`
-            <div style="min-width:210px;">
-              <strong style="font-size:14px;">${sight.name}</strong>
-              <p style="font-size:12px;color:#666;margin:4px 0;">${sight.description[locale].slice(0, 110)}...</p>
-              <p style="font-size:11px;color:#C25A3A;margin:2px 0;">🎟️ ${sight.entrance}</p>
-              <div style="display:flex;gap:10px;margin-top:4px;">
-                ${sight.url ? `<a href="${sight.url}" target="_blank" rel="noopener" style="font-size:11px;color:#2A5A8C;text-decoration:none;">🌐 Web</a>` : ''}
-                <a href="https://maps.google.com/?q=${sight.lat},${sight.lng}" target="_blank" rel="noopener"
-                   style="font-size:11px;color:#2A5A8C;text-decoration:none;">🗺️ ${t('openInMaps')}</a>
-              </div>
-            </div>
-          `);
+        makeSightMarker(L, sight).addTo(sightsLayer);
       });
 
       // Encuadrar todos los puntos (apartamento + monumentos)
@@ -126,11 +132,41 @@ export default function MapSection() {
     };
   }, [tab, locale]);
 
+  // Redibujar los markers del mapa al cambiar los filtros
+  useEffect(() => {
+    if (!mapLoaded || !sightsLayerRef.current) return;
+    let cancelled = false;
+    const redraw = async () => {
+      const L = (await import('leaflet')).default;
+      if (cancelled || !sightsLayerRef.current) return;
+      const layer = sightsLayerRef.current;
+      layer.clearLayers();
+      SIGHTS
+        .filter((s) => (category === 'all' || s.category === category) && (zone === 'all' || s.zone === zone))
+        .forEach((sight) => makeSightMarker(L, sight).addTo(layer));
+    };
+    redraw();
+    return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [category, zone, mapLoaded, locale]);
+
   const categories: { key: SightCategory; label: string }[] = [
     'all', 'monument', 'neighborhood', 'culture', 'food', 'nature', 'modern', 'fun'
   ].map(key => ({ key: key as SightCategory, label: t(`categories.${key}` as Parameters<typeof t>[0]) }));
 
-  const filteredSights = SIGHTS.filter((s) => category === 'all' || s.category === category);
+  const ZONES: { key: string; label: string; icon: string }[] = [
+    { key: 'all', label: t('zones.all'), icon: '🗺️' },
+    { key: 'centro', label: t('zones.centro'), icon: '🏛️' },
+    { key: 'santa-cruz', label: t('zones.santa-cruz'), icon: '🌳' },
+    { key: 'paseo-rio', label: t('zones.paseo-rio'), icon: '⛵' },
+    { key: 'triana', label: t('zones.triana'), icon: '🎨' },
+    { key: 'macarena', label: t('zones.macarena'), icon: '⛪' },
+    { key: 'cartuja', label: t('zones.cartuja'), icon: '🚀' },
+  ];
+
+  const filteredSights = SIGHTS.filter(
+    (s) => (category === 'all' || s.category === category) && (zone === 'all' || s.zone === zone)
+  );
   const MAX_VISIBLE_SIGHTS = 12;
   const visibleSights = showAllSights ? filteredSights : filteredSights.slice(0, MAX_VISIBLE_SIGHTS);
 
@@ -182,6 +218,28 @@ export default function MapSection() {
                   )}
                 >
                   {key !== 'all' && <span className="mr-1.5">{CATEGORY_ICONS[key]}</span>}
+                  {label}
+                </button>
+              ))}
+            </div>
+
+            {/* Zone filters */}
+            <div className="flex flex-wrap gap-2 mb-6 justify-center items-center">
+              <span className="text-xs uppercase tracking-wider text-tinta/40 font-semibold mr-1">
+                {t('zoneLabel')}
+              </span>
+              {ZONES.map(({ key, label, icon }) => (
+                <button
+                  key={key}
+                  onClick={() => setZone(key)}
+                  className={cn(
+                    'px-3 py-1.5 rounded-full text-xs font-medium transition-all border',
+                    zone === key
+                      ? 'bg-azulejo-600 text-white border-azulejo-600'
+                      : 'bg-white text-tinta/60 border-tinta/10 hover:border-azulejo-300'
+                  )}
+                >
+                  <span className="mr-1">{icon}</span>
                   {label}
                 </button>
               ))}
