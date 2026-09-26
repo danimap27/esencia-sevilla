@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { absoluteUrl } from '@/lib/utils';
 import { APARTMENT, EMERGENCY_CONTACTS, HOUSE_RULES } from '@/data/apartment';
-import { SEVILLE_EVENTS } from '@/data/events';
+import GuideEvents from '@/components/GuideEvents';
 import { TOURIST_ROUTES } from '@/data/routes';
 import { type Locale } from '@/i18n';
 
@@ -198,25 +198,7 @@ export default async function GuidePage({ params: { locale } }: { params: { loca
         {/* Events */}
         <section>
           <h2 className="text-3xl font-serif text-tinta mb-6">{t('eventsTitle')}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {SEVILLE_EVENTS.slice(0, 6).map((event: any) => (
-              <div key={event.id} className="card p-5">
-                <div className="flex items-start justify-between mb-2">
-                  <h3 className="font-serif text-lg text-tinta">{event.title?.[loc] || event.title?.es || ''}</h3>
-                  {event.isHighSeason && (
-                    <span className="badge bg-terracota-100 text-terracota-600 text-xs">★</span>
-                  )}
-                </div>
-                <p className="text-sm text-tinta/60">{event.startDate} — {event.endDate}</p>
-                <p className="text-sm text-tinta/50 mt-2">{event.description?.[loc] || event.description?.es || ''}</p>
-                {event.url && (
-                  <a href={event.url} target="_blank" rel="noopener noreferrer" className="text-sm text-terracota-500 mt-2 inline-block">
-                    {t('moreInfo')} ↗
-                  </a>
-                )}
-              </div>
-            ))}
-          </div>
+          <GuideEvents />
         </section>
 
         {/* Emergency contacts */}

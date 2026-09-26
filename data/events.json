@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21",
+  "updatedAt": "2026-09-26",
   "source": "hermes-cron",
   "events": [
     {
@@ -188,6 +188,37 @@
       "isHighSeason": false
     },
     {
+      "id": "juan-de-mesa-2026",
+      "title": {
+        "es": "Juan de Mesa. IV Centenario",
+        "en": "Juan de Mesa. 4th Centenary",
+        "fr": "Juan de Mesa. IVe Centenaire",
+        "de": "Juan de Mesa. 400. Todestag",
+        "it": "Juan de Mesa. IV Centenario",
+        "pt": "Juan de Mesa. IV Centenário"
+      },
+      "description": {
+        "es": "Gran retrospectiva en el Museo de Bellas Artes por el cuarto centenario de la muerte de Juan de Mesa, el imaginero del Gran Poder y el Cristo del Amor. Unas 35 obras maestras de la Semana Santa sevillana reunidas por primera vez.",
+        "en": "A major retrospective at the Museum of Fine Arts marking the 400th anniversary of Juan de Mesa's death, the sculptor behind Seville's most revered Holy Week figures. Some 35 masterpieces brought together for the first time.",
+        "fr": "Grande rétrospective au Musée des Beaux-Arts pour le quatrième centenaire de la mort de Juan de Mesa, le sculpteur des figures les plus vénérées de la Semaine Sainte. Environ 35 chefs-d'œuvre réunis pour la première fois.",
+        "de": "Große Retrospektive im Museum der Schönen Künste zum 400. Todestag von Juan de Mesa, dem Bildhauer der verehrtesten Karwochenfiguren Sevillas. Rund 35 Meisterwerke erstmals vereint.",
+        "it": "Grande retrospettiva al Museo di Belle Arti per il quarto centenario della morte di Juan de Mesa, lo scultore delle figure più venerate della Settimana Santa. Circa 35 capolavori riuniti per la prima volta.",
+        "pt": "Grande retrospectiva no Museu de Belas Artes pelo quarto centenário da morte de Juan de Mesa, o escultor das figuras mais veneradas da Semana Santa. Cerca de 35 obras-primas reunidas pela primeira vez."
+      },
+      "startDate": "2026-11-01",
+      "endDate": "2027-03-31",
+      "category": "culture",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Cristo_del_Amor_%28Juan_de_Mesa%29.jpg/960px-Cristo_del_Amor_%28Juan_de_Mesa%29.jpg",
+      "url": "https://www.juntadeandalucia.es/organismos/culturaydeporte/servicios/actualidad/noticias/detalle/641068.html",
+      "location": {
+        "name": "Museo de Bellas Artes de Sevilla",
+        "address": "Plaza del Museo 9",
+        "lat": 37.392416,
+        "lng": -6.0000135
+      },
+      "isHighSeason": false
+    },
+    {
       "id": "seff-2026",
       "title": {
         "es": "Festival de Cine Europeo de Sevilla (SEFF)",
@@ -215,6 +246,99 @@
         "address": "Av. de María Luisa s/n",
         "lat": 37.3786363,
         "lng": -5.9908003
+      },
+      "isHighSeason": false
+    },
+    {
+      "id": "vetusta-morla-2026",
+      "title": {
+        "es": "Vetusta Morla en concierto",
+        "en": "Vetusta Morla live in concert",
+        "fr": "Vetusta Morla en concert",
+        "de": "Vetusta Morla live",
+        "it": "Vetusta Morla in concerto",
+        "pt": "Vetusta Morla em concerto"
+      },
+      "description": {
+        "es": "La banda madrileña de indie rock más importante de España llega al Estadio La Cartuja con su gira más ambiciosa. Un espectáculo de gran formato con despliegue audiovisual y todos sus himnos.",
+        "en": "Spain's biggest indie rock band comes to La Cartuja Stadium with their most ambitious tour yet. A large-scale show with a striking audiovisual production and all their anthems.",
+        "fr": "Le plus grand groupe de rock indé espagnol se produit au stade La Cartuja avec sa tournée la plus ambitieuse. Un spectacle de grande envergure avec une production audiovisuelle impressionnante.",
+        "de": "Spaniens größte Indie-Rock-Band kommt mit ihrer ehrgeizigsten Tour ins Estadio La Cartuja. Eine große Show mit aufwendiger audiovisueller Produktion und allen ihren Hymnen.",
+        "it": "La più grande band indie rock spagnola arriva all'Estadio La Cartuja con il suo tour più ambizioso. Uno spettacolo di grande formato con una produzione audiovisiva d'eccezione.",
+        "pt": "A maior banda de indie rock de Espanha chega ao Estádio La Cartuja com a sua digressão mais ambiciosa. Um espetáculo de grande formato com produção audiovisual de destaque."
+      },
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "category": "music",
+      "image": "https://www.vetustamorla.com/wp-content/uploads/2026/03/VM-BANNER-WEB-SOFA-2.jpg",
+      "url": "https://www.estadiolacartuja.es/eventos-musicales/",
+      "location": {
+        "name": "Estadio La Cartuja",
+        "address": "Isla de la Cartuja",
+        "lat": 37.4172353,
+        "lng": -6.0046134
+      },
+      "isHighSeason": false
+    },
+    {
+      "id": "maria-jose-llergo-2026",
+      "title": {
+        "es": "María José Llergo en concierto",
+        "en": "María José Llergo live in concert",
+        "fr": "María José Llergo en concert",
+        "de": "María José Llergo live",
+        "it": "María José Llergo in concerto",
+        "pt": "María José Llergo em concerto"
+      },
+      "description": {
+        "es": "La joven cantaora cordobesa presenta su gira El Juego en el Teatro de la Maestranza. Una voz que rompe los límites del flamenco contemporáneo en un escenario único a orillas del Guadalquivir.",
+        "en": "The young Cordoba-born singer presents her El Juego tour at the Teatro de la Maestranza. A voice pushing the boundaries of contemporary flamenco on a unique stage by the Guadalquivir.",
+        "fr": "La jeune chanteuse cordouane présente sa tournée El Juego au Teatro de la Maestranza. Une voix qui repousse les limites du flamenco contemporain sur une scène unique au bord du Guadalquivir.",
+        "de": "Die junge Sängerin aus Córdoba präsentiert ihre Tour El Juego im Teatro de la Maestranza. Eine Stimme, die die Grenzen des zeitgenössischen Flamenco sprengt, auf einer einzigartigen Bühne am Guadalquivir.",
+        "it": "La giovane cantante cordovese presenta il suo tour El Juego al Teatro de la Maestranza. Una voce che supera i confini del flamenco contemporaneo su un palco unico sul Guadalquivir.",
+        "pt": "A jovem cantora de Córdova apresenta a sua digressão El Juego no Teatro de la Maestranza. Uma voz que rompe os limites do flamenco contemporâneo num palco único junto ao Guadalquivir."
+      },
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-28",
+      "category": "music",
+      "image": "https://thumbor.teatrodelamaestranza.es/3UKRmzKlPhIl3MwtUlulMdAWGdI=/300x400/smart/teatro-maestranza/shows/maria-jose-llergo-recortada.jpg",
+      "url": "https://www.teatrodelamaestranza.es/es/shows/detalle/525/maria-jose-llergo",
+      "location": {
+        "name": "Teatro de la Maestranza",
+        "address": "Paseo de Cristóbal Colón 22",
+        "lat": 37.3840732,
+        "lng": -5.9966688
+      },
+      "isHighSeason": false
+    },
+    {
+      "id": "mundos-de-alicia-2026",
+      "title": {
+        "es": "Los mundos de Alicia",
+        "en": "The Worlds of Alice",
+        "fr": "Les mondes d'Alice",
+        "de": "Alices Welten",
+        "it": "I mondi di Alice",
+        "pt": "Os mundos de Alice"
+      },
+      "description": {
+        "es": "Exposición que celebra los 160 años de Alicia en el País de las Maravillas con ilustraciones originales, arte contemporáneo y experiencias inmersivas. Para toda la familia en el CaixaForum de la Cartuja.",
+        "en": "An exhibition celebrating 160 years of Alice in Wonderland with original illustrations, contemporary art and immersive experiences. Fun for the whole family at CaixaForum.",
+        "fr": "Une exposition célébrant les 160 ans d'Alice au pays des merveilles avec illustrations originales, art contemporain et expériences immersives. Pour toute la famille au CaixaForum.",
+        "de": "Eine Ausstellung zum 160. Jubiläum von Alice im Wunderland mit Originalillustrationen, zeitgenössischer Kunst und immersiven Erlebnissen. Für die ganze Familie im CaixaForum.",
+        "it": "Una mostra che celebra i 160 anni di Alice nel Paese delle Meraviglie con illustrazioni originali, arte contemporanea ed esperienze immersive. Per tutta la famiglia al CaixaForum.",
+        "pt": "Uma exposição que celebra os 160 anos de Alice no País das Maravilhas com ilustrações originais, arte contemporânea e experiências imersivas. Para toda a família no CaixaForum."
+      },
+      "startDate": "2026-12-02",
+      "endDate": "2027-04-04",
+      "category": "culture",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Alice_par_John_Tenniel_30.png/960px-Alice_par_John_Tenniel_30.png",
+      "url": "https://caixaforum.org/es/sevilla",
+      "location": {
+        "name": "CaixaForum Sevilla",
+        "address": "Camino de los Descubrimientos",
+        "lat": 37.393635,
+        "lng": -6.0092938
       },
       "isHighSeason": false
     },
