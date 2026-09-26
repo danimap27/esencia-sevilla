@@ -338,7 +338,7 @@
    "q8": "Is there WiFi? Is it fast?",
    "a8": "Yes, the apartment has high-speed fibre optic WiFi (600 Mbps). The network name and password are in the welcome book.",
    "q9": "What are check-in and check-out times?",
-   "a9": "Check-in: from 16:00. Check-out: before 11:00. If your flight arrives earlier, you can leave your luggage for free and explore the city. Late check-out until 14:00 available for €20 (subject to availability).",
+   "a9": "Check-in: from 16:00. Check-out: before 12:00. If your flight arrives earlier, you can leave your luggage for free and explore the city. Late check-out until 14:00 available for €20 (subject to availability).",
    "q10": "Does the apartment have a fully equipped kitchen?",
    "a10": "Yes, the kitchen is fully equipped: fridge, hob, microwave, coffee maker (Nespresso capsules), toaster, kettle, full utensils and crockery for 4 people.",
    "q11": "Is smoking allowed in the apartment?",
@@ -354,7 +354,7 @@
    "q16": "Is there a washing machine?",
    "a16": "Yes, the apartment has a washing machine with detergent included.",
    "q17": "Can I check out late if my flight is in the afternoon?",
-   "a17": "Standard check-out is before 11:00. If you need more time, late check-out until 14:00 is available for €20 subject to availability. For later departures, you can leave your luggage stored in the apartment.",
+   "a17": "Standard check-out is before 12:00. If you need more time, late check-out until 14:00 is available for €20 subject to availability. For later departures, you can leave your luggage stored in the apartment.",
    "q18": "Is the apartment adapted for people with reduced mobility?",
    "a18": "The building has a lift. The apartment is on the 3rd floor. There is a step at the building entrance. If you have special needs, please consult us before booking.",
    "q19": "How does online pre-check-in work?",
@@ -489,7 +489,7 @@
   "checkoutList": [
    "Gather all your belongings (check drawers, bathroom, wardrobes).",
    "Close windows and blinds.",
-   "Leave the keys in the safety box by the door.",
+   "Leave the keys on the table.",
    "Turn off the AC and lights.",
    "Close the door when leaving."
   ],
@@ -630,16 +630,12 @@
    "🐾 No pets",
    "🔇 Quiet after 22:00",
    "👥 Max. 4 guests",
-   "🎉 No parties",
-   "🔑 Self check-in"
+   "🎉 No parties"
   ],
-  "checkoutTitle": "✅ Check-out (before 11:00)",
+  "checkoutTitle": "✅ Check-out (before 12:00)",
   "checkoutSteps": [
-   "Leave the keys in the safety box",
    "Turn off all AC units",
-   "Close windows and blinds",
-   "Leave towels in the bathroom",
-   "Empty the fridge",
+   "Leave the keys on the table",
    "Leave a review! 😊"
   ],
   "registryLabel": "Reg. No.",
@@ -719,8 +715,7 @@
   "noPets": "No pets",
   "quietHours": "Quiet after 22:00",
   "maxGuests": "Max. 4 guests",
-  "noParties": "No parties",
-  "selfCheckin": "Self check-in"
+  "noParties": "No parties"
  },
  "emergency": {
   "112": "112 - Emergencies",

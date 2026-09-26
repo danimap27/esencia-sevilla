@@ -13,9 +13,9 @@ export const APARTMENT: ApartmentInfo = {
   size: '65 m²',
   wifi: 'EsenciaSevilla_5G',
   checkInTime: '16:00',
-  checkOutTime: '11:00',
-  phone: '+34 600 000 000',
-  whatsapp: '34600000000',
+  checkOutTime: '12:00',
+  phone: '+34 658 410 769',
+  whatsapp: '34658410769',
   email: 'hola@esenciasevilla.com',
   basePricePerNight: 142,
   cleaningFee: 60,
@@ -77,7 +77,6 @@ export const HOUSE_RULES = [
   { icon: '🔇', key: 'rules.quietHours' },
   { icon: '👥', key: 'rules.maxGuests' },
   { icon: '🎉', key: 'rules.noParties' },
-  { icon: '🔑', key: 'rules.selfCheckin' },
 ] as const;
 
 export const EMERGENCY_CONTACTS = [
@@ -86,7 +85,7 @@ export const EMERGENCY_CONTACTS = [
   { icon: '🏥', nameKey: 'hospital', phone: '+34 955 012 000' },
   { icon: '💊', nameKey: 'pharmacy', phone: '024 (consultar)' },
   { icon: '🚕', nameKey: 'taxi', phone: '+34 954 622 222' },
-  { icon: '🔧', nameKey: 'host', phone: '+34 600 000 000' },
+  { icon: '🔧', nameKey: 'host', phone: '+34 658 410 769' },
 ] as const;
 
 export const ARRIVAL_INSTRUCTIONS = {

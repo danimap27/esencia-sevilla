@@ -338,7 +338,7 @@
    "q8": "¿Hay WiFi? ¿Es rápido?",
    "a8": "Sí, el apartamento dispone de WiFi de fibra óptica de alta velocidad (600 Mbps). El nombre de la red y la contraseña se encuentran en el libro de bienvenida.",
    "q9": "¿A qué hora es el check-in y el check-out?",
-   "a9": "Check-in: a partir de las 16:00h. Check-out: antes de las 11:00h. Si tu vuelo llega antes, puedes dejar las maletas gratuitamente y explorar la ciudad. Late check-out hasta las 14:00h disponible por 20€ (según disponibilidad).",
+   "a9": "Check-in: a partir de las 16:00h. Check-out: antes de las 12:00h. Si tu vuelo llega antes, puedes dejar las maletas gratuitamente y explorar la ciudad. Late check-out hasta las 14:00h disponible por 20€ (según disponibilidad).",
    "q10": "¿El apartamento tiene cocina equipada?",
    "a10": "Sí, la cocina está completamente equipada: nevera, vitrocerámica, microondas, cafetera (cápsulas Nespresso), tostadora, hervidor, utensilios completos y vajilla para 4 personas.",
    "q11": "¿Está permitido fumar en el apartamento?",
@@ -354,7 +354,7 @@
    "q16": "¿Hay lavadora?",
    "a16": "Sí, el apartamento dispone de lavadora con detergente incluido.",
    "q17": "¿Puedo hacer el check-out tarde si mi vuelo es por la tarde?",
-   "a17": "El check-out estándar es antes de las 11:00h. Si necesitas más tiempo, el late check-out hasta las 14:00h está disponible por 20€ sujeto a disponibilidad. Para salidas más tarde, puedes dejar el equipaje guardado en el apartamento.",
+   "a17": "El check-out estándar es antes de las 12:00h. Si necesitas más tiempo, el late check-out hasta las 14:00h está disponible por 20€ sujeto a disponibilidad. Para salidas más tarde, puedes dejar el equipaje guardado en el apartamento.",
    "q18": "¿El apartamento está adaptado para personas con movilidad reducida?",
    "a18": "El edificio tiene ascensor. El apartamento está en la planta 3ª. Existe un escalón de acceso al edificio. Si tienes necesidades especiales, consúltanos antes de reservar.",
    "q19": "¿Cómo funciona el pre-check-in online?",
@@ -489,7 +489,7 @@
   "checkoutList": [
    "Recoge todas tus pertenencias (revisa cajones, baño, armarios).",
    "Cierra ventanas y persianas.",
-   "Deja las llaves en la caja de seguridad junto a la puerta.",
+   "Deja las llaves en la mesa.",
    "Apaga el A/C y las luces.",
    "Cierra la puerta al salir."
   ],
@@ -630,16 +630,12 @@
    "🐾 No mascotas",
    "🔇 Silencio 22:00",
    "👥 Máx. 4 huéspedes",
-   "🎉 No fiestas",
-   "🔑 Check-in autónomo"
+   "🎉 No fiestas"
   ],
-  "checkoutTitle": "✅ Check-out (antes de las 11:00)",
+  "checkoutTitle": "✅ Check-out (antes de las 12:00)",
   "checkoutSteps": [
-   "Deja las llaves en la caja de seguridad",
    "Apaga todos los aires acondicionados",
-   "Cierra ventanas y persianas",
-   "Deja las toallas en el baño",
-   "Vacía la nevera",
+   "Deja las llaves en la mesa",
    "¡Deja una reseña! 😊"
   ],
   "registryLabel": "Nº Registro",
@@ -719,8 +715,7 @@
   "noPets": "No mascotas",
   "quietHours": "Silencio 22:00",
   "maxGuests": "Máx. 4 huéspedes",
-  "noParties": "No fiestas",
-  "selfCheckin": "Check-in autónomo"
+  "noParties": "No fiestas"
  },
  "emergency": {
   "112": "112 - Emergencias",

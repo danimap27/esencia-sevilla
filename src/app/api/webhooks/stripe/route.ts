@@ -149,7 +149,7 @@ async function sendConfirmationEmail(params: ConfirmationEmailParams) {
               <table style="width:100%;border-collapse:collapse;">
                 <tr><td style="padding:8px 0;color:#6B5444;font-size:14px;">Referencia</td><td style="padding:8px 0;font-weight:600;text-align:right;">${bookingRef}</td></tr>
                 <tr><td style="padding:8px 0;color:#6B5444;font-size:14px;">Check-in</td><td style="padding:8px 0;font-weight:600;text-align:right;">${checkIn} (desde las 16:00)</td></tr>
-                <tr><td style="padding:8px 0;color:#6B5444;font-size:14px;">Check-out</td><td style="padding:8px 0;font-weight:600;text-align:right;">${checkOut} (antes de las 11:00)</td></tr>
+                <tr><td style="padding:8px 0;color:#6B5444;font-size:14px;">Check-out</td><td style="padding:8px 0;font-weight:600;text-align:right;">${checkOut} (antes de las 12:00)</td></tr>
                 <tr><td style="padding:8px 0;color:#6B5444;font-size:14px;">Huéspedes</td><td style="padding:8px 0;font-weight:600;text-align:right;">${guests}</td></tr>
                 <tr style="border-top:1px solid #EDE3D0;"><td style="padding:12px 0 8px;font-weight:600;">Total pagado</td><td style="padding:12px 0 8px;font-weight:700;color:#C25A3A;text-align:right;font-size:18px;">${total}€</td></tr>
               </table>

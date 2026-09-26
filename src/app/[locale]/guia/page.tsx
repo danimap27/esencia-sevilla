@@ -122,7 +122,7 @@ export default async function GuidePage({ params: { locale } }: { params: { loca
 
         {/* Featured routes */}
         <section>
-          <h2 className="text-3xl font-serif text-tinta mb-3">🧭 {t('routesTitle')}</h2>
+          <h2 className="text-3xl font-serif text-tinta mb-3">{t('routesTitle')}</h2>
           <p className="text-tinta/60 mb-6 max-w-3xl">{t('routesText')}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {featured.map(route => (
@@ -157,7 +157,7 @@ export default async function GuidePage({ params: { locale } }: { params: { loca
 
         {/* Apartment info */}
         <section className="card p-6 md:p-8">
-          <h2 className="text-3xl font-serif text-tinta mb-5">🏠 {t('apartmentTitle')}</h2>
+          <h2 className="text-3xl font-serif text-tinta mb-5">{t('apartmentTitle')}</h2>
           <p className="text-tinta/70 mb-6 max-w-3xl">{t('apartmentText')}</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="p-4 bg-crema rounded-xl">

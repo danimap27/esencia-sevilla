@@ -338,7 +338,7 @@
    "q8": "Y a-t-il le WiFi ? Est-il rapide ?",
    "a8": "Oui, l'appartement dispose d'un WiFi fibre haute vitesse (600 Mbps). Le nom du réseau et le mot de passe se trouvent dans le livre d'accueil.",
    "q9": "Quelles sont les heures d'arrivée et de départ ?",
-   "a9": "Arrivée : à partir de 16h00. Départ : avant 11h00. Si votre vol arrive plus tôt, vous pouvez laisser vos bagages gratuitement et explorer la ville. Départ tardif jusqu'à 14h00 disponible pour 20€ (selon disponibilité).",
+   "a9": "Arrivée : à partir de 16h00. Départ : avant 12h00. Si votre vol arrive plus tôt, vous pouvez laisser vos bagages gratuitement et explorer la ville. Départ tardif jusqu'à 14h00 disponible pour 20€ (selon disponibilité).",
    "q10": "L'appartement a-t-il une cuisine équipée ?",
    "a10": "Oui, la cuisine est entièrement équipée : réfrigérateur, plaque vitrocéramique, micro-ondes, machine à café (capsules Nespresso), grille-pain, bouilloire, ustensiles complets et vaisselle pour 4 personnes.",
    "q11": "Fumer est-il autorisé dans l'appartement ?",
@@ -354,7 +354,7 @@
    "q16": "Y a-t-il un lave-linge ?",
    "a16": "Oui, l'appartement dispose d'un lave-linge avec détergent inclus.",
    "q17": "Puis-je faire un départ tardif si mon vol est l'après-midi ?",
-   "a17": "Le départ standard est avant 11h00. Si vous avez besoin de plus de temps, le départ tardif jusqu'à 14h00 est disponible pour 20€ selon disponibilité. Pour des départs plus tardifs, vous pouvez laisser vos bagages à l'appartement.",
+   "a17": "Le départ standard est avant 12h00. Si vous avez besoin de plus de temps, le départ tardif jusqu'à 14h00 est disponible pour 20€ selon disponibilité. Pour des départs plus tardifs, vous pouvez laisser vos bagages à l'appartement.",
    "q18": "L'appartement est-il adapté aux personnes à mobilité réduite ?",
    "a18": "L'immeuble a un ascenseur. L'appartement est au 3ème étage. Il y a une marche à l'entrée de l'immeuble. Si vous avez des besoins spéciaux, consultez-nous avant de réserver.",
    "q19": "Comment fonctionne le pré-enregistrement en ligne ?",
@@ -489,7 +489,7 @@
   "checkoutList": [
    "Rassemblez toutes vos affaires (vérifiez tiroirs, salle de bain, placards).",
    "Fermez fenêtres et volets.",
-   "Laissez les clés dans la boîte de sécurité près de la porte.",
+   "Laissez les clés sur la table.",
    "Éteignez la climatisation et les lumières.",
    "Fermez la porte en sortant."
   ],
@@ -630,16 +630,12 @@
    "🐾 Pas d'animaux",
    "🔇 Silence après 22h00",
    "👥 Max. 4 personnes",
-   "🎉 Pas de fêtes",
-   "🔑 Arrivée autonome"
+   "🎉 Pas de fêtes"
   ],
-  "checkoutTitle": "✅ Départ (avant 11h00)",
+  "checkoutTitle": "✅ Départ (avant 12h00)",
   "checkoutSteps": [
-   "Laissez les clés dans la boîte de sécurité",
    "Éteignez tous les climatiseurs",
-   "Fermez fenêtres et volets",
-   "Laissez les serviettes dans la salle de bain",
-   "Videz le réfrigérateur",
+   "Laissez les clés sur la table",
    "Laissez un avis ! 😊"
   ],
   "registryLabel": "Nº d'enregistrement",
@@ -719,8 +715,7 @@
   "noPets": "Pas d'animaux",
   "quietHours": "Silence après 22h00",
   "maxGuests": "Max. 4 personnes",
-  "noParties": "Pas de fêtes",
-  "selfCheckin": "Arrivée autonome"
+  "noParties": "Pas de fêtes"
  },
  "emergency": {
   "112": "112 - Urgences",

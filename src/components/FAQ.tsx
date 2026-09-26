@@ -94,7 +94,7 @@ export default function FAQ() {
           <p className="text-lg font-serif mb-2">{t('noAnswer')}</p>
           <p className="text-tinta/70 mb-4">{t('contactDirect')}</p>
           <a
-            href={`https://wa.me/${process.env.NEXT_PUBLIC_APARTMENT_WHATSAPP || '34600000000'}?text=${encodeURIComponent(t('whatsappMessage'))}`}
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_APARTMENT_WHATSAPP || '34658410769'}?text=${encodeURIComponent(t('whatsappMessage'))}`}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex"
