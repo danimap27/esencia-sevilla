@@ -62,10 +62,10 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <p className="font-semibold text-crema mb-4 uppercase text-xs tracking-wider">Navegación</p>
+            <p className="font-semibold text-crema mb-4 uppercase text-xs tracking-wider">{t('nav')}</p>
             <nav className="space-y-2.5">
               {[
-                { label: 'Inicio', href: `/${locale}` },
+                { label: t('home'), href: `/${locale}` },
                 { label: t('links.blog'), href: `/${locale}/blog` },
                 { label: t('links.guide'), href: `/${locale}/guia` },
                 { label: 'FAQ', href: '#faq' },
@@ -86,7 +86,7 @@ export default function Footer() {
               <p>💬 <a href={`https://wa.me/${APARTMENT.whatsapp}`} target="_blank" rel="noopener noreferrer" className="hover:text-crema transition-colors">WhatsApp</a></p>
             </div>
 
-            <p className="font-semibold text-crema mb-3 uppercase text-xs tracking-wider">Legal</p>
+            <p className="font-semibold text-crema mb-3 uppercase text-xs tracking-wider">{t('legal')}</p>
             <nav className="space-y-2.5">
               {[
                 { label: t('links.privacy'), href: `/${locale}/privacidad` },

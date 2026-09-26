@@ -443,7 +443,7 @@ export default function MapSection() {
                 <Bus size={20} className="text-terracota-500" />
                 {t('transport.title')}
               </h3>
-              <p className="text-sm text-tinta/60 mb-6">{t('transport.nearestStop')}: Arroyo (Vicente Alanís) — 2 min a pie</p>
+              <p className="text-sm text-tinta/60 mb-6">{t('transport.nearestStopLine')}</p>
 
               <div className="space-y-4">
                 {BUS_LINES.map(line => (

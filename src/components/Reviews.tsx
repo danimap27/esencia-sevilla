@@ -104,7 +104,7 @@ export default function Reviews() {
                       onClick={() => setExpanded(isExpanded ? null : review.id)}
                       className="mt-1 text-xs text-terracota-500 hover:text-terracota-700 font-medium"
                     >
-                      {isExpanded ? 'Ver menos' : 'Leer más'}
+                      {isExpanded ? t('showLess') : t('readMore')}
                     </button>
                   )}
                 </div>
@@ -126,7 +126,7 @@ export default function Reviews() {
             rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center gap-2"
           >
-            🔵 <ExternalLink size={16} /> Dejar reseña en Google
+            🔵 <ExternalLink size={16} /> {t('leaveGoogle')}
           </a>
           <a
             href={`https://www.booking.com/Share-Skt5m9#tab-reviews`}
@@ -134,7 +134,7 @@ export default function Reviews() {
             rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center gap-2"
           >
-            🏨 <ExternalLink size={16} /> Reseñar en Booking
+            🏨 <ExternalLink size={16} /> {t('leaveBooking')}
           </a>
         </div>
       </div>

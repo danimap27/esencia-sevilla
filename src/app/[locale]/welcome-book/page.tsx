@@ -17,6 +17,7 @@ export default async function WelcomeBookPage({
   params: { locale: string };
 }) {
   unstable_setRequestLocale(locale);
+  const t = await getTranslations('welcomeBook');
 
   return (
     <div className="min-h-screen bg-crema py-12 px-4 sm:px-8">
@@ -27,10 +28,10 @@ export default async function WelcomeBookPage({
             ES
           </div>
           <h1 className="text-3xl md:text-4xl font-serif text-tinta mb-2">
-            Libro de Bienvenida
+            {t('pageTitle')}
           </h1>
           <p className="text-tinta/60 max-w-lg mx-auto">
-            Todo lo que necesitas para disfrutar tu estancia en {APARTMENT.name}.
+            {t('pageSubtitle', { name: APARTMENT.name })}
           </p>
         </div>
 

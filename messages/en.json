@@ -26,7 +26,48 @@
    "wifi": "Ultra-fast WiFi",
    "ac": "A/C in all rooms",
    "location": "Next to Santa Justa (AVE)"
-  }
+  },
+  "photoAlts": [
+   "Main living room of Esencia Sevilla",
+   "Master bedroom with king bed",
+   "Fully equipped kitchen",
+   "Bathroom with shower and amenities",
+   "View from the balcony over the neighbourhood"
+  ],
+  "landmarks": [
+   {
+    "name": "Seville Cathedral",
+    "distance": "26 min walk"
+   },
+   {
+    "name": "The Giralda",
+    "distance": "26 min walk"
+   },
+   {
+    "name": "Royal Alcázar",
+    "distance": "27 min walk"
+   },
+   {
+    "name": "Santa Cruz Quarter",
+    "distance": "24 min walk"
+   },
+   {
+    "name": "Plaza de España",
+    "distance": "31 min walk"
+   },
+   {
+    "name": "Archive of the Indies",
+    "distance": "26 min walk"
+   },
+   {
+    "name": "Torre del Oro",
+    "distance": "32 min walk"
+   },
+   {
+    "name": "Fine Arts Museum",
+    "distance": "20 min walk"
+   }
+  ]
  },
  "comparison": {
   "title": "Why book directly?",
@@ -108,7 +149,10 @@
   "processing": "Processing...",
   "noAvailability": "No availability on these dates",
   "contactUs": "Contact us for special availability",
-  "cta": "Book now"
+  "cta": "Book now",
+  "freeCancel": "Free cancellation",
+  "approxNote": "This option is priced approx. 10% higher than direct booking.",
+  "maxGuests": "Max. {count}"
  },
  "gallery": {
   "title": "The apartment",
@@ -122,7 +166,57 @@
   "noPhotos": "We are preparing the 360° virtual tour. Come back soon to walk through the apartment as if you were there.",
   "tourDesc": "Walk through every room before you arrive: living room, bedrooms, kitchen and bathroom in 360°, as if you were already inside.",
   "tourCta": "Explore the tour",
-  "tourViews": "{count} 360° views"
+  "tourViews": "{count} 360° views",
+  "photos": [
+   {
+    "alt": "Main living room",
+    "caption": "Cosy living room with Andalusian décor"
+   },
+   {
+    "alt": "Master bedroom",
+    "caption": "Master bedroom with double bed"
+   },
+   {
+    "alt": "Second bedroom",
+    "caption": "Second bedroom with two single beds"
+   },
+   {
+    "alt": "Bathroom",
+    "caption": "Full bathroom with shower"
+   },
+   {
+    "alt": "Kitchen",
+    "caption": "Fully equipped kitchen"
+   },
+   {
+    "alt": "City view",
+    "caption": "Views over the Seville neighbourhood"
+   },
+   {
+    "alt": "Decorative details",
+    "caption": "Seville ceramic details"
+   },
+   {
+    "alt": "Lounge area",
+    "caption": "Lounge area with comfy sofa"
+   },
+   {
+    "alt": "Terrace",
+    "caption": "Access to outdoor terrace"
+   },
+   {
+    "alt": "Entrance",
+    "caption": "Apartment entrance and access"
+   },
+   {
+    "alt": "Dining table",
+    "caption": "Dining table for 4 people"
+   },
+   {
+    "alt": "Window",
+    "caption": "Windows overlooking the street"
+   }
+  ]
  },
  "map": {
   "title": "Explore Seville from your apartment",
@@ -170,7 +264,8 @@
    "nearestStop": "Nearest stop to the apartment",
    "lines": "Available lines",
    "frequency": "Frequency",
-   "price": "Price"
+   "price": "Price",
+   "nearestStopLine": "Nearest stop: Arroyo (Vicente Alanís) — 2 min walk"
   },
   "fullRoute": "Full route in Google Maps",
   "bestTime": "Best time",
@@ -216,7 +311,11 @@
    "booking": "Booking.com",
    "airbnb": "Airbnb",
    "direct": "Direct booking"
-  }
+  },
+  "readMore": "Read more",
+  "showLess": "Show less",
+  "leaveGoogle": "Leave a Google review",
+  "leaveBooking": "Review on Booking"
  },
  "faq": {
   "title": "Frequently asked questions",
@@ -262,12 +361,17 @@
    "a19": "When you confirm your booking you will receive a link to complete pre-check-in: passport details, estimated arrival time and preferences. This allows us to prepare everything for your arrival and comply with Spanish traveller registration regulations.",
    "q20": "What is the apartment's tourist registration number?",
    "a20": "Tourist registration number with the Junta de Andalucía: AT/SE/03584. You can verify it in the Andalusia Tourism Register."
-  }
+  },
+  "searchPlaceholder": "Search question...",
+  "noAnswer": "Can't find your answer?",
+  "contactDirect": "Contact us directly on WhatsApp",
+  "whatsappCta": "Message us on WhatsApp",
+  "whatsappMessage": "Hi! I have a question about the Esencia Sevilla apartment"
  },
  "location": {
   "title": "Where we are",
   "subtitle": "Well connected: AVE 7 min on foot, centre 10 min by bus or taxi",
-  "address": "Imaginero Luis Alvarez Duarte N7, 41008 Seville",
+  "address": "Imaginero Luis Álvarez Duarte 7, 41008 Seville",
   "howToArrive": "How to get here",
   "fromAirport": "From Seville Airport (SVQ)",
   "fromStation": "From Santa Justa Station (Renfe)",
@@ -290,7 +394,10 @@
     "step2": "Enter GPS: Imaginero Luis Álvarez Duarte, 7, Seville",
     "step3": "Loading area in front of the building; street parking nearby"
    }
-  }
+  },
+  "privateTransfer": "Prefer a private transfer?",
+  "privateTransferDesc": "Personalised airport pick-up for €35",
+  "addTransfer": "Add transfer when booking"
  },
  "chat": {
   "title": "Esencia Sevilla Assistant",
@@ -332,7 +439,10 @@
    "birthDate": "Date of birth",
    "submit": "Confirm pre-check-in",
    "success": "Pre-check-in completed! You'll receive the access code 24h before your arrival.",
-   "legalNote": "Data required by Spanish Citizen Security Act for traveller registration."
+   "legalNote": "Data required by Spanish Citizen Security Act for traveller registration.",
+   "done": "Pre-check-in completed!",
+   "pageTitle": "Pre-check-in",
+   "pageIntro": "Complete your details before arrival to speed up check-in and comply with Spanish traveller registration regulations."
   }
  },
  "welcomeBook": {
@@ -345,7 +455,82 @@
   "emergencies": "Emergencies",
   "appliances": "Appliances",
   "checkoutSteps": "Check-out steps",
-  "recommendations": "Host's recommendations"
+  "recommendations": "Host's recommendations",
+  "password": "Password:",
+  "wifiNote": "600 Mbps fibre, 5G signal throughout the apartment",
+  "pageTitle": "Welcome Book",
+  "pageSubtitle": "Everything you need to enjoy your stay at {name}.",
+  "appliancesList": [
+   {
+    "name": "Fridge",
+    "instructions": "Combi fridge: adjust the temperature on the inner panel. Freezer at the bottom."
+   },
+   {
+    "name": "Nespresso machine",
+    "instructions": "1. Fill the water tank. 2. Insert a capsule. 3. Press the espresso (40 ml) or lungo (110 ml) button."
+   },
+   {
+    "name": "Air conditioning",
+    "instructions": "Remote control in the living room. Cool mode at 22-24 °C recommended in summer."
+   },
+   {
+    "name": "Smart TV",
+    "instructions": "Remote on the side table. Netflix/Prime Video available with your account. USB port available."
+   },
+   {
+    "name": "Water heater",
+    "instructions": "Water heater in the bathroom. Adjustable temperature. Hot water available 24 h."
+   },
+   {
+    "name": "Washing machine",
+    "instructions": "Detergent in the cupboard. Eco 40 °C programme for normal use (1 h 20 min). Do not use for delicate garments."
+   }
+  ],
+  "checkoutList": [
+   "Gather all your belongings (check drawers, bathroom, wardrobes).",
+   "Close windows and blinds.",
+   "Leave the keys in the safety box by the door.",
+   "Turn off the AC and lights.",
+   "Close the door when leaving."
+  ],
+  "recommendationsList": [
+   {
+    "name": "Bar Danubio",
+    "type": "Neighbourhood bar",
+    "distance": "3 min walk",
+    "note": "Classic breakfasts and tapas, local atmosphere."
+   },
+   {
+    "name": "La Rosaleda",
+    "type": "Andalusian restaurant",
+    "distance": "4 min walk",
+    "note": "Homemade set menu, very popular locally."
+   },
+   {
+    "name": "Berenice Bistrot",
+    "type": "Restaurant",
+    "distance": "2 min walk",
+    "note": "Market cuisine in a small venue."
+   },
+   {
+    "name": "Alimentación La Esquinita",
+    "type": "Grocery store",
+    "distance": "2 min walk",
+    "note": "All the basics for the fridge."
+   },
+   {
+    "name": "Panadería Polvillo",
+    "type": "Bakery",
+    "distance": "9 min walk",
+    "note": "Freshly baked bread and pastries."
+   },
+   {
+    "name": "Mercadona",
+    "type": "Supermarket",
+    "distance": "6 min walk",
+    "note": "Full grocery shopping near home."
+   }
+  ]
  },
  "footer": {
   "tagline": "Your home in Seville",
@@ -360,7 +545,10 @@
   "contact": "Contact",
   "followUs": "Follow us",
   "copyright": "© {year} Esencia Sevilla. All rights reserved.",
-  "madeWith": "Made with love in Seville"
+  "madeWith": "Made with love in Seville",
+  "nav": "Navigation",
+  "home": "Home",
+  "legal": "Legal"
  },
  "blog": {
   "title": "Esencia Sevilla Blog",
@@ -407,17 +595,55 @@
   "logout": "Log out"
  },
  "guide": {
-  "title": "Esencia Sevilla Tourist Guide",
-  "subtitle": "Everything you need to enjoy Seville",
-  "offline": "Available offline",
-  "sections": {
-   "map": "Map",
-   "transport": "Transport",
-   "restaurants": "Restaurants",
-   "events": "Events",
-   "apartment": "The Apartment",
-   "emergency": "Emergencies"
-  }
+  "headerTitle": "Tourist Guide",
+  "langLabel": "Language:",
+  "back": "Back",
+  "offline": "Offline",
+  "welcomeTitle": "Welcome to Seville 🌟",
+  "welcomeText": "Your personal guide to discover the best of the Andalusian capital. Everything you need, offline.",
+  "quickInfo": {
+   "wifi": "WiFi",
+   "checkin": "Check-in",
+   "checkout": "Check-out",
+   "emergency": "Emergencies",
+   "checkinFrom": "From",
+   "checkoutBefore": "Before"
+  },
+  "weatherTitle": "☀️ Weather in Seville",
+  "mapTitle": "🗺️ Seville Map",
+  "routesTitle": "🧭 Recommended walking routes",
+  "routesText": "Routes across Seville and its province with stops, history and tips. Tap one to see the full itinerary with map.",
+  "routeCta": "View route",
+  "apartmentTitle": "🏠 Your apartment",
+  "apartmentText": "You are in the San Pablo-Santa Justa neighbourhood, a 7-minute walk from Santa Justa AVE station and about 10 minutes from the centre by bus or taxi.",
+  "addressLabel": "Address",
+  "arriveLabel": "Getting here",
+  "arriveText": "From the airport: EA bus to Santa Justa and a 7-minute walk. From the centre: bus C1/C2 or taxi (10 min). Nearest bus stop: Arroyo (Vicente Alanís), 2 min away.",
+  "contactLabel": "Contact",
+  "contactText": "For any questions during your stay, message us on WhatsApp:",
+  "eventsTitle": "🎭 Events in Seville",
+  "moreInfo": "More info",
+  "emergencyTitle": "🚨 Emergency Contacts",
+  "rulesTitle": "📋 House Rules",
+  "rules": [
+   "🚭 No smoking",
+   "🐾 No pets",
+   "🔇 Quiet after 22:00",
+   "👥 Max. 4 guests",
+   "🎉 No parties",
+   "🔑 Self check-in"
+  ],
+  "checkoutTitle": "✅ Check-out (before 11:00)",
+  "checkoutSteps": [
+   "Leave the keys in the safety box",
+   "Turn off all AC units",
+   "Close windows and blinds",
+   "Leave towels in the bathroom",
+   "Empty the fridge",
+   "Leave a review! 😊"
+  ],
+  "registryLabel": "Reg. No.",
+  "allRoutes": "See all routes"
  },
  "common": {
   "loading": "Loading...",
@@ -438,7 +664,9 @@
   "perNight": "/ night",
   "euros": "€",
   "showMore": "Show more",
-  "showLess": "Show less"
+  "showLess": "Show less",
+  "connectionError": "Connection error",
+  "sendError": "Error sending"
  },
  "seo": {
   "homeTitle": "Tourist Apartment in Seville next to Santa Justa | Esencia Sevilla",
@@ -485,5 +713,112 @@
    "laundry": "Laundry"
   },
   "all": "All"
+ },
+ "rules": {
+  "noSmoking": "No smoking",
+  "noPets": "No pets",
+  "quietHours": "Quiet after 22:00",
+  "maxGuests": "Max. 4 guests",
+  "noParties": "No parties",
+  "selfCheckin": "Self check-in"
+ },
+ "emergency": {
+  "112": "112 - Emergencies",
+  "police": "National Police",
+  "hospital": "Virgen del Rocío Hospital",
+  "pharmacy": "On-call pharmacy",
+  "taxi": "Teletaxi Seville",
+  "host": "Owner / Host"
+ },
+ "privacy": {
+  "title": "Privacy Policy",
+  "home": "Home",
+  "updated": "Last updated:",
+  "sections": [
+   {
+    "t": "1. Data controller",
+    "p": [
+     "In compliance with Regulation (EU) 2016/679 (GDPR) and Organic Law 3/2018 (LOPDGDD), we inform you that the controller of your personal data is:"
+    ],
+    "list": [
+     "Name: Esencia Sevilla",
+     "Address: {address}",
+     "Email: {email}",
+     "Tourist Registry No.: {reg}"
+    ]
+   },
+   {
+    "t": "2. Data we collect",
+    "p": [
+     "We collect the following personal data:"
+    ],
+    "list": [
+     "Booking data: name, email, phone, stay dates, number of guests",
+     "Payment data: processed exclusively by Stripe (we do not store card details)",
+     "Pre-check-in: ID document details, date of birth, nationality (required by law)",
+     "Communications: chat or email messages sent through the site",
+     "Technical data: IP address, browser type, pages visited (via Google Analytics)"
+    ]
+   },
+   {
+    "t": "3. Purpose and legal basis",
+    "p": [
+     "We process your data for:"
+    ],
+    "list": [
+     "Booking management: performance of the contract (Art. 6.1.b GDPR)",
+     "Traveller registry: legal obligation, Organic Law 4/2015 on Public Safety (Art. 6.1.c GDPR)",
+     "Booking-related communications: performance of the contract",
+     "Marketing/newsletter: consent of the data subject (Art. 6.1.a GDPR)",
+     "Analytics: legitimate interest in improving the service"
+    ]
+   },
+   {
+    "t": "4. Disclosure to third parties",
+    "p": [
+     "Your data may be disclosed to:"
+    ],
+    "list": [
+     "Security Forces (SES.HOSPEDERÍA): legal obligation",
+     "Stripe Inc.: payment processing (PCI-DSS certified)",
+     "Resend/SendGrid: transactional email delivery",
+     "Supabase: data storage (servers in the EU)",
+     "Google Analytics: anonymised data for traffic analysis"
+    ]
+   },
+   {
+    "t": "5. Data retention",
+    "p": [],
+    "list": [
+     "Booking data: 5 years (tax obligation)",
+     "Traveller registry data: 3 years (police regulations)",
+     "Communications data: up to 2 years after the last contact"
+    ]
+   },
+   {
+    "t": "6. Your rights",
+    "p": [
+     "You may exercise the following rights by emailing {email}:"
+    ],
+    "list": [
+     "Access: know what data we hold about you",
+     "Rectification: correct inaccurate data",
+     "Erasure: request deletion (where there is no legal obligation)",
+     "Portability: receive your data in electronic format",
+     "Objection: object to processing for marketing",
+     "Restriction: restrict processing in certain circumstances"
+    ],
+    "after": {
+     "pre": "You may also lodge a complaint with the",
+     "link": "Spanish Data Protection Agency (AEPD)"
+    }
+   },
+   {
+    "t": "7. Cookies",
+    "p": [
+     "We use our own cookies (session) and third-party cookies (Google Analytics, Meta Pixel). You can manage your preferences in the cookie banner or in your browser settings."
+    ]
+   }
+  ]
  }
 }

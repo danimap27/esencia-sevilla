@@ -23,36 +23,21 @@ function WifiQR({ ssid, password }: { ssid: string; password: string }) {
   );
 }
 
+const APPLIANCE_ICONS = [Refrigerator, Coffee, Snowflake, Tv, ShowerHead, Lightbulb];
+
 export default function WelcomeBook() {
   const t = useTranslations('welcomeBook');
   const tBooking = useTranslations('booking');
   const tCommon = useTranslations('common');
+  const tRules = useTranslations('rules');
+  const tEmergency = useTranslations('emergency');
 
-  const appliances = [
-    { icon: Refrigerator, name: 'Nevera', instructions: 'Nevera combi: ajusta la temperatura con el panel interior. Congelador en la parte inferior.' },
-    { icon: Coffee, name: 'Cafetera Nespresso', instructions: '1. Rellena el depósito de agua. 2. Insertar cápsula. 3. Pulsar botón espresso (40ml) o lungo (110ml).' },
-    { icon: Snowflake, name: 'Aire Acondicionado', instructions: 'Mando a distancia en el salón. Modo Cool (nieve) a 22-24°C recomendado en verano.' },
-    { icon: Tv, name: 'Smart TV', instructions: 'Mando a distancia en la mesita. Netflix/Prime Video disponibles con tu cuenta. USB disponible.' },
-    { icon: ShowerHead, name: 'Calentador', instructions: 'Calentador de agua en cuarto de baño. Temperatura ajustable. Agua caliente disponible 24h.' },
-    { icon: Lightbulb, name: 'Lavadora', instructions: 'Detergente en el armario. Programa Eco 40°C para uso normal (1h 20min). No usar para prendas delicadas.' },
-  ];
+  const appliances = (t.raw('appliancesList') as { name: string; instructions: string }[])
+    .map((a, i) => ({ ...a, icon: APPLIANCE_ICONS[i] ?? Refrigerator }));
 
-  const checkoutSteps = [
-    'Recoge todas tus pertenencias (revisa cajones, baño, armarios).',
-    'Cierra ventanas y persianas.',
-    'Deja las llaves en la caja de seguridad junto a la puerta.',
-    'Apaga el A/C y las luces.',
-    'Cierra la puerta al salir.',
-  ];
+  const checkoutSteps = t.raw('checkoutList') as string[];
 
-  const recommendations = [
-    { name: 'Bar Danubio', type: 'Bar de barrio', distance: '3 min andando', note: 'Desayunos y tapas de siempre, ambiente local.' },
-    { name: 'La Rosaleda', type: 'Restaurante andaluz', distance: '4 min andando', note: 'Menú del día casero, muy popular en la zona.' },
-    { name: 'Berenice Bistrot', type: 'Restaurante', distance: '2 min andando', note: 'Cocina de mercado en un local pequeño.' },
-    { name: 'Alimentación La Esquinita', type: 'Ultramarinos', distance: '2 min andando', note: 'Todo lo básico para la nevera.' },
-    { name: 'Panadería Polvillo', type: 'Panadería', distance: '9 min andando', note: 'Pan recién hecho y bollería.' },
-    { name: 'Mercadona', type: 'Supermercado', distance: '6 min andando', note: 'Compra completa cerca de casa.' },
-  ];
+  const recommendations = t.raw('recommendationsList') as { name: string; type: string; distance: string; note: string }[];
 
   return (
     <div className="max-w-4xl mx-auto space-y-8">
@@ -66,11 +51,11 @@ export default function WelcomeBook() {
           <div className="flex-1 space-y-2">
             <div className="flex items-center gap-3 text-sm">
               <Key size={16} className="text-tinta/40" />
-              <span className="text-tinta/60">Contraseña:</span>
+              <span className="text-tinta/60">{t('password')}</span>
               <span className="font-mono font-bold text-tinta">2025Sevilla!</span>
             </div>
             <p className="text-xs text-tinta/40">
-              Fibra óptica 600 Mbps — señal 5G en toda la vivienda
+              {t('wifiNote')}
             </p>
           </div>
         </div>
@@ -97,7 +82,7 @@ export default function WelcomeBook() {
           {HOUSE_RULES.map((rule, i) => (
             <li key={i} className="flex items-center gap-3 text-tinta/80">
               <span className="text-xl">{rule.icon}</span>
-              <span className="text-sm">No fumar · No mascotas · No fiestas</span>
+              <span className="text-sm">{tRules(rule.key.replace('rules.', '') as Parameters<typeof tRules>[0])}</span>
             </li>
           ))}
         </ul>
@@ -135,7 +120,7 @@ export default function WelcomeBook() {
             >
               <span className="text-xl">{contact.icon}</span>
               <div className="flex-1">
-                <p className="text-sm font-medium text-tinta">{contact.name}</p>
+                <p className="text-sm font-medium text-tinta">{tEmergency(contact.nameKey)}</p>
                 <p className="text-xs text-tinta/50 font-mono">{contact.phone}</p>
               </div>
               <Phone size={16} className="text-red-400" />

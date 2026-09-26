@@ -6,23 +6,16 @@ import { useTranslations } from 'next-intl';
 import { X, ChevronLeft, ChevronRight, Grid3X3, Maximize2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const PHOTOS = [
-  { src: '/fotos/foto1.jpg', alt: 'Salón principal', caption: 'Salón acogedor con decoración andaluza' },
-  { src: '/fotos/foto2.jpg', alt: 'Dormitorio principal', caption: 'Dormitorio principal con cama de matrimonio' },
-  { src: '/fotos/foto3.jpg', alt: 'Segunda habitación', caption: 'Segunda habitación con dos camas individuales' },
-  { src: '/fotos/foto4.jpg', alt: 'Baño', caption: 'Baño completo con ducha' },
-  { src: '/fotos/foto5.jpg', alt: 'Cocina', caption: 'Cocina completamente equipada' },
-  { src: '/fotos/foto6.jpg', alt: 'Vista ciudad', caption: 'Vistas al barrio de Sevilla' },
-  { src: '/fotos/foto7.jpg', alt: 'Detalles decorativos', caption: 'Detalles de cerámica sevillana' },
-  { src: '/fotos/foto8.jpg', alt: 'Zona de estar', caption: 'Zona de estar con sofá cómodo' },
-  { src: '/fotos/foto9.jpg', alt: 'Terraza', caption: 'Acceso a terraza exterior' },
-  { src: '/fotos/foto10.jpg', alt: 'Entrada', caption: 'Entrada y acceso al apartamento' },
-  { src: '/fotos/foto11.jpg', alt: 'Mesa comedor', caption: 'Mesa de comedor para 4 personas' },
-  { src: '/fotos/foto12.jpg', alt: 'Ventana', caption: 'Ventanas con vistas a la calle' },
+const PHOTO_SRCS = [
+  '/fotos/foto1.jpg', '/fotos/foto2.jpg', '/fotos/foto3.jpg', '/fotos/foto4.jpg',
+  '/fotos/foto5.jpg', '/fotos/foto6.jpg', '/fotos/foto7.jpg', '/fotos/foto8.jpg',
+  '/fotos/foto9.jpg', '/fotos/foto10.jpg', '/fotos/foto11.jpg', '/fotos/foto12.jpg',
 ];
 
 export default function Gallery() {
   const t = useTranslations('gallery');
+  const photoTexts = t.raw('photos') as { alt: string; caption: string }[];
+  const PHOTOS = PHOTO_SRCS.map((src, i) => ({ src, alt: photoTexts[i]?.alt ?? '', caption: photoTexts[i]?.caption ?? '' }));
   const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
   const [showAll, setShowAll] = useState(false);
 

@@ -20,6 +20,7 @@ export default async function PreCheckinPage({
   searchParams: { ref?: string; checkin?: string };
 }) {
   unstable_setRequestLocale(locale);
+  const t = await getTranslations('guestPortal');
 
   return (
     <div className="min-h-screen bg-crema py-12 px-4 sm:px-8">
@@ -30,10 +31,10 @@ export default async function PreCheckinPage({
             ES
           </div>
           <h1 className="text-3xl md:text-4xl font-serif text-tinta mb-2">
-            Pre-check-in
+            {t('preCheckin.pageTitle')}
           </h1>
           <p className="text-tinta/60 max-w-lg mx-auto">
-            Completa tus datos antes de tu llegada para agilizar el check-in y cumplir con la normativa española de registro de viajeros.
+            {t('preCheckin.pageIntro')}
           </p>
         </div>
 

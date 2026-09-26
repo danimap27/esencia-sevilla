@@ -136,13 +136,13 @@ export default function LocationSection() {
             {/* Airport transfer CTA */}
             {activeArrival === 'airport' && (
               <div className="mt-6 p-5 rounded-2xl bg-terracota-50 border border-terracota-200">
-                <p className="font-medium text-tinta mb-1">¿Prefieres un traslado privado?</p>
-                <p className="text-sm text-tinta/70 mb-3">Recogida personalizada en el aeropuerto por 35€</p>
+                <p className="font-medium text-tinta mb-1">{t('privateTransfer')}</p>
+                <p className="text-sm text-tinta/70 mb-3">{t('privateTransferDesc')}</p>
                 <button
                   onClick={() => document.querySelector('#reservar')?.scrollIntoView({ behavior: 'smooth' })}
                   className="btn-primary text-sm py-2"
                 >
-                  🚗 Añadir traslado al reservar
+                  🚗 {t('addTransfer')}
                 </button>
               </div>
             )}

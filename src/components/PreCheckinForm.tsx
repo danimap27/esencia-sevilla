@@ -61,10 +61,10 @@ export default function PreCheckinForm({ bookingRef }: { bookingRef?: string }) 
         setSuccess(true);
       } else {
         const data = await res.json();
-        setError(data.error || 'Error al enviar');
+        setError(data.error || tCommon('sendError'));
       }
     } catch {
-      setError('Error de conexión');
+      setError(tCommon('connectionError'));
     }
     setSubmitting(false);
   };
@@ -75,7 +75,7 @@ export default function PreCheckinForm({ bookingRef }: { bookingRef?: string }) 
         <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
           <Check size={32} className="text-green-600" />
         </div>
-        <h3 className="text-xl font-serif text-tinta mb-2">¡Pre-check-in completado!</h3>
+        <h3 className="text-xl font-serif text-tinta mb-2">{t('preCheckin.done')}</h3>
         <p className="text-tinta/70 mb-4">
           {t('preCheckin.success')}
         </p>

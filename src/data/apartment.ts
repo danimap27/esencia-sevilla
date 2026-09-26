@@ -2,7 +2,7 @@ import { ApartmentInfo, BookingUpsell } from '@/types';
 
 export const APARTMENT: ApartmentInfo = {
   name: 'Esencia Sevilla',
-  address: 'Imaginero Luis Alvarez Duarte N7, 41008 Sevilla, España',
+  address: 'Imaginero Luis Álvarez Duarte 7, 41008 Sevilla, España',
   lat: 37.3968636,
   lng: -5.9742189,
   registrationNumber: 'AT/SE/03584',
@@ -81,12 +81,12 @@ export const HOUSE_RULES = [
 ] as const;
 
 export const EMERGENCY_CONTACTS = [
-  { icon: '🚨', name: '112 — Emergencias', phone: '112' },
-  { icon: '👮', name: 'Policía Nacional', phone: '091' },
-  { icon: '🏥', name: 'Hospital Virgen del Rocío', phone: '+34 955 012 000' },
-  { icon: '💊', name: 'Farmacia de guardia', phone: '024 (consultar)' },
-  { icon: '🚕', name: 'Teletaxi Sevilla', phone: '+34 954 622 222' },
-  { icon: '🔧', name: 'Propietario / Host', phone: '+34 600 000 000' },
+  { icon: '🚨', nameKey: '112', phone: '112' },
+  { icon: '👮', nameKey: 'police', phone: '091' },
+  { icon: '🏥', nameKey: 'hospital', phone: '+34 955 012 000' },
+  { icon: '💊', nameKey: 'pharmacy', phone: '024 (consultar)' },
+  { icon: '🚕', nameKey: 'taxi', phone: '+34 954 622 222' },
+  { icon: '🔧', nameKey: 'host', phone: '+34 600 000 000' },
 ] as const;
 
 export const ARRIVAL_INSTRUCTIONS = {

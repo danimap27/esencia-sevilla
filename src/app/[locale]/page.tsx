@@ -104,7 +104,7 @@ function StructuredData({ locale }: { locale: Locale }) {
     image: [absoluteUrl('/og-image.jpg'), absoluteUrl('/fotos/foto1.jpg')],
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Imaginero Luis Alvarez Duarte N7',
+      streetAddress: 'Imaginero Luis Álvarez Duarte 7',
       addressLocality: 'Sevilla',
       postalCode: '41008',
       addressCountry: 'ES',

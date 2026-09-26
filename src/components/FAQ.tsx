@@ -34,7 +34,7 @@ export default function FAQ() {
               type="text"
               value={search}
               onChange={e => setSearch(e.target.value)}
-              placeholder="Buscar pregunta..."
+              placeholder={t('searchPlaceholder')}
               className="input pl-11 pr-4 py-3"
             />
           </div>
@@ -91,15 +91,15 @@ export default function FAQ() {
 
         {/* Contact CTA */}
         <div className="mt-12 text-center p-8 rounded-3xl bg-gradient-to-br from-terracota-50 to-ocre-50 border border-terracota-100">
-          <p className="text-lg font-serif mb-2">¿No encuentras tu respuesta?</p>
-          <p className="text-tinta/70 mb-4">Contacta con nosotros directamente por WhatsApp</p>
+          <p className="text-lg font-serif mb-2">{t('noAnswer')}</p>
+          <p className="text-tinta/70 mb-4">{t('contactDirect')}</p>
           <a
-            href={`https://wa.me/${process.env.NEXT_PUBLIC_APARTMENT_WHATSAPP || '34600000000'}?text=Hola! Tengo una pregunta sobre el apartamento Esencia Sevilla`}
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_APARTMENT_WHATSAPP || '34600000000'}?text=${encodeURIComponent(t('whatsappMessage'))}`}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex"
           >
-            💬 Escríbenos por WhatsApp
+            💬 {t('whatsappCta')}
           </a>
         </div>
       </div>

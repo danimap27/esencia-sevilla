@@ -8,13 +8,7 @@ import { APARTMENT, NEARBY_LANDMARKS } from '@/data/apartment';
 import { calculatePrice } from '@/lib/utils';
 import { addDays } from 'date-fns';
 
-const HERO_IMAGES = [
-  { src: '/fotos/foto1.jpg', alt: 'Salón principal de Esencia Sevilla' },
-  { src: '/fotos/foto2.jpg', alt: 'Dormitorio principal con cama king' },
-  { src: '/fotos/foto3.jpg', alt: 'Cocina completamente equipada' },
-  { src: '/fotos/foto4.jpg', alt: 'Baño con ducha y amenities' },
-  { src: '/fotos/foto5.jpg', alt: 'Vista desde el balcón al barrio' },
-];
+const HERO_SRCS = ['/fotos/foto1.jpg', '/fotos/foto2.jpg', '/fotos/foto3.jpg', '/fotos/foto4.jpg', '/fotos/foto5.jpg'];
 
 const TRUST_BADGES = [
   { icon: Shield, key: 'checkin' },
@@ -25,6 +19,14 @@ const TRUST_BADGES = [
 
 export default function Hero({ onScrollToBooking }: { onScrollToBooking?: () => void }) {
   const t = useTranslations('hero');
+  const heroAlts = t.raw('photoAlts') as string[];
+  const HERO_IMAGES = HERO_SRCS.map((src, i) => ({ src, alt: heroAlts[i] ?? '' }));
+  const landmarkTexts = t.raw('landmarks') as { name: string; distance: string }[];
+  const LANDMARKS = NEARBY_LANDMARKS.map((lm, i) => ({
+    ...lm,
+    name: landmarkTexts[i]?.name ?? lm.name,
+    distance: landmarkTexts[i]?.distance ?? lm.distance,
+  }));
   const [currentImage, setCurrentImage] = useState(0);
   const [savings, setSavings] = useState(0);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -252,7 +254,7 @@ export default function Hero({ onScrollToBooking }: { onScrollToBooking?: () => 
 
         {/* Nearby landmarks */}
         <div className="mt-8 mb-4 flex flex-wrap gap-2 animate-slide-up-fade" style={{ animationDelay: '0.7s' }}>
-          {NEARBY_LANDMARKS.slice(0, 5).map((landmark) => (
+          {LANDMARKS.slice(0, 5).map((landmark) => (
             <span
               key={landmark.name}
               className="text-xs text-white/60 flex items-center gap-1 hover:text-white/80 transition-colors duration-200"

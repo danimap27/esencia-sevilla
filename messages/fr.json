@@ -26,7 +26,48 @@
    "wifi": "WiFi ultra-rapide",
    "ac": "Climatisation dans toutes les pièces",
    "location": "Près de Santa Justa (AVE)"
-  }
+  },
+  "photoAlts": [
+   "Salon principal d'Esencia Sevilla",
+   "Chambre principale avec lit king size",
+   "Cuisine entièrement équipée",
+   "Salle de bain avec douche et équipements",
+   "Vue depuis le balcon sur le quartier"
+  ],
+  "landmarks": [
+   {
+    "name": "Cathédrale de Séville",
+    "distance": "26 min à pied"
+   },
+   {
+    "name": "La Giralda",
+    "distance": "26 min à pied"
+   },
+   {
+    "name": "Alcázar royal",
+    "distance": "27 min à pied"
+   },
+   {
+    "name": "Quartier Santa Cruz",
+    "distance": "24 min à pied"
+   },
+   {
+    "name": "Plaza de España",
+    "distance": "31 min à pied"
+   },
+   {
+    "name": "Archives des Indes",
+    "distance": "26 min à pied"
+   },
+   {
+    "name": "Torre del Oro",
+    "distance": "32 min à pied"
+   },
+   {
+    "name": "Musée des Beaux-Arts",
+    "distance": "20 min à pied"
+   }
+  ]
  },
  "comparison": {
   "title": "Pourquoi réserver ici ?",
@@ -108,7 +149,10 @@
   "processing": "Traitement...",
   "noAvailability": "Pas de disponibilité pour ces dates",
   "contactUs": "Contactez-nous pour une disponibilité spéciale",
-  "cta": "Réserver"
+  "cta": "Réserver",
+  "freeCancel": "Annulation gratuite",
+  "approxNote": "Cette option est environ 10 % plus chère que la réservation directe.",
+  "maxGuests": "Max. {count}"
  },
  "gallery": {
   "title": "L'appartement",
@@ -122,7 +166,57 @@
   "noPhotos": "Nous préparons la visite virtuelle 360°. Revenez bientôt pour parcourir l'appartement comme si vous y étiez.",
   "tourDesc": "Parcourez chaque pièce avant d'arriver : salon, chambres, cuisine et salle de bain en 360°, comme si vous y étiez.",
   "tourCta": "Explorer la visite",
-  "tourViews": "{count} vues à 360°"
+  "tourViews": "{count} vues à 360°",
+  "photos": [
+   {
+    "alt": "Salon principal",
+    "caption": "Salon confortable avec décoration andalouse"
+   },
+   {
+    "alt": "Chambre principale",
+    "caption": "Chambre principale avec lit double"
+   },
+   {
+    "alt": "Deuxième chambre",
+    "caption": "Deuxième chambre avec deux lits simples"
+   },
+   {
+    "alt": "Salle de bain",
+    "caption": "Salle de bain complète avec douche"
+   },
+   {
+    "alt": "Cuisine",
+    "caption": "Cuisine entièrement équipée"
+   },
+   {
+    "alt": "Vue sur la ville",
+    "caption": "Vues sur le quartier de Séville"
+   },
+   {
+    "alt": "Détails décoratifs",
+    "caption": "Détails en céramique sévillane"
+   },
+   {
+    "alt": "Coin salon",
+    "caption": "Coin salon avec canapé confortable"
+   },
+   {
+    "alt": "Terrasse",
+    "caption": "Accès à la terrasse extérieure"
+   },
+   {
+    "alt": "Entrée",
+    "caption": "Entrée et accès à l'appartement"
+   },
+   {
+    "alt": "Table à manger",
+    "caption": "Table à manger pour 4 personnes"
+   },
+   {
+    "alt": "Fenêtre",
+    "caption": "Fenêtres donnant sur la rue"
+   }
+  ]
  },
  "map": {
   "title": "Explorez Séville depuis votre appartement",
@@ -170,7 +264,8 @@
    "nearestStop": "Arrêt le plus proche de l'appartement",
    "lines": "Lignes disponibles",
    "frequency": "Fréquence",
-   "price": "Prix"
+   "price": "Prix",
+   "nearestStopLine": "Arrêt le plus proche : Arroyo (Vicente Alanís) — 2 min à pied"
   },
   "fullRoute": "Itinéraire complet dans Google Maps",
   "bestTime": "Meilleur moment",
@@ -216,7 +311,11 @@
    "booking": "Booking.com",
    "airbnb": "Airbnb",
    "direct": "Réservation directe"
-  }
+  },
+  "readMore": "Lire plus",
+  "showLess": "Voir moins",
+  "leaveGoogle": "Laisser un avis Google",
+  "leaveBooking": "Noter sur Booking"
  },
  "faq": {
   "title": "Questions fréquentes",
@@ -262,12 +361,17 @@
    "a19": "À la confirmation de votre réservation, vous recevrez un lien pour compléter le pré-enregistrement : données du passeport, heure d'arrivée estimée et préférences. Cela nous permet de préparer votre arrivée et de respecter la réglementation espagnole d'enregistrement des voyageurs.",
    "q20": "Quel est le numéro d'enregistrement touristique de l'appartement ?",
    "a20": "Numéro d'enregistrement touristique de la Junte d'Andalousie : AT/SE/03584. Vous pouvez le vérifier dans le Registre du Tourisme d'Andalousie."
-  }
+  },
+  "searchPlaceholder": "Rechercher une question...",
+  "noAnswer": "Vous ne trouvez pas votre réponse ?",
+  "contactDirect": "Contactez-nous directement sur WhatsApp",
+  "whatsappCta": "Écrivez-nous sur WhatsApp",
+  "whatsappMessage": "Bonjour ! J'ai une question sur l'appartement Esencia Sevilla"
  },
  "location": {
   "title": "Où sommes-nous",
   "subtitle": "Bien connecté : AVE à 7 min à pied, centre à 10 min en bus ou taxi",
-  "address": "Imaginero Luis Alvarez Duarte N7, 41008 Séville",
+  "address": "Imaginero Luis Álvarez Duarte 7, 41008 Séville",
   "howToArrive": "Comment arriver",
   "fromAirport": "Depuis l'aéroport SVQ",
   "fromStation": "Depuis Santa Justa (Renfe)",
@@ -290,7 +394,10 @@
     "step2": "Entrez dans le GPS : Imaginero Luis Álvarez Duarte, 7, Séville",
     "step3": "Zone de chargement devant l'immeuble ; stationnement dans le quartier"
    }
-  }
+  },
+  "privateTransfer": "Vous préférez un transfert privé ?",
+  "privateTransferDesc": "Prise en charge personnalisée à l'aéroport pour 35 €",
+  "addTransfer": "Ajouter le transfert lors de la réservation"
  },
  "chat": {
   "title": "Assistant Esencia Sevilla",
@@ -332,7 +439,10 @@
    "birthDate": "Date de naissance",
    "submit": "Confirmer le pré-enregistrement",
    "success": "Pré-enregistrement complété ! Vous recevrez le code d'accès 24h avant votre arrivée.",
-   "legalNote": "Données requises par la Loi Organique de Sécurité Citoyenne (Espagne) pour l'enregistrement des voyageurs."
+   "legalNote": "Données requises par la Loi Organique de Sécurité Citoyenne (Espagne) pour l'enregistrement des voyageurs.",
+   "done": "Pré-enregistrement terminé !",
+   "pageTitle": "Pré-enregistrement",
+   "pageIntro": "Complétez vos informations avant votre arrivée pour accélérer l'enregistrement et respecter la réglementation espagnole sur le registre des voyageurs."
   }
  },
  "welcomeBook": {
@@ -345,7 +455,82 @@
   "emergencies": "Urgences",
   "appliances": "Électroménager",
   "checkoutSteps": "Étapes du départ",
-  "recommendations": "Recommandations de l'hôte"
+  "recommendations": "Recommandations de l'hôte",
+  "password": "Mot de passe :",
+  "wifiNote": "Fibre 600 Mbps, signal 5G dans tout l'appartement",
+  "pageTitle": "Livret d'accueil",
+  "pageSubtitle": "Tout ce qu'il vous faut pour profiter de votre séjour à {name}.",
+  "appliancesList": [
+   {
+    "name": "Réfrigérateur",
+    "instructions": "Réfrigérateur combiné : réglez la température sur le panneau intérieur. Congélateur en bas."
+   },
+   {
+    "name": "Machine Nespresso",
+    "instructions": "1. Remplissez le réservoir d'eau. 2. Insérez une capsule. 3. Appuyez sur le bouton espresso (40 ml) ou lungo (110 ml)."
+   },
+   {
+    "name": "Climatisation",
+    "instructions": "Télécommande dans le salon. Mode Cool à 22-24 °C recommandé en été."
+   },
+   {
+    "name": "Smart TV",
+    "instructions": "Télécommande sur la table basse. Netflix/Prime Video disponibles avec votre compte. Port USB disponible."
+   },
+   {
+    "name": "Chauffe-eau",
+    "instructions": "Chauffe-eau dans la salle de bain. Température réglable. Eau chaude disponible 24 h/24."
+   },
+   {
+    "name": "Lave-linge",
+    "instructions": "Lessive dans le placard. Programme Éco 40 °C pour un usage normal (1 h 20). Ne pas utiliser pour les vêtements délicats."
+   }
+  ],
+  "checkoutList": [
+   "Rassemblez toutes vos affaires (vérifiez tiroirs, salle de bain, placards).",
+   "Fermez fenêtres et volets.",
+   "Laissez les clés dans la boîte de sécurité près de la porte.",
+   "Éteignez la climatisation et les lumières.",
+   "Fermez la porte en sortant."
+  ],
+  "recommendationsList": [
+   {
+    "name": "Bar Danubio",
+    "type": "Bar de quartier",
+    "distance": "3 min à pied",
+    "note": "Petits-déjeuners et tapas à l'ancienne, ambiance locale."
+   },
+   {
+    "name": "La Rosaleda",
+    "type": "Restaurant andalou",
+    "distance": "4 min à pied",
+    "note": "Menu du jour fait maison, très populaire dans le quartier."
+   },
+   {
+    "name": "Berenice Bistrot",
+    "type": "Restaurant",
+    "distance": "2 min à pied",
+    "note": "Cuisine de marché dans un petit local."
+   },
+   {
+    "name": "Alimentación La Esquinita",
+    "type": "Épicerie",
+    "distance": "2 min à pied",
+    "note": "Tout l'essentiel pour le frigo."
+   },
+   {
+    "name": "Panadería Polvillo",
+    "type": "Boulangerie",
+    "distance": "9 min à pied",
+    "note": "Pain frais et viennoiseries."
+   },
+   {
+    "name": "Mercadona",
+    "type": "Supermarché",
+    "distance": "6 min à pied",
+    "note": "Courses complètes près de chez vous."
+   }
+  ]
  },
  "footer": {
   "tagline": "Votre maison à Séville",
@@ -360,7 +545,10 @@
   "contact": "Contact",
   "followUs": "Suivez-nous",
   "copyright": "© {year} Esencia Sevilla. Tous droits réservés.",
-  "madeWith": "Fait avec amour à Séville"
+  "madeWith": "Fait avec amour à Séville",
+  "nav": "Navigation",
+  "home": "Accueil",
+  "legal": "Mentions légales"
  },
  "blog": {
   "title": "Le Blog d'Esencia Sevilla",
@@ -407,17 +595,55 @@
   "logout": "Déconnexion"
  },
  "guide": {
-  "title": "Guide Touristique Esencia Sevilla",
-  "subtitle": "Tout ce dont vous avez besoin pour profiter de Séville",
-  "offline": "Disponible hors ligne",
-  "sections": {
-   "map": "Carte",
-   "transport": "Transport",
-   "restaurants": "Restaurants",
-   "events": "Événements",
-   "apartment": "L'Appartement",
-   "emergency": "Urgences"
-  }
+  "headerTitle": "Guide Touristique",
+  "langLabel": "Langue :",
+  "back": "Retour",
+  "offline": "Hors ligne",
+  "welcomeTitle": "Bienvenue à Séville 🌟",
+  "welcomeText": "Votre guide personnel pour découvrir le meilleur de la capitale andalouse. Tout ce dont vous avez besoin, hors ligne.",
+  "quickInfo": {
+   "wifi": "WiFi",
+   "checkin": "Arrivée",
+   "checkout": "Départ",
+   "emergency": "Urgences",
+   "checkinFrom": "À partir de",
+   "checkoutBefore": "Avant"
+  },
+  "weatherTitle": "☀️ Météo à Séville",
+  "mapTitle": "🗺️ Carte de Séville",
+  "routesTitle": "🧭 Itinéraires à pied recommandés",
+  "routesText": "Des itinéraires à travers Séville et sa province avec étapes, histoire et conseils. Touchez-en un pour voir le parcours complet avec carte.",
+  "routeCta": "Voir l'itinéraire",
+  "apartmentTitle": "🏠 Votre appartement",
+  "apartmentText": "Vous êtes dans le quartier de San Pablo-Santa Justa, à 7 minutes à pied de la gare AVE Santa Justa et à environ 10 minutes du centre en bus ou en taxi.",
+  "addressLabel": "Adresse",
+  "arriveLabel": "Comment venir",
+  "arriveText": "Depuis l'aéroport : bus EA jusqu'à Santa Justa et 7 minutes à pied. Depuis le centre : bus C1/C2 ou taxi (10 min). Arrêt de bus le plus proche : Arroyo (Vicente Alanís), à 2 min.",
+  "contactLabel": "Contact",
+  "contactText": "Pour toute question pendant votre séjour, écrivez-nous sur WhatsApp :",
+  "eventsTitle": "🎭 Événements à Séville",
+  "moreInfo": "Plus d'infos",
+  "emergencyTitle": "🚨 Contacts d'urgence",
+  "rulesTitle": "📋 Règles de la maison",
+  "rules": [
+   "🚭 Non-fumeur",
+   "🐾 Pas d'animaux",
+   "🔇 Silence après 22h00",
+   "👥 Max. 4 personnes",
+   "🎉 Pas de fêtes",
+   "🔑 Arrivée autonome"
+  ],
+  "checkoutTitle": "✅ Départ (avant 11h00)",
+  "checkoutSteps": [
+   "Laissez les clés dans la boîte de sécurité",
+   "Éteignez tous les climatiseurs",
+   "Fermez fenêtres et volets",
+   "Laissez les serviettes dans la salle de bain",
+   "Videz le réfrigérateur",
+   "Laissez un avis ! 😊"
+  ],
+  "registryLabel": "Nº d'enregistrement",
+  "allRoutes": "Voir tous les itinéraires"
  },
  "common": {
   "loading": "Chargement...",
@@ -438,7 +664,9 @@
   "perNight": "/ nuit",
   "euros": "€",
   "showMore": "Voir plus",
-  "showLess": "Voir moins"
+  "showLess": "Voir moins",
+  "connectionError": "Erreur de connexion",
+  "sendError": "Erreur d'envoi"
  },
  "seo": {
   "homeTitle": "Appartement Touristique à Séville près de Santa Justa | Esencia Sevilla",
@@ -485,5 +713,112 @@
    "laundry": "Pressing"
   },
   "all": "Tous"
+ },
+ "rules": {
+  "noSmoking": "Non-fumeur",
+  "noPets": "Pas d'animaux",
+  "quietHours": "Silence après 22h00",
+  "maxGuests": "Max. 4 personnes",
+  "noParties": "Pas de fêtes",
+  "selfCheckin": "Arrivée autonome"
+ },
+ "emergency": {
+  "112": "112 - Urgences",
+  "police": "Police nationale",
+  "hospital": "Hôpital Virgen del Rocío",
+  "pharmacy": "Pharmacie de garde",
+  "taxi": "Teletaxi Séville",
+  "host": "Propriétaire / Hôte"
+ },
+ "privacy": {
+  "title": "Politique de Confidentialité",
+  "home": "Accueil",
+  "updated": "Dernière mise à jour :",
+  "sections": [
+   {
+    "t": "1. Responsable du traitement",
+    "p": [
+     "Conformément au Règlement (UE) 2016/679 (RGPD) et à la loi organique 3/2018 (LOPDGDD), nous vous informons que le responsable du traitement de vos données personnelles est :"
+    ],
+    "list": [
+     "Nom : Esencia Sevilla",
+     "Adresse : {address}",
+     "Email : {email}",
+     "Nº d'enregistrement touristique : {reg}"
+    ]
+   },
+   {
+    "t": "2. Données collectées",
+    "p": [
+     "Nous collectons les données personnelles suivantes :"
+    ],
+    "list": [
+     "Données de réservation : nom, email, téléphone, dates de séjour, nombre de personnes",
+     "Données de paiement : traitées exclusivement par Stripe (nous ne stockons pas de données bancaires)",
+     "Pré-enregistrement : données de la pièce d'identité, date de naissance, nationalité (exigées par la loi)",
+     "Communications : messages de chat ou emails envoyés via le site",
+     "Données techniques : adresse IP, type de navigateur, pages visitées (via Google Analytics)"
+    ]
+   },
+   {
+    "t": "3. Finalité et base légale",
+    "p": [
+     "Nous traitons vos données pour :"
+    ],
+    "list": [
+     "Gestion des réservations : exécution du contrat (art. 6.1.b RGPD)",
+     "Registre des voyageurs : obligation légale, loi organique 4/2015 sur la sécurité citoyenne (art. 6.1.c RGPD)",
+     "Communications liées à la réservation : exécution du contrat",
+     "Marketing/newsletter : consentement de l'intéressé (art. 6.1.a RGPD)",
+     "Analytics : intérêt légitime pour améliorer le service"
+    ]
+   },
+   {
+    "t": "4. Cession à des tiers",
+    "p": [
+     "Vos données pourront être cédées à :"
+    ],
+    "list": [
+     "Forces de sécurité (SES.HOSPEDERÍA) : obligation légale",
+     "Stripe Inc. : traitement des paiements (certifié PCI-DSS)",
+     "Resend/SendGrid : envoi d'emails transactionnels",
+     "Supabase : stockage des données (serveurs dans l'UE)",
+     "Google Analytics : données anonymisées pour l'analyse du trafic"
+    ]
+   },
+   {
+    "t": "5. Conservation des données",
+    "p": [],
+    "list": [
+     "Données de réservation : 5 ans (obligation fiscale)",
+     "Données du registre des voyageurs : 3 ans (réglementation policière)",
+     "Données de communication : jusqu'à 2 ans après le dernier contact"
+    ]
+   },
+   {
+    "t": "6. Vos droits",
+    "p": [
+     "Vous pouvez exercer les droits suivants en envoyant un email à {email} :"
+    ],
+    "list": [
+     "Accès : connaître les données que nous détenons",
+     "Rectification : corriger les données inexactes",
+     "Effacement : demander la suppression (en l'absence d'obligation légale)",
+     "Portabilité : recevoir vos données sous format électronique",
+     "Opposition : vous opposer au traitement à des fins de marketing",
+     "Limitation : restreindre le traitement dans certaines circonstances"
+    ],
+    "after": {
+     "pre": "Vous pouvez également déposer une réclamation auprès de l'",
+     "link": "Agence espagnole de protection des données (AEPD)"
+    }
+   },
+   {
+    "t": "7. Cookies",
+    "p": [
+     "Nous utilisons des cookies propres (session) et de tiers (Google Analytics, Meta Pixel). Vous pouvez gérer vos préférences dans la bannière cookies ou dans les paramètres de votre navigateur."
+    ]
+   }
+  ]
  }
 }

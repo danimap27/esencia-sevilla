@@ -173,7 +173,7 @@ export default function BookingSection() {
           >
             <div className="flex items-center justify-center gap-2">
               <ExternalLink size={16} />
-              <span>Cancelación gratuita</span>
+              <span>{t('freeCancel')}</span>
             </div>
           </button>
         </div>
@@ -182,13 +182,13 @@ export default function BookingSection() {
           /* Booking.com redirect */
           <div className="max-w-2xl mx-auto card p-8 text-center">
             <div className="text-5xl mb-4">🏨</div>
-            <h3 className="text-2xl font-serif mb-3">Cancelación gratuita</h3>
+            <h3 className="text-2xl font-serif mb-3">{t('freeCancel')}</h3>
             <p className="text-tinta-lighter mb-2">
               {t('nonRefundableNote')}{' '}
               <strong className="text-azulejo-500">Booking.com</strong>
             </p>
             <p className="text-sm text-tinta/50 mb-6">
-              Esta opción tiene un precio aprox. 10% más alto que la reserva directa.
+              {t('approxNote')}
             </p>
             <a
               href={BOOKING_COM_URL}
@@ -209,7 +209,7 @@ export default function BookingSection() {
               <div className="card p-6">
                 <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                   <Calendar size={18} className="text-terracota-500" />
-                  Selecciona las fechas
+                  {t('selectDates')}
                 </h3>
                 <div className="flex justify-center overflow-x-auto">
                   <DayPicker
@@ -280,7 +280,7 @@ export default function BookingSection() {
                   >
                     +
                   </button>
-                  <span className="text-sm text-tinta/50">Máx. {APARTMENT.maxGuests}</span>
+                  <span className="text-sm text-tinta/50">{t('maxGuests', { count: APARTMENT.maxGuests })}</span>
                 </div>
               </div>
 

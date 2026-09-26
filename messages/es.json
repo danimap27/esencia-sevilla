@@ -26,7 +26,48 @@
    "wifi": "WiFi ultrarrápido",
    "ac": "A/C en todas las habitaciones",
    "location": "Junto a Santa Justa (AVE)"
-  }
+  },
+  "photoAlts": [
+   "Salón principal de Esencia Sevilla",
+   "Dormitorio principal con cama king",
+   "Cocina completamente equipada",
+   "Baño con ducha y amenities",
+   "Vista desde el balcón al barrio"
+  ],
+  "landmarks": [
+   {
+    "name": "Catedral de Sevilla",
+    "distance": "26 min a pie"
+   },
+   {
+    "name": "La Giralda",
+    "distance": "26 min a pie"
+   },
+   {
+    "name": "Real Alcázar",
+    "distance": "27 min a pie"
+   },
+   {
+    "name": "Barrio de Santa Cruz",
+    "distance": "24 min a pie"
+   },
+   {
+    "name": "Plaza de España",
+    "distance": "31 min a pie"
+   },
+   {
+    "name": "Archivo de Indias",
+    "distance": "26 min a pie"
+   },
+   {
+    "name": "Torre del Oro",
+    "distance": "32 min a pie"
+   },
+   {
+    "name": "Museo de Bellas Artes",
+    "distance": "20 min a pie"
+   }
+  ]
  },
  "comparison": {
   "title": "¿Por qué reservar aquí?",
@@ -108,7 +149,10 @@
   "processing": "Procesando...",
   "noAvailability": "Sin disponibilidad en estas fechas",
   "contactUs": "Contactar para disponibilidad especial",
-  "cta": "Reservar"
+  "cta": "Reservar",
+  "freeCancel": "Cancelación gratuita",
+  "approxNote": "Esta opción tiene un precio aprox. 10% más alto que la reserva directa.",
+  "maxGuests": "Máx. {count}"
  },
  "gallery": {
   "title": "El apartamento",
@@ -122,7 +166,57 @@
   "noPhotos": "Estamos preparando el tour virtual 360°. Vuelve pronto para recorrer el apartamento como si estuvieras dentro.",
   "tourDesc": "Recorre cada habitación antes de llegar: salón, dormitorios, cocina y baño en 360°, como si ya estuvieras dentro.",
   "tourCta": "Explorar el tour",
-  "tourViews": "{count} vistas en 360°"
+  "tourViews": "{count} vistas en 360°",
+  "photos": [
+   {
+    "alt": "Salón principal",
+    "caption": "Salón acogedor con decoración andaluza"
+   },
+   {
+    "alt": "Dormitorio principal",
+    "caption": "Dormitorio principal con cama de matrimonio"
+   },
+   {
+    "alt": "Segunda habitación",
+    "caption": "Segunda habitación con dos camas individuales"
+   },
+   {
+    "alt": "Baño",
+    "caption": "Baño completo con ducha"
+   },
+   {
+    "alt": "Cocina",
+    "caption": "Cocina completamente equipada"
+   },
+   {
+    "alt": "Vista ciudad",
+    "caption": "Vistas al barrio de Sevilla"
+   },
+   {
+    "alt": "Detalles decorativos",
+    "caption": "Detalles de cerámica sevillana"
+   },
+   {
+    "alt": "Zona de estar",
+    "caption": "Zona de estar con sofá cómodo"
+   },
+   {
+    "alt": "Terraza",
+    "caption": "Acceso a terraza exterior"
+   },
+   {
+    "alt": "Entrada",
+    "caption": "Entrada y acceso al apartamento"
+   },
+   {
+    "alt": "Mesa comedor",
+    "caption": "Mesa de comedor para 4 personas"
+   },
+   {
+    "alt": "Ventana",
+    "caption": "Ventanas con vistas a la calle"
+   }
+  ]
  },
  "map": {
   "title": "Explora Sevilla desde tu apartamento",
@@ -170,7 +264,8 @@
    "nearestStop": "Parada más cercana al apartamento",
    "lines": "Líneas disponibles",
    "frequency": "Frecuencia",
-   "price": "Precio"
+   "price": "Precio",
+   "nearestStopLine": "Parada más cercana: Arroyo (Vicente Alanís) — 2 min a pie"
   },
   "fullRoute": "Ruta completa en Google Maps",
   "bestTime": "Mejor hora",
@@ -216,7 +311,11 @@
    "booking": "Booking.com",
    "airbnb": "Airbnb",
    "direct": "Reserva directa"
-  }
+  },
+  "readMore": "Leer más",
+  "showLess": "Ver menos",
+  "leaveGoogle": "Dejar reseña en Google",
+  "leaveBooking": "Reseñar en Booking"
  },
  "faq": {
   "title": "Preguntas frecuentes",
@@ -262,12 +361,17 @@
    "a19": "Al confirmar tu reserva recibirás un enlace para completar el pre-check-in: datos del pasaporte, hora estimada de llegada y preferencias. Esto nos permite preparar todo para tu llegada y cumplir con la normativa española de registro de viajeros.",
    "q20": "¿Cuál es el número de registro turístico del apartamento?",
    "a20": "Número de registro turístico de la Junta de Andalucía: AT/SE/03584. Puedes verificarlo en el Registro de Turismo de Andalucía."
-  }
+  },
+  "searchPlaceholder": "Buscar pregunta...",
+  "noAnswer": "¿No encuentras tu respuesta?",
+  "contactDirect": "Contacta con nosotros directamente por WhatsApp",
+  "whatsappCta": "Escríbenos por WhatsApp",
+  "whatsappMessage": "Hola! Tengo una pregunta sobre el apartamento Esencia Sevilla"
  },
  "location": {
   "title": "Dónde estamos",
   "subtitle": "Bien conectado: AVE a 7 min andando y centro a 10 min en bus o taxi",
-  "address": "Imaginero Luis Alvarez Duarte N7, 41008 Sevilla",
+  "address": "Imaginero Luis Álvarez Duarte 7, 41008 Sevilla",
   "howToArrive": "Cómo llegar",
   "fromAirport": "Desde el Aeropuerto SVQ",
   "fromStation": "Desde Santa Justa (Renfe)",
@@ -290,7 +394,10 @@
     "step2": "Introduce en el GPS: Imaginero Luis Álvarez Duarte, 7, Sevilla",
     "step3": "Zona de carga/descarga frente al edificio; aparcamiento en la zona"
    }
-  }
+  },
+  "privateTransfer": "¿Prefieres un traslado privado?",
+  "privateTransferDesc": "Recogida personalizada en el aeropuerto por 35€",
+  "addTransfer": "Añadir traslado al reservar"
  },
  "chat": {
   "title": "Asistente Esencia Sevilla",
@@ -332,7 +439,10 @@
    "birthDate": "Fecha de nacimiento",
    "submit": "Confirmar pre-check-in",
    "success": "¡Pre-check-in completado! Recibirás el código de acceso 24h antes de tu llegada.",
-   "legalNote": "Datos requeridos por la Ley Orgánica de Seguridad Ciudadana (España) para el registro de viajeros."
+   "legalNote": "Datos requeridos por la Ley Orgánica de Seguridad Ciudadana (España) para el registro de viajeros.",
+   "done": "¡Pre-check-in completado!",
+   "pageTitle": "Pre-check-in",
+   "pageIntro": "Completa tus datos antes de tu llegada para agilizar el check-in y cumplir con la normativa española de registro de viajeros."
   }
  },
  "welcomeBook": {
@@ -345,7 +455,82 @@
   "emergencies": "Emergencias",
   "appliances": "Electrodomésticos",
   "checkoutSteps": "Pasos para el check-out",
-  "recommendations": "Recomendaciones del anfitrión"
+  "recommendations": "Recomendaciones del anfitrión",
+  "password": "Contraseña:",
+  "wifiNote": "Fibra óptica 600 Mbps, señal 5G en toda la vivienda",
+  "pageTitle": "Libro de Bienvenida",
+  "pageSubtitle": "Todo lo que necesitas para disfrutar tu estancia en {name}.",
+  "appliancesList": [
+   {
+    "name": "Nevera",
+    "instructions": "Nevera combi: ajusta la temperatura con el panel interior. Congelador en la parte inferior."
+   },
+   {
+    "name": "Cafetera Nespresso",
+    "instructions": "1. Rellena el depósito de agua. 2. Inserta una cápsula. 3. Pulsa el botón espresso (40 ml) o lungo (110 ml)."
+   },
+   {
+    "name": "Aire Acondicionado",
+    "instructions": "Mando a distancia en el salón. Modo Cool (nieve) a 22-24 °C recomendado en verano."
+   },
+   {
+    "name": "Smart TV",
+    "instructions": "Mando a distancia en la mesita. Netflix/Prime Video disponibles con tu cuenta. USB disponible."
+   },
+   {
+    "name": "Calentador",
+    "instructions": "Calentador de agua en el cuarto de baño. Temperatura ajustable. Agua caliente disponible 24 h."
+   },
+   {
+    "name": "Lavadora",
+    "instructions": "Detergente en el armario. Programa Eco 40 °C para uso normal (1 h 20 min). No usar para prendas delicadas."
+   }
+  ],
+  "checkoutList": [
+   "Recoge todas tus pertenencias (revisa cajones, baño, armarios).",
+   "Cierra ventanas y persianas.",
+   "Deja las llaves en la caja de seguridad junto a la puerta.",
+   "Apaga el A/C y las luces.",
+   "Cierra la puerta al salir."
+  ],
+  "recommendationsList": [
+   {
+    "name": "Bar Danubio",
+    "type": "Bar de barrio",
+    "distance": "3 min andando",
+    "note": "Desayunos y tapas de siempre, ambiente local."
+   },
+   {
+    "name": "La Rosaleda",
+    "type": "Restaurante andaluz",
+    "distance": "4 min andando",
+    "note": "Menú del día casero, muy popular en la zona."
+   },
+   {
+    "name": "Berenice Bistrot",
+    "type": "Restaurante",
+    "distance": "2 min andando",
+    "note": "Cocina de mercado en un local pequeño."
+   },
+   {
+    "name": "Alimentación La Esquinita",
+    "type": "Ultramarinos",
+    "distance": "2 min andando",
+    "note": "Todo lo básico para la nevera."
+   },
+   {
+    "name": "Panadería Polvillo",
+    "type": "Panadería",
+    "distance": "9 min andando",
+    "note": "Pan recién hecho y bollería."
+   },
+   {
+    "name": "Mercadona",
+    "type": "Supermercado",
+    "distance": "6 min andando",
+    "note": "Compra completa cerca de casa."
+   }
+  ]
  },
  "footer": {
   "tagline": "Tu hogar en Sevilla",
@@ -360,7 +545,10 @@
   "contact": "Contacto",
   "followUs": "Síguenos",
   "copyright": "© {year} Esencia Sevilla. Todos los derechos reservados.",
-  "madeWith": "Hecho con amor en Sevilla"
+  "madeWith": "Hecho con amor en Sevilla",
+  "nav": "Navegación",
+  "home": "Inicio",
+  "legal": "Legal"
  },
  "blog": {
   "title": "El Blog de Esencia Sevilla",
@@ -407,17 +595,55 @@
   "logout": "Cerrar sesión"
  },
  "guide": {
-  "title": "Guía Turística Esencia Sevilla",
-  "subtitle": "Todo lo que necesitas para disfrutar Sevilla",
-  "offline": "Disponible sin conexión",
-  "sections": {
-   "map": "Mapa",
-   "transport": "Transporte",
-   "restaurants": "Restaurantes",
-   "events": "Eventos",
-   "apartment": "El Apartamento",
-   "emergency": "Emergencias"
-  }
+  "headerTitle": "Guía Turística",
+  "langLabel": "Idioma:",
+  "back": "Volver",
+  "offline": "Offline",
+  "welcomeTitle": "Bienvenido a Sevilla 🌟",
+  "welcomeText": "Tu guía personal para descubrir lo mejor de la capital andaluza. Todo lo que necesitas, sin conexión.",
+  "quickInfo": {
+   "wifi": "WiFi",
+   "checkin": "Check-in",
+   "checkout": "Check-out",
+   "emergency": "Emergencias",
+   "checkinFrom": "Desde",
+   "checkoutBefore": "Antes de"
+  },
+  "weatherTitle": "☀️ Tiempo en Sevilla",
+  "mapTitle": "🗺️ Mapa de Sevilla",
+  "routesTitle": "🧭 Rutas a pie recomendadas",
+  "routesText": "Rutas por Sevilla y su provincia con paradas, historia y consejos. Pulsa una para ver el itinerario completo con mapa.",
+  "routeCta": "Ver ruta",
+  "apartmentTitle": "🏠 Tu apartamento",
+  "apartmentText": "Estás en el barrio de San Pablo-Santa Justa, a 7 minutos andando de la estación de AVE Santa Justa y a unos 10 minutos del centro en bus o taxi.",
+  "addressLabel": "Dirección",
+  "arriveLabel": "Cómo llegar",
+  "arriveText": "Desde el aeropuerto: bus EA hasta Santa Justa y 7 minutos andando. Desde el centro: bus C1/C2 o taxi (10 min). Parada de bus más cercana: Arroyo (Vicente Alanís), a 2 min.",
+  "contactLabel": "Contacto",
+  "contactText": "Para cualquier duda durante tu estancia, escríbenos por WhatsApp:",
+  "eventsTitle": "🎭 Eventos en Sevilla",
+  "moreInfo": "Más info",
+  "emergencyTitle": "🚨 Contactos de Emergencia",
+  "rulesTitle": "📋 Normas de la Casa",
+  "rules": [
+   "🚭 No fumar",
+   "🐾 No mascotas",
+   "🔇 Silencio 22:00",
+   "👥 Máx. 4 huéspedes",
+   "🎉 No fiestas",
+   "🔑 Check-in autónomo"
+  ],
+  "checkoutTitle": "✅ Check-out (antes de las 11:00)",
+  "checkoutSteps": [
+   "Deja las llaves en la caja de seguridad",
+   "Apaga todos los aires acondicionados",
+   "Cierra ventanas y persianas",
+   "Deja las toallas en el baño",
+   "Vacía la nevera",
+   "¡Deja una reseña! 😊"
+  ],
+  "registryLabel": "Nº Registro",
+  "allRoutes": "Ver todas las rutas"
  },
  "common": {
   "loading": "Cargando...",
@@ -438,7 +664,9 @@
   "perNight": "/ noche",
   "euros": "€",
   "showMore": "Ver más",
-  "showLess": "Ver menos"
+  "showLess": "Ver menos",
+  "connectionError": "Error de conexión",
+  "sendError": "Error al enviar"
  },
  "seo": {
   "homeTitle": "Apartamento Turístico en Sevilla junto a Santa Justa | Esencia Sevilla",
@@ -485,5 +713,112 @@
    "laundry": "Lavandería"
   },
   "all": "Todos"
+ },
+ "rules": {
+  "noSmoking": "No fumar",
+  "noPets": "No mascotas",
+  "quietHours": "Silencio 22:00",
+  "maxGuests": "Máx. 4 huéspedes",
+  "noParties": "No fiestas",
+  "selfCheckin": "Check-in autónomo"
+ },
+ "emergency": {
+  "112": "112 - Emergencias",
+  "police": "Policía Nacional",
+  "hospital": "Hospital Virgen del Rocío",
+  "pharmacy": "Farmacia de guardia",
+  "taxi": "Teletaxi Sevilla",
+  "host": "Propietario / Host"
+ },
+ "privacy": {
+  "title": "Política de Privacidad",
+  "home": "Inicio",
+  "updated": "Última actualización:",
+  "sections": [
+   {
+    "t": "1. Responsable del tratamiento",
+    "p": [
+     "En cumplimiento del Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD), le informamos que el responsable del tratamiento de sus datos personales es:"
+    ],
+    "list": [
+     "Nombre: Esencia Sevilla",
+     "Dirección: {address}",
+     "Email: {email}",
+     "Nº Registro Turístico: {reg}"
+    ]
+   },
+   {
+    "t": "2. Datos que recabamos",
+    "p": [
+     "Recabamos los siguientes datos personales:"
+    ],
+    "list": [
+     "Datos de reserva: nombre, email, teléfono, fechas de estancia, número de huéspedes",
+     "Datos de pago: procesados exclusivamente por Stripe (no almacenamos datos bancarios)",
+     "Pre-check-in: datos del documento de identidad, fecha de nacimiento, nacionalidad (exigidos por ley)",
+     "Comunicaciones: mensajes de chat o email enviados a través del sitio",
+     "Datos técnicos: dirección IP, tipo de navegador, páginas visitadas (mediante Google Analytics)"
+    ]
+   },
+   {
+    "t": "3. Finalidad y base legal",
+    "p": [
+     "Tratamos sus datos para:"
+    ],
+    "list": [
+     "Gestión de reservas: ejecución del contrato (Art. 6.1.b RGPD)",
+     "Registro de viajeros: obligación legal, Ley Orgánica 4/2015 de Seguridad Ciudadana (Art. 6.1.c RGPD)",
+     "Comunicaciones sobre la reserva: ejecución del contrato",
+     "Marketing/newsletter: consentimiento del interesado (Art. 6.1.a RGPD)",
+     "Analytics: interés legítimo para mejorar el servicio"
+    ]
+   },
+   {
+    "t": "4. Cesión de datos a terceros",
+    "p": [
+     "Sus datos podrán ser cedidos a:"
+    ],
+    "list": [
+     "Fuerzas y Cuerpos de Seguridad (SES.HOSPEDERÍA): obligación legal",
+     "Stripe Inc.: para el procesamiento de pagos (certificado PCI-DSS)",
+     "Resend/SendGrid: para el envío de emails transaccionales",
+     "Supabase: almacenamiento de datos (servidores en la UE)",
+     "Google Analytics: datos anonimizados para análisis de tráfico"
+    ]
+   },
+   {
+    "t": "5. Conservación de datos",
+    "p": [],
+    "list": [
+     "Datos de reserva: 5 años (obligación fiscal)",
+     "Datos del registro de viajeros: 3 años (normativa policial)",
+     "Datos de comunicaciones: hasta 2 años tras el último contacto"
+    ]
+   },
+   {
+    "t": "6. Sus derechos",
+    "p": [
+     "Puede ejercer los siguientes derechos enviando un email a {email}:"
+    ],
+    "list": [
+     "Acceso: conocer qué datos tenemos sobre usted",
+     "Rectificación: corregir datos incorrectos",
+     "Supresión: solicitar el borrado (cuando no haya obligación legal)",
+     "Portabilidad: recibir sus datos en formato electrónico",
+     "Oposición: oponerse al tratamiento para marketing",
+     "Limitación: restringir el tratamiento en determinadas circunstancias"
+    ],
+    "after": {
+     "pre": "También puede presentar una reclamación ante la",
+     "link": "Agencia Española de Protección de Datos (AEPD)"
+    }
+   },
+   {
+    "t": "7. Cookies",
+    "p": [
+     "Utilizamos cookies propias (sesión) y de terceros (Google Analytics, Meta Pixel). Puede gestionar sus preferencias en el banner de cookies o en la configuración de su navegador."
+    ]
+   }
+  ]
  }
 }
