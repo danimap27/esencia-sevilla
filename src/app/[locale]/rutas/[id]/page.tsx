@@ -63,11 +63,6 @@ export default function RouteDetailPage({
   const fallbackRelated = TOURIST_ROUTES.filter((r) => r.id !== route.id).slice(0, 3);
   const relatedRoutes = related.length > 0 ? related : fallbackRelated;
 
-  // curiosidades agregadas: tips + bestTime + historias de las paradas
-  const curiosities = route.stops
-    .map((stop) => ({ name: stop.name, tip: stop.tip?.[locale], history: stop.history?.[locale] }))
-    .filter((c) => c.tip || c.history);
-
   const categoryLabel = (cat: string) => {
     const CATS: Record<string, Record<Locale, string>> = {
       classic: { es: 'Clásica', en: 'Classic', fr: 'Classique', de: 'Klassiker', it: 'Classica', pt: 'Clássica' },
@@ -105,7 +100,6 @@ export default function RouteDetailPage({
     tip: { es: 'Consejo', en: 'Tip', fr: 'Conseil', de: 'Tipp', it: 'Consiglio', pt: 'Conselho' },
     bestTime: { es: 'Mejor hora', en: 'Best time', fr: 'Meilleur moment', de: 'Beste Zeit', it: 'Orario migliore', pt: 'Melhor hora' },
     howToGet: { es: 'Cómo llegar y moverse', en: 'Getting there & around', fr: 'Comment venir', de: 'Anreise', it: 'Come arrivare', pt: 'Como chegar' },
-    curiosities: { es: 'Curiosidades del camino', en: 'Curiosities along the way', fr: 'Curiosités', de: 'Kuriositäten', it: 'Curiosità', pt: 'Curiosidades' },
     stops: { es: 'paradas', en: 'stops', fr: 'arrêts', de: 'Stopps', it: 'tappe', pt: 'paragens' },
     fullRoute: { es: 'Abrir ruta completa a pie en Google Maps', en: 'Open full walking route in Google Maps', fr: 'Ouvrir l\'itinéraire complet à pied dans Google Maps', de: 'Komplette Route zu Fuß in Google Maps öffnen', it: 'Apri percorso completo a piedi in Google Maps', pt: 'Abrir rota completa a pé no Google Maps' },
     otherRoutes: { es: 'Sigue explorando', en: 'Keep exploring', fr: 'Continuez à explorer', de: 'Weiter entdecken', it: 'Continua a esplorare', pt: 'Continue a explorar' },
@@ -251,21 +245,6 @@ export default function RouteDetailPage({
             ))}
           </div>
         </section>
-
-        {/* Curiosidades */}
-        {curiosities.length > 0 && (
-          <section className="mb-12">
-            <h2 className="section-title text-left mb-6">{L('curiosities')}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {curiosities.map((c, i) => (
-                <div key={i} className="card p-5 border-l-4 border-l-ocre-400">
-                  <p className="font-semibold text-tinta text-sm mb-1">{c.name}</p>
-                  <p className="text-sm text-tinta/75 leading-relaxed">{c.tip ?? c.history}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
 
         {/* Mapa con todas las paradas */}
         <section className="mb-12">
