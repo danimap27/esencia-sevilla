@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { APARTMENT, AMENITIES, HOUSE_RULES, EMERGENCY_CONTACTS } from '@/data/apartment';
+import { APARTMENT } from '@/data/apartment';
 
-const SYSTEM_PROMPT = `You are the virtual assistant for Esencia Sevilla, a luxury tourist apartment in the historic centre of Seville, Spain.
+const SYSTEM_PROMPT = `You are the virtual assistant for Esencia Sevilla, a tourist apartment in Seville, Spain. The apartment is in the San Pablo–Santa Justa neighbourhood, 7 minutes on foot from Santa Justa AVE station and about 10 minutes by bus or taxi from the historic centre.
 
 ## Apartment Details
 - Name: ${APARTMENT.name}
@@ -11,7 +11,7 @@ const SYSTEM_PROMPT = `You are the virtual assistant for Esencia Sevilla, a luxu
 - Bathrooms: ${APARTMENT.bathrooms}
 - Size: ${APARTMENT.size}
 - WiFi: ${APARTMENT.wifi} (password given upon booking confirmation)
-- Check-in: from ${APARTMENT.checkInTime} (self check-in via key safe)
+- Check-in: from ${APARTMENT.checkInTime}
 - Check-out: before ${APARTMENT.checkOutTime}
 - Registration: ${APARTMENT.registrationNumber}
 - Contact: ${APARTMENT.phone} | ${APARTMENT.email}
@@ -23,7 +23,7 @@ const SYSTEM_PROMPT = `You are the virtual assistant for Esencia Sevilla, a luxu
 - Minimum stay: 2 nights
 
 ## Amenities
-WiFi 600Mbps, air conditioning, fully equipped kitchen (Nespresso coffee maker, hob, microwave, fridge, toaster, kettle), washing machine, Smart TV, elevator, self check-in
+WiFi 600Mbps, air conditioning, fully equipped kitchen (Nespresso coffee maker, hob, microwave, fridge, toaster, kettle), washing machine, Smart TV, elevator
 
 ## House Rules
 - No smoking (€150 penalty)
@@ -31,9 +31,10 @@ WiFi 600Mbps, air conditioning, fully equipped kitchen (Nespresso coffee maker, 
 - Quiet hours: 22:00-09:00
 - Maximum 4 guests
 - No parties or events
+- On check-out day: turn off the air conditioning, leave the keys on the table and leave a review
 
 ## Location & Getting Around
-The apartment (Calle Imaginero Luis Álvarez Duarte 7, 41008 Seville) is in the San Pablo–Santa Justa area:
+The apartment (Calle Imaginero Luis Álvarez Duarte 7, 41008 Sevilla) is in the San Pablo–Santa Justa area:
 - Santa Justa AVE station: 7 min walk
 - Historic centre (Cathedral & Alcázar, about 2 km): ~26 min on foot or ~10 min by bus/taxi
 - Puerta Osario (edge of the old town): 14 min walk
@@ -96,6 +97,53 @@ The apartment (Calle Imaginero Luis Álvarez Duarte 7, 41008 Seville) is in the 
 - Keep responses concise but complete
 - Use emojis sparingly for a friendly tone`;
 
+// Cadena de modelos: primero el barato de pago, después modelos gratuitos
+// como red de seguridad (solo se usan si el principal falla o agota cuota).
+function modelChain(): string[] {
+  const primary = process.env.OPENROUTER_MODEL || 'openai/gpt-5-nano';
+  const fallbacks = (process.env.OPENROUTER_FALLBACK_MODELS ||
+    'google/gemma-4-26b-a4b-it:free,inclusionai/ling-3.0-flash-sante:free,qwen/qwen3.8-27b:free')
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean);
+  return [primary, ...fallbacks.filter((m) => m !== primary)];
+}
+
+async function callOpenRouter(apiKey: string, model: string, messages: unknown[]) {
+  const body: Record<string, unknown> = {
+    model,
+    messages: [{ role: 'system', content: SYSTEM_PROMPT }, ...messages],
+    max_tokens: 800,
+    temperature: 0.7,
+  };
+  // Los gpt-5 razonan por defecto; para un chat turístico basta el mínimo
+  // (más rápido y más barato, y evita respuestas vacías por gasto de razonamiento).
+  if (model.startsWith('openai/gpt-5')) {
+    body.reasoning = { effort: 'minimal' };
+  }
+
+  const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${apiKey}`,
+      'Content-Type': 'application/json',
+      'HTTP-Referer': process.env.NEXT_PUBLIC_SITE_URL || 'https://esenciasevilla.com',
+      'X-Title': 'Esencia Sevilla Assistant',
+    },
+    body: JSON.stringify(body),
+  });
+
+  if (!response.ok) {
+    throw new Error(`OpenRouter ${model}: HTTP ${response.status}`);
+  }
+  const data = await response.json();
+  const content = data.choices?.[0]?.message?.content?.trim();
+  if (!content) {
+    throw new Error(`OpenRouter ${model}: empty response`);
+  }
+  return content as string;
+}
+
 export async function POST(req: NextRequest) {
   try {
     const { messages, locale } = await req.json();
@@ -108,33 +156,21 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-        'HTTP-Referer': process.env.NEXT_PUBLIC_SITE_URL || 'https://esenciasevilla.com',
-        'X-Title': 'Esencia Sevilla Assistant',
-      },
-      body: JSON.stringify({
-        model: process.env.OPENROUTER_MODEL || 'anthropic/claude-3-haiku',
-        messages: [
-          { role: 'system', content: SYSTEM_PROMPT },
-          ...messages.slice(-10), // Keep last 10 messages for context window
-        ],
-        max_tokens: 500,
-        temperature: 0.7,
-      }),
-    });
+    const history = Array.isArray(messages) ? messages.slice(-10) : [];
+    const chain = modelChain();
 
-    if (!response.ok) {
-      throw new Error(`OpenRouter error: ${response.status}`);
+    let lastError: unknown = null;
+    for (const model of chain) {
+      try {
+        const message = await callOpenRouter(apiKey, model, history);
+        return NextResponse.json({ message, model });
+      } catch (err) {
+        lastError = err;
+        console.warn('Chat model failed, trying next:', (err as Error).message);
+      }
     }
 
-    const data = await response.json();
-    const message = data.choices?.[0]?.message?.content || 'Lo siento, no pude procesar tu mensaje. Por favor inténtalo de nuevo.';
-
-    return NextResponse.json({ message });
+    throw lastError ?? new Error('No model available');
   } catch (error) {
     console.error('Chat API error:', error);
     return NextResponse.json(
