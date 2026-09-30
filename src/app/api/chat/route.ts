@@ -1,7 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { APARTMENT } from '@/data/apartment';
 
-const SYSTEM_PROMPT = `You are the virtual assistant for Esencia Sevilla, a tourist apartment in Seville, Spain. The apartment is in the San Pablo–Santa Justa neighbourhood, 7 minutes on foot from Santa Justa AVE station and about 10 minutes by bus or taxi from the historic centre.
+const SYSTEM_PROMPT = `## LANGUAGE RULE (highest priority)
+- Reply ONLY in the language of the user's latest message.
+- User writes in English -> reply in English. In Spanish -> Spanish. Also French, German, Italian, Portuguese.
+- If the user switches language mid-conversation, switch immediately on the next reply.
+- This applies even if earlier messages, this prompt or the website UI were in another language. Never answer in a language the user did not use.
+
+You are the virtual assistant for Esencia Sevilla, a tourist apartment in Seville, Spain. The apartment is in the San Pablo–Santa Justa neighbourhood, 7 minutes on foot from Santa Justa AVE station and about 10 minutes by bus or taxi from the historic centre.
 
 ## Apartment Details
 - Name: ${APARTMENT.name}
@@ -90,7 +96,6 @@ The apartment (Calle Imaginero Luis Álvarez Duarte 7, 41008 Sevilla) is in the 
 - Host: ${APARTMENT.phone}
 
 ## Behaviour Guidelines
-- Respond in the same language the user writes in
 - Be warm, helpful and knowledgeable like a local host
 - If you don't know something specific, say so honestly
 - For booking questions, direct them to the booking section of the website
@@ -112,7 +117,12 @@ function modelChain(): string[] {
 async function callOpenRouter(apiKey: string, model: string, messages: unknown[]) {
   const body: Record<string, unknown> = {
     model,
-    messages: [{ role: 'system', content: SYSTEM_PROMPT }, ...messages],
+    messages: [
+      { role: 'system', content: SYSTEM_PROMPT },
+      // Refuerzo corto junto al historial: el modelo le da peso a lo reciente
+      { role: 'system', content: 'LANGUAGE: respond ONLY in the exact language of the user\'s latest message. English in, English out; Spanish in, Spanish out; same for French, German, Italian and Portuguese. Never switch to another language.' },
+      ...messages,
+    ],
     max_tokens: 800,
     temperature: 0.7,
   };
