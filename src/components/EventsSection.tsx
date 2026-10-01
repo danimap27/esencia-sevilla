@@ -32,19 +32,32 @@ export default function EventsSection() {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const dateFnsLocale = DATE_FNS_LOCALES[locale] as Parameters<typeof format>[2]['locale'];
 
-  // Eventos dinámicos actualizados por el cron semanal (data/events.json vía /api/events)
+  // Eventos dinámicos actualizados por el cron semanal (data/events.json vía /api/events).
+  // Fallback: /events.json copiado al build (hosting estático sin API routes).
   useEffect(() => {
     let cancelled = false;
+    const apply = (evs: SevilleEvent[]) => {
+      if (!cancelled && Array.isArray(evs) && evs.length > 0) {
+        setEvents(evs);
+      }
+    };
     fetch('/api/events')
       .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
       .then((data: { events?: SevilleEvent[] }) => {
-        if (!cancelled && Array.isArray(data.events) && data.events.length > 0) {
-          setEvents(data.events);
+        if (Array.isArray(data.events) && data.events.length > 0) {
+          apply(data.events);
+        } else {
+          throw new Error('empty');
         }
       })
-      .catch(() => {
-        // Fallback silencioso a los eventos estáticos del bundle
-      });
+      .catch(() =>
+        fetch('/events.json')
+          .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+          .then((data: { events?: SevilleEvent[] }) => apply(data.events || []))
+          .catch(() => {
+            // Último recurso: eventos estáticos del bundle
+          })
+      );
     return () => {
       cancelled = true;
     };

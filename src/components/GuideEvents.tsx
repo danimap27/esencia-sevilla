@@ -37,19 +37,32 @@ export default function GuideEvents({ limit = 6 }: { limit?: number }) {
   const locale = useLocale() as Locale;
   const [events, setEvents] = useState<SevilleEvent[]>(() => relevant(SEVILLE_EVENTS, limit));
 
-  // Eventos dinámicos (data/events.json vía /api/events, actualizado por cron)
+  // Eventos dinámicos (data/events.json vía /api/events, actualizado por cron).
+  // Fallback: /events.json copiado al build (hosting estático sin API routes).
   useEffect(() => {
     let cancelled = false;
+    const apply = (evs: SevilleEvent[]) => {
+      if (!cancelled && Array.isArray(evs) && evs.length > 0) {
+        setEvents(relevant(evs, limit));
+      }
+    };
     fetch('/api/events')
       .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
       .then((data: { events?: SevilleEvent[] }) => {
-        if (!cancelled && Array.isArray(data.events) && data.events.length > 0) {
-          setEvents(relevant(data.events, limit));
+        if (Array.isArray(data.events) && data.events.length > 0) {
+          apply(data.events);
+        } else {
+          throw new Error('empty');
         }
       })
-      .catch(() => {
-        // Fallback silencioso a los eventos estáticos del bundle
-      });
+      .catch(() =>
+        fetch('/events.json')
+          .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+          .then((data: { events?: SevilleEvent[] }) => apply(data.events || []))
+          .catch(() => {
+            // Último recurso: eventos estáticos del bundle
+          })
+      );
     return () => {
       cancelled = true;
     };

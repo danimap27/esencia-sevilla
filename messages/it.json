@@ -1,827 +1,828 @@
 {
- "nav": {
-  "gallery": "Foto",
-  "booking": "Prenota",
-  "map": "Mappa",
-  "guide": "Guida",
-  "reviews": "Recensioni",
-  "faq": "FAQ",
-  "blog": "Blog",
-  "bookNow": "Prenota ora",
-  "nearby": "Vicino"
- },
- "hero": {
-  "badge": "Appartamento Turistico — Siviglia",
-  "headline": "La tua casa a Siviglia",
-  "subheadline": "A 7 minuti a piedi dalla stazione AVE Santa Justa e a 10 minuti dal centro storico in bus o taxi. Vivi Siviglia come un local.",
-  "cta": "Verifica disponibilità",
-  "ctaSecondary": "Vedi foto",
-  "reviewsBadge": "{count} recensioni 5 stelle",
-  "ratingLabel": "Valutazione media",
-  "savingsBadge": "Risparmia {amount}€ vs Booking",
-  "savingsDesc": "Prenotando direttamente",
-  "registrationLabel": "Nº Registrazione Turistica",
-  "trustBadges": {
-   "checkin": "Check-in autonomo 24h",
-   "wifi": "WiFi ultrarapido",
-   "ac": "A/C in tutte le stanze",
-   "location": "Accanto a Santa Justa (AVE)"
+  "nav": {
+    "gallery": "Foto",
+    "booking": "Prenota",
+    "map": "Mappa",
+    "guide": "Guida",
+    "reviews": "Recensioni",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "bookNow": "Prenota ora",
+    "nearby": "Vicino"
   },
-  "photoAlts": [
-   "Soggiorno principale di Esencia Sevilla",
-   "Camera principale con letto king",
-   "Cucina completamente attrezzata",
-   "Bagno con doccia e servizi",
-   "Vista dal balcone sul quartiere"
-  ],
-  "landmarks": [
-   {
-    "name": "Cattedrale di Siviglia",
-    "distance": "26 min a piedi"
-   },
-   {
-    "name": "La Giralda",
-    "distance": "26 min a piedi"
-   },
-   {
-    "name": "Real Alcázar",
-    "distance": "27 min a piedi"
-   },
-   {
-    "name": "Quartiere Santa Cruz",
-    "distance": "24 min a piedi"
-   },
-   {
-    "name": "Plaza de España",
-    "distance": "31 min a piedi"
-   },
-   {
-    "name": "Archivio delle Indie",
-    "distance": "26 min a piedi"
-   },
-   {
-    "name": "Torre del Oro",
-    "distance": "32 min a piedi"
-   },
-   {
-    "name": "Museo di Belle Arti",
-    "distance": "20 min a piedi"
-   }
-  ]
- },
- "comparison": {
-  "title": "Perché prenotare qui?",
-  "subtitle": "Comparazione diretta con Booking.com",
-  "feature": "Caratteristica",
-  "direct": "Esencia Sevilla",
-  "booking": "Booking.com",
-  "rows": {
-   "price": "Prezzo",
-   "priceDirect": "10% più economico",
-   "priceBooking": "Prezzo pieno",
-   "cancellation": "Cancellazione",
-   "cancellationDirect": "Non rimborsabile",
-   "cancellationBooking": "Gratuita (prezzo maggiore)",
-   "communication": "Comunicazione",
-   "communicationDirect": "Diretta con l'host",
-   "communicationBooking": "Tramite piattaforma",
-   "extras": "Extra inclusi",
-   "extrasDirect": "Libro benvenuto, guida QR, chat IA",
-   "extrasBooking": "Solo alloggio",
-   "checkin": "Istruzioni arrivo",
-   "checkinDirect": "Personalizzate + mappa",
-   "checkinBooking": "Standard"
-  }
- },
- "booking": {
-  "title": "Prenota",
-  "subtitle": "Scegli le date e ottieni il miglior prezzo",
-  "checkIn": "Check-in",
-  "checkOut": "Check-out",
-  "guests": "Ospiti",
-  "guestCount": "{count} ospite",
-  "guestsCount": "{count} ospiti",
-  "nights": "{count} notte",
-  "nightsPlural": "{count} notti",
-  "pricePerNight": "a notte",
-  "selectDates": "Seleziona le date",
-  "minStay": "Soggiorno minimo: 2 notti",
-  "unavailable": "Non disponibile",
-  "available": "Disponibile",
-  "today": "Oggi",
-  "breakdown": {
-   "title": "Dettaglio del prezzo",
-   "perNight": "{price}€ × {nights} notti",
-   "cleaning": "Tassa di pulizia",
-   "touristTax": "Tassa turistica",
-   "upsells": "Extra selezionati",
-   "discount": "Sconto",
-   "total": "Totale",
-   "bookingComparison": "Su Booking pagheresti",
-   "savings": "Il tuo risparmio"
-  },
-  "upsells": {
-   "title": "Migliora il tuo soggiorno",
-   "add": "Aggiungi",
-   "added": "Aggiunto",
-   "airportTransfer": "Trasferimento aeroporto",
-   "airportTransferDesc": "Prelievo al SVQ, arrivo al tuo orario",
-   "welcomePack": "Pack benvenuto",
-   "welcomePackDesc": "Prodotti locali artigianali di Siviglia",
-   "lateCheckout": "Check-out tardivo (fino alle 14:00)",
-   "lateCheckoutDesc": "Goditi la mattina senza fretta",
-   "travelCot": "Letto da viaggio",
-   "travelCotDesc": "Per neonati fino a 2 anni",
-   "romanticPack": "Pack romantico",
-   "romanticPackDesc": "Vino andaluso + fiori + nota personalizzata"
-  },
-  "coupon": {
-   "label": "Codice sconto",
-   "placeholder": "ESENCIA10",
-   "apply": "Applica",
-   "invalid": "Codice non valido",
-   "applied": "Sconto applicato!"
-  },
-  "nonRefundable": "Questa tariffa è NON RIMBORSABILE",
-  "nonRefundableNote": "Ottieni cancellazione gratuita prenotando su",
-  "bookButton": "Prenota ora — {total}€",
-  "bookingRedirect": "Prenota con cancellazione gratuita su Booking.com",
-  "processing": "Elaborazione...",
-  "noAvailability": "Nessuna disponibilità per queste date",
-  "contactUs": "Contattaci per disponibilità speciale",
-  "cta": "Prenota",
-  "freeCancel": "Cancellazione gratuita",
-  "approxNote": "Questa opzione costa circa il 10% in più della prenotazione diretta.",
-  "maxGuests": "Max {count}"
- },
- "gallery": {
-  "title": "L'appartamento",
-  "subtitle": "Spazi pensati per il riposo e il piacere",
-  "viewAll": "Vedi tutte le foto",
-  "virtualTour": "Tour virtuale 360°",
-  "close": "Chiudi",
-  "prev": "Precedente",
-  "next": "Successivo",
-  "comingSoon": "Tour 360° — prossimamente",
-  "noPhotos": "Stiamo preparando il tour virtuale a 360°. Torna presto per esplorare l'appartamento come se fossi lì.",
-  "tourDesc": "Esplora ogni stanza prima di arrivare: soggiorno, camere, cucina e bagno a 360°, come se fossi già dentro.",
-  "tourCta": "Esplora il tour",
-  "tourViews": "{count} viste a 360°",
-  "photos": [
-   {
-    "alt": "Soggiorno principale",
-    "caption": "Soggiorno accogliente con decorazione andalusa"
-   },
-   {
-    "alt": "Camera principale",
-    "caption": "Camera principale con letto matrimoniale"
-   },
-   {
-    "alt": "Seconda camera",
-    "caption": "Seconda camera con due letti singoli"
-   },
-   {
-    "alt": "Bagno",
-    "caption": "Bagno completo con doccia"
-   },
-   {
-    "alt": "Cucina",
-    "caption": "Cucina completamente attrezzata"
-   },
-   {
-    "alt": "Vista città",
-    "caption": "Viste sul quartiere di Siviglia"
-   },
-   {
-    "alt": "Dettagli decorativi",
-    "caption": "Dettagli in ceramica sivigliana"
-   },
-   {
-    "alt": "Zona living",
-    "caption": "Zona living con comodo divano"
-   },
-   {
-    "alt": "Terrazza",
-    "caption": "Accesso alla terrazza esterna"
-   },
-   {
-    "alt": "Ingresso",
-    "caption": "Ingresso e accesso all'appartamento"
-   },
-   {
-    "alt": "Tavolo da pranzo",
-    "caption": "Tavolo da pranzo per 4 persone"
-   },
-   {
-    "alt": "Finestra",
-    "caption": "Finestre con vista sulla strada"
-   }
-  ]
- },
- "map": {
-  "title": "Esplora Siviglia dal tuo appartamento",
-  "subtitle": "Itinerari, monumenti e segreti locali",
-  "tabs": {
-   "map": "Mappa interattiva",
-   "routes": "Itinerari a piedi",
-   "transport": "Trasporti"
-  },
-  "categories": {
-   "all": "Tutti",
-   "monument": "Monumenti",
-   "neighborhood": "Quartieri",
-   "culture": "Cultura",
-   "food": "Gastronomia",
-   "nature": "Natura",
-   "modern": "Moderno",
-   "fun": "Intrattenimento"
-  },
-  "openInMaps": "Apri in Google Maps",
-  "entranceFree": "Ingresso libero",
-  "minutesWalk": "{min} min a piedi",
-  "routeDetails": "Vedi itinerario completo",
-  "routeCategories": {
-   "classic": "Classica",
-   "neighborhoods": "Quartieri",
-   "romantic": "Romantica",
-   "food": "Gastronomica",
-   "family": "Familiare",
-   "culture": "Culturale",
-   "nature": "Natura",
-   "shopping": "Shopping",
-   "photos": "Fotografica",
-   "history": "Storia",
-   "legends": "Leggende",
-   "art": "Arte",
-   "daytrip": "Escursione",
-   "wine": "Vino",
-   "beach": "Spiaggia"
-  },
-  "transport": {
-   "title": "Come muoversi a Siviglia",
-   "multiviaje": "Carta Multiviaje TUSSAM",
-   "multiviajePrices": "Ricarica da 5€ alle macchinette delle fermate e sull'app TUSSAM",
-   "nearestStop": "Fermata più vicina all'appartamento",
-   "lines": "Linee disponibili",
-   "frequency": "Frequenza",
-   "price": "Prezzo",
-   "nearestStopLine": "Fermata più vicina: Arroyo (Vicente Alanís) — 2 min a piedi"
-  },
-  "fullRoute": "Percorso completo in Google Maps",
-  "bestTime": "Orario migliore",
-  "routeTransport": {
-   "walking": "A piedi",
-   "public": "Trasporto pubblico",
-   "car": "In auto"
-  },
-  "howToGet": "Come arrivare",
-  "historyLabel": "Storia",
-  "officialWeb": "Sito ufficiale",
-  "filterAll": "Tutte",
-  "filterBy": "Filtra per tipo",
-  "zoneLabel": "Zona",
-  "zones": {
-   "all": "Tutte",
-   "centro": "Centro storico",
-   "santa-cruz": "Santa Cruz & María Luisa",
-   "paseo-rio": "Lungofiume",
-   "triana": "Triana",
-   "macarena": "Macarena & Alameda",
-   "cartuja": "Cartuja & Isla"
-  }
- },
- "events": {
-  "title": "Siviglia ti aspetta",
-  "subtitle": "Eventi e festival dell'anno",
-  "highSeason": "Alta stagione — prenota in anticipo",
-  "limitedAvailability": "Disponibilità limitata in queste date",
-  "viewMore": "Maggiori informazioni",
-  "bookForEvent": "Prenota per questo evento",
-  "now": "In corso",
-  "startsIn": "Inizia tra {days} giorni."
- },
- "reviews": {
-  "title": "Cosa dicono i nostri ospiti",
-  "subtitle": "Oltre {count} recensioni verificate",
-  "overallRating": "Valutazione generale",
-  "basedOn": "basato su {count} recensioni",
-  "leaveReview": "Lascia una recensione",
-  "sources": {
-   "google": "Google Reviews",
-   "booking": "Booking.com",
-   "airbnb": "Airbnb",
-   "direct": "Prenotazione diretta"
-  },
-  "readMore": "Leggi di più",
-  "showLess": "Mostra meno",
-  "leaveGoogle": "Lascia una recensione Google",
-  "leaveBooking": "Recensisci su Booking"
- },
- "faq": {
-  "title": "Domande frequenti",
-  "subtitle": "Tutto ciò che devi sapere prima di arrivare",
-  "questions": {
-   "q1": "C'è un parcheggio vicino all'appartamento?",
-   "a1": "Nessun parcheggio privato nell'edificio. L'appartamento è fuori dalle zone a traffico limitato del centro: parcheggiare in zona è più facile che nel centro storico. Per visitare il centro (a circa 2 km) consigliamo bus, taxi o un parcheggio del centro.",
-   "q2": "Si accettano animali?",
-   "a2": "Spiacenti, non si accettano animali nell'appartamento per rispettare gli altri ospiti e mantenere la pulizia.",
-   "q3": "Come funziona il check-in autonomo?",
-   "a3": "24h prima del tuo arrivo riceverai un messaggio WhatsApp e email con il codice della cassetta di sicurezza dove si trovano le chiavi. Non è necessario coordinarsi con nessuno. Puoi arrivare in qualsiasi ora tra le 16:00 e le 23:00.",
-   "q4": "Le pulizie sono incluse?",
-   "a4": "Sì. Prima del vostro arrivo l'appartamento riceve una pulizia completa, con cambio di lenzuola e asciugamani e rifornimento dei bagni.",
-   "q5": "C'è l'aria condizionata?",
-   "a5": "Sì, l'appartamento ha aria condizionata in tutte le stanze (soggiorno e camere). È indispensabile in estate quando le temperature a Siviglia possono superare i 40°C.",
-   "q6": "Qual è la capacità massima dell'appartamento?",
-   "a6": "L'appartamento ospita 4 ospiti: una camera doppia con letto king e un'altra camera con due letti singoli.",
-   "q7": "Si può ospitare un neonato?",
-   "a7": "Certo! L'appartamento è adatto a bambini di tutte le età. Culla da viaggio disponibile su richiesta, basta chiederla.",
-   "q8": "C'è il WiFi? È veloce?",
-   "a8": "Sì, l'appartamento dispone di WiFi in fibra ad alta velocità (600 Mbps). Il nome della rete e la password si trovano nel libro di benvenuto.",
-   "q9": "A che ora sono il check-in e il check-out?",
-   "a9": "Check-in: dalle 16:00. Check-out: entro le 12:00. Se il vostro volo arriva prima, potete lasciare i bagagli gratuitamente e girare per la città.",
-   "q10": "L'appartamento ha una cucina attrezzata?",
-   "a10": "Sì, la cucina è completamente attrezzata: frigorifero, piano a induzione, microonde, macchina da caffè (capsule Nespresso), tostapane, bollitore, utensili completi e stoviglie per 4 persone.",
-   "q11": "È permesso fumare nell'appartamento?",
-   "a11": "Non è permesso fumare nell'appartamento. Il mancato rispetto di questa regola comporta una penalità di 150€.",
-   "q12": "Come arrivo dall'aeroporto all'appartamento?",
-   "a12": "L'opzione più semplice è il bus EA (Airport Express), ogni 15-30 minuti a 4 €. Scendete a Santa Justa (circa 30-40 minuti), da lì l'appartamento è a 7 minuti a piedi.",
-   "q13": "Cosa faccio se ho un problema durante il soggiorno?",
-   "a13": "Siamo disponibili 24/7 su WhatsApp per qualsiasi evenienza. In caso di emergenza: il 112 è il numero di emergenza in Spagna.",
-   "q14": "Si accettano addii al celibato/nubilato o feste?",
-   "a14": "Non sono ammesse feste o eventi che possano disturbare i vicini. Siviglia ha molte opzioni per il tempo libero notturno, ma l'appartamento è esclusivamente per il riposo.",
-   "q15": "L'edificio ha un ascensore?",
-   "a15": "Sì, l'edificio dispone di un ascensore.",
-   "q16": "C'è una lavatrice?",
-   "a16": "Sì, l'appartamento dispone di una lavatrice con detersivo incluso.",
-   "q17": "Posso fare un check-out tardivo se il mio volo è nel pomeriggio?",
-   "a17": "Il check-out standard è entro le 12:00. Per partenze più tarde potete lasciare i bagagli custoditi nell'appartamento.",
-   "q18": "L'appartamento è adatto a persone con mobilità ridotta?",
-   "a18": "L'edificio ha un ascensore. L'appartamento è al 3° piano. C'è un gradino all'ingresso dell'edificio. Se hai esigenze speciali, consultaci prima di prenotare.",
-   "q19": "Come funziona il pre-check-in online?",
-   "a19": "Alla conferma della prenotazione riceverai un link per completare il pre-check-in: dati del passaporto, orario stimato di arrivo e preferenze. Questo ci permette di preparare tutto per il tuo arrivo e rispettare la normativa spagnola di registrazione dei viaggiatori.",
-   "q20": "Qual è il numero di registrazione turistica dell'appartamento?",
-   "a20": "Numero di registrazione turistica della Giunta di Andalusia: AT/SE/03584. Puoi verificarlo nel Registro del Turismo dell'Andalusia."
-  },
-  "searchPlaceholder": "Cerca domanda...",
-  "noAnswer": "Non trovi la risposta?",
-  "contactDirect": "Contattaci direttamente su WhatsApp",
-  "whatsappCta": "Scrivici su WhatsApp",
-  "whatsappMessage": "Ciao! Ho una domanda sull'appartamento Esencia Sevilla"
- },
- "location": {
-  "title": "Dove siamo",
-  "subtitle": "Ben collegato: AVE a 7 min a piedi, centro a 10 min in bus o taxi",
-  "address": "Imaginero Luis Álvarez Duarte 7, 41008 Siviglia",
-  "howToArrive": "Come arrivare",
-  "fromAirport": "Dall'aeroporto SVQ",
-  "fromStation": "Da Santa Justa (Renfe)",
-  "byCar": "In auto",
-  "step": "Passo {n}",
-  "arrivalSteps": {
-   "airport": {
-    "step1": "Prendi il bus EA (Airport Express) all'uscita arrivi — 4€",
-    "step2": "Scendi a Santa Justa (≈30-40 min)",
-    "step3": "Cammina 7 minuti verso nord fino all'appartamento",
-    "step4": "Arriva a Imaginero Luis Álvarez Duarte, 7"
-   },
-   "train": {
-    "step1": "Esci da Santa Justa dall'uscita Avenida de Kansas City",
-    "step2": "Cammina 7 minuti verso nord lungo l'Avenida de Kansas City",
-    "step3": "Arrivi a Imaginero Luis Álvarez Duarte, 7"
-   },
-   "car": {
-    "step1": "L'appartamento è fuori dalle zone a traffico limitato del centro: arrivare in auto è semplice",
-    "step2": "Inserisci nel GPS: Imaginero Luis Álvarez Duarte, 7, Siviglia",
-    "step3": "Zona di carico/scarico davanti all'edificio; parcheggio in zona"
-   }
-  },
-  "privateTransfer": "Preferisci un transfer privato?",
-  "privateTransferDesc": "Presa in carico personalizzata in aeroporto per 35 €",
-  "addTransfer": "Aggiungi transfer alla prenotazione"
- },
- "chat": {
-  "title": "Assistente Esencia Sevilla",
-  "subtitle": "Chiedimi dell'appartamento, di Siviglia o della tua prenotazione",
-  "placeholder": "Scrivi la tua domanda...",
-  "send": "Invia",
-  "welcome": "Ciao! Sono l'assistente virtuale di Esencia Sevilla. Posso aiutarti con informazioni sull'appartamento, consigli su Siviglia, trasporti o la tua prenotazione. Come posso aiutarti?",
-  "suggestions": [
-   "A che ora è il check-in?",
-   "Qual è la password del WiFi?",
-   "Come arrivo dall'aeroporto?",
-   "Quali ristoranti consigli nei dintorni?"
-  ],
-  "typing": "Scrivendo...",
-  "error": "Errore di connessione. Riprova.",
-  "poweredBy": "Assistito da IA"
- },
- "guestPortal": {
-  "title": "Portale dell'Ospite",
-  "subtitle": "Completa il tuo pre-check-in",
-  "countdown": "Mancano {days} giorni al tuo soggiorno",
-  "countdownToday": "Il tuo soggiorno inizia oggi!",
-  "preCheckin": {
-   "title": "Pre-check-in online",
-   "subtitle": "Completa i tuoi dati per un arrivo senza attese",
-   "documentType": "Tipo di documento",
-   "passport": "Passaporto",
-   "dni": "DNI",
-   "nie": "NIE",
-   "documentNumber": "Numero di documento",
-   "documentExpiry": "Data di scadenza",
-   "nationality": "Nazionalità",
-   "arrivalTime": "Orario stimato di arrivo",
-   "specialRequests": "Richieste speciali (opzionale)",
-   "addGuest": "Aggiungi ospite",
-   "guestN": "Ospite {n}",
-   "firstName": "Nome",
-   "lastName": "Cognome",
-   "birthDate": "Data di nascita",
-   "submit": "Conferma pre-check-in",
-   "success": "Pre-check-in completato! Riceverai il codice di accesso 24h prima del tuo arrivo.",
-   "legalNote": "Dati richiesti dalla Legge Organica di Sicurezza Cittadina (Spagna) per la registrazione dei viaggiatori.",
-   "done": "Pre-check-in completato!",
-   "pageTitle": "Pre-check-in",
-   "pageIntro": "Completa i tuoi dati prima dell'arrivo per velocizzare il check-in e rispettare la normativa spagnola sul registro dei viaggiatori."
-  }
- },
- "welcomeBook": {
-  "title": "Libro di Benvenuto",
-  "wifi": "WiFi",
-  "wifiPassword": "Password",
-  "checkIn": "Check-in",
-  "checkOut": "Check-out",
-  "rules": "Regole della casa",
-  "emergencies": "Emergenze",
-  "appliances": "Elettrodomestici",
-  "checkoutSteps": "Passaggi per il check-out",
-  "recommendations": "Consigli dell'host",
-  "password": "Password:",
-  "wifiNote": "Fibra ottica 600 Mbps, segnale 5G in tutto l'appartamento",
-  "pageTitle": "Libro di benvenuto",
-  "pageSubtitle": "Tutto ciò che ti serve per goderti il soggiorno a {name}.",
-  "appliancesList": [
-   {
-    "name": "Frigorifero",
-    "instructions": "Frigorifero combinato: regola la temperatura dal pannello interno. Congelatore in basso."
-   },
-   {
-    "name": "Macchina Nespresso",
-    "instructions": "1. Riempire il serbatoio dell'acqua. 2. Inserire una capsula. 3. Premere il pulsante espresso (40 ml) o lungo (110 ml)."
-   },
-   {
-    "name": "Aria condizionata",
-    "instructions": "Telecomando in soggiorno. In estate si consiglia la modalità Cool a 22-24 °C."
-   },
-   {
-    "name": "Smart TV",
-    "instructions": "Telecomando sul tavolino. Netflix/Prime Video disponibili con il tuo account. Porta USB disponibile."
-   },
-   {
-    "name": "Scaldabagno",
-    "instructions": "Scaldabagno in bagno. Temperatura regolabile. Acqua calda disponibile 24 h."
-   },
-   {
-    "name": "Lavatrice",
-    "instructions": "Detersivo nell'armadio. Programma Eco 40 °C per l'uso normale (1 h 20 min). Non usare per capi delicati."
-   }
-  ],
-  "checkoutList": [
-   "Raccogli tutte le tue cose (controlla cassetti, bagno, armadi).",
-   "Chiudi finestre e tapparelle.",
-   "Lascia le chiavi sul tavolo.",
-   "Spegni l'aria condizionata e le luci.",
-   "Chiudi la porta uscendo."
-  ],
-  "recommendationsList": [
-   {
-    "name": "Bar Danubio",
-    "type": "Bar di quartiere",
-    "distance": "3 min a piedi",
-    "note": "Colazioni e tapas di sempre, atmosfera locale."
-   },
-   {
-    "name": "La Rosaleda",
-    "type": "Ristorante andaluso",
-    "distance": "4 min a piedi",
-    "note": "Menù del giorno fatto in casa, molto popolare in zona."
-   },
-   {
-    "name": "Berenice Bistrot",
-    "type": "Ristorante",
-    "distance": "2 min a piedi",
-    "note": "Cucina di mercato in un piccolo locale."
-   },
-   {
-    "name": "Alimentación La Esquinita",
-    "type": "Alimentari",
-    "distance": "2 min a piedi",
-    "note": "Tutto il necessario per il frigo."
-   },
-   {
-    "name": "Panadería Polvillo",
-    "type": "Panetteria",
-    "distance": "9 min a piedi",
-    "note": "Pane appena sfornato e pasticceria."
-   },
-   {
-    "name": "Mercadona",
-    "type": "Supermercato",
-    "distance": "6 min a piedi",
-    "note": "Spesa completa vicino a casa."
-   }
-  ]
- },
- "footer": {
-  "tagline": "La tua casa a Siviglia",
-  "registrationLabel": "Nº Registrazione Turistica",
-  "links": {
-   "privacy": "Informativa sulla Privacy",
-   "terms": "Termini e Condizioni",
-   "cookies": "Politica dei Cookie",
-   "blog": "Blog",
-   "guide": "Guida Turistica"
-  },
-  "contact": "Contatto",
-  "followUs": "Seguici",
-  "copyright": "© {year} Esencia Sevilla. Tutti i diritti riservati.",
-  "madeWith": "Fatto con amore a Siviglia",
-  "nav": "Navigazione",
-  "home": "Home",
-  "legal": "Note legali"
- },
- "blog": {
-  "title": "Il Blog di Esencia Sevilla",
-  "subtitle": "Guide, consigli e segreti per scoprire Siviglia",
-  "readMore": "Leggi di più",
-  "minRead": "{min} min di lettura",
-  "relatedPosts": "Articoli correlati",
-  "posts": {
-   "que": {
-    "title": "Cosa vedere a Siviglia in 3 giorni",
-    "excerpt": "La guida definitiva per 3 giorni a Siviglia: Cattedrale, Alcázar, Triana, Plaza de España e altro."
-   },
-   "sevilla": {
-    "title": "Siviglia con bambini: guida completa",
-    "excerpt": "Parchi, musei interattivi e attività per godersi Siviglia in famiglia."
-   },
-   "semana": {
-    "title": "Settimana Santa a Siviglia: consigli per turisti",
-    "excerpt": "Tutto ciò che devi sapere per vivere la Settimana Santa sivigliana come un locale."
-   },
-   "como": {
-    "title": "Come muoversi a Siviglia in autobus",
-    "excerpt": "Guida completa ai trasporti pubblici di Siviglia: TUSSAM, carte, percorsi e consigli."
-   },
-   "mejores": {
-    "title": "I migliori tapas vicino alla Cattedrale",
-    "excerpt": "La nostra selezione personale delle migliori taverne e tapas nel centro di Siviglia."
-   }
-  }
- },
- "admin": {
-  "title": "Pannello Proprietario",
-  "dashboard": "Dashboard",
-  "bookings": "Prenotazioni",
-  "calendar": "Calendario",
-  "reviews": "Recensioni",
-  "settings": "Impostazioni",
-  "qrGuide": "QR Guida Turistica",
-  "revenue": "Entrate del mese",
-  "occupancy": "Occupazione",
-  "avgNight": "Prezzo medio/notte",
-  "blockDates": "Blocca date",
-  "downloadQR": "Scarica QR in alta risoluzione",
-  "logout": "Esci"
- },
- "guide": {
-  "headerTitle": "Guida Turistica",
-  "langLabel": "Lingua:",
-  "back": "Indietro",
-  "offline": "Offline",
-  "welcomeTitle": "Benvenuto a Siviglia 🌟",
-  "welcomeText": "La tua guida personale per scoprire il meglio della capitale andalusa. Tutto ciò di cui hai bisogno, offline.",
-  "quickInfo": {
-   "wifi": "WiFi",
-   "wifiNetwork": "Rete",
-   "wifiPassword": "Password",
-   "checkin": "Check-in",
-   "checkout": "Check-out",
-   "emergency": "Emergenze",
-   "checkinFrom": "Dalle",
-   "checkoutBefore": "Entro le"
-  },
-  "weatherTitle": "☀️ Meteo a Siviglia",
-  "mapTitle": "🗺️ Mappa di Siviglia",
-  "routesTitle": "🧭 Percorsi a piedi consigliati",
-  "routesText": "Percorsi per Siviglia e la sua provincia con tappe, storia e consigli. Tocca uno per vedere l'itinerario completo con mappa.",
-  "routeCta": "Vedi percorso",
-  "apartmentTitle": "🏠 Il tuo appartamento",
-  "apartmentText": "Sei nel quartiere San Pablo-Santa Justa, a 7 minuti a piedi dalla stazione AVE Santa Justa e a circa 10 minuti dal centro in bus o taxi.",
-  "addressLabel": "Indirizzo",
-  "arriveLabel": "Come arrivare",
-  "arriveText": "Dall'aeroporto: bus EA fino a Santa Justa e 7 minuti a piedi. Dal centro: bus C1/C2 o taxi (10 min). Fermata bus più vicina: Arroyo (Vicente Alanís), a 2 min.",
-  "contactLabel": "Contatto",
-  "contactText": "Per qualsiasi domanda durante il soggiorno, scrivici su WhatsApp:",
-  "eventsTitle": "🎭 Eventi a Siviglia",
-  "moreInfo": "Più info",
-  "emergencyTitle": "🚨 Numeri di emergenza",
-  "rulesTitle": "📋 Regole della casa",
-  "rules": [
-   "🚭 Non fumatori",
-   "🐾 No animali",
-   "🔇 Silenzio dopo le 22:00",
-   "👥 Max. 4 ospiti",
-   "🎉 Niente feste"
-  ],
-  "checkoutTitle": "✅ Check-out (entro le 12:00)",
-  "checkoutSteps": [
-   "Spegni tutti i condizionatori",
-   "Lascia le chiavi sul tavolo",
-   "Lascia una recensione! 😊"
-  ],
-  "registryLabel": "N. registrazione",
-  "allRoutes": "Vedi tutti i percorsi"
- },
- "common": {
-  "loading": "Caricamento...",
-  "error": "Si è verificato un errore",
-  "retry": "Riprova",
-  "close": "Chiudi",
-  "save": "Salva",
-  "cancel": "Annulla",
-  "confirm": "Conferma",
-  "back": "Indietro",
-  "next": "Avanti",
-  "previous": "Precedente",
-  "seeAll": "Vedi tutti",
-  "learnMore": "Maggiori informazioni",
-  "minutes": "min",
-  "km": "km",
-  "free": "Gratuito",
-  "perNight": "/ notte",
-  "euros": "€",
-  "showMore": "Mostra altro",
-  "showLess": "Mostra meno",
-  "connectionError": "Errore di connessione",
-  "sendError": "Errore di invio"
- },
- "seo": {
-  "homeTitle": "Appartamento Turistico a Siviglia vicino a Santa Justa | Esencia Sevilla",
-  "homeDescription": "Appartamento turistico a Siviglia, a 7 minuti a piedi dalla stazione AVE Santa Justa e a 10 minuti dal centro storico in autobus o taxi. Self check-in, WiFi, A/C. Prenota su Booking.com.",
-  "guideTitle": "Guida Turistica Siviglia Gratuita | Mappa, Itinerari e Trasporti",
-  "guideDescription": "Guida turistica completa e gratuita di Siviglia: mappa interattiva, itinerari a piedi, trasporti TUSSAM, ristoranti ed eventi. Disponibile offline.",
-  "blogTitle": "Blog di Viaggi Siviglia | Guide e Consigli",
-  "blogDescription": "Le migliori guide di viaggio per Siviglia: cosa vedere, dove mangiare, come muoversi. Consigli di locali per vivere Siviglia come un vero sivigliano."
- },
- "cookies": {
-  "title": "Uso dei cookie",
-  "description": "Usiamo cookie per migliorare la tua esperienza e analizzare il traffico. Puoi accettare, rifiutare o personalizzare le tue preferenze.",
-  "customize": "Personalizza preferenze",
-  "necessary": "Necessari",
-  "necessaryDesc": "Richiesti per il funzionamento. Non possono essere disattivati.",
-  "analytics": "Analitici",
-  "analyticsDesc": "Google Analytics per capire come usi il sito.",
-  "marketing": "Marketing",
-  "marketingDesc": "Meta Pixel per misurare le campagne pubblicitarie.",
-  "acceptAll": "Accetta tutti",
-  "rejectAll": "Rifiuta non essenziali",
-  "savePrefs": "Salva preferenze",
-  "close": "Chiudi"
- },
- "nearby": {
-  "title": "Tutto ciò che serve, qui vicino",
-  "subtitle": "Servizi, negozi e trasporti a pochi minuti a piedi dall'appartamento",
-  "minWalk": "{min} min a piedi",
-  "openInMaps": "Vedi su Google Maps",
-  "categories": {
-   "supermarket": "Supermercati",
-   "convenience": "Negozi",
-   "bakery": "Panetterie",
-   "pharmacy": "Farmacie",
-   "tobacco": "Tabaccherie",
-   "bank": "Banche",
-   "atm": "Bancomat",
-   "bus": "Fermate bus",
-   "taxi": "Taxi",
-   "tussam": "Treno / Stazione",
-   "restaurant": "Ristoranti",
-   "bar": "Bar",
-   "fast_food": "Fast food",
-   "laundry": "Lavanderia"
-  },
-  "all": "Tutti"
- },
- "rules": {
-  "noSmoking": "Non fumatori",
-  "noPets": "No animali",
-  "quietHours": "Silenzio dopo le 22:00",
-  "maxGuests": "Max. 4 ospiti",
-  "noParties": "Niente feste"
- },
- "emergency": {
-  "112": "112 - Emergenze",
-  "police": "Polizia Nazionale",
-  "hospital": "Ospedale Virgen del Rocío",
-  "pharmacy": "Farmacia di turno",
-  "taxi": "Teletaxi Siviglia",
-  "host": "Proprietario / Host"
- },
- "privacy": {
-  "title": "Informativa sulla Privacy",
-  "home": "Home",
-  "updated": "Ultimo aggiornamento:",
-  "sections": [
-   {
-    "t": "1. Titolare del trattamento",
-    "p": [
-     "In conformità al Regolamento (UE) 2016/679 (GDPR) e alla Legge Organica 3/2018 (LOPDGDD), vi informiamo che il titolare del trattamento dei vostri dati personali è:"
+  "hero": {
+    "badge": "Appartamento Turistico — Siviglia",
+    "headline": "La tua casa a Siviglia",
+    "subheadline": "A 7 minuti a piedi dalla stazione AVE Santa Justa e a 10 minuti dal centro storico in bus o taxi. Vivi Siviglia come un local.",
+    "cta": "Verifica disponibilità",
+    "ctaSecondary": "Vedi foto",
+    "reviewsBadge": "{count} recensioni 5 stelle",
+    "ratingLabel": "Valutazione media",
+    "savingsBadge": "Risparmia {amount}€ vs Booking",
+    "savingsDesc": "Prenotando direttamente",
+    "registrationLabel": "Nº Registrazione Turistica",
+    "trustBadges": {
+      "checkin": "Check-in autonomo 24h",
+      "wifi": "WiFi ultrarapido",
+      "ac": "A/C in tutte le stanze",
+      "location": "Accanto a Santa Justa (AVE)"
+    },
+    "photoAlts": [
+      "Soggiorno principale di Esencia Sevilla",
+      "Camera principale con letto king",
+      "Cucina completamente attrezzata",
+      "Bagno con doccia e servizi",
+      "Vista dal balcone sul quartiere"
     ],
-    "list": [
-     "Nome: Esencia Sevilla",
-     "Indirizzo: {address}",
-     "Email: {email}",
-     "N. registrazione turistica: {reg}"
+    "landmarks": [
+      {
+        "name": "Cattedrale di Siviglia",
+        "distance": "26 min a piedi"
+      },
+      {
+        "name": "La Giralda",
+        "distance": "26 min a piedi"
+      },
+      {
+        "name": "Real Alcázar",
+        "distance": "27 min a piedi"
+      },
+      {
+        "name": "Quartiere Santa Cruz",
+        "distance": "24 min a piedi"
+      },
+      {
+        "name": "Plaza de España",
+        "distance": "31 min a piedi"
+      },
+      {
+        "name": "Archivio delle Indie",
+        "distance": "26 min a piedi"
+      },
+      {
+        "name": "Torre del Oro",
+        "distance": "32 min a piedi"
+      },
+      {
+        "name": "Museo di Belle Arti",
+        "distance": "20 min a piedi"
+      }
     ]
-   },
-   {
-    "t": "2. Dati raccolti",
-    "p": [
-     "Raccogliamo i seguenti dati personali:"
-    ],
-    "list": [
-     "Dati di prenotazione: nome, email, telefono, date del soggiorno, numero di ospiti",
-     "Dati di pagamento: trattati esclusivamente da Stripe (non memorizziamo dati bancari)",
-     "Pre-check-in: dati del documento d'identità, data di nascita, nazionalità (richiesti per legge)",
-     "Comunicazioni: messaggi di chat o email inviati tramite il sito",
-     "Dati tecnici: indirizzo IP, tipo di browser, pagine visitate (tramite Google Analytics)"
-    ]
-   },
-   {
-    "t": "3. Finalità e base giuridica",
-    "p": [
-     "Trattiamo i vostri dati per:"
-    ],
-    "list": [
-     "Gestione delle prenotazioni: esecuzione del contratto (art. 6.1.b GDPR)",
-     "Registro dei viaggiatori: obbligo di legge, Legge Organica 4/2015 sulla sicurezza cittadina (art. 6.1.c GDPR)",
-     "Comunicazioni sulla prenotazione: esecuzione del contratto",
-     "Marketing/newsletter: consenso dell'interessato (art. 6.1.a GDPR)",
-     "Analytics: interesse legittimo a migliorare il servizio"
-    ]
-   },
-   {
-    "t": "4. Comunicazione a terzi",
-    "p": [
-     "I vostri dati potranno essere comunicati a:"
-    ],
-    "list": [
-     "Forze di sicurezza (SES.HOSPEDERÍA): obbligo di legge",
-     "Stripe Inc.: elaborazione dei pagamenti (certificato PCI-DSS)",
-     "Resend/SendGrid: invio di email transazionali",
-     "Supabase: archiviazione dei dati (server nell'UE)",
-     "Google Analytics: dati anonimizzati per l'analisi del traffico"
-    ]
-   },
-   {
-    "t": "5. Conservazione dei dati",
-    "p": [],
-    "list": [
-     "Dati di prenotazione: 5 anni (obbligo fiscale)",
-     "Dati del registro viaggiatori: 3 anni (normativa di polizia)",
-     "Dati delle comunicazioni: fino a 2 anni dopo l'ultimo contatto"
-    ]
-   },
-   {
-    "t": "6. I vostri diritti",
-    "p": [
-     "Potete esercitare i seguenti diritti inviando un'email a {email}:"
-    ],
-    "list": [
-     "Accesso: conoscere quali dati abbiamo su di voi",
-     "Rettifica: correggere dati inesatti",
-     "Cancellazione: richiedere la cancellazione (ove non vi sia obbligo di legge)",
-     "Portabilità: ricevere i vostri dati in formato elettronico",
-     "Opposizione: opporvi al trattamento per marketing",
-     "Limitazione: limitare il trattamento in determinate circostanze"
-    ],
-    "after": {
-     "pre": "Potete inoltre presentare un reclamo all'",
-     "link": "Agenzia Spagnola per la Protezione dei Dati (AEPD)"
+  },
+  "comparison": {
+    "title": "Perché prenotare qui?",
+    "subtitle": "Comparazione diretta con Booking.com",
+    "feature": "Caratteristica",
+    "direct": "Esencia Sevilla",
+    "booking": "Booking.com",
+    "rows": {
+      "price": "Prezzo",
+      "priceDirect": "10% più economico",
+      "priceBooking": "Prezzo pieno",
+      "cancellation": "Cancellazione",
+      "cancellationDirect": "Non rimborsabile",
+      "cancellationBooking": "Gratuita (prezzo maggiore)",
+      "communication": "Comunicazione",
+      "communicationDirect": "Diretta con l'host",
+      "communicationBooking": "Tramite piattaforma",
+      "extras": "Extra inclusi",
+      "extrasDirect": "Libro benvenuto, guida QR, chat IA",
+      "extrasBooking": "Solo alloggio",
+      "checkin": "Istruzioni arrivo",
+      "checkinDirect": "Personalizzate + mappa",
+      "checkinBooking": "Standard"
     }
-   },
-   {
-    "t": "7. Cookie",
-    "p": [
-     "Utilizziamo cookie propri (sessione) e di terze parti (Google Analytics, Meta Pixel). Potete gestire le vostre preferenze nel banner dei cookie o nelle impostazioni del browser."
+  },
+  "booking": {
+    "title": "Prenota",
+    "subtitle": "Scegli le date e ottieni il miglior prezzo",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Ospiti",
+    "guestCount": "{count} ospite",
+    "guestsCount": "{count} ospiti",
+    "nights": "{count} notte",
+    "nightsPlural": "{count} notti",
+    "pricePerNight": "a notte",
+    "selectDates": "Seleziona le date",
+    "minStay": "Soggiorno minimo: 2 notti",
+    "unavailable": "Non disponibile",
+    "available": "Disponibile",
+    "today": "Oggi",
+    "breakdown": {
+      "title": "Dettaglio del prezzo",
+      "perNight": "{price}€ × {nights} notti",
+      "cleaning": "Tassa di pulizia",
+      "touristTax": "Tassa turistica",
+      "upsells": "Extra selezionati",
+      "discount": "Sconto",
+      "total": "Totale",
+      "bookingComparison": "Su Booking pagheresti",
+      "savings": "Il tuo risparmio"
+    },
+    "upsells": {
+      "title": "Migliora il tuo soggiorno",
+      "add": "Aggiungi",
+      "added": "Aggiunto",
+      "airportTransfer": "Trasferimento aeroporto",
+      "airportTransferDesc": "Prelievo al SVQ, arrivo al tuo orario",
+      "welcomePack": "Pack benvenuto",
+      "welcomePackDesc": "Prodotti locali artigianali di Siviglia",
+      "lateCheckout": "Check-out tardivo (fino alle 14:00)",
+      "lateCheckoutDesc": "Goditi la mattina senza fretta",
+      "travelCot": "Letto da viaggio",
+      "travelCotDesc": "Per neonati fino a 2 anni",
+      "romanticPack": "Pack romantico",
+      "romanticPackDesc": "Vino andaluso + fiori + nota personalizzata"
+    },
+    "coupon": {
+      "label": "Codice sconto",
+      "placeholder": "ESENCIA10",
+      "apply": "Applica",
+      "invalid": "Codice non valido",
+      "applied": "Sconto applicato!"
+    },
+    "nonRefundable": "Questa tariffa è NON RIMBORSABILE",
+    "nonRefundableNote": "Ottieni cancellazione gratuita prenotando su",
+    "bookButton": "Prenota ora — {total}€",
+    "bookingRedirect": "Prenota con cancellazione gratuita su Booking.com",
+    "processing": "Elaborazione...",
+    "noAvailability": "Nessuna disponibilità per queste date",
+    "contactUs": "Contattaci per disponibilità speciale",
+    "cta": "Prenota",
+    "freeCancel": "Cancellazione gratuita",
+    "approxNote": "Questa opzione costa circa il 10% in più della prenotazione diretta.",
+    "maxGuests": "Max {count}"
+  },
+  "gallery": {
+    "title": "L'appartamento",
+    "subtitle": "Spazi pensati per il riposo e il piacere",
+    "viewAll": "Vedi tutte le foto",
+    "virtualTour": "Tour virtuale 360°",
+    "close": "Chiudi",
+    "prev": "Precedente",
+    "next": "Successivo",
+    "comingSoon": "Tour 360° — prossimamente",
+    "noPhotos": "Stiamo preparando il tour virtuale a 360°. Torna presto per esplorare l'appartamento come se fossi lì.",
+    "tourDesc": "Esplora ogni stanza prima di arrivare: soggiorno, camere, cucina e bagno a 360°, come se fossi già dentro.",
+    "tourCta": "Esplora il tour",
+    "tourViews": "{count} viste a 360°",
+    "photos": [
+      {
+        "alt": "Soggiorno principale",
+        "caption": "Soggiorno accogliente con decorazione andalusa"
+      },
+      {
+        "alt": "Camera principale",
+        "caption": "Camera principale con letto matrimoniale"
+      },
+      {
+        "alt": "Seconda camera",
+        "caption": "Seconda camera con due letti singoli"
+      },
+      {
+        "alt": "Bagno",
+        "caption": "Bagno completo con doccia"
+      },
+      {
+        "alt": "Cucina",
+        "caption": "Cucina completamente attrezzata"
+      },
+      {
+        "alt": "Vista città",
+        "caption": "Viste sul quartiere di Siviglia"
+      },
+      {
+        "alt": "Dettagli decorativi",
+        "caption": "Dettagli in ceramica sivigliana"
+      },
+      {
+        "alt": "Zona living",
+        "caption": "Zona living con comodo divano"
+      },
+      {
+        "alt": "Terrazza",
+        "caption": "Accesso alla terrazza esterna"
+      },
+      {
+        "alt": "Ingresso",
+        "caption": "Ingresso e accesso all'appartamento"
+      },
+      {
+        "alt": "Tavolo da pranzo",
+        "caption": "Tavolo da pranzo per 4 persone"
+      },
+      {
+        "alt": "Finestra",
+        "caption": "Finestre con vista sulla strada"
+      }
     ]
-   }
-  ]
- },
- "bookingCta": {
-  "title": "Prenota su Booking.com",
-  "text": "Le prenotazioni avvengono direttamente su Booking.com, con cancellazione gratuita e pagamento sicuro sulla piattaforma.",
-  "button": "Prenota su Booking.com",
-  "note": "Verrai reindirizzato a Booking.com per completare la prenotazione."
- }
+  },
+  "map": {
+    "title": "Esplora Siviglia dal tuo appartamento",
+    "subtitle": "Itinerari, monumenti e segreti locali",
+    "tabs": {
+      "map": "Mappa interattiva",
+      "routes": "Itinerari a piedi",
+      "transport": "Trasporti"
+    },
+    "categories": {
+      "all": "Tutti",
+      "monument": "Monumenti",
+      "neighborhood": "Quartieri",
+      "culture": "Cultura",
+      "food": "Gastronomia",
+      "nature": "Natura",
+      "modern": "Moderno",
+      "fun": "Intrattenimento"
+    },
+    "openInMaps": "Apri in Google Maps",
+    "entranceFree": "Ingresso libero",
+    "minutesWalk": "{min} min a piedi",
+    "routeDetails": "Vedi itinerario completo",
+    "routeCategories": {
+      "classic": "Classica",
+      "neighborhoods": "Quartieri",
+      "romantic": "Romantica",
+      "food": "Gastronomica",
+      "family": "Familiare",
+      "culture": "Culturale",
+      "nature": "Natura",
+      "shopping": "Shopping",
+      "photos": "Fotografica",
+      "history": "Storia",
+      "legends": "Leggende",
+      "art": "Arte",
+      "daytrip": "Escursione",
+      "wine": "Vino",
+      "beach": "Spiaggia"
+    },
+    "transport": {
+      "title": "Come muoversi a Siviglia",
+      "multiviaje": "Carta Multiviaje TUSSAM",
+      "multiviajePrices": "Ricarica da 5€ alle macchinette delle fermate e sull'app TUSSAM",
+      "nearestStop": "Fermata più vicina all'appartamento",
+      "lines": "Linee disponibili",
+      "frequency": "Frequenza",
+      "price": "Prezzo",
+      "nearestStopLine": "Fermata più vicina: Arroyo (Vicente Alanís) — 2 min a piedi"
+    },
+    "fullRoute": "Percorso completo in Google Maps",
+    "bestTime": "Orario migliore",
+    "routeTransport": {
+      "walking": "A piedi",
+      "public": "Trasporto pubblico",
+      "car": "In auto"
+    },
+    "howToGet": "Come arrivare",
+    "historyLabel": "Storia",
+    "officialWeb": "Sito ufficiale",
+    "filterAll": "Tutte",
+    "filterBy": "Filtra per tipo",
+    "zoneLabel": "Zona",
+    "zones": {
+      "all": "Tutte",
+      "centro": "Centro storico",
+      "santa-cruz": "Santa Cruz & María Luisa",
+      "paseo-rio": "Lungofiume",
+      "triana": "Triana",
+      "macarena": "Macarena & Alameda",
+      "cartuja": "Cartuja & Isla"
+    }
+  },
+  "events": {
+    "title": "Siviglia ti aspetta",
+    "subtitle": "Eventi e festival dell'anno",
+    "highSeason": "Alta stagione — prenota in anticipo",
+    "limitedAvailability": "Disponibilità limitata in queste date",
+    "viewMore": "Maggiori informazioni",
+    "bookForEvent": "Prenota per questo evento",
+    "now": "In corso",
+    "startsIn": "Inizia tra {days} giorni."
+  },
+  "reviews": {
+    "title": "Cosa dicono i nostri ospiti",
+    "subtitle": "Oltre {count} recensioni verificate",
+    "overallRating": "Valutazione generale",
+    "basedOn": "basato su {count} recensioni",
+    "leaveReview": "Lascia una recensione",
+    "sources": {
+      "google": "Google Reviews",
+      "booking": "Booking.com",
+      "airbnb": "Airbnb",
+      "direct": "Prenotazione diretta"
+    },
+    "readMore": "Leggi di più",
+    "showLess": "Mostra meno",
+    "leaveGoogle": "Lascia una recensione Google",
+    "leaveBooking": "Recensisci su Booking"
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "subtitle": "Tutto ciò che devi sapere prima di arrivare",
+    "questions": {
+      "q1": "C'è un parcheggio vicino all'appartamento?",
+      "a1": "Nessun parcheggio privato nell'edificio. L'appartamento è fuori dalle zone a traffico limitato del centro: parcheggiare in zona è più facile che nel centro storico. Per visitare il centro (a circa 2 km) consigliamo bus, taxi o un parcheggio del centro.",
+      "q2": "Si accettano animali?",
+      "a2": "Spiacenti, non si accettano animali nell'appartamento per rispettare gli altri ospiti e mantenere la pulizia.",
+      "q3": "Come funziona il check-in autonomo?",
+      "a3": "24h prima del tuo arrivo riceverai un messaggio WhatsApp e email con il codice della cassetta di sicurezza dove si trovano le chiavi. Non è necessario coordinarsi con nessuno. Puoi arrivare in qualsiasi ora tra le 16:00 e le 23:00.",
+      "q4": "Le pulizie sono incluse?",
+      "a4": "Sì. Prima del vostro arrivo l'appartamento riceve una pulizia completa, con cambio di lenzuola e asciugamani e rifornimento dei bagni.",
+      "q5": "C'è l'aria condizionata?",
+      "a5": "Sì, l'appartamento ha aria condizionata in tutte le stanze (soggiorno e camere). È indispensabile in estate quando le temperature a Siviglia possono superare i 40°C.",
+      "q6": "Qual è la capacità massima dell'appartamento?",
+      "a6": "L'appartamento ospita 4 ospiti: una camera doppia con letto king e un'altra camera con due letti singoli.",
+      "q7": "Si può ospitare un neonato?",
+      "a7": "Certo! L'appartamento è adatto a bambini di tutte le età. Culla da viaggio disponibile su richiesta, basta chiederla.",
+      "q8": "C'è il WiFi? È veloce?",
+      "a8": "Sì, l'appartamento dispone di WiFi in fibra ad alta velocità (600 Mbps). Il nome della rete e la password si trovano nel libro di benvenuto.",
+      "q9": "A che ora sono il check-in e il check-out?",
+      "a9": "Check-in: dalle 16:00. Check-out: entro le 12:00. Se il vostro volo arriva prima, potete lasciare i bagagli gratuitamente e girare per la città.",
+      "q10": "L'appartamento ha una cucina attrezzata?",
+      "a10": "Sì, la cucina è completamente attrezzata: frigorifero, piano a induzione, microonde, macchina da caffè (capsule Nespresso), tostapane, bollitore, utensili completi e stoviglie per 4 persone.",
+      "q11": "È permesso fumare nell'appartamento?",
+      "a11": "Non è permesso fumare nell'appartamento. Il mancato rispetto di questa regola comporta una penalità di 150€.",
+      "q12": "Come arrivo dall'aeroporto all'appartamento?",
+      "a12": "L'opzione più semplice è il bus EA (Airport Express), ogni 15-30 minuti a 4 €. Scendete a Santa Justa (circa 30-40 minuti), da lì l'appartamento è a 7 minuti a piedi.",
+      "q13": "Cosa faccio se ho un problema durante il soggiorno?",
+      "a13": "Siamo disponibili 24/7 su WhatsApp per qualsiasi evenienza. In caso di emergenza: il 112 è il numero di emergenza in Spagna.",
+      "q14": "Si accettano addii al celibato/nubilato o feste?",
+      "a14": "Non sono ammesse feste o eventi che possano disturbare i vicini. Siviglia ha molte opzioni per il tempo libero notturno, ma l'appartamento è esclusivamente per il riposo.",
+      "q15": "L'edificio ha un ascensore?",
+      "a15": "Sì, l'edificio dispone di un ascensore.",
+      "q16": "C'è una lavatrice?",
+      "a16": "Sì, l'appartamento dispone di una lavatrice con detersivo incluso.",
+      "q17": "Posso fare un check-out tardivo se il mio volo è nel pomeriggio?",
+      "a17": "Il check-out standard è entro le 12:00. Per partenze più tarde potete lasciare i bagagli custoditi nell'appartamento.",
+      "q18": "L'appartamento è adatto a persone con mobilità ridotta?",
+      "a18": "L'edificio ha un ascensore. L'appartamento è al 3° piano. C'è un gradino all'ingresso dell'edificio. Se hai esigenze speciali, consultaci prima di prenotare.",
+      "q19": "Come funziona il pre-check-in online?",
+      "a19": "Alla conferma della prenotazione riceverai un link per completare il pre-check-in: dati del passaporto, orario stimato di arrivo e preferenze. Questo ci permette di preparare tutto per il tuo arrivo e rispettare la normativa spagnola di registrazione dei viaggiatori.",
+      "q20": "Qual è il numero di registrazione turistica dell'appartamento?",
+      "a20": "Numero di registrazione turistica della Giunta di Andalusia: AT/SE/03584. Puoi verificarlo nel Registro del Turismo dell'Andalusia."
+    },
+    "searchPlaceholder": "Cerca domanda...",
+    "noAnswer": "Non trovi la risposta?",
+    "contactDirect": "Contattaci direttamente su WhatsApp",
+    "whatsappCta": "Scrivici su WhatsApp",
+    "whatsappMessage": "Ciao! Ho una domanda sull'appartamento Esencia Sevilla"
+  },
+  "location": {
+    "title": "Dove siamo",
+    "subtitle": "Ben collegato: AVE a 7 min a piedi, centro a 10 min in bus o taxi",
+    "address": "Imaginero Luis Álvarez Duarte 7, 41008 Siviglia",
+    "howToArrive": "Come arrivare",
+    "fromAirport": "Dall'aeroporto SVQ",
+    "fromStation": "Da Santa Justa (Renfe)",
+    "byCar": "In auto",
+    "step": "Passo {n}",
+    "arrivalSteps": {
+      "airport": {
+        "step1": "Prendi il bus EA (Airport Express) all'uscita arrivi — 4€",
+        "step2": "Scendi a Santa Justa (≈30-40 min)",
+        "step3": "Cammina 7 minuti verso nord fino all'appartamento",
+        "step4": "Arriva a Imaginero Luis Álvarez Duarte, 7"
+      },
+      "train": {
+        "step1": "Esci da Santa Justa dall'uscita Avenida de Kansas City",
+        "step2": "Cammina 7 minuti verso nord lungo l'Avenida de Kansas City",
+        "step3": "Arrivi a Imaginero Luis Álvarez Duarte, 7"
+      },
+      "car": {
+        "step1": "L'appartamento è fuori dalle zone a traffico limitato del centro: arrivare in auto è semplice",
+        "step2": "Inserisci nel GPS: Imaginero Luis Álvarez Duarte, 7, Siviglia",
+        "step3": "Zona di carico/scarico davanti all'edificio; parcheggio in zona"
+      }
+    },
+    "privateTransfer": "Preferisci un transfer privato?",
+    "privateTransferDesc": "Presa in carico personalizzata in aeroporto per 35 €",
+    "addTransfer": "Aggiungi transfer alla prenotazione"
+  },
+  "chat": {
+    "title": "Assistente Esencia Sevilla",
+    "subtitle": "Chiedimi dell'appartamento, di Siviglia o della tua prenotazione",
+    "placeholder": "Scrivi la tua domanda...",
+    "send": "Invia",
+    "welcome": "Ciao! Sono l'assistente virtuale di Esencia Sevilla. Posso aiutarti con informazioni sull'appartamento, consigli su Siviglia, trasporti o la tua prenotazione. Come posso aiutarti?",
+    "suggestions": [
+      "A che ora è il check-in?",
+      "Qual è la password del WiFi?",
+      "Come arrivo dall'aeroporto?",
+      "Quali ristoranti consigli nei dintorni?"
+    ],
+    "typing": "Scrivendo...",
+    "error": "Errore di connessione. Riprova.",
+    "poweredBy": "Assistito da IA",
+    "close": "Chiudi"
+  },
+  "guestPortal": {
+    "title": "Portale dell'Ospite",
+    "subtitle": "Completa il tuo pre-check-in",
+    "countdown": "Mancano {days} giorni al tuo soggiorno",
+    "countdownToday": "Il tuo soggiorno inizia oggi!",
+    "preCheckin": {
+      "title": "Pre-check-in online",
+      "subtitle": "Completa i tuoi dati per un arrivo senza attese",
+      "documentType": "Tipo di documento",
+      "passport": "Passaporto",
+      "dni": "DNI",
+      "nie": "NIE",
+      "documentNumber": "Numero di documento",
+      "documentExpiry": "Data di scadenza",
+      "nationality": "Nazionalità",
+      "arrivalTime": "Orario stimato di arrivo",
+      "specialRequests": "Richieste speciali (opzionale)",
+      "addGuest": "Aggiungi ospite",
+      "guestN": "Ospite {n}",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "birthDate": "Data di nascita",
+      "submit": "Conferma pre-check-in",
+      "success": "Pre-check-in completato! Riceverai il codice di accesso 24h prima del tuo arrivo.",
+      "legalNote": "Dati richiesti dalla Legge Organica di Sicurezza Cittadina (Spagna) per la registrazione dei viaggiatori.",
+      "done": "Pre-check-in completato!",
+      "pageTitle": "Pre-check-in",
+      "pageIntro": "Completa i tuoi dati prima dell'arrivo per velocizzare il check-in e rispettare la normativa spagnola sul registro dei viaggiatori."
+    }
+  },
+  "welcomeBook": {
+    "title": "Libro di Benvenuto",
+    "wifi": "WiFi",
+    "wifiPassword": "Password",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "rules": "Regole della casa",
+    "emergencies": "Emergenze",
+    "appliances": "Elettrodomestici",
+    "checkoutSteps": "Passaggi per il check-out",
+    "recommendations": "Consigli dell'host",
+    "password": "Password:",
+    "wifiNote": "Fibra ottica 600 Mbps, segnale 5G in tutto l'appartamento",
+    "pageTitle": "Libro di benvenuto",
+    "pageSubtitle": "Tutto ciò che ti serve per goderti il soggiorno a {name}.",
+    "appliancesList": [
+      {
+        "name": "Frigorifero",
+        "instructions": "Frigorifero combinato: regola la temperatura dal pannello interno. Congelatore in basso."
+      },
+      {
+        "name": "Macchina Nespresso",
+        "instructions": "1. Riempire il serbatoio dell'acqua. 2. Inserire una capsula. 3. Premere il pulsante espresso (40 ml) o lungo (110 ml)."
+      },
+      {
+        "name": "Aria condizionata",
+        "instructions": "Telecomando in soggiorno. In estate si consiglia la modalità Cool a 22-24 °C."
+      },
+      {
+        "name": "Smart TV",
+        "instructions": "Telecomando sul tavolino. Netflix/Prime Video disponibili con il tuo account. Porta USB disponibile."
+      },
+      {
+        "name": "Scaldabagno",
+        "instructions": "Scaldabagno in bagno. Temperatura regolabile. Acqua calda disponibile 24 h."
+      },
+      {
+        "name": "Lavatrice",
+        "instructions": "Detersivo nell'armadio. Programma Eco 40 °C per l'uso normale (1 h 20 min). Non usare per capi delicati."
+      }
+    ],
+    "checkoutList": [
+      "Raccogli tutte le tue cose (controlla cassetti, bagno, armadi).",
+      "Chiudi finestre e tapparelle.",
+      "Lascia le chiavi sul tavolo.",
+      "Spegni l'aria condizionata e le luci.",
+      "Chiudi la porta uscendo."
+    ],
+    "recommendationsList": [
+      {
+        "name": "Bar Danubio",
+        "type": "Bar di quartiere",
+        "distance": "3 min a piedi",
+        "note": "Colazioni e tapas di sempre, atmosfera locale."
+      },
+      {
+        "name": "La Rosaleda",
+        "type": "Ristorante andaluso",
+        "distance": "4 min a piedi",
+        "note": "Menù del giorno fatto in casa, molto popolare in zona."
+      },
+      {
+        "name": "Berenice Bistrot",
+        "type": "Ristorante",
+        "distance": "2 min a piedi",
+        "note": "Cucina di mercato in un piccolo locale."
+      },
+      {
+        "name": "Alimentación La Esquinita",
+        "type": "Alimentari",
+        "distance": "2 min a piedi",
+        "note": "Tutto il necessario per il frigo."
+      },
+      {
+        "name": "Panadería Polvillo",
+        "type": "Panetteria",
+        "distance": "9 min a piedi",
+        "note": "Pane appena sfornato e pasticceria."
+      },
+      {
+        "name": "Mercadona",
+        "type": "Supermercato",
+        "distance": "6 min a piedi",
+        "note": "Spesa completa vicino a casa."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "La tua casa a Siviglia",
+    "registrationLabel": "Nº Registrazione Turistica",
+    "links": {
+      "privacy": "Informativa sulla Privacy",
+      "terms": "Termini e Condizioni",
+      "cookies": "Politica dei Cookie",
+      "blog": "Blog",
+      "guide": "Guida Turistica"
+    },
+    "contact": "Contatto",
+    "followUs": "Seguici",
+    "copyright": "© {year} Esencia Sevilla. Tutti i diritti riservati.",
+    "madeWith": "Fatto con amore a Siviglia",
+    "nav": "Navigazione",
+    "home": "Home",
+    "legal": "Note legali"
+  },
+  "blog": {
+    "title": "Il Blog di Esencia Sevilla",
+    "subtitle": "Guide, consigli e segreti per scoprire Siviglia",
+    "readMore": "Leggi di più",
+    "minRead": "{min} min di lettura",
+    "relatedPosts": "Articoli correlati",
+    "posts": {
+      "que": {
+        "title": "Cosa vedere a Siviglia in 3 giorni",
+        "excerpt": "La guida definitiva per 3 giorni a Siviglia: Cattedrale, Alcázar, Triana, Plaza de España e altro."
+      },
+      "sevilla": {
+        "title": "Siviglia con bambini: guida completa",
+        "excerpt": "Parchi, musei interattivi e attività per godersi Siviglia in famiglia."
+      },
+      "semana": {
+        "title": "Settimana Santa a Siviglia: consigli per turisti",
+        "excerpt": "Tutto ciò che devi sapere per vivere la Settimana Santa sivigliana come un locale."
+      },
+      "como": {
+        "title": "Come muoversi a Siviglia in autobus",
+        "excerpt": "Guida completa ai trasporti pubblici di Siviglia: TUSSAM, carte, percorsi e consigli."
+      },
+      "mejores": {
+        "title": "I migliori tapas vicino alla Cattedrale",
+        "excerpt": "La nostra selezione personale delle migliori taverne e tapas nel centro di Siviglia."
+      }
+    }
+  },
+  "admin": {
+    "title": "Pannello Proprietario",
+    "dashboard": "Dashboard",
+    "bookings": "Prenotazioni",
+    "calendar": "Calendario",
+    "reviews": "Recensioni",
+    "settings": "Impostazioni",
+    "qrGuide": "QR Guida Turistica",
+    "revenue": "Entrate del mese",
+    "occupancy": "Occupazione",
+    "avgNight": "Prezzo medio/notte",
+    "blockDates": "Blocca date",
+    "downloadQR": "Scarica QR in alta risoluzione",
+    "logout": "Esci"
+  },
+  "guide": {
+    "headerTitle": "Guida Turistica",
+    "langLabel": "Lingua:",
+    "back": "Indietro",
+    "offline": "Offline",
+    "welcomeTitle": "Benvenuto a Siviglia 🌟",
+    "welcomeText": "La tua guida personale per scoprire il meglio della capitale andalusa. Tutto ciò di cui hai bisogno, offline.",
+    "quickInfo": {
+      "wifi": "WiFi",
+      "wifiNetwork": "Rete",
+      "wifiPassword": "Password",
+      "checkin": "Check-in",
+      "checkout": "Check-out",
+      "emergency": "Emergenze",
+      "checkinFrom": "Dalle",
+      "checkoutBefore": "Entro le"
+    },
+    "weatherTitle": "☀️ Meteo a Siviglia",
+    "mapTitle": "🗺️ Mappa di Siviglia",
+    "routesTitle": "🧭 Percorsi a piedi consigliati",
+    "routesText": "Percorsi per Siviglia e la sua provincia con tappe, storia e consigli. Tocca uno per vedere l'itinerario completo con mappa.",
+    "routeCta": "Vedi percorso",
+    "apartmentTitle": "🏠 Il tuo appartamento",
+    "apartmentText": "Sei nel quartiere San Pablo-Santa Justa, a 7 minuti a piedi dalla stazione AVE Santa Justa e a circa 10 minuti dal centro in bus o taxi.",
+    "addressLabel": "Indirizzo",
+    "arriveLabel": "Come arrivare",
+    "arriveText": "Dall'aeroporto: bus EA fino a Santa Justa e 7 minuti a piedi. Dal centro: bus C1/C2 o taxi (10 min). Fermata bus più vicina: Arroyo (Vicente Alanís), a 2 min.",
+    "contactLabel": "Contatto",
+    "contactText": "Per qualsiasi domanda durante il soggiorno, scrivici su WhatsApp:",
+    "eventsTitle": "🎭 Eventi a Siviglia",
+    "moreInfo": "Più info",
+    "emergencyTitle": "🚨 Numeri di emergenza",
+    "rulesTitle": "📋 Regole della casa",
+    "rules": [
+      "🚭 Non fumatori",
+      "🐾 No animali",
+      "🔇 Silenzio dopo le 22:00",
+      "👥 Max. 4 ospiti",
+      "🎉 Niente feste"
+    ],
+    "checkoutTitle": "✅ Check-out (entro le 12:00)",
+    "checkoutSteps": [
+      "Spegni tutti i condizionatori",
+      "Lascia le chiavi sul tavolo",
+      "Lascia una recensione! 😊"
+    ],
+    "registryLabel": "N. registrazione",
+    "allRoutes": "Vedi tutti i percorsi"
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "retry": "Riprova",
+    "close": "Chiudi",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "confirm": "Conferma",
+    "back": "Indietro",
+    "next": "Avanti",
+    "previous": "Precedente",
+    "seeAll": "Vedi tutti",
+    "learnMore": "Maggiori informazioni",
+    "minutes": "min",
+    "km": "km",
+    "free": "Gratuito",
+    "perNight": "/ notte",
+    "euros": "€",
+    "showMore": "Mostra altro",
+    "showLess": "Mostra meno",
+    "connectionError": "Errore di connessione",
+    "sendError": "Errore di invio"
+  },
+  "seo": {
+    "homeTitle": "Appartamento Turistico a Siviglia vicino a Santa Justa | Esencia Sevilla",
+    "homeDescription": "Appartamento turistico a Siviglia, a 7 minuti a piedi dalla stazione AVE Santa Justa e a 10 minuti dal centro storico in autobus o taxi. Self check-in, WiFi, A/C. Prenota su Booking.com.",
+    "guideTitle": "Guida Turistica Siviglia Gratuita | Mappa, Itinerari e Trasporti",
+    "guideDescription": "Guida turistica completa e gratuita di Siviglia: mappa interattiva, itinerari a piedi, trasporti TUSSAM, ristoranti ed eventi. Disponibile offline.",
+    "blogTitle": "Blog di Viaggi Siviglia | Guide e Consigli",
+    "blogDescription": "Le migliori guide di viaggio per Siviglia: cosa vedere, dove mangiare, come muoversi. Consigli di locali per vivere Siviglia come un vero sivigliano."
+  },
+  "cookies": {
+    "title": "Uso dei cookie",
+    "description": "Usiamo cookie per migliorare la tua esperienza e analizzare il traffico. Puoi accettare, rifiutare o personalizzare le tue preferenze.",
+    "customize": "Personalizza preferenze",
+    "necessary": "Necessari",
+    "necessaryDesc": "Richiesti per il funzionamento. Non possono essere disattivati.",
+    "analytics": "Analitici",
+    "analyticsDesc": "Google Analytics per capire come usi il sito.",
+    "marketing": "Marketing",
+    "marketingDesc": "Meta Pixel per misurare le campagne pubblicitarie.",
+    "acceptAll": "Accetta tutti",
+    "rejectAll": "Rifiuta non essenziali",
+    "savePrefs": "Salva preferenze",
+    "close": "Chiudi"
+  },
+  "nearby": {
+    "title": "Tutto ciò che serve, qui vicino",
+    "subtitle": "Servizi, negozi e trasporti a pochi minuti a piedi dall'appartamento",
+    "minWalk": "{min} min a piedi",
+    "openInMaps": "Vedi su Google Maps",
+    "categories": {
+      "supermarket": "Supermercati",
+      "convenience": "Negozi",
+      "bakery": "Panetterie",
+      "pharmacy": "Farmacie",
+      "tobacco": "Tabaccherie",
+      "bank": "Banche",
+      "atm": "Bancomat",
+      "bus": "Fermate bus",
+      "taxi": "Taxi",
+      "tussam": "Treno / Stazione",
+      "restaurant": "Ristoranti",
+      "bar": "Bar",
+      "fast_food": "Fast food",
+      "laundry": "Lavanderia"
+    },
+    "all": "Tutti"
+  },
+  "rules": {
+    "noSmoking": "Non fumatori",
+    "noPets": "No animali",
+    "quietHours": "Silenzio dopo le 22:00",
+    "maxGuests": "Max. 4 ospiti",
+    "noParties": "Niente feste"
+  },
+  "emergency": {
+    "112": "112 - Emergenze",
+    "police": "Polizia Nazionale",
+    "hospital": "Ospedale Virgen del Rocío",
+    "pharmacy": "Farmacia di turno",
+    "taxi": "Teletaxi Siviglia",
+    "host": "Proprietario / Host"
+  },
+  "privacy": {
+    "title": "Informativa sulla Privacy",
+    "home": "Home",
+    "updated": "Ultimo aggiornamento:",
+    "sections": [
+      {
+        "t": "1. Titolare del trattamento",
+        "p": [
+          "In conformità al Regolamento (UE) 2016/679 (GDPR) e alla Legge Organica 3/2018 (LOPDGDD), vi informiamo che il titolare del trattamento dei vostri dati personali è:"
+        ],
+        "list": [
+          "Nome: Esencia Sevilla",
+          "Indirizzo: {address}",
+          "Email: {email}",
+          "N. registrazione turistica: {reg}"
+        ]
+      },
+      {
+        "t": "2. Dati raccolti",
+        "p": [
+          "Raccogliamo i seguenti dati personali:"
+        ],
+        "list": [
+          "Dati di prenotazione: nome, email, telefono, date del soggiorno, numero di ospiti",
+          "Dati di pagamento: trattati esclusivamente da Stripe (non memorizziamo dati bancari)",
+          "Pre-check-in: dati del documento d'identità, data di nascita, nazionalità (richiesti per legge)",
+          "Comunicazioni: messaggi di chat o email inviati tramite il sito",
+          "Dati tecnici: indirizzo IP, tipo di browser, pagine visitate (tramite Google Analytics)"
+        ]
+      },
+      {
+        "t": "3. Finalità e base giuridica",
+        "p": [
+          "Trattiamo i vostri dati per:"
+        ],
+        "list": [
+          "Gestione delle prenotazioni: esecuzione del contratto (art. 6.1.b GDPR)",
+          "Registro dei viaggiatori: obbligo di legge, Legge Organica 4/2015 sulla sicurezza cittadina (art. 6.1.c GDPR)",
+          "Comunicazioni sulla prenotazione: esecuzione del contratto",
+          "Marketing/newsletter: consenso dell'interessato (art. 6.1.a GDPR)",
+          "Analytics: interesse legittimo a migliorare il servizio"
+        ]
+      },
+      {
+        "t": "4. Comunicazione a terzi",
+        "p": [
+          "I vostri dati potranno essere comunicati a:"
+        ],
+        "list": [
+          "Forze di sicurezza (SES.HOSPEDERÍA): obbligo di legge",
+          "Stripe Inc.: elaborazione dei pagamenti (certificato PCI-DSS)",
+          "Resend/SendGrid: invio di email transazionali",
+          "Supabase: archiviazione dei dati (server nell'UE)",
+          "Google Analytics: dati anonimizzati per l'analisi del traffico"
+        ]
+      },
+      {
+        "t": "5. Conservazione dei dati",
+        "p": [],
+        "list": [
+          "Dati di prenotazione: 5 anni (obbligo fiscale)",
+          "Dati del registro viaggiatori: 3 anni (normativa di polizia)",
+          "Dati delle comunicazioni: fino a 2 anni dopo l'ultimo contatto"
+        ]
+      },
+      {
+        "t": "6. I vostri diritti",
+        "p": [
+          "Potete esercitare i seguenti diritti inviando un'email a {email}:"
+        ],
+        "list": [
+          "Accesso: conoscere quali dati abbiamo su di voi",
+          "Rettifica: correggere dati inesatti",
+          "Cancellazione: richiedere la cancellazione (ove non vi sia obbligo di legge)",
+          "Portabilità: ricevere i vostri dati in formato elettronico",
+          "Opposizione: opporvi al trattamento per marketing",
+          "Limitazione: limitare il trattamento in determinate circostanze"
+        ],
+        "after": {
+          "pre": "Potete inoltre presentare un reclamo all'",
+          "link": "Agenzia Spagnola per la Protezione dei Dati (AEPD)"
+        }
+      },
+      {
+        "t": "7. Cookie",
+        "p": [
+          "Utilizziamo cookie propri (sessione) e di terze parti (Google Analytics, Meta Pixel). Potete gestire le vostre preferenze nel banner dei cookie o nelle impostazioni del browser."
+        ]
+      }
+    ]
+  },
+  "bookingCta": {
+    "title": "Prenota su Booking.com",
+    "text": "Le prenotazioni avvengono direttamente su Booking.com, con cancellazione gratuita e pagamento sicuro sulla piattaforma.",
+    "button": "Prenota su Booking.com",
+    "note": "Verrai reindirizzato a Booking.com per completare la prenotazione."
+  }
 }

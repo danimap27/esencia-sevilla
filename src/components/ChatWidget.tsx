@@ -47,19 +47,31 @@ export default function ChatWidget() {
     setInput('');
     setIsLoading(true);
 
+    // Lanza el chat: primero /api/chat (Next, con Node), y si no hay API
+    // (hosting estático), fallback a /chat.php (proxy PHP a OpenRouter).
+    const callChat = async (endpoint: string, body: string) => {
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body,
+        });
+        if (!res.ok) return null;
+        const data = await res.json();
+        if (data && typeof data.message === 'string') return data as { message: string };
+      } catch {
+        // JSON inválido o endpoint inexistente
+      }
+      return null;
+    };
+
     try {
-      const res = await fetch('/api/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          messages: [...messages, userMsg],
-          locale,
-        }),
+      const body = JSON.stringify({
+        messages: [...messages, userMsg],
+        locale,
       });
-
-      if (!res.ok) throw new Error('API error');
-
-      const data = await res.json();
+      const data = (await callChat('/api/chat', body)) || (await callChat('/chat.php', body));
+      if (!data) throw new Error('No chat endpoint');
       setMessages(prev => [...prev, { role: 'assistant', content: data.message }]);
     } catch {
       setMessages(prev => [

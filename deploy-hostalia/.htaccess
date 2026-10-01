@@ -1,0 +1,49 @@
+# Esencia Sevilla — hosting estático (Apache con mod_rewrite, p.ej. Hostalia)
+# Sube TODO el contenido de out/ a public_html (raíz del dominio).
+
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 1) Raíz del dominio → home en español
+RewriteRule ^$ /es/ [R=302,L]
+
+# 2) /xx/pre-checkin no existe en el build estático (necesita API) → guía
+RewriteRule ^(es|en|fr|de|it|pt)/pre-checkin/?$ /$1/guia [R=302,L]
+
+# 3) Rutas sin prefijo de idioma → /es/... (replica del middleware de Next)
+RewriteCond %{REQUEST_URI} !^/(es|en|fr|de|it|pt)(/|$)
+RewriteCond %{REQUEST_URI} !^/_next/
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]+$
+RewriteRule ^(.*)$ /es/$1 [R=302,L]
+
+# 4) Fallback por si algún enlace apunta a página .html plana (sin carpeta)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+</IfModule>
+
+# Manifest de la PWA
+<IfModule mod_mime.c>
+AddType application/manifest+json .webmanifest
+</IfModule>
+
+# El service worker debe poder vivir en la raíz
+<FilesMatch "^(sw\.js|workbox-.*\.js)$">
+  <IfModule mod_headers.c>
+    Header set Service-Worker-Allowed "/"
+  </IfModule>
+</FilesMatch>
+
+# Cache corta para HTML y larga para los assets de Next (hashed)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType application/json "access plus 1 hour"
+</IfModule>

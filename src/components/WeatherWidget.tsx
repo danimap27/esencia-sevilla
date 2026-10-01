@@ -3,36 +3,38 @@
 import { useState, useEffect } from 'react';
 import { Cloud, Droplets, Wind } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { type WeatherData, openMeteoUrl, mapOpenMeteo } from '@/lib/weather-codes';
 
-interface WeatherData {
-  current: {
-    temperature: number;
-    icon: string;
-    description: string;
-    windSpeed: number;
-    humidity: number;
-  };
-  forecast: Array<{
-    date: string;
-    maxTemp: number;
-    minTemp: number;
-    icon: string;
-    precipitation: number;
-  }>;
-}
+const LAT = process.env.NEXT_PUBLIC_APARTMENT_LAT || '37.3968636';
+const LNG = process.env.NEXT_PUBLIC_APARTMENT_LNG || '-5.9742189';
 
 export default function WeatherWidget({ compact = false }: { compact?: boolean }) {
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Fallback: llamada directa a Open-Meteo (funciona también en hosting estático
+    // sin /api/weather; Open-Meteo permite CORS y no necesita key).
+    const loadDirect = () =>
+      fetch(openMeteoUrl(LAT, LNG))
+        .then(res => (res.ok ? res.json() : Promise.reject(new Error('open-meteo'))))
+        .then(data => {
+          setWeather(mapOpenMeteo(data));
+          setLoading(false);
+        })
+        .catch(() => setLoading(false));
+
     fetch('/api/weather')
-      .then(res => res.json())
+      .then(res => (res.ok ? res.json() : Promise.reject(new Error('api'))))
       .then(data => {
-        if (data.current) setWeather(data);
-        setLoading(false);
+        if (data && data.current) {
+          setWeather(data);
+          setLoading(false);
+        } else {
+          return loadDirect();
+        }
       })
-      .catch(() => setLoading(false));
+      .catch(() => loadDirect());
   }, []);
 
   if (loading) {
