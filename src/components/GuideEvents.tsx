@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { parseISO, format, type Locale as DateFnsLocale } from 'date-fns';
 import { es, enUS, fr, de, it, pt } from 'date-fns/locale';
@@ -66,26 +67,48 @@ export default function GuideEvents({ limit = 6 }: { limit?: number }) {
           ? format(startDate, 'd MMM yyyy', { locale: dateFnsLocale })
           : `${format(startDate, 'd MMM yyyy', { locale: dateFnsLocale })} – ${format(endDate, 'd MMM yyyy', { locale: dateFnsLocale })}`;
 
+        const title = event.title?.[locale] || event.title?.es || '';
+
         return (
-          <div key={event.id} className="card p-5">
-            <div className="flex items-start justify-between mb-2">
-              <h3 className="font-serif text-lg text-tinta">{event.title?.[locale] || event.title?.es || ''}</h3>
-              {event.isHighSeason && (
-                <span className="badge bg-terracota-100 text-terracota-600 text-xs">★</span>
+          <div key={event.id} className="card group">
+            {/* Foto del evento */}
+            {event.image && (
+              <div className="relative h-40 overflow-hidden">
+                <Image
+                  src={event.image}
+                  alt={title}
+                  fill
+                  unoptimized
+                  loading="lazy"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-tinta/40 to-transparent" />
+                {event.isHighSeason && (
+                  <span className="absolute top-3 right-3 badge bg-terracota-500 text-white text-xs">★</span>
+                )}
+              </div>
+            )}
+            <div className="p-5">
+              <div className="flex items-start justify-between mb-2">
+                <h3 className="font-serif text-lg text-tinta">{title}</h3>
+                {event.isHighSeason && !event.image && (
+                  <span className="badge bg-terracota-100 text-terracota-600 text-xs">★</span>
+                )}
+              </div>
+              <p className="text-sm text-tinta/60">{dateLabel}</p>
+              <p className="text-sm text-tinta/50 mt-2">{event.description?.[locale] || event.description?.es || ''}</p>
+              {event.url && (
+                <a
+                  href={event.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-terracota-500 mt-2 inline-block"
+                >
+                  {t('moreInfo')} ↗
+                </a>
               )}
             </div>
-            <p className="text-sm text-tinta/60">{dateLabel}</p>
-            <p className="text-sm text-tinta/50 mt-2">{event.description?.[locale] || event.description?.es || ''}</p>
-            {event.url && (
-              <a
-                href={event.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-terracota-500 mt-2 inline-block"
-              >
-                {t('moreInfo')} ↗
-              </a>
-            )}
           </div>
         );
       })}
