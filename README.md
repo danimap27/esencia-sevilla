@@ -23,13 +23,14 @@
 9. [Schema de base de datos](#-schema-de-base-de-datos)
 10. [Variables de entorno](#-variables-de-entorno)
 11. [Despliegue en Vercel](#-despliegue-en-vercel)
-12. [Guía de personalización visual](#-guía-de-personalización-visual)
-13. [Sistema de i18n (6 idiomas)](#-sistema-de-i18n-6-idiomas)
-14. [API Routes](#-api-routes)
-15. [SEO y datos estructurados](#-seo-y-datos-estructurados)
-16. [Mantenimiento y actualización](#-mantenimiento-y-actualización)
-17. [Checklist post-despliegue](#-checklist-post-despliegue)
-18. [FAQ técnica](#-faq-técnica)
+12. [Despliegue en VPS (Hostalia)](#-despliegue-en-vps-hostalia)
+13. [Guía de personalización visual](#-guía-de-personalización-visual)
+14. [Sistema de i18n (6 idiomas)](#-sistema-de-i18n-6-idiomas)
+15. [API Routes](#-api-routes)
+16. [SEO y datos estructurados](#-seo-y-datos-estructurados)
+17. [Mantenimiento y actualización](#-mantenimiento-y-actualización)
+18. [Checklist post-despliegue](#-checklist-post-despliegue)
+19. [FAQ técnica](#-faq-técnica)
 
 ---
 
@@ -772,6 +773,16 @@ RUN npm ci --production
 EXPOSE 3000
 CMD ["npm", "start"]
 ```
+
+---
+
+## 🖥 Despliegue en VPS (Hostalia)
+
+Tutorial completo paso a paso: **[DEPLOY-VPS.md](DEPLOY-VPS.md)**.
+
+Resumen: Ubuntu + Node 20 + PM2 (`ecosystem.config.js` incluido) + Nginx reverse proxy + SSL con Certbot, con el dominio apuntando al VPS por registro A en el panel de Hostalia. Incluye webhook de Stripe, actualizaciones con `git pull`, troubleshooting y checklist.
+
+> ⚠️ El hosting compartido con cPanel de Hostalia **no sirve** para Next.js: hace falta un VPS (o Cloud) con SSH y acceso root.
 
 ---
 

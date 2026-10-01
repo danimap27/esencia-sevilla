@@ -126,6 +126,8 @@ CREATE POLICY "blocked_dates_read" ON blocked_dates FOR SELECT USING (true);
 4. **Deploy**
 5. Configura el dominio `esenciasevilla.com` en Settings → Domains
 
+> **¿VPS (Hostalia) en lugar de Vercel?** Ver la guía completa en [DEPLOY-VPS.md](DEPLOY-VPS.md): Ubuntu + PM2 + Nginx + Certbot, DNS en el panel de Hostalia, webhook de Stripe, auto-actualizaciones y troubleshooting.
+
 ### Webhook de Stripe
 
 1. En Stripe Dashboard → Developers → Webhooks
