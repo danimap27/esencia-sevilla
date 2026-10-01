@@ -80,7 +80,7 @@ foreach ($models as $model) {
         'max_tokens' => 800,
         'temperature' => 0.7,
     ];
-    if (str_starts_with($model, 'openai/gpt-5')) {
+    if (strncmp($model, 'openai/gpt-5', 12) === 0) {
         $payload['reasoning'] = ['effort' => 'minimal'];
     }
 
