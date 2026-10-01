@@ -133,19 +133,7 @@ export default function LocationSection() {
               ))}
             </div>
 
-            {/* Airport transfer CTA */}
-            {activeArrival === 'airport' && (
-              <div className="mt-6 p-5 rounded-2xl bg-terracota-50 border border-terracota-200">
-                <p className="font-medium text-tinta mb-1">{t('privateTransfer')}</p>
-                <p className="text-sm text-tinta/70 mb-3">{t('privateTransferDesc')}</p>
-                <button
-                  onClick={() => document.querySelector('#reservar')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="btn-primary text-sm py-2"
-                >
-                  🚗 {t('addTransfer')}
-                </button>
-              </div>
-            )}
+            {/* Airport transfer CTA — retirado: sin pagos extras en la web */}
           </div>
         </div>
       </div>

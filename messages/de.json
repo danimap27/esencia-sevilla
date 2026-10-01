@@ -327,24 +327,24 @@
    "a2": "Leider sind Haustiere in der Wohnung nicht erlaubt, um andere Gäste zu respektieren und die Sauberkeit zu wahren.",
    "q3": "Wie funktioniert der Selbstcheck-in?",
    "a3": "24h vor Ihrer Ankunft erhalten Sie eine WhatsApp-Nachricht und E-Mail mit dem Code für den Sicherheitssafe, in dem sich die Schlüssel befinden. Keine Absprache nötig. Sie können jederzeit zwischen 16:00 und 23:00 Uhr ankommen.",
-   "q4": "Was beinhaltet die Endreinigung?",
-   "a4": "Die Reinigungsgebühr (60€) umfasst die vollständige Reinigung der Wohnung, Wechsel von Bettwäsche und Handtüchern sowie Auffüllen der Pflegeprodukte. Eine tägliche Reinigung während des Aufenthalts ist nicht inklusive (für 30€/Tag zusätzlich verfügbar).",
+   "q4": "Ist die Reinigung inklusive?",
+   "a4": "Ja. Vor Ihrer Ankunft wird die Wohnung gründlich gereinigt, inklusive Bettwäsche- und Handtuchwechsel und Auffüllen der Badezimmerartikel.",
    "q5": "Gibt es Klimaanlage?",
    "a5": "Ja, die Wohnung hat in allen Räumen Klimaanlage (Wohnzimmer und Schlafzimmer). Dies ist im Sommer unerlässlich, wenn die Temperaturen in Sevilla 40°C überschreiten können.",
    "q6": "Wie ist die maximale Kapazität der Wohnung?",
    "a6": "Die Wohnung bietet Platz für 4 Gäste: ein Doppelzimmer mit King-Size-Bett und ein weiteres Zimmer mit zwei Einzelbetten.",
    "q7": "Kann ein Baby untergebracht werden?",
-   "a7": "Natürlich! Wir können ein Reisebett für 15€ zusätzlich bereitstellen (bei der Buchung wählbar). Die Wohnung ist für Kinder jeden Alters geeignet.",
+   "a7": "Natürlich! Die Wohnung ist für Kinder jeden Alters geeignet. Ein Reisebett ist auf Anfrage verfügbar, fragen Sie uns einfach.",
    "q8": "Gibt es WiFi? Ist es schnell?",
    "a8": "Ja, die Wohnung verfügt über Glasfaser-WLAN mit hoher Geschwindigkeit (600 Mbps). Netzwerkname und Passwort finden Sie im Willkommensbuch.",
    "q9": "Wie spät sind Check-in und Check-out?",
-   "a9": "Check-in: ab 16:00 Uhr. Check-out: vor 12:00 Uhr. Wenn Ihr Flug früher ankommt, können Sie kostenlos Gepäck ablegen und die Stadt erkunden. Später Check-out bis 14:00 Uhr für 20€ verfügbar (je nach Verfügbarkeit).",
+   "a9": "Check-in: ab 16:00. Check-out: bis 12:00. Wenn Ihr Flug früher ankommt, können Sie Ihr Gepäck kostenlos hinterlassen und die Stadt erkunden.",
    "q10": "Hat die Wohnung eine ausgestattete Küche?",
    "a10": "Ja, die Küche ist vollständig ausgestattet: Kühlschrank, Cerankochfeld, Mikrowelle, Kaffeemaschine (Nespresso-Kapseln), Toaster, Wasserkocher, komplettes Geschirr und Besteck für 4 Personen.",
    "q11": "Ist Rauchen in der Wohnung erlaubt?",
    "a11": "Rauchen in der Wohnung ist nicht erlaubt. Bei Verstößen gegen diese Regel wird eine Strafe von 150€ fällig.",
    "q12": "Wie komme ich vom Flughafen zur Wohnung?",
-   "a12": "Am einfachsten ist der EA-Bus (Airport Express), alle 15-30 Minuten, 4€. Steig an Santa Justa aus (ca. 30-40 Minuten) – von dort sind es 7 Gehminuten zur Wohnung. Wir bieten auch einen privaten Flughafentransfer für 35€.",
+   "a12": "Die einfachste Option ist der EA-Bus (Airport Express), alle 15-30 Minuten für 4 €. Aussteigen in Santa Justa (ca. 30-40 Minuten), von dort sind es 7 Minuten zu Fuß bis zur Wohnung.",
    "q13": "Was passiert, wenn ich ein Problem während meines Aufenthalts habe?",
    "a13": "Wir sind 24/7 per WhatsApp für alle Vorfälle erreichbar. Im Notfall: die 112 ist die Notrufnummer in Spanien.",
    "q14": "Werden Junggesellenabschiede oder Partys akzeptiert?",
@@ -354,7 +354,7 @@
    "q16": "Gibt es eine Waschmaschine?",
    "a16": "Ja, die Wohnung verfügt über eine Waschmaschine mit Waschmittel.",
    "q17": "Kann ich später auschecken, wenn mein Flug erst am Nachmittag ist?",
-   "a17": "Der Standardcheck-out ist vor 12:00 Uhr. Wenn Sie mehr Zeit benötigen, ist ein später Check-out bis 14:00 Uhr für 20€ verfügbar, je nach Verfügbarkeit. Für spätere Abreisen können Sie Ihr Gepäck in der Wohnung lassen.",
+   "a17": "Der Standard-Check-out ist bis 12:00. Für spätere Abreisen können Sie Ihr Gepäck in der Wohnung lassen.",
    "q18": "Ist die Wohnung für Personen mit eingeschränkter Mobilität geeignet?",
    "a18": "Das Gebäude hat einen Aufzug. Die Wohnung liegt im 3. Stock. Es gibt eine Stufe am Gebäudeeingang. Wenn Sie besondere Bedürfnisse haben, kontaktieren Sie uns vor der Buchung.",
    "q19": "Wie funktioniert der Online-Pre-Check-in?",
@@ -603,6 +603,8 @@
   "welcomeText": "Ihr persönlicher Guide, um das Beste der andalusischen Hauptstadt zu entdecken. Alles, was Sie brauchen, offline.",
   "quickInfo": {
    "wifi": "WiFi",
+   "wifiNetwork": "Netzwerk",
+   "wifiPassword": "Passwort",
    "checkin": "Check-in",
    "checkout": "Check-out",
    "emergency": "Notrufe",
@@ -666,7 +668,7 @@
  },
  "seo": {
   "homeTitle": "Touristenwohnung in Sevilla neben Santa Justa | Esencia Sevilla",
-  "homeDescription": "Miete eine Touristenwohnung in Sevilla, 7 Gehminuten vom AVE-Bahnhof Santa Justa und 10 Minuten vom historischen Zentrum. Selbst-Check-in, WiFi, A/C. 10% günstiger als Booking!",
+  "homeDescription": "Touristenwohnung in Sevilla, 7 Minuten zu Fuß vom AVE-Bahnhof Santa Justa und 10 Minuten vom historischen Zentrum mit Bus oder Taxi. Selbstcheck-in, WLAN, Klimaanlage. Buchen Sie auf Booking.com.",
   "guideTitle": "Kostenloser Reiseführer Sevilla | Karte, Routen und Transport",
   "guideDescription": "Vollständiger und kostenloser Reiseführer von Sevilla: interaktive Karte, Fußrouten, TUSSAM-Transport, Restaurants und Events. Offline verfügbar.",
   "blogTitle": "Sevilla Reise-Blog | Guides und Tipps",
@@ -815,5 +817,11 @@
     ]
    }
   ]
+ },
+ "bookingCta": {
+  "title": "Auf Booking.com buchen",
+  "text": "Reservierungen erfolgen direkt über Booking.com, mit kostenloser Stornierung und sicherer Zahlung auf der Plattform.",
+  "button": "Auf Booking.com buchen",
+  "note": "Sie werden zu Booking.com weitergeleitet, um Ihre Buchung abzuschließen."
  }
 }

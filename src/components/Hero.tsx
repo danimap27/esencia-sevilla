@@ -3,10 +3,8 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { Star, Shield, Wifi, AirVent, MapPin, ChevronDown, TrendingDown } from 'lucide-react';
+import { Star, Shield, Wifi, AirVent, MapPin, ChevronDown } from 'lucide-react';
 import { APARTMENT, NEARBY_LANDMARKS } from '@/data/apartment';
-import { calculatePrice } from '@/lib/utils';
-import { addDays } from 'date-fns';
 
 const HERO_SRCS = ['/fotos/foto1.jpg', '/fotos/foto2.jpg', '/fotos/foto3.jpg', '/fotos/foto4.jpg', '/fotos/foto5.jpg'];
 
@@ -28,17 +26,9 @@ export default function Hero({ onScrollToBooking }: { onScrollToBooking?: () => 
     distance: landmarkTexts[i]?.distance ?? lm.distance,
   }));
   const [currentImage, setCurrentImage] = useState(0);
-  const [savings, setSavings] = useState(0);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [scrollY, setScrollY] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const checkIn = addDays(new Date(), 7);
-    const checkOut = addDays(checkIn, 3);
-    const price = calculatePrice(checkIn, checkOut, 2, 0, 10);
-    setSavings(price.savings || 0);
-  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -218,16 +208,6 @@ export default function Hero({ onScrollToBooking }: { onScrollToBooking?: () => 
             <span className="text-white font-semibold">5.0</span>
             <span className="text-white/70 text-sm">{t('reviewsBadge', { count: 127 })}</span>
           </div>
-
-          {savings > 0 && (
-            <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-terracota-500/90 backdrop-blur-sm border border-terracota-400 hover:bg-terracota-500 transition-all duration-300">
-              <TrendingDown size={14} className="text-white" />
-              <span className="text-white font-medium text-sm">
-                {t('savingsBadge', { amount: savings })}
-              </span>
-              <span className="text-white/80 text-xs">{t('savingsDesc')}</span>
-            </div>
-          )}
 
           <div className="text-white/60 text-xs flex items-center gap-1.5">
             <Shield size={12} />

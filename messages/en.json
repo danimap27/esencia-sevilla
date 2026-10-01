@@ -327,24 +327,24 @@
    "a2": "We're sorry, pets are not allowed in the apartment to respect other guests and maintain cleanliness.",
    "q3": "How does self check-in work?",
    "a3": "24 hours before your arrival you will receive a WhatsApp message and email with the key safe code. No need to coordinate with anyone. You can arrive at any time between 16:00 and 23:00.",
-   "q4": "What does the cleaning fee include?",
-   "a4": "The cleaning fee (€60) includes a full clean of the apartment, linen and towel change, and bathroom items replenishment. Daily cleaning during your stay is not included (available for an extra €30/day).",
+   "q4": "Is cleaning included?",
+   "a4": "Yes. Before your arrival the apartment receives a full clean, including linen and towel change and bathroom items replenishment.",
    "q5": "Is there air conditioning?",
    "a5": "Yes, the apartment has air conditioning in all rooms (living room and bedrooms). Essential in summer when temperatures can exceed 40°C in Seville.",
    "q6": "What is the maximum capacity?",
    "a6": "The apartment accommodates up to 4 guests: a double bedroom with a king bed and another bedroom with two single beds.",
    "q7": "Can a baby stay?",
-   "a7": "Of course! We can provide a travel cot for an additional €15 (selectable when booking). The apartment is suitable for children of all ages.",
+   "a7": "Of course! The apartment is suitable for children of all ages. A travel cot is available on request, just ask us.",
    "q8": "Is there WiFi? Is it fast?",
    "a8": "Yes, the apartment has high-speed fibre optic WiFi (600 Mbps). The network name and password are in the welcome book.",
    "q9": "What are check-in and check-out times?",
-   "a9": "Check-in: from 16:00. Check-out: before 12:00. If your flight arrives earlier, you can leave your luggage for free and explore the city. Late check-out until 14:00 available for €20 (subject to availability).",
+   "a9": "Check-in: from 16:00. Check-out: before 12:00. If your flight arrives earlier, you can leave your luggage for free and explore the city.",
    "q10": "Does the apartment have a fully equipped kitchen?",
    "a10": "Yes, the kitchen is fully equipped: fridge, hob, microwave, coffee maker (Nespresso capsules), toaster, kettle, full utensils and crockery for 4 people.",
    "q11": "Is smoking allowed in the apartment?",
    "a11": "Smoking is not allowed inside the apartment. Violation of this rule results in a €150 penalty.",
    "q12": "How do I get from the airport?",
-   "a12": "The easiest option is the EA bus (Airport Express), running every 15-30 minutes for €4. Get off at Santa Justa (about 30-40 minutes) and from there the apartment is a 7-minute walk. We also offer a private airport transfer for €35.",
+   "a12": "The easiest option is the EA bus (Airport Express), running every 15-30 minutes for €4. Get off at Santa Justa (about 30-40 minutes) and from there the apartment is a 7-minute walk.",
    "q13": "What if I have a problem during my stay?",
    "a13": "We are available 24/7 via WhatsApp for any issue. In case of emergency: 112 is the emergency number in Spain.",
    "q14": "Are stag/hen parties or events allowed?",
@@ -354,7 +354,7 @@
    "q16": "Is there a washing machine?",
    "a16": "Yes, the apartment has a washing machine with detergent included.",
    "q17": "Can I check out late if my flight is in the afternoon?",
-   "a17": "Standard check-out is before 12:00. If you need more time, late check-out until 14:00 is available for €20 subject to availability. For later departures, you can leave your luggage stored in the apartment.",
+   "a17": "Standard check-out is before 12:00. For later departures you can leave your luggage stored in the apartment.",
    "q18": "Is the apartment adapted for people with reduced mobility?",
    "a18": "The building has a lift. The apartment is on the 3rd floor. There is a step at the building entrance. If you have special needs, please consult us before booking.",
    "q19": "How does online pre-check-in work?",
@@ -603,6 +603,8 @@
   "welcomeText": "Your personal guide to discover the best of the Andalusian capital. Everything you need, offline.",
   "quickInfo": {
    "wifi": "WiFi",
+   "wifiNetwork": "Network",
+   "wifiPassword": "Password",
    "checkin": "Check-in",
    "checkout": "Check-out",
    "emergency": "Emergencies",
@@ -666,7 +668,7 @@
  },
  "seo": {
   "homeTitle": "Tourist Apartment in Seville next to Santa Justa | Esencia Sevilla",
-  "homeDescription": "Rent a tourist apartment in Seville, a 7-minute walk from Santa Justa AVE station and 10 minutes from the historic centre. Self check-in, WiFi, A/C. 10% cheaper than Booking!",
+  "homeDescription": "Tourist apartment in Seville, a 7-minute walk from Santa Justa AVE station and 10 minutes from the historic centre by bus or taxi. Self check-in, WiFi, A/C. Book on Booking.com.",
   "guideTitle": "Free Seville Tourist Guide | Map, Routes & Transport",
   "guideDescription": "Complete free tourist guide to Seville: interactive map, walking routes, TUSSAM transport, restaurants and events. Available offline.",
   "blogTitle": "Seville Travel Blog | Guides & Tips",
@@ -815,5 +817,11 @@
     ]
    }
   ]
+ },
+ "bookingCta": {
+  "title": "Book on Booking.com",
+  "text": "Reservations are handled directly through Booking.com, with free cancellation and secure payment on the platform.",
+  "button": "Book on Booking.com",
+  "note": "You will be taken to Booking.com to complete your booking."
  }
 }

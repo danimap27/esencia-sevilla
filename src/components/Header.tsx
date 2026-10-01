@@ -7,6 +7,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { locales, localeFlags, localeNames, type Locale } from '@/i18n';
 import { cn } from '@/lib/utils';
+import { APARTMENT } from '@/data/apartment';
 
 const NAV_ITEMS = [
   { key: 'gallery', href: '#galeria' },
@@ -166,13 +167,15 @@ export default function Header() {
               )}
             </div>
 
-            {/* Book CTA */}
-            <button
-              onClick={() => handleNavClick('#reservar')}
+            {/* Book CTA — solo Booking.com */}
+            <a
+              href={APARTMENT.bookingComUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary text-sm py-2 px-4 hidden sm:inline-flex"
             >
               {t('bookNow')}
-            </button>
+            </a>
 
             {/* Mobile menu button */}
             <button
@@ -206,12 +209,14 @@ export default function Header() {
               ))}
 
               <div className="pt-4 border-t border-tinta/10">
-                <button
-                  onClick={() => handleNavClick('#reservar')}
+                <a
+                  href={APARTMENT.bookingComUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-primary w-full"
                 >
                   {t('bookNow')}
-                </button>
+                </a>
               </div>
 
               {/* Language options in mobile */}

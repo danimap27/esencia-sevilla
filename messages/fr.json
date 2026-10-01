@@ -327,24 +327,24 @@
    "a2": "Désolé, les animaux ne sont pas acceptés dans l'appartement pour respecter les autres voyageurs et maintenir la propreté.",
    "q3": "Comment fonctionne l'arrivée autonome ?",
    "a3": "24h avant votre arrivée, vous recevrez un message WhatsApp et email avec le code de la boîte de sécurité où se trouvent les clés. Aucune coordination nécessaire. Vous pouvez arriver à toute heure entre 16h00 et 23h00.",
-   "q4": "Qu'inclut le nettoyage final ?",
-   "a4": "Les frais de nettoyage (60€) incluent le nettoyage complet de l'appartement, le changement des draps et serviettes, et la recharge des articles de toilette. Le nettoyage quotidien n'est pas inclus pendant le séjour (disponible pour 30€/jour supplémentaire).",
+   "q4": "Le ménage est-il inclus ?",
+   "a4": "Oui. Avant votre arrivée, l'appartement reçoit un ménage complet, avec changement des draps et des serviettes et réapprovisionnement des produits de salle de bain.",
    "q5": "Y a-t-il la climatisation ?",
    "a5": "Oui, l'appartement est climatisé dans toutes les pièces (salon et chambres). C'est indispensable en été quand les températures peuvent dépasser 40°C à Séville.",
    "q6": "Quelle est la capacité maximum de l'appartement ?",
    "a6": "L'appartement accueille 4 voyageurs : une chambre double avec lit king-size et une autre chambre avec deux lits simples.",
    "q7": "Peut-on héberger un bébé ?",
-   "a7": "Bien sûr ! Nous pouvons fournir un lit de voyage pour 15€ supplémentaires (sélectionnable à la réservation). L'appartement est adapté aux enfants de tous âges.",
+   "a7": "Bien sûr ! L'appartement convient aux enfants de tous âges. Lit de voyage disponible sur demande, il suffit de nous le demander.",
    "q8": "Y a-t-il le WiFi ? Est-il rapide ?",
    "a8": "Oui, l'appartement dispose d'un WiFi fibre haute vitesse (600 Mbps). Le nom du réseau et le mot de passe se trouvent dans le livre d'accueil.",
    "q9": "Quelles sont les heures d'arrivée et de départ ?",
-   "a9": "Arrivée : à partir de 16h00. Départ : avant 12h00. Si votre vol arrive plus tôt, vous pouvez laisser vos bagages gratuitement et explorer la ville. Départ tardif jusqu'à 14h00 disponible pour 20€ (selon disponibilité).",
+   "a9": "Arrivée : à partir de 16:00. Départ : avant 12:00. Si votre vol arrive plus tôt, vous pouvez laisser vos bagages gratuitement et découvrir la ville.",
    "q10": "L'appartement a-t-il une cuisine équipée ?",
    "a10": "Oui, la cuisine est entièrement équipée : réfrigérateur, plaque vitrocéramique, micro-ondes, machine à café (capsules Nespresso), grille-pain, bouilloire, ustensiles complets et vaisselle pour 4 personnes.",
    "q11": "Fumer est-il autorisé dans l'appartement ?",
    "a11": "Il est interdit de fumer dans l'appartement. Le non-respect de cette règle entraîne une pénalité de 150€.",
    "q12": "Comment puis-je rejoindre l'appartement depuis l'aéroport ?",
-   "a12": "L'option la plus simple est le bus EA (Airport Express), toutes les 15-30 minutes, 4€. Descendez à Santa Justa (environ 30-40 minutes) : l'appartement est à 7 minutes à pied. Nous proposons aussi un transfert privé depuis l'aéroport pour 35€.",
+   "a12": "L'option la plus simple est le bus EA (Airport Express), toutes les 15-30 minutes pour 4 €. Descendez à Santa Justa (environ 30-40 minutes), puis l'appartement est à 7 minutes à pied.",
    "q13": "Que faire si j'ai un problème pendant mon séjour ?",
    "a13": "Nous sommes disponibles 24h/24 et 7j/7 par WhatsApp pour tout incident. En cas d'urgence : le 112 est le numéro d'urgence en Espagne.",
    "q14": "Les enterrements de vie de célibataire ou les fêtes sont-ils acceptés ?",
@@ -354,7 +354,7 @@
    "q16": "Y a-t-il un lave-linge ?",
    "a16": "Oui, l'appartement dispose d'un lave-linge avec détergent inclus.",
    "q17": "Puis-je faire un départ tardif si mon vol est l'après-midi ?",
-   "a17": "Le départ standard est avant 12h00. Si vous avez besoin de plus de temps, le départ tardif jusqu'à 14h00 est disponible pour 20€ selon disponibilité. Pour des départs plus tardifs, vous pouvez laisser vos bagages à l'appartement.",
+   "a17": "Le départ standard est avant 12:00. Pour des départs plus tardifs, vous pouvez laisser vos bagages dans lintérieur de lappartement.",
    "q18": "L'appartement est-il adapté aux personnes à mobilité réduite ?",
    "a18": "L'immeuble a un ascenseur. L'appartement est au 3ème étage. Il y a une marche à l'entrée de l'immeuble. Si vous avez des besoins spéciaux, consultez-nous avant de réserver.",
    "q19": "Comment fonctionne le pré-enregistrement en ligne ?",
@@ -603,6 +603,8 @@
   "welcomeText": "Votre guide personnel pour découvrir le meilleur de la capitale andalouse. Tout ce dont vous avez besoin, hors ligne.",
   "quickInfo": {
    "wifi": "WiFi",
+   "wifiNetwork": "Réseau",
+   "wifiPassword": "Mot de passe",
    "checkin": "Arrivée",
    "checkout": "Départ",
    "emergency": "Urgences",
@@ -666,7 +668,7 @@
  },
  "seo": {
   "homeTitle": "Appartement Touristique à Séville près de Santa Justa | Esencia Sevilla",
-  "homeDescription": "Louez un appartement touristique à Séville, à 7 min à pied de la gare AVE Santa Justa et à 10 min du centre historique. Arrivée autonome, WiFi, climatisation. 10% moins cher que Booking !",
+  "homeDescription": "Appartement touristique à Séville, à 7 minutes à pied de la gare AVE Santa Justa et à 10 minutes du centre historique en bus ou taxi. Arrivée autonome, WiFi, Clim. Réservez sur Booking.com.",
   "guideTitle": "Guide Touristique Séville Gratuit | Carte, Itinéraires et Transport",
   "guideDescription": "Guide touristique complet et gratuit de Séville : carte interactive, itinéraires à pied, transport TUSSAM, restaurants et événements. Disponible hors ligne.",
   "blogTitle": "Blog de Voyages Séville | Guides et Conseils",
@@ -815,5 +817,11 @@
     ]
    }
   ]
+ },
+ "bookingCta": {
+  "title": "Réservez sur Booking.com",
+  "text": "Les réservations se font directement via Booking.com, avec annulation gratuite et paiement sécurisé sur la plateforme.",
+  "button": "Réserver sur Booking.com",
+  "note": "Vous serez redirigé vers Booking.com pour finaliser votre réservation."
  }
 }

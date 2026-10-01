@@ -192,6 +192,8 @@ export interface ApartmentInfo {
   bathrooms: number;
   size: string;
   wifi: string;
+  wifiPassword: string;
+  bookingComUrl: string;
   checkInTime: string;
   checkOutTime: string;
   phone: string;

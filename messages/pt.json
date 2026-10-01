@@ -327,24 +327,24 @@
    "a2": "Lamentamos, não se aceitam animais no apartamento para respeitar outros hóspedes e manter a limpeza.",
    "q3": "Como funciona o check-in autónomo?",
    "a3": "24h antes da sua chegada receberá uma mensagem por WhatsApp e email com o código da caixa de segurança onde estão as chaves. Não é necessário coordenar-se com ninguém. Pode chegar a qualquer hora entre as 16:00 e as 23:00.",
-   "q4": "O que inclui a limpeza final?",
-   "a4": "A taxa de limpeza (60€) inclui limpeza completa do apartamento, mudança de lençóis e toalhas, e reposição de artigos de higiene. O serviço de limpeza diária não está incluído durante a estadia (disponível por 30€/dia extra).",
+   "q4": "A limpeza está incluída?",
+   "a4": "Sim. Antes da sua chegada o apartamento recebe uma limpeza completa, com mudança de roupa de cama e toalhas e reposição dos produtos de banho.",
    "q5": "Há ar condicionado?",
    "a5": "Sim, o apartamento tem ar condicionado em todas as divisões (sala e quartos). É indispensável no verão quando as temperaturas em Sevilha podem ultrapossar os 40°C.",
    "q6": "Qual é a capacidade máxima do apartamento?",
    "a6": "O apartamento tem capacidade para 4 hóspedes: um quarto duplo com cama king e outro quarto com duas camas individuais.",
    "q7": "Pode alojar-se um bebé?",
-   "a7": "Claro! Podemos fornecer um berço de viagem por 15€ adicionais (selecionável ao reservar). O apartamento é adequado para crianças de todas as idades.",
+   "a7": "Claro! O apartamento é adequado para crianças de todas as idades. Berço de viagem disponível mediante pedido, basta pedir.",
    "q8": "Há WiFi? É rápido?",
    "a8": "Sim, o apartamento dispõe de WiFi de fibra de alta velocidade (600 Mbps). O nome da rede e a palavra-passe encontram-se no livro de boas-vindas.",
    "q9": "A que horas são o check-in e o check-out?",
-   "a9": "Check-in: a partir das 16:00h. Check-out: antes das 12:00h. Se o seu voo chega mais cedo, pode deixar as malas gratuitamente e explorar a cidade. Late check-out até às 14:00h disponível por 20€ (conforme disponibilidade).",
+   "a9": "Check-in: a partir das 16:00. Check-out: antes das 12:00. Se o seu voo chegar mais cedo, pode deixar a bagagem guardada grátis e conhecer a cidade.",
    "q10": "O apartamento tem cozinha equipada?",
    "a10": "Sim, a cozinha está completamente equipada: frigorífico, placa de indução, micro-ondas, cafeteira (cápsulas Nespresso), torradeira, chaleira, utensílios completos e loiça para 4 pessoas.",
    "q11": "É permitido fumar no apartamento?",
    "a11": "Não é permitido fumar dentro do apartamento. O incumprimento desta regra implica uma penalização de 150€.",
    "q12": "Como chego do aeroporto ao apartamento?",
-   "a12": "A opção mais cómoda é o autocarro EA (Airport Express), a cada 15-30 minutos, 4€. Saia em Santa Justa (cerca de 30-40 minutos) e daí o apartamento fica a 7 minutos a pé. Também oferecemos transfer privado do aeroporto por 35€.",
+   "a12": "A opção mais fácil é o autocarro EA (Airport Express), a cada 15-30 minutos por 4 €. Desça em Santa Justa (cerca de 30-40 minutos) e daí são 7 minutos a pé até ao apartamento.",
    "q13": "O que faço se tiver algum problema durante a minha estadia?",
    "a13": "Estamos disponíveis 24/7 por WhatsApp para qualquer incidência. Em caso de emergência: o 112 é o número de emergências em Espanha.",
    "q14": "Aceitam-se despedidas de solteiro/a ou festas?",
@@ -354,7 +354,7 @@
    "q16": "Há máquina de lavar?",
    "a16": "Sim, o apartamento dispõe de máquina de lavar com detergente incluído.",
    "q17": "Posso fazer check-out tardio se o meu voo é à tarde?",
-   "a17": "O check-out padrão é antes das 12:00h. Se necessita de mais tempo, o late check-out até às 14:00h está disponível por 20€ conforme disponibilidade. Para partidas mais tardias, pode deixar a bagagem guardada no apartamento.",
+   "a17": "O check-out padrão é antes das 12:00. Para saídas mais tardias pode deixar a bagagem guardada no apartamento.",
    "q18": "O apartamento está adaptado para pessoas com mobilidade reduzida?",
    "a18": "O edifício tem elevador. O apartamento fica no 3º andar. Existe um degrau no acesso ao edifício. Se tem necessidades especiais, consulte-nos antes de reservar.",
    "q19": "Como funciona o pre-check-in online?",
@@ -603,6 +603,8 @@
   "welcomeText": "O seu guia pessoal para descobrir o melhor da capital andaluza. Tudo o que precisa, offline.",
   "quickInfo": {
    "wifi": "WiFi",
+   "wifiNetwork": "Rede",
+   "wifiPassword": "Senha",
    "checkin": "Check-in",
    "checkout": "Check-out",
    "emergency": "Emergências",
@@ -666,7 +668,7 @@
  },
  "seo": {
   "homeTitle": "Apartamento Turístico em Sevilha junto a Santa Justa | Esencia Sevilla",
-  "homeDescription": "Alugue um apartamento turístico em Sevilha, a 7 min a pé da estação AVE Santa Justa e a 10 min do centro histórico. Check-in autónomo, WiFi, A/C. 10% mais barato que a Booking!",
+  "homeDescription": "Apartamento turístico em Sevilha, a 7 minutos a pé da estação AVE Santa Justa e a 10 minutos do centro histórico de autocarro ou táxi. Auto check-in, WiFi, Ar condicionado. Reserve no Booking.com.",
   "guideTitle": "Guia Turística Sevilha Grátis | Mapa, Rotas e Transporte",
   "guideDescription": "Guia turística completa e gratuita de Sevilha: mapa interativo, rotas a pé, transporte TUSSAM, restaurantes e eventos. Disponível offline.",
   "blogTitle": "Blog de Viagens Sevilha | Guias e Conselhos",
@@ -815,5 +817,11 @@
     ]
    }
   ]
+ },
+ "bookingCta": {
+  "title": "Reserve no Booking.com",
+  "text": "As reservas são feitas diretamente no Booking.com, com cancelamento gratuito e pagamento seguro na plataforma.",
+  "button": "Reservar no Booking.com",
+  "note": "Será redirecionado para o Booking.com para concluir a sua reserva."
  }
 }

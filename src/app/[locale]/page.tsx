@@ -10,8 +10,7 @@ import { absoluteUrl } from '@/lib/utils';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Gallery from '@/components/Gallery';
-import BookingComparison from '@/components/BookingComparison';
-import BookingSection from '@/components/BookingSection';
+import BookingCTA from '@/components/BookingCTA';
 import FAQ from '@/components/FAQ';
 import Reviews from '@/components/Reviews';
 import EventsSection from '@/components/EventsSection';
@@ -171,10 +170,9 @@ export default function HomePage({ params: { locale } }: { params: { locale: str
       <Header />
       <main>
         <Hero />
-        <BookingComparison />
         <Gallery />
         <VirtualTour locale={locale} />
-        <BookingSection />
+        <BookingCTA />
         <MapSection />
         <EventsSection />
         <Reviews />

@@ -47,12 +47,12 @@ export default function WelcomeBook() {
           <Wifi size={24} className="text-terracota-500" /> {t('wifi')}
         </h2>
         <div className="flex flex-col sm:flex-row gap-6 items-start">
-          <WifiQR ssid={APARTMENT.wifi} password="2025Sevilla!" />
+          <WifiQR ssid={APARTMENT.wifi} password={APARTMENT.wifiPassword} />
           <div className="flex-1 space-y-2">
             <div className="flex items-center gap-3 text-sm">
               <Key size={16} className="text-tinta/40" />
               <span className="text-tinta/60">{t('password')}</span>
-              <span className="font-mono font-bold text-tinta">2025Sevilla!</span>
+              <span className="font-mono font-bold text-tinta">{APARTMENT.wifiPassword}</span>
             </div>
             <p className="text-xs text-tinta/40">
               {t('wifiNote')}

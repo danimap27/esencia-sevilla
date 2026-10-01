@@ -327,24 +327,24 @@
    "a2": "Spiacenti, non si accettano animali nell'appartamento per rispettare gli altri ospiti e mantenere la pulizia.",
    "q3": "Come funziona il check-in autonomo?",
    "a3": "24h prima del tuo arrivo riceverai un messaggio WhatsApp e email con il codice della cassetta di sicurezza dove si trovano le chiavi. Non è necessario coordinarsi con nessuno. Puoi arrivare in qualsiasi ora tra le 16:00 e le 23:00.",
-   "q4": "Cosa include la pulizia finale?",
-   "a4": "La tassa di pulizia (60€) include la pulizia completa dell'appartamento, cambio lenzuola e asciugamani, e ripristino dei prodotti da bagno. Il servizio di pulizia giornaliero non è incluso durante il soggiorno (disponibile per 30€/giorno extra).",
+   "q4": "Le pulizie sono incluse?",
+   "a4": "Sì. Prima del vostro arrivo l'appartamento riceve una pulizia completa, con cambio di lenzuola e asciugamani e rifornimento dei bagni.",
    "q5": "C'è l'aria condizionata?",
    "a5": "Sì, l'appartamento ha aria condizionata in tutte le stanze (soggiorno e camere). È indispensabile in estate quando le temperature a Siviglia possono superare i 40°C.",
    "q6": "Qual è la capacità massima dell'appartamento?",
    "a6": "L'appartamento ospita 4 ospiti: una camera doppia con letto king e un'altra camera con due letti singoli.",
    "q7": "Si può ospitare un neonato?",
-   "a7": "Certo! Possiamo fornire un letto da viaggio per 15€ aggiuntivi (selezionabile al momento della prenotazione). L'appartamento è adatto a bambini di tutte le età.",
+   "a7": "Certo! L'appartamento è adatto a bambini di tutte le età. Culla da viaggio disponibile su richiesta, basta chiederla.",
    "q8": "C'è il WiFi? È veloce?",
    "a8": "Sì, l'appartamento dispone di WiFi in fibra ad alta velocità (600 Mbps). Il nome della rete e la password si trovano nel libro di benvenuto.",
    "q9": "A che ora sono il check-in e il check-out?",
-   "a9": "Check-in: dalle 16:00. Check-out: prima delle 12:00. Se il tuo volo arriva prima, puoi lasciare i bagagli gratuitamente e esplorare la città. Check-out tardivo fino alle 14:00 disponibile per 20€ (seconda disponibilità).",
+   "a9": "Check-in: dalle 16:00. Check-out: entro le 12:00. Se il vostro volo arriva prima, potete lasciare i bagagli gratuitamente e girare per la città.",
    "q10": "L'appartamento ha una cucina attrezzata?",
    "a10": "Sì, la cucina è completamente attrezzata: frigorifero, piano a induzione, microonde, macchina da caffè (capsule Nespresso), tostapane, bollitore, utensili completi e stoviglie per 4 persone.",
    "q11": "È permesso fumare nell'appartamento?",
    "a11": "Non è permesso fumare nell'appartamento. Il mancato rispetto di questa regola comporta una penalità di 150€.",
    "q12": "Come arrivo dall'aeroporto all'appartamento?",
-   "a12": "L'opzione più comoda è il bus EA (Airport Express), ogni 15-30 minuti, 4€. Scendi a Santa Justa (circa 30-40 minuti): da lì l'appartamento è a 7 minuti a piedi. Offriamo anche un transfer privato dall'aeroporto per 35€.",
+   "a12": "L'opzione più semplice è il bus EA (Airport Express), ogni 15-30 minuti a 4 €. Scendete a Santa Justa (circa 30-40 minuti), da lì l'appartamento è a 7 minuti a piedi.",
    "q13": "Cosa faccio se ho un problema durante il soggiorno?",
    "a13": "Siamo disponibili 24/7 su WhatsApp per qualsiasi evenienza. In caso di emergenza: il 112 è il numero di emergenza in Spagna.",
    "q14": "Si accettano addii al celibato/nubilato o feste?",
@@ -354,7 +354,7 @@
    "q16": "C'è una lavatrice?",
    "a16": "Sì, l'appartamento dispone di una lavatrice con detersivo incluso.",
    "q17": "Posso fare un check-out tardivo se il mio volo è nel pomeriggio?",
-   "a17": "Il check-out standard è prima delle 12:00. Se hai bisogno di più tempo, il check-out tardivo fino alle 14:00 è disponibile per 20€ secondo disponibilità. Per partenze più tardive, puoi lasciare i bagagli nell'appartamento.",
+   "a17": "Il check-out standard è entro le 12:00. Per partenze più tarde potete lasciare i bagagli custoditi nell'appartamento.",
    "q18": "L'appartamento è adatto a persone con mobilità ridotta?",
    "a18": "L'edificio ha un ascensore. L'appartamento è al 3° piano. C'è un gradino all'ingresso dell'edificio. Se hai esigenze speciali, consultaci prima di prenotare.",
    "q19": "Come funziona il pre-check-in online?",
@@ -603,6 +603,8 @@
   "welcomeText": "La tua guida personale per scoprire il meglio della capitale andalusa. Tutto ciò di cui hai bisogno, offline.",
   "quickInfo": {
    "wifi": "WiFi",
+   "wifiNetwork": "Rete",
+   "wifiPassword": "Password",
    "checkin": "Check-in",
    "checkout": "Check-out",
    "emergency": "Emergenze",
@@ -666,7 +668,7 @@
  },
  "seo": {
   "homeTitle": "Appartamento Turistico a Siviglia vicino a Santa Justa | Esencia Sevilla",
-  "homeDescription": "Affitta un appartamento turistico a Siviglia, a 7 min a piedi dalla stazione AVE Santa Justa e a 10 min dal centro storico. Check-in autonomo, WiFi, A/C. 10% più economico di Booking!",
+  "homeDescription": "Appartamento turistico a Siviglia, a 7 minuti a piedi dalla stazione AVE Santa Justa e a 10 minuti dal centro storico in autobus o taxi. Self check-in, WiFi, A/C. Prenota su Booking.com.",
   "guideTitle": "Guida Turistica Siviglia Gratuita | Mappa, Itinerari e Trasporti",
   "guideDescription": "Guida turistica completa e gratuita di Siviglia: mappa interattiva, itinerari a piedi, trasporti TUSSAM, ristoranti ed eventi. Disponibile offline.",
   "blogTitle": "Blog di Viaggi Siviglia | Guide e Consigli",
@@ -815,5 +817,11 @@
     ]
    }
   ]
+ },
+ "bookingCta": {
+  "title": "Prenota su Booking.com",
+  "text": "Le prenotazioni avvengono direttamente su Booking.com, con cancellazione gratuita e pagamento sicuro sulla piattaforma.",
+  "button": "Prenota su Booking.com",
+  "note": "Verrai reindirizzato a Booking.com per completare la prenotazione."
  }
 }
