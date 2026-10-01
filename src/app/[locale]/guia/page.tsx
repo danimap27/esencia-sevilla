@@ -107,15 +107,18 @@ export default async function GuidePage({ params: { locale } }: { params: { loca
         {/* Quick info cards */}
         <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { key: 'wifi', icon: '📶', label: t('quickInfo.wifi'), lines: [
+            { key: 'wifi', icon: '📶', label: t('quickInfo.wifi'), span: true, lines: [
               { l: t('quickInfo.wifiNetwork'), v: APARTMENT.wifi },
               { l: t('quickInfo.wifiPassword'), v: APARTMENT.wifiPassword },
             ] },
             { key: 'checkin', icon: '🔑', label: t('quickInfo.checkin'), value: `${t('quickInfo.checkinFrom')} ${APARTMENT.checkInTime}` },
             { key: 'checkout', icon: '🧳', label: t('quickInfo.checkout'), value: `${t('quickInfo.checkoutBefore')} ${APARTMENT.checkOutTime}` },
             { key: 'emergency', icon: '📱', label: t('quickInfo.emergency'), value: '112' },
-          ].map(({ key, icon, label, value, lines }) => (
-            <div key={key} className={`card p-4 text-center ${key === 'wifi' ? 'border-2 border-terracota-500/60' : ''}`}>
+          ].map(({ key, icon, label, value, lines, span }) => (
+            <div
+              key={key}
+              className={`card p-4 text-center ${span ? 'col-span-2 md:col-span-1' : ''} ${key === 'wifi' ? 'border-2 border-terracota-500/60' : ''}`}
+            >
               <div className="text-3xl mb-2">{icon}</div>
               <p className="text-xs text-tinta/50 uppercase tracking-wide mb-1">{label}</p>
               {lines ? (
