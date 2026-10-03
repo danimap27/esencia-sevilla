@@ -207,7 +207,7 @@ export const SIGHTS: Sight[] = [
     lng: -5.9872491,
     walkMinutes: 18,
     entrance: "Consultar web",
-    url: 'https://www.casapilatos.com/',
+    url: 'https://fundacionmedinaceli.org/monumentos/casa-de-pilatos/',
     description: {
       es: 'Palacio mudéjar-renacentista de los duques de Medinaceli, con un Vía Crucis que marcó el propio Marqués de Tarifa en 1521.',
       en: 'Mudéjar-Renaissance palace of the Medinaceli dukes, with a Via Crucis marked by the Marquis of Tarifa himself in 1521.',

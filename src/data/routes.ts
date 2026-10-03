@@ -2829,7 +2829,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       {
         name: 'Torre del Oro (embarcadero)',
         lat: 37.3824026, lng: -5.9963156,
-        url: 'https://www.torredeloro.es/',
+        url: 'https://andalucia.org/sevilla-visitas-torre-del-oro-museo-naval',
         description: {
           es: 'Punto de salida de los cruceros y antigua atalaya del puerto almohade.',
           en: 'Cruise departure point and former watchtower of the Almohad port.',
