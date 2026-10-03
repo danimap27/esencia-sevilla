@@ -96,37 +96,6 @@
       "isHighSeason": false
     },
     {
-      "id": "espana-croacia-2026",
-      "title": {
-        "es": "España - Croacia: Liga de Naciones UEFA",
-        "en": "Spain - Croatia: UEFA Nations League",
-        "fr": "Espagne - Croatie : Ligue des Nations UEFA",
-        "de": "Spanien - Kroatien: UEFA Nations League",
-        "it": "Spagna - Croazia: UEFA Nations League",
-        "pt": "Espanha - Croácia: Liga das Nações UEFA"
-      },
-      "description": {
-        "es": "La selección española juega en Sevilla: partido oficial de la Liga de Naciones en el Ramón Sánchez Pizjuán, uno de los campos con más ambiente de Europa.",
-        "en": "The Spanish national team plays in Seville: an official Nations League match at the Ramón Sánchez Pizjuán, one of Europe's most atmospheric grounds.",
-        "fr": "La sélection espagnole joue à Séville : match officiel de la Ligue des Nations au Ramón Sánchez Pizjuán.",
-        "de": "Die spanische Nationalmannschaft spielt in Sevilla: offizielles Nations-League-Spiel im Ramón Sánchez Pizjuán.",
-        "it": "La nazionale spagnola gioca a Siviglia: partita ufficiale della Nations League al Ramón Sánchez Pizjuán.",
-        "pt": "A seleção espanhola joga em Sevilha: jogo oficial da Liga das Nações no Ramón Sánchez Pizjuán."
-      },
-      "startDate": "2026-09-29",
-      "endDate": "2026-09-29",
-      "category": "sports",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Seville_Ram%C3%B3n_S%C3%A1nchez_Pizju%C3%A1n_Stadium_1.jpg",
-      "url": "https://sevillafc.es/",
-      "location": {
-        "name": "Estadio Ramón Sánchez Pizjuán",
-        "address": "Calle Sevilla FC s/n",
-        "lat": 37.3840876,
-        "lng": -5.9706309
-      },
-      "isHighSeason": true
-    },
-    {
       "id": "marina-heredia-ross-2026",
       "title": {
         "es": "Marina Heredia & ROSS: «¡En libertad!»",

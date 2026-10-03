@@ -12,6 +12,9 @@ RewriteRule ^$ /es/ [R=302,L]
 # 2) /xx/pre-checkin no existe en el build estático (necesita API) → guía
 RewriteRule ^(es|en|fr|de|it|pt)/pre-checkin/?$ /$1/guia [R=302,L]
 
+# 2b) Excepción: el reto ACME de Let's Encrypt no se redirige
+RewriteRule ^\.well-known/ - [L]
+
 # 3) Rutas sin prefijo de idioma → /es/... (replica del middleware de Next)
 RewriteCond %{REQUEST_URI} !^/(es|en|fr|de|it|pt)(/|$)
 RewriteCond %{REQUEST_URI} !^/_next/
