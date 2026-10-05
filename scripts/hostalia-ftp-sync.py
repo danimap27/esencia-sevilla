@@ -102,7 +102,23 @@ def main():
     print(f"local: {len(local_files)} archivos, {len(local_dirs)} dirs")
 
     ftp = connect()
-    remote_files = remote_inventory(ftp)
+    # El walk remoto (una sola conexión, árbol grande) puede morir por un blip de red
+    # ("Network is unreachable"); reintentar con conexión nueva (visto oct-2026).
+    remote_files = None
+    for attempt in range(3):
+        try:
+            remote_files = remote_inventory(ftp)
+            break
+        except Exception as exc:  # noqa: BLE001
+            print(f"  walk remoto falló ({exc}); reintento {attempt + 2}/3 con conexión nueva")
+            try:
+                ftp.quit()
+            except Exception:  # noqa: BLE001
+                pass
+            time.sleep(2)
+            ftp = connect()
+    if remote_files is None:
+        sys.exit("No se pudo leer el inventario remoto tras 3 intentos")
     print(f"remoto: {len(remote_files)} archivos")
 
     # dirs primero (orden lexicográfico = padres antes que hijos)
