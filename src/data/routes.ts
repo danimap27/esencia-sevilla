@@ -3979,7 +3979,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
       {
         name: 'Torre Tavira (cámara oscura)',
         lat: 36.5319575, lng: -6.2984001,
-        url: 'https://www.torretavira.com/',
+        url: 'https://torretavira.com/',
         description: {
           es: 'El mirador más alto del casco antiguo, con cámara oscura: la ciudad en directo sobre una mesa.',
           en: 'The highest viewpoint of the old town, with a camera obscura: the live city on a table.',
