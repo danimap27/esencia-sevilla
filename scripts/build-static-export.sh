@@ -2,34 +2,37 @@
 # Build de EXPORT ESTÁTICO de Esencia Sevilla para hosting compartido (Hostalia).
 # Genera out/ listo para subir a public_html.
 #
-# Trucos necesarios (y por qué):
-#  - output:'export' en next.config.mjs (temporal): genera out/ con HTML+JS puro.
-#  - images.unoptimized: el export no soporta el optimizador de imágenes de Next.
-#  - src/app/api fuera del build: los route handlers con force-dynamic no se pueden
-#    exportar (el build fallaría); el hosting estático no los necesita porque los
-#    componentes llevan fallbacks (/events.json, Open-Meteo directo, /chat.php).
+# IMPORTANTE — POR QUÉ COPIA AISLADA:
+#   El build de export (output:'export') escribe SIEMPRE los artefactos en .next/
+#   (Next 14.2: con output:'export', configOutDir=distDir para la salida pero
+#   config.distDir se fuerza a ".next" para los intermedios). Si se construye
+#   in-place, .next de PRODUCCIÓN (el que sirve `next start -p 3010` con las API
+#   routes) queda machacado y todas las /api/* devuelven 404 hasta el siguiente
+#   `npm run build`. Pasó el 2026-10-05: /api/events y /api/weather en 404 una
+#   semana. Por eso el export corre en una COPIA (.export-work/) y el .next del
+#   repo no se toca jamás.
 #
-# El repo queda EXACTAMENTE igual al terminar (se restaura siempre, incluso con Ctrl-C).
+# Trucos del export (inyectados SOLO en la copia):
+#  - output:'export' + trailingSlash + images.unoptimized.
+#  - src/app/api y pre-checkin fuera: no exportables (force-dynamic/searchParams).
+#    El hosting estático usa los fallbacks (/events.json, Open-Meteo directo, /chat.php).
 set -euo pipefail
 cd "$(dirname "$0")/.."
+ROOT="$(pwd)"
+WORK="$ROOT/.export-work"
 
-BAK="$(mktemp -d)"
-echo "==> Backup en $BAK"
-cp next.config.mjs "$BAK/next.config.mjs"
+echo "==> Sincronizando copia de trabajo en $WORK (rsync)"
+mkdir -p "$WORK"
+rsync -a --delete \
+  --exclude node_modules --exclude .next --exclude out --exclude .git \
+  --exclude '.export-work' \
+  "$ROOT/" "$WORK/"
+ln -sfn "$ROOT/node_modules" "$WORK/node_modules"
 
-cleanup() {
-  echo "==> Restaurando repo"
-  cp "$BAK/next.config.mjs" next.config.mjs
-  [ -d "$BAK/api" ] && mv "$BAK/api" src/app/api || true
-  [ -d "$BAK/pre-checkin" ] && mv "$BAK/pre-checkin" "src/app/[locale]/pre-checkin" || true
-  rm -rf "$BAK"
-}
-trap cleanup EXIT INT TERM
-
-echo "==> Inyectando output:'export' + trailingSlash + images.unoptimized (temporal)"
-python3 - <<'PY'
-import pathlib
-p = pathlib.Path('next.config.mjs')
+echo "==> Inyectando output:'export' + trailingSlash + images.unoptimized (solo en la copia)"
+python3 - "$WORK/next.config.mjs" <<'PY'
+import pathlib, sys
+p = pathlib.Path(sys.argv[1])
 t = p.read_text()
 assert "output: 'export'" not in t
 t = t.replace("const nextConfig = {\n", "const nextConfig = {\n  output: 'export',\n  trailingSlash: true,\n", 1)
@@ -37,20 +40,23 @@ t = t.replace("  images: {\n    remotePatterns:", "  images: {\n    unoptimized:
 p.write_text(t)
 PY
 
-echo "==> Sacando src/app/api y pre-checkin (temporal; necesitan APIs/searchParams dinámicos)"
-mv src/app/api "$BAK/api"
-mv "src/app/[locale]/pre-checkin" "$BAK/pre-checkin"
+echo "==> Sacando src/app/api y pre-checkin (solo de la copia)"
+rm -rf "$WORK/src/app/api" "$WORK/src/app/[locale]/pre-checkin"
 
-echo "==> npm run build (export)"
-rm -rf out
-npm run build
+echo "==> npm run build (export) en la copia"
+( cd "$WORK" && rm -rf out && npm run build )
 
 # La raíz '/' genera redirect a /es en el deploy normal; en export no hay index.html
 # en la raíz (el .htaccess lo redirige a /es/). Comprobamos el home en español:
-if [ ! -f out/es/index.html ]; then
+if [ ! -f "$WORK/out/es/index.html" ]; then
   echo "ERROR: no se generó out/es/index.html" >&2
   exit 1
 fi
+
+echo "==> Reemplazando out/ del repo con el export nuevo"
+rm -rf "$ROOT/out"
+mv "$WORK/out" "$ROOT/out"
+rm -rf "$WORK"
 
 echo "==> Copiando data/events.json → out/events.json (fallback de eventos)"
 cp data/events.json out/events.json
