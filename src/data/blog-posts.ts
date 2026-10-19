@@ -226,7 +226,7 @@ Séville est étonnamment bonne à visiter avec des enfants. Il y a des parcs, d
     slug: 'semana-santa-en-sevilla-consejos',
     titleKey: 'posts.semanaSanta.title',
     excerptKey: 'posts.semanaSanta.excerpt',
-    coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200',
+    coverImage: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Nazarenos_hiniesta.jpg/1280px-Nazarenos_hiniesta.jpg',
     category: 'Festivales',
     minRead: 6,
     publishedAt: '2024-10-15',

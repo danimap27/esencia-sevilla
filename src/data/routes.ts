@@ -650,7 +650,7 @@ export const TOURIST_ROUTES: TouristRoute[] = [
     duration: '3h (atardecer)',
     distance: '3 km',
     difficulty: 'easy',
-    image: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800',
+    image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Torre_Norte_en_Plaza_de_Espa%C3%B1a.jpg/1280px-Torre_Norte_en_Plaza_de_Espa%C3%B1a.jpg',
     title: {
       es: 'Ruta Romántica al Atardecer',
       en: 'Romantic Sunset Route',
