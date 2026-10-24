@@ -22,7 +22,7 @@
     "savingsDesc": "By booking directly",
     "registrationLabel": "Tourist Registration No.",
     "trustBadges": {
-      "checkin": "Self check-in 24h",
+      "checkin": "24h check-in",
       "wifi": "Ultra-fast WiFi",
       "ac": "A/C in all rooms",
       "location": "Next to Santa Justa (AVE)"
@@ -325,8 +325,8 @@
       "a1": "There is no private parking in the building. The apartment is outside the city centre's restricted access zones, so parking nearby is easier than in the old town. To visit the centre (about 2 km away) we recommend bus, taxi or leaving the car in a city-centre car park.",
       "q2": "Are pets allowed?",
       "a2": "We're sorry, pets are not allowed in the apartment to respect other guests and maintain cleanliness.",
-      "q3": "How does self check-in work?",
-      "a3": "24 hours before your arrival you will receive a WhatsApp message and email with the key safe code. No need to coordinate with anyone. You can arrive at any time between 16:00 and 23:00.",
+      "q3": "How does check-in work?",
+      "a3": "Check-in is from 16:00. The day before your arrival we will send you the access instructions by WhatsApp and email, so you know exactly what to do before you come.",
       "q4": "Is cleaning included?",
       "a4": "Yes. Before your arrival the apartment receives a full clean, including linen and towel change and bathroom items replenishment.",
       "q5": "Is there air conditioning?",
@@ -600,7 +600,7 @@
     "langLabel": "Language:",
     "back": "Back",
     "offline": "Offline",
-    "welcomeTitle": "Welcome to Seville 🌟",
+    "welcomeTitle": "Welcome to Esencia Sevilla 🌟",
     "welcomeText": "Your personal guide to discover the best of the Andalusian capital. Everything you need, offline.",
     "quickInfo": {
       "wifi": "WiFi",

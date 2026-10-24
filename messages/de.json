@@ -22,7 +22,7 @@
     "savingsDesc": "Bei direkter Buchung",
     "registrationLabel": "Touristische Registrierungsnummer",
     "trustBadges": {
-      "checkin": "Selbstcheck-in 24h",
+      "checkin": "24h-Check-in",
       "wifi": "Ultra-schnelles WiFi",
       "ac": "Klimaanlage in allen Räumen",
       "location": "Neben Santa Justa (AVE)"
@@ -325,8 +325,8 @@
       "a1": "Kein privater Parkplatz im Gebäude. Die Wohnung liegt außerhalb der eingeschränkten Zufahrtszonen des Zentrums – Parken in der Nähe ist einfacher als in der Altstadt. Für das Zentrum (ca. 2 km) empfehlen wir Bus, Taxi oder ein Parkhaus im Zentrum.",
       "q2": "Sind Haustiere erlaubt?",
       "a2": "Leider sind Haustiere in der Wohnung nicht erlaubt, um andere Gäste zu respektieren und die Sauberkeit zu wahren.",
-      "q3": "Wie funktioniert der Selbstcheck-in?",
-      "a3": "24h vor Ihrer Ankunft erhalten Sie eine WhatsApp-Nachricht und E-Mail mit dem Code für den Sicherheitssafe, in dem sich die Schlüssel befinden. Keine Absprache nötig. Sie können jederzeit zwischen 16:00 und 23:00 Uhr ankommen.",
+      "q3": "Wie funktioniert der Check-in?",
+      "a3": "Der Check-in ist ab 16:00 Uhr möglich. Am Tag vor Ihrer Ankunft senden wir Ihnen die Zugangsanweisungen per WhatsApp und E-Mail zu.",
       "q4": "Ist die Reinigung inklusive?",
       "a4": "Ja. Vor Ihrer Ankunft wird die Wohnung gründlich gereinigt, inklusive Bettwäsche- und Handtuchwechsel und Auffüllen der Badezimmerartikel.",
       "q5": "Gibt es Klimaanlage?",
@@ -600,7 +600,7 @@
     "langLabel": "Sprache:",
     "back": "Zurück",
     "offline": "Offline",
-    "welcomeTitle": "Willkommen in Sevilla 🌟",
+    "welcomeTitle": "Willkommen bei Esencia Sevilla 🌟",
     "welcomeText": "Ihr persönlicher Guide, um das Beste der andalusischen Hauptstadt zu entdecken. Alles, was Sie brauchen, offline.",
     "quickInfo": {
       "wifi": "WiFi",
@@ -669,7 +669,7 @@
   },
   "seo": {
     "homeTitle": "Touristenwohnung in Sevilla neben Santa Justa | Esencia Sevilla",
-    "homeDescription": "Touristenwohnung in Sevilla, 7 Minuten zu Fuß vom AVE-Bahnhof Santa Justa und 10 Minuten vom historischen Zentrum mit Bus oder Taxi. Selbstcheck-in, WLAN, Klimaanlage. Buchen Sie auf Booking.com.",
+    "homeDescription": "Touristenwohnung in Sevilla, 7 Minuten zu Fuß vom AVE-Bahnhof Santa Justa und 10 Minuten vom historischen Zentrum mit Bus oder Taxi. Check-in ab 16:00, WLAN, Klimaanlage. Buchen Sie auf Booking.com.",
     "guideTitle": "Kostenloser Reiseführer Sevilla | Karte, Routen und Transport",
     "guideDescription": "Vollständiger und kostenloser Reiseführer von Sevilla: interaktive Karte, Fußrouten, TUSSAM-Transport, Restaurants und Events. Offline verfügbar.",
     "blogTitle": "Sevilla Reise-Blog | Guides und Tipps",

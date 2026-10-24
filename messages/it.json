@@ -22,7 +22,7 @@
     "savingsDesc": "Prenotando direttamente",
     "registrationLabel": "Nº Registrazione Turistica",
     "trustBadges": {
-      "checkin": "Check-in autonomo 24h",
+      "checkin": "Check-in 24h",
       "wifi": "WiFi ultrarapido",
       "ac": "A/C in tutte le stanze",
       "location": "Accanto a Santa Justa (AVE)"
@@ -325,8 +325,8 @@
       "a1": "Nessun parcheggio privato nell'edificio. L'appartamento è fuori dalle zone a traffico limitato del centro: parcheggiare in zona è più facile che nel centro storico. Per visitare il centro (a circa 2 km) consigliamo bus, taxi o un parcheggio del centro.",
       "q2": "Si accettano animali?",
       "a2": "Spiacenti, non si accettano animali nell'appartamento per rispettare gli altri ospiti e mantenere la pulizia.",
-      "q3": "Come funziona il check-in autonomo?",
-      "a3": "24h prima del tuo arrivo riceverai un messaggio WhatsApp e email con il codice della cassetta di sicurezza dove si trovano le chiavi. Non è necessario coordinarsi con nessuno. Puoi arrivare in qualsiasi ora tra le 16:00 e le 23:00.",
+      "q3": "Come funziona il check-in?",
+      "a3": "Il check-in è a partire dalle 16:00. Il giorno prima del tuo arrivo ti invieremo le istruzioni di accesso via WhatsApp ed email.",
       "q4": "Le pulizie sono incluse?",
       "a4": "Sì. Prima del vostro arrivo l'appartamento riceve una pulizia completa, con cambio di lenzuola e asciugamani e rifornimento dei bagni.",
       "q5": "C'è l'aria condizionata?",
@@ -600,7 +600,7 @@
     "langLabel": "Lingua:",
     "back": "Indietro",
     "offline": "Offline",
-    "welcomeTitle": "Benvenuto a Siviglia 🌟",
+    "welcomeTitle": "Benvenuto a Esencia Sevilla 🌟",
     "welcomeText": "La tua guida personale per scoprire il meglio della capitale andalusa. Tutto ciò di cui hai bisogno, offline.",
     "quickInfo": {
       "wifi": "WiFi",

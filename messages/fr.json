@@ -22,7 +22,7 @@
     "savingsDesc": "En réservant directement",
     "registrationLabel": "Nº d'enregistrement touristique",
     "trustBadges": {
-      "checkin": "Arrivée autonome 24h",
+      "checkin": "Check-in 24h",
       "wifi": "WiFi ultra-rapide",
       "ac": "Climatisation dans toutes les pièces",
       "location": "Près de Santa Justa (AVE)"
@@ -325,8 +325,8 @@
       "a1": "Pas de parking privé dans l'immeuble. L'appartement est en dehors des zones d'accès restreint du centre : stationner à proximité est plus facile que dans la vieille ville. Pour visiter le centre (à environ 2 km), nous recommandons bus, taxi ou un parking du centre.",
       "q2": "Les animaux sont-ils acceptés ?",
       "a2": "Désolé, les animaux ne sont pas acceptés dans l'appartement pour respecter les autres voyageurs et maintenir la propreté.",
-      "q3": "Comment fonctionne l'arrivée autonome ?",
-      "a3": "24h avant votre arrivée, vous recevrez un message WhatsApp et email avec le code de la boîte de sécurité où se trouvent les clés. Aucune coordination nécessaire. Vous pouvez arriver à toute heure entre 16h00 et 23h00.",
+      "q3": "Comment fonctionne l'arrivée ?",
+      "a3": "L'arrivée se fait à partir de 16h00. La veille de votre arrivée, nous vous enverrons les instructions d'accès par WhatsApp et email.",
       "q4": "Le ménage est-il inclus ?",
       "a4": "Oui. Avant votre arrivée, l'appartement reçoit un ménage complet, avec changement des draps et des serviettes et réapprovisionnement des produits de salle de bain.",
       "q5": "Y a-t-il la climatisation ?",
@@ -600,7 +600,7 @@
     "langLabel": "Langue :",
     "back": "Retour",
     "offline": "Hors ligne",
-    "welcomeTitle": "Bienvenue à Séville 🌟",
+    "welcomeTitle": "Bienvenue à Esencia Sevilla 🌟",
     "welcomeText": "Votre guide personnel pour découvrir le meilleur de la capitale andalouse. Tout ce dont vous avez besoin, hors ligne.",
     "quickInfo": {
       "wifi": "WiFi",
@@ -669,7 +669,7 @@
   },
   "seo": {
     "homeTitle": "Appartement Touristique à Séville près de Santa Justa | Esencia Sevilla",
-    "homeDescription": "Appartement touristique à Séville, à 7 minutes à pied de la gare AVE Santa Justa et à 10 minutes du centre historique en bus ou taxi. Arrivée autonome, WiFi, Clim. Réservez sur Booking.com.",
+    "homeDescription": "Appartement touristique à Séville, à 7 minutes à pied de la gare AVE Santa Justa et à 10 minutes du centre historique en bus ou taxi. Check-in à partir de 16h, WiFi, Clim. Réservez sur Booking.com.",
     "guideTitle": "Guide Touristique Séville Gratuit | Carte, Itinéraires et Transport",
     "guideDescription": "Guide touristique complet et gratuit de Séville : carte interactive, itinéraires à pied, transport TUSSAM, restaurants et événements. Disponible hors ligne.",
     "blogTitle": "Blog de Voyages Séville | Guides et Conseils",

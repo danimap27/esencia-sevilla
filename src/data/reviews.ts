@@ -78,12 +78,12 @@ export const REVIEWS: Review[] = [
     date: '2025-05-18',
     source: 'direct',
     text: {
-      es: 'Apartamento precioso, muy bien decorado y con todo lo necesario. La zona es fantástica, muy bien comunicada. El check-in autónomo funcionó perfectamente. Muy recomendable para familias.',
-      en: 'Beautiful apartment, very well decorated and with everything you need. The area is fantastic, very well connected. Self check-in worked perfectly. Highly recommended for families.',
-      fr: 'Bel appartement, très bien décoré et avec tout le nécessaire. Le quartier est fantastique. Le check-in autonome a parfaitement fonctionné. Très recommandé pour les familles.',
-      de: 'Schöne Wohnung, sehr schön dekoriert und mit allem was man braucht. Das Viertel ist fantastisch. Self-Check-in hat perfekt funktioniert.',
-      it: 'Bellissimo appartamento, molto ben arredato e con tutto il necessario. La zona è fantastica. Il self check-in ha funzionato perfettamente.',
-      pt: 'Apartamento lindo, muito bem decorado e com tudo o que precisa. A área é fantástica. O check-in autônomo funcionou perfeitamente.',
+      es: 'Apartamento precioso, muy bien decorado y con todo lo necesario. La zona es fantástica, muy bien comunicada. La llegada fue muy cómoda y sin esperas. Muy recomendable para familias.',
+      en: 'Beautiful apartment, very well decorated and with everything you need. The area is fantastic, very well connected. The arrival was smooth, with no waiting at all. Highly recommended for families.',
+      fr: 'Bel appartement, très bien décoré et avec tout le nécessaire. Le quartier est fantastique. L\'arrivée a été très fluide, sans aucune attente. Très recommandé pour les familles.',
+      de: 'Schöne Wohnung, sehr schön dekoriert und mit allem was man braucht. Das Viertel ist fantastisch. Die Anreise war sehr bequem und ohne Wartezeit.',
+      it: 'Bellissimo appartamento, molto ben arredato e con tutto il necessario. La zona è fantastica. L\'arrivo è stato molto comodo e senza attese.',
+      pt: 'Apartamento lindo, muito bem decorado e com tudo o que precisa. A área é fantástica. A chegada foi muito cómoda e sem esperas.',
     },
   },
   {

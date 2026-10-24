@@ -22,7 +22,7 @@
     "savingsDesc": "Reservando directamente",
     "registrationLabel": "Nº Registro Turístico",
     "trustBadges": {
-      "checkin": "Check-in autónomo 24h",
+      "checkin": "Check-in 24h",
       "wifi": "WiFi ultrarrápido",
       "ac": "A/C en todas las habitaciones",
       "location": "Junto a Santa Justa (AVE)"
@@ -325,8 +325,8 @@
       "a1": "No hay parking privado en el edificio. El apartamento está fuera de las zonas de acceso restringido del centro, así que aparcar en la zona es más fácil que en el casco histórico. Para visitar el centro (a unos 2 km) recomendamos bus, taxi o dejar el coche en un parking del centro.",
       "q2": "¿Se admiten mascotas?",
       "a2": "Lo sentimos, no se admiten mascotas en el apartamento para respetar a otros huéspedes y mantener la limpieza.",
-      "q3": "¿Cómo funciona el check-in autónomo?",
-      "a3": "24h antes de tu llegada recibirás un mensaje por WhatsApp y email con el código de la caja de seguridad donde están las llaves. No es necesario coordinarse con nadie. Puedes llegar a cualquier hora entre las 16:00 y las 23:00.",
+      "q3": "¿Cómo funciona el check-in?",
+      "a3": "El check-in es a partir de las 16:00. El día antes de tu llegada te enviaremos las instrucciones de acceso por WhatsApp y email, para que tengas todo claro antes de venir.",
       "q4": "¿La limpieza está incluida?",
       "a4": "Sí. Antes de tu llegada el apartamento recibe una limpieza completa, con cambio de ropa de cama y de toallas y reposición de productos de baño.",
       "q5": "¿Hay aire acondicionado?",
@@ -600,7 +600,7 @@
     "langLabel": "Idioma:",
     "back": "Volver",
     "offline": "Offline",
-    "welcomeTitle": "Bienvenido a Sevilla 🌟",
+    "welcomeTitle": "Bienvenido a Esencia Sevilla 🌟",
     "welcomeText": "Tu guía personal para descubrir lo mejor de la capital andaluza. Todo lo que necesitas, sin conexión.",
     "quickInfo": {
       "wifi": "WiFi",
