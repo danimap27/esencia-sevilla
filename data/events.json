@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26",
+  "updatedAt": "2026-10-27",
   "source": "hermes-cron",
   "events": [
     {
@@ -185,37 +185,6 @@
         "address": "Paseo de Cristóbal Colón 22",
         "lat": 37.3840732,
         "lng": -5.9966688
-      },
-      "isHighSeason": false
-    },
-    {
-      "id": "jorge-drexler-taraca-2026",
-      "title": {
-        "es": "Jorge Drexler – Gira «Taracá»",
-        "en": "Jorge Drexler – 'Taracá' Tour",
-        "fr": "Jorge Drexler – Tournée « Taracá »",
-        "de": "Jorge Drexler – Tour 'Taracá'",
-        "it": "Jorge Drexler – Tour «Taracá»",
-        "pt": "Jorge Drexler – Digressão «Taracá»"
-      },
-      "description": {
-        "es": "El cantautor uruguayo, ganador del Óscar por «Al otro lado del río» y gran referente de la canción latinoamericana, presenta su gira «Taracá» en el Cartuja Center CITE: poesía, guitarra y ritmos rioplatenses en directo.",
-        "en": "The Uruguayan singer-songwriter, Oscar winner for 'Al otro lado del río' and a leading voice of Latin American songwriting, brings his 'Taracá' tour to the Cartuja Center CITE: poetry, guitar and Rioplatense rhythms live.",
-        "fr": "L'auteur-compositeur-interprète uruguayen, lauréat d'un Oscar pour « Al otro lado del río » et grande voix de la chanson latino-américaine, présente sa tournée « Taracá » au Cartuja Center CITE : poésie, guitare et rythmes du Río de la Plata en concert.",
-        "de": "Der uruguayische Singer-Songwriter, Oscar-Preisträger für 'Al otro lado del río' und eine der großen Stimmen des lateinamerikanischen Lieds, präsentiert seine 'Taracá'-Tour im Cartuja Center CITE: Poesie, Gitarre und Río-de-la-Plata-Rhythmen live.",
-        "it": "Il cantautore uruguaiano, premio Oscar per «Al otro lado del río» e grande voce della canzone latinoamericana, porta il suo tour «Taracá» al Cartuja Center CITE: poesia, chitarra e ritmi del Río de la Plata dal vivo.",
-        "pt": "O cantautor uruguaio, vencedor do Óscar por «Al otro lado del río» e grande voz da canção latino-americana, apresenta a sua digressão «Taracá» no Cartuja Center CITE: poesia, guitarra e ritmos do Río de la Plata ao vivo."
-      },
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-24",
-      "category": "music",
-      "image": "https://www.giglon.com/documents/10180/30003/3-86806x1-nfhld.jpg/f84fefcd-ee8d-4f62-8b80-a31fb4eb3ac6",
-      "url": "https://cartujacenter.com/actualidad/programacion-cartuja-center-sevilla-octubre-2026-conciertos-teatros-y-espectaculos/",
-      "location": {
-        "name": "Cartuja Center CITE",
-        "address": "Calle Albert Einstein (PCT Cartuja)",
-        "lat": 37.4045749,
-        "lng": -6.0078013
       },
       "isHighSeason": false
     },
@@ -1208,6 +1177,68 @@
         "lng": -6.0058
       },
       "isHighSeason": true
+    },
+    {
+      "id": "regata-sevilla-betis-2026",
+      "title": {
+        "es": "Regata Sevilla-Betis (60ª edición)",
+        "en": "Sevilla-Betis Regatta (60th edition)",
+        "fr": "Régate Séville-Betis (60e édition)",
+        "de": "Regatta Sevilla-Betis (60. Ausgabe)",
+        "it": "Regata Siviglia-Betis (60ª edizione)",
+        "pt": "Regata Sevilla-Betis (60ª edição)"
+      },
+      "description": {
+        "es": "La 60ª edición del derbi del remo hispalense: seis embarcaciones de ocho con timonel del Sevilla FC y el Real Betis se enfrentan sobre el Guadalquivir, con salida en la pasarela de San Jerónimo y llegada frente a la Torre del Oro. Pruebas absolutas a las 12:00 (femenina) y 13:00 (masculina); se sigue gratis desde el Paseo de Cristóbal Colón y el Puente de Triana.",
+        "en": "The 60th edition of Seville's rowing derby: six coxed eight crews from Sevilla FC and Real Betis race on the Guadalquivir, starting at the San Jerónimo footbridge and finishing in front of the Torre del Oro. Absolute finals at 12:00 (women) and 13:00 (men); free to watch from the Paseo de Cristóbal Colón and the Triana bridge.",
+        "fr": "60e édition du derby de l'aviron sévillan : six embarcations de huit rameurs avec barreur du Séville FC et du Real Betis s'affrontent sur le Guadalquivir, départ à la passerelle de San Jerónimo et arrivée devant la Torre del Oro. Finales absolues à 12h00 (femmes) et 13h00 (hommes) ; accès libre depuis le Paseo de Cristóbal Colón et le pont de Triana.",
+        "de": "60. Ausgabe des Ruder-Derbys von Sevilla: Sechs Achter mit Steuermann von Sevilla FC und Real Betis treten auf dem Guadalquivir gegeneinander an – Start an der San-Jerónimo-Fußgängerbrücke, Ziel vor dem Torre del Oro. Absolute Läufe um 12:00 (Frauen) und 13:00 (Männer); kostenlos zu sehen vom Paseo de Cristóbal Colón und der Triana-Brücke.",
+        "it": "60ª edizione del derby del remo sivigliano: sei otto con timoniere di Siviglia FC e Real Betis si sfidano sul Guadalquivir, partenza dalla passerella di San Jerónimo e arrivo davanti alla Torre del Oro. Prove assolute alle 12:00 (femminile) e 13:00 (maschile); si segue gratis dal Paseo de Cristóbal Colón e dal ponte di Triana.",
+        "pt": "60ª edição do dérbi do remo sevilhano: seis oitos com timoneiro do Sevilla FC e do Real Betis enfrentam-se no Guadalquivir, com partida na passarela de San Jerónimo e chegada em frente à Torre del Oro. Provas absolutas às 12:00 (feminina) e 13:00 (masculina); vê-se grátis do Paseo de Cristóbal Colón e da ponte de Triana."
+      },
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "category": "sports",
+      "image": "/events/regata-sevilla-betis-2026.jpg",
+      "url": "https://regatasevillabetis.com/",
+      "location": {
+        "name": "Torre del Oro / Paseo de Cristóbal Colón",
+        "address": "Paseo de Cristóbal Colón, 41001 Sevilla",
+        "lat": 37.3824026,
+        "lng": -5.9963156
+      },
+      "isHighSeason": false
+    },
+    {
+      "id": "kinpaku-arte-japones-2026",
+      "title": {
+        "es": "KINPAKU. Naturaleza, poder e imaginación en el arte japonés",
+        "en": "KINPAKU: Nature, Power and Imagination in Japanese Art",
+        "fr": "KINPAKU. Nature, pouvoir et imagination dans l'art japonais",
+        "de": "KINPAKU. Natur, Macht und Fantasie in der japanischen Kunst",
+        "it": "KINPAKU. Natura, potere e immaginazione nell'arte giapponese",
+        "pt": "KINPAKU. Natureza, poder e imaginação na arte japonesa"
+      },
+      "description": {
+        "es": "Diez biombos y dieciséis abanicos japoneses de los siglos XVI al XIX, con fondos de pan de oro (kinpaku), de una colección privada que rara vez se muestra al público. En el Espacio Santa Clara, antiguo convento junto a la Alameda. Entrada libre; martes a sábado de 10:00 a 20:00, domingos y festivos hasta las 14:00, lunes cerrado.",
+        "en": "Ten Japanese folding screens and sixteen fans from the 16th to 19th centuries, with gold-leaf (kinpaku) backgrounds, from a private collection rarely shown in public. At the Espacio Santa Clara, a former convent next to the Alameda. Free entry; Tuesday to Saturday 10:00–20:00, Sundays and holidays until 14:00, closed Mondays.",
+        "fr": "Dix paravents et seize éventails japonais du XVIe au XIXe siècle, sur fonds de feuille d'or (kinpaku), issus d'une collection privée rarement montrée au public. À l'Espacio Santa Clara, ancien couvent près de l'Alameda. Entrée libre ; du mardi au samedi de 10h00 à 20h00, dimanches et jours fériés jusqu'à 14h00, fermé le lundi.",
+        "de": "Zehn japanische Stellschirme und sechzehn Fächer aus dem 16. bis 19. Jahrhundert mit Blattgoldhintergründen (Kinpaku) aus einer selten gezeigten Privatsammlung. Im Espacio Santa Clara, einem ehemaligen Kloster an der Alameda. Eintritt frei; Dienstag bis Samstag 10:00–20:00, sonn- und feiertags bis 14:00, montags geschlossen.",
+        "it": "Dieci paraventi e sedici ventagli giapponesi dal XVI al XIX secolo, con fondi in foglia d'oro (kinpaku), da una collezione privata raramente esposta. All'Espacio Santa Clara, ex convento vicino all'Alameda. Ingresso libero; da martedì a sabato 10:00–20:00, domeniche e festivi fino alle 14:00, lunedì chiuso.",
+        "pt": "Dez biombos e dezasseis leques japoneses dos séculos XVI a XIX, com fundos de folha de ouro (kinpaku), de uma coleção privada raramente exposta. No Espacio Santa Clara, antigo convento junto à Alameda. Entrada livre; de terça a sábado das 10:00 às 20:00, domingos e feriados até às 14:00, encerrado às segundas."
+      },
+      "startDate": "2026-10-20",
+      "endDate": "2027-01-10",
+      "category": "culture",
+      "image": "/events/kinpaku-2026.jpg",
+      "url": "https://icas.sevilla.org/agenda/kinpaku-naturaleza-poder-e-imaginacion-en-el-arte-japones",
+      "location": {
+        "name": "Espacio Santa Clara",
+        "address": "Calle Becas s/n, 41002 Sevilla",
+        "lat": 37.3999019,
+        "lng": -5.9953091
+      },
+      "isHighSeason": false
     }
   ]
 }
